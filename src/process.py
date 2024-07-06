@@ -75,14 +75,14 @@ def format_human_label(in_dir,out_dir):
             for anno in anno_list:
                 # entity
                 if 'value' in anno:
-                    entity = anno['value']['text']
+                    entity = anno['value']['text'].strip()
                     label = anno['value']['labels'][0]
                     id = anno['id']
                     id2entity[id] = entity
                     entity_result[label].append(entity)
                 elif 'from_id' in anno:
-                    from_e = id2entity[anno['from_id']]
-                    to_e = id2entity[anno['to_id']]
+                    from_e = id2entity[anno['from_id']].strip()
+                    to_e = id2entity[anno['to_id']].strip()
                     label = anno['labels'][0] if 'labels' in anno and len(anno['labels'])>0 else "interface"
                     relation_item = [from_e,to_e]
                     relation_result[label].append(relation_item)
@@ -142,10 +142,15 @@ def kfold(origin_path,split_dir):
     print("10-fold划分完成。")
 
 def main():
+    # in_dir = "/home/jindongming/project/modeling/PDEval/data/human_label"
+    # out_dir = "/home/jindongming/project/modeling/PDEval/data/dataset/total"
+    # format_human_label(in_dir,out_dir)
+    # in_dir = "/home/jindongming/project/modeling/PDEval/data/dataset/total"
+    # out_dir = "/home/jindongming/project/modeling/PDEval/data/dataset/10-fold"
+    # merge_file(in_dir,out_dir)
     origin_path = "/home/jindongming/project/modeling/PDEval/data/dataset/10-fold/total.json"
     split_dir = "/home/jindongming/project/modeling/PDEval/data/dataset/10-fold"
     kfold(origin_path,split_dir)
-
 
 if __name__=="__main__":
     main()
