@@ -1,0 +1,5748 @@
+[
+  {
+    "text": "E-GOVERNANCE MISSION MODE PROJECT (MMP) ",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "CRIME &amp; CRIMINAL TRACKING NETWORK AND SYSTEMS (CCTNS)",
+    "entity": {
+      "Machine Domain": [
+        "CRIMINAL TRACKING NETWORK AND SYSTEMS (CCTNS)"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "FUNCTIONAL REQUIREMENTS SPECIFICATION V1.0 (DRAFT) ",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "MINISTRY OF HOME AFFAIRS GOVERNMENT OF INDIA  ",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Functional Requirements Specifications (FRS) report provides the detailed description of the functionalities required for the first version of the CCTNS.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The key guiding principle behind the functional design of CCTNS V1.0 is to focus on the critical functionality that provides value to the police personnel at the cutting edge which in turn can improve the outcomes in the areas of “Investigation of Crime” and “Detection of Criminals”.",
+    "entity": {
+      "Machine Domain": [
+        "CCTNS V1.0"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the police personnel"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to focus on the critical functionality",
+        "improve the outcomes"
+      ],
+      "Shared Phenomena": [
+        "value"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "CCTNS V1.0",
+          "value"
+        ],
+        [
+          "the police personnel",
+          "value"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "CCTNS V1.0",
+          "to focus on the critical functionality"
+        ],
+        [
+          "CCTNS V1.0",
+          "improve the outcomes"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "CCTNS V1.0 functionality is designed to focus on delivering value to IOs, records room staff and citizens within the broad crime investigation area.",
+    "entity": {
+      "Machine Domain": [
+        "CCTNS V1.0"
+      ],
+      "Physical Device": [
+        "IOs"
+      ],
+      "Environment Entity": [
+        "citizens",
+        "room staff"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to focus on delivering value",
+        "records room staff and citizens"
+      ],
+      "Shared Phenomena": [
+        "value"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "CCTNS V1.0",
+          "value"
+        ],
+        [
+          "IOs",
+          "value"
+        ],
+        [
+          "CCTNS V1.0",
+          "room staff"
+        ],
+        [
+          "CCTNS V1.0",
+          "citizens"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "CCTNS V1.0",
+          "records room staff and citizens"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Based on the guiding principles stated above, nine different function blocks have been identified and the detailed functionality of each block was determined.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The functionality of the CCTNS application is focused on providing value to the police personnel, especially the officers operating at the cutting edge and easing the day to day operations of the police function.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS application"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "officers",
+        "the police personnel",
+        "the police"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "easing the day to day operations of the police function"
+      ],
+      "Shared Phenomena": [
+        "value"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the CCTNS application",
+          "value"
+        ],
+        [
+          "the police personnel",
+          "value"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the police personnel",
+          "easing the day to day operations of the police function"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Citizens can register their complaints with police and then based on the evidence, facts and following investigation, police shall take the complaint forward.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Citizens",
+        "police",
+        "police"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "complaints",
+        "evidence",
+        "facts",
+        "following investigation",
+        "complaint"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "police",
+          "complaints"
+        ],
+        [
+          "Citizens",
+          "complaints"
+        ],
+        [
+          "police",
+          "evidence"
+        ],
+        [
+          "police",
+          "facts"
+        ],
+        [
+          "police",
+          "following investigation"
+        ],
+        [
+          "police",
+          "complaint"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Registration module acts as an interface between the police and citizens and it eases the approach, interaction and information exchange between police and complainants.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "police",
+        "citizens",
+        "police",
+        "complainants"
+      ],
+      "Design Domain": [
+        "Registration module"
+      ],
+      "Requirements": [
+        "eases the approach, interaction and information exchange"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "police",
+          "Registration module"
+        ],
+        [
+          "citizens",
+          "Registration module"
+        ],
+        [
+          "Registration module",
+          "complainants"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "police",
+          "eases the approach, interaction and information exchange"
+        ],
+        [
+          "complainants",
+          "eases the approach, interaction and information exchange"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "After a complaint is initiated, police initiates the investigation process.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "police",
+        "a complaint"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "a complaint",
+          "police"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Investigation module of the CCTNS facilitates the investigation process and introduces operational efficiencies by automating most of the tasks that take place after initial entries are made during Registration.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "facilitates the investigation process and introduces operational efficiencies"
+      ],
+      "Shared Phenomena": [
+        "initial entries"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "the CCTNS",
+          "facilitates the investigation process and introduces operational efficiencies"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Interfacing with the courts during the prosecution of cases is an integral part of the responsibilities of police personnel.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "courts",
+        "police personnel"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "cases"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "courts",
+          "police personnel"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A designated constable from each police station constantly interfaces with the courts.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "police station",
+        "courts"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "constable"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "police station",
+          "constable"
+        ],
+        [
+          "courts",
+          "constable"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Prosecution module of the CCTNS aids this interfacing by providing a platform to record entries of the court interactions.",
+    "entity": {
+      "Machine Domain": [
+        "The Prosecution module of the CCTNS"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a platform"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to record entries of the court interactions"
+      ],
+      "Shared Phenomena": [
+        "entries of the court interactions"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Prosecution module of the CCTNS",
+          "entries of the court interactions"
+        ],
+        [
+          "a platform",
+          "entries of the court interactions"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "a platform",
+          "to record entries of the court interactions"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Search module of the CCTNS gives police personnel the ability to execute a basic or advanced search on cases.",
+    "entity": {
+      "Machine Domain": [
+        "The Search module of the CCTNS"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "police personnel"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to execute a basic or advanced search on cases"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Search module of the CCTNS",
+          "police personnel"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "police personnel",
+          "to execute a basic or advanced search on cases"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Using the search functionality, police personnel can search for a particular person, type of crime, modus operandi, property etc.",
+    "entity": {
+      "Machine Domain": [
+        "the search functionality"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "police personnel"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "search for a particular person, type of crime, modus operandi, property etc"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the search functionality",
+          "police personnel"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "police personnel",
+          "search for a particular person, type of crime, modus operandi, property etc"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It also gives the user the ability to customize the results view by criminal/accused or by cases.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "customize the results view by criminal/accused or by cases"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "the user",
+          "customize the results view by criminal/accused or by cases"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "It makes reporting easy for police by enabling them to execute different types of queries such as monthly reporting, RTI related etc.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "police"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to execute different types of queries",
+        "reporting easy"
+      ],
+      "Shared Phenomena": [
+        "RTI related",
+        "monthly reporting"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "police",
+          "reporting easy"
+        ],
+        [
+          "police",
+          "to execute different types of queries"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Citizen Interface module of the CCTNS acts as a conduit for the information exchange between citizens and police units/personnel.",
+    "entity": {
+      "Machine Domain": [
+        "The Citizen Interface module of the CCTNS"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "citizens",
+        "police"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "citizens",
+          "the information"
+        ],
+        [
+          "police",
+          "the information"
+        ],
+        [
+          "The Citizen Interface module of the CCTNS",
+          "the information"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Citizens can use it as a tool to get information or acknowledgements from police.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Citizens",
+        "police"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "get information or acknowledgements"
+      ],
+      "Shared Phenomena": [
+        "information",
+        "acknowledgements"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Citizens",
+          "information"
+        ],
+        [
+          "Citizens",
+          "acknowledgements"
+        ],
+        [
+          "police",
+          "information"
+        ],
+        [
+          "police",
+          "acknowledgements"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "Citizens",
+          "get information or acknowledgements"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The police in turn can use it to respond to citizens with very little turnaround time.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The police"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to respond to citizens"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The police",
+          "to respond to citizens"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It improves overall productivity by helping citizens and police to cut short the drudgery of large amounts of paperwork.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "citizens",
+        "police"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "improves overall productivity",
+        "to cut short the drudgery of large amounts of paperwork"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "citizens",
+          "to cut short the drudgery of large amounts of paperwork"
+        ],
+        [
+          "police",
+          "to cut short the drudgery of large amounts of paperwork"
+        ],
+        [
+          "citizens",
+          "improves overall productivity"
+        ],
+        [
+          "police",
+          "improves overall productivity"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Navigation module of the CCTNS provides role based landing pages which help in navigating through the CCTNS application.",
+    "entity": {
+      "Machine Domain": [
+        "The Navigation module of the CCTNS",
+        "CCTNS application"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "help in navigating"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The Navigation module of the CCTNS",
+          "help in navigating"
+        ]
+      ],
+      "requirements constraints": [
+        [
+          "CCTNS application",
+          "help in navigating"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "It shows information such as cases assigned, alerts, pending tasks etc hence helping police personnel to plan better and execute with greater efficiency.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "police personnel"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "plan better and execute"
+      ],
+      "Shared Phenomena": [
+        "information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "police personnel",
+          "information"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "police personnel",
+          "plan better and execute"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Configuration module of the CCTNS helps keep the application configured according to the states’ requirements in addition to keeping data elements/rules up to date.",
+    "entity": {
+      "Machine Domain": [
+        "The Configuration module of the CCTNS"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "keep the application configured"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The Configuration module of the CCTNS",
+          "keep the application configured"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "With a proper configuration, information such as act and sections, state specific data, castes, tribes, property information etc.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The functional requirements for each of the modules are provided as A1 to A7 in separate enclosures.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The non-functional requirements specify the qualitative attributes such as user-friendliness and performance of the CCTNS system that are critical for the increased user-acceptance of the application.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The solution should provide detailed context-sensitive help material for all the possible actions and scenarios on all user interfaces in the application.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "all user interfaces"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "detailed context-sensitive help material"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "all user interfaces",
+          "detailed context-sensitive help material"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The solution should provide detailed context-sensitive help material for all the possible actions and scenarios on all user interfaces in the application.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "all user"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "detailed context-sensitive"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "all user",
+          "detailed context-sensitive"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The solution should provide an interface for the user to log any defects or enhancement requests on the application and track thereafter.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "log any defects",
+        "enhancement requests",
+        "track thereafter"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "the user",
+          "log any defects"
+        ],
+        [
+          "the user",
+          "enhancement requests"
+        ],
+        [
+          "the user",
+          "track thereafter"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The solution should send alerts (e.g., email, SMS) to the user if the user chooses to whenever any action has been taken on the alert.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "alerts"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the user",
+          "alerts"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The solution should enable the user to track the submitted defect or enhancement request.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "track the submitted defect",
+        "enhancement request"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "the user",
+          "track the submitted defect"
+        ],
+        [
+          "the user",
+          "enhancement request"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The solution should enable the help-desk user to view the reports on the submitted defects or enhancement requests category-wise, status-wise, and age- wise.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the help-desk user "
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "view the reports"
+      ],
+      "Shared Phenomena": [
+        "reports"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "reports",
+          "the help-desk user "
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the help-desk user ",
+          "view the reports"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The support solution should be accessible to the users both from within the application and also outside the application through a browser interface.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the users"
+      ],
+      "Design Domain": [
+        "a browser interface"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the users",
+          "a browser interface"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "An audit trail is a record of actions taken by either the user or the CCTNS system triggers.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "An audit trail"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the user",
+          "An audit trail"
+        ],
+        [
+          "the CCTNS system",
+          "An audit trail"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This includes actions taken by users or Administrators, or actions initiated automatically by the CCTNS system as a result of system parameters.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users",
+        "Administrators"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "actions",
+        "actions"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "users",
+          "actions"
+        ],
+        [
+          "Administrators",
+          "actions"
+        ],
+        [
+          "the CCTNS system",
+          "actions"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must keep an unalterable audit trail capable of automatically capturing and storing information about all the actions (create/read/update/delete) that are taken upon the critical entities in the CCTNS system.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system",
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "an unalterable audit trail"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information about all the actions "
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "information about all the actions "
+        ],
+        [
+          "an unalterable audit trail",
+          "information about all the actions "
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must keep an unalterable audit trail capable of automatically capturing and storing information about the user initiating and or carrying out the action.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "an unalterable audit trail"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information about the user initiating"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "information about the user initiating"
+        ],
+        [
+          "an unalterable audit trail",
+          "information about the user initiating"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must keep an unalterable audit trail capable of automatically capturing and storing information about the date and time of the event.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "an unalterable audit trail"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information about the date",
+        "time of the event"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "information about the date"
+        ],
+        [
+          "The CCTNS system",
+          "time of the event"
+        ],
+        [
+          "an unalterable audit trail",
+          "information about the date"
+        ],
+        [
+          "an unalterable audit trail",
+          "time of the event"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must keep an unalterable audit trail capable of automatically capturing and storing information about administrative parameters.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "an unalterable audit trail"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information about administrative parameters"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "information about administrative parameters"
+        ],
+        [
+          "an unalterable audit trail",
+          "information about administrative parameters"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The word “unalterable” is to mean that the audit trail data cannot be modified in any way or deleted by any user.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "any user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the audit trail data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "any user",
+          "the audit trail data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It may be subject to re-department and copying to removable media if required, so long as its contents remain unchanged.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once the audit trail functionality has been activated, the CCTNS system must track events without manual intervention, and store in the audit trail information about them.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the audit trail"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "events"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the CCTNS system",
+          "events"
+        ],
+        [
+          "the audit trail",
+          "events"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must maintain the audit trail for as long as required, which will be at least for the life of the case to which it refers.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the audit trail"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "the audit trail"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must ensure that audit trail data is available for inspection on request, so that a specific event can be identified and all related data made accessible, and that this can be achieved by authorised external personnel who have little or no familiarity with the CCTNS system.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system",
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "external personnel"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "audit trail data",
+        "a specific event",
+        "all related data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "audit trail data"
+        ],
+        [
+          "The CCTNS system",
+          "a specific event"
+        ],
+        [
+          "The CCTNS system",
+          "all related data"
+        ],
+        [
+          "external personnel",
+          "audit trail data"
+        ],
+        [
+          "external personnel",
+          "a specific event"
+        ],
+        [
+          "external personnel",
+          "all related data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must be able to export audit trails for specified cases (without affecting the audit trail stored by The CCTNS system).",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system",
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "export audit trails"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "export audit trails",
+          "The CCTNS system"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This functionality can be used by external auditors who wish to examine or analyse system activity.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "external auditors"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to examine or analyse system activity"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "external auditors",
+          "to examine or analyse system activity"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must be able to capture and store violations (i.e.A user’s attempts to access a case to which he is denied access), and (where violations can validly be attempted) attempted violations, of access control mechanisms.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to capture and store violations",
+        "attempted violations"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "to capture and store violations"
+        ],
+        [
+          "The CCTNS system",
+          "attempted violations"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should be able to provide reports for actions on cases organised by workstation and (where technically appropriate) by network address.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "workstation"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "reports"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "reports"
+        ],
+        [
+          "workstation",
+          "reports"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "# 审核到这里啦",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The requirements specify the requirements to control the user access to correspondences, files, and records and various functionalities provided within the CCTNS system.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must allow the user to limit access to cases to specified users or user groups.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "user",
+        "users",
+        "user groups"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "limit access"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "limit access"
+        ],
+        [
+          "user",
+          "limit access"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should provide for role-based control for the functionality within the CCTNS system ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system",
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "role-based control"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "role-based control"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must allow a user to be a member of more than one group.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "a user"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must allow only admin-users to set up user profiles and allocate users to groups.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "admin-users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "user profiles",
+        "groups"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "user profiles"
+        ],
+        [
+          "The CCTNS system",
+          "groups"
+        ],
+        [
+          "admin-users",
+          "user profiles"
+        ],
+        [
+          "admin-users",
+          "groups"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should allow a user to stipulate which other users or groups can access cases.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "stipulate which other users or groups can access cases"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "a user"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "a user",
+          "stipulate which other users or groups can access cases"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must allow changes to security attributes for groups or users (such as access rights, security level, privileges, password allocation and management) to be made only by super-user.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "groups",
+        "users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "security attributes"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "security attributes"
+        ],
+        [
+          "groups",
+          "security attributes"
+        ],
+        [
+          "users",
+          "security attributes"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If a user requests access to, or searches for, a case which he does not have the right to access, the CCTNS system must provide one of the following responses (selectable at configuration time): display title and metadata;display the existence of a case but not its title or other metadata;do not display any case information or indicate its existence in any way.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "title",
+        "metadata",
+        "requests access",
+        "the existence of a case"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a user",
+          "requests access"
+        ],
+        [
+          "the CCTNS system",
+          "requests access"
+        ],
+        [
+          "a user",
+          "title"
+        ],
+        [
+          "a user",
+          "metadata"
+        ],
+        [
+          "a user",
+          "the existence of a case"
+        ],
+        [
+          "the CCTNS system",
+          "title"
+        ],
+        [
+          "the CCTNS system",
+          "metadata"
+        ],
+        [
+          "the CCTNS system",
+          "the existence of a case"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "These options are presented in order of increasing security.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Note that the requirement in the third option (i.e.the most stringent) implies that the CCTNS system must not include such cases in any count of search results; this level of security is normally appropriate for cases dealing with matters such as national security.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If a user performs a quick or advanced search, the CCTNS system must never include in the search result list any record which the user does not have the right to access.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the search result",
+        "search"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a user",
+          "search"
+        ],
+        [
+          "the CCTNS system",
+          "search"
+        ],
+        [
+          "the CCTNS system",
+          "the search result"
+        ],
+        [
+          "a user",
+          "the search result"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If the CCTNS system allows users to make unauthorised attempts to access cases, it must log these in the audit trail.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users",
+        "cases",
+        "the audit trail"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "unauthorised attempts"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the CCTNS system",
+          "unauthorised attempts"
+        ],
+        [
+          "users",
+          "unauthorised attempts"
+        ],
+        [
+          "users",
+          "cases"
+        ],
+        [
+          "cases",
+          "the audit trail"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Any access to cases, and all other activities involving the cases and related documents or data should also need to be stored in the audit trail to ensure legal admissibility and to assist in data recovery.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the audit trail"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to ensure legal admissibility",
+        "to assist in data recovery"
+      ],
+      "Shared Phenomena": [
+        "documents",
+        "data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the audit trail",
+          "documents"
+        ],
+        [
+          "the audit trail",
+          "data"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the audit trail",
+          "to ensure legal admissibility"
+        ],
+        [
+          "the audit trail",
+          "to assist in data recovery"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All error messages produced by the CCTNS system must be meaningful, so that they can be appropriately acted upon by the users who are likely to see them.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "error messages"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the CCTNS system",
+          "error messages"
+        ],
+        [
+          "the users",
+          "error messages"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Ideally, each error message will be accompanied by explanatory text and an indication of the action(s) which the user can take in response to the error.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "error message"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the user",
+          "error message"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must employ a single set of user interface rules, or a small number of sets to provide a familiar and common look and feel for the application.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to provide a familiar and common look "
+      ],
+      "Shared Phenomena": [
+        "user interface rules"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "user interface rules"
+        ],
+        [
+          "to provide a familiar and common look ",
+          "user interface rules"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must be able to display several entities (cases, suspects) simultaneously.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "several entities"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "several entities"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The interfaces must be made customizable or user-configurable to the extent possible.(e.g., the displayed columns in the table, move, resize, modify the appearance).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Such configurations must be saved in the user profile.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "configurations"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the user",
+          "configurations"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system user interface must be suitable for users with special needs; that is, compatible with specialist software that may be used and with appropriate interface guidelines ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "users"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must provide End User and Administrator functions which are easy to use and intuitive throughout.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "End User",
+        "Administrator"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "easy to use and intuitive throughout"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "End User"
+        ],
+        [
+          "The CCTNS system",
+          "Administrator"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "End User",
+          "easy to use and intuitive throughout"
+        ],
+        [
+          "Administrator",
+          "easy to use and intuitive throughout"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must allow persistent defaults for data entry where desirable.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "data entry"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "persistent defaults"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "persistent defaults"
+        ],
+        [
+          "data entry",
+          "persistent defaults"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "These defaults should include: user-definable values; values same as previous item; values derived from context, e.g.date, file reference, user identifier;",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Frequently-executed System transactions must be designed so that they can be completed with a small number of interactions (e.g.mouse clicks).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Where the CCTNS system employs a graphical user interface, it must allow users to customise it.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a graphical user interface"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the CCTNS system",
+          "a graphical user interface"
+        ],
+        [
+          "users",
+          "a graphical user interface"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Customisation should include, but need not be limited to the following changes: menu contents; layout of screens; use of function keys; on-screen colours, fonts and font sizes; ",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The user interfaces should be designed to make them user-intuitive.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The user interfaces of the CCTNS system should comply with Standard ISO 9241.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "ICT accessibility: ISO 9241-20 shall be the standard for guidance on ICT accessibility.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Application user interfaces to meet its requirements and recommendations.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Software accessibility ISO 9241-171 shall be the standard for guidance on software accessibility.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "User interfaces should meet its requirements and recommendations.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Content accessibility WCAG 1.0 shall be the standard used for guidance on content accessibility.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The application logo to be available on all pages as a link to the home page.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Providing text equivalents for non-text media objects: All non-text media objects, such as graphical images or video, should be provided with alternative equivalent textual descriptions and/or with equivalent text-based functionality.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "graphical images",
+        "video",
+        "alternative equivalent textual descriptions",
+        "equivalent text-based functionality"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Making navigation self-descriptive: Navigation should be designed to help users understand where they are, where they have been and where they can go next.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users"
+      ],
+      "Design Domain": [
+        "Navigation"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "where they are",
+        "where they have been",
+        "where they can go next"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Navigation",
+          "where they are"
+        ],
+        [
+          "Navigation",
+          "where they have been"
+        ],
+        [
+          "Navigation",
+          "where they can go next"
+        ],
+        [
+          "users",
+          "where they are"
+        ],
+        [
+          "users",
+          "where they have been"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "General guidance on achieving self-descriptiveness is given in ISO 9241-110.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Showing users where they are: Each presentation segment (page or window) should provide the user with a clear and sufficient indication of where he or she is in the navigation structure and of the current segment position with respect to the overall structure.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [
+        "Each presentation segment"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a clear and sufficient indication"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Each presentation segment",
+          "a clear and sufficient indication"
+        ],
+        [
+          "the user",
+          "a clear and sufficient indication"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Offering alternative access paths: Alternative access paths for navigating to a specific unit of content should be offered to support different navigation strategies.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a specific unit of content"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to support different navigation strategies"
+      ],
+      "Shared Phenomena": [
+        "Alternative access paths"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a specific unit of content",
+          "Alternative access paths"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "a specific unit of content",
+          "to support different navigation strategies"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Minimizing navigation effort: The number of navigation steps needed to reach a certain piece of content should be minimized as long as different mental models, navigation strategies and tasks of the user are taken into account.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Splash screens should be avoided unless they provide useful content or feedback about the application state to the user.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "Splash screens"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "useful content or feedback"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the user",
+          "useful content or feedback"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If a splash screen is used, a navigation option to skip it should be offered.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a splash screen"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a navigation option"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a splash screen",
+          "a navigation option"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Avoiding opening unnecessary windows: Additional windows such as new browser windows or pop-up windows should only be opened if this supports the user’s task.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [
+        "Additional windows"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "opened"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Additional windows",
+          "opened"
+        ],
+        [
+          "the user",
+          "opened"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Opening new windows can distract, confuse or impede users for a variety of reasons.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users"
+      ],
+      "Design Domain": [
+        "new windows"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "new windows",
+          "users"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "They can superimpose the primary window, hiding relevant information.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "They could make it cognitively more difficult to understand the navigation structure with negative effects on both usability and accessibility.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "They also require additional user actions for closing unwanted windows.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "unwanted windows"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "for closing unwanted windows"
+      ],
+      "Shared Phenomena": [
+        "user actions"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "unwanted windows",
+          "user actions"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "unwanted windows",
+          "for closing unwanted windows"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "This may be done by placing important information at the top and providing links to information that is further down the page.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "important information",
+        "links to information"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Horizontal scrolling should be avoided wherever possible.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Designing for input device independence: User interfaces should be designed to allow activation of controls by a variety of input devices.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "input device",
+        "input devices"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to allow activation of controls"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "to allow activation of controls",
+          "input device"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The ability to choose between different input devices for activating controls such as links, fields and buttons is important both for users who prefer a certain input mode, mobile users and users with disabilities.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "input devices"
+      ],
+      "Environment Entity": [
+        "users",
+        "mobile users",
+        "users with disabilities"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In general, device independence can be achieved if the functionality is operable via a keyboard.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Making user interfaces robust: User interfaces should be designed to be as robust as possible in the face of changing technology.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "User interfaces"
+      ],
+      "Requirements": [
+        "Making user interfaces robust"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "User interfaces",
+          "Making user interfaces robust"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This encompasses being able to present content containing newer technologies by older user agents as well as designing content to be usable with future technologies.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "older user agents"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "content containing newer technologies"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "older user agents",
+          "content containing newer technologies"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Acceptable opening / download times: Application pages should be designed and implemented so that there are acceptable opening times and download times for the expected range of technical contexts of use (e.g.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "Application pages"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "bandwidth between the application and the user).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This is particularly important for frequently accessed pages or pages that are important for user navigation and exploration, such as the home page.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Minimizing user errors: Potential user errors as well as the effort needed to recover from errors should be minimized.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Potential user errors"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Providing clear error messages: The content of error messages shown on the pages or special error pages should clearly state the reason why the error occurred and, if possible, actions the user can take to resolve the error.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [
+        "the pages",
+        "special error pages"
+      ],
+      "Requirements": [
+        "resolve the error"
+      ],
+      "Shared Phenomena": [
+        "The content of error messages",
+        "actions"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the pages",
+          "The content of error messages"
+        ],
+        [
+          "special error pages",
+          "The content of error messages"
+        ],
+        [
+          "the user",
+          "The content of error messages"
+        ],
+        [
+          "the user",
+          "actions"
+        ],
+        [
+          "the pages",
+          "actions"
+        ],
+        [
+          "special error pages",
+          "actions"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the user",
+          "resolve the error"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Users expect error messages to be in the same language as the user interface.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "error messages"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Users",
+          "error messages"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Using appropriate formats, units of measurement or currency: When designing user interfaces for use by diverse groups, input and output of information elements such as currency, units of measurement, temperatures, date and time, phone numbers, address or postal codes should be designed so that they are usable.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Making text resizable by the user: Text should be able to be resized by the user, using functions provided by the user agent or other appropriate means i.e.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "the user agent"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "Making text resizable by the user"
+      ],
+      "Shared Phenomena": [
+        "Text "
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the user",
+          "Text "
+        ],
+        [
+          "the user agent",
+          "Text "
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the user",
+          "Making text resizable by the user"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Text quality: The quality of textual content with respect to spelling and grammar should be sufficient so as not to impede readability.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Writing style: The reading and understanding of the textual content on the screen should be supported by suitable means, including the use of short sentences, the division of the text into shorter chunks or the presentation of content items in the form of bullet points.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Supporting text skimming: Fast skimming of text should be supported by the provision of clear links, bulleted lists, highlighted keywords, logical headings, and short phrases and sentences.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Readability of text: Text presented on the pages should be readable taking into account the expected display characteristics and spatial arrangement.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "ISO 9241-303 shall be consulted for screen text legibility requirements.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Distinguishable within-page links: Within-page links should be clearly distinguishable from other links that lead to a different page.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Within-page links are shown with dashed rather than solid underlines ",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Avoiding link overload: Text pages containing large proportions of links should be formatted so that the presence of links does not impede the readability of the text.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Using familiar terminology for navigation links: Navigation links — particularly links representing the main navigation structure — should be labelled with terms that are familiar to the user, based on his/her general knowledge, prior experience in the application domain or experience of using other systems.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Using descriptive link labels: The target or purpose of a link should be directly indicated by its label, avoiding generic labels such as “go” or “click here” except where the purpose of the link is clear from its context on the page or the labels have commonly understood semantics in the particular application domain.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Using appropriate terminology specific to the user’s tasks and information needs is important for making the content easy to understand.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "making the content easy to understand"
+      ],
+      "Shared Phenomena": [
+        "appropriate terminology"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the user",
+          "appropriate terminology"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the user",
+          "making the content easy to understand"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Marking links opening new windows: Links that open new browser windows or pop-up windows should be clearly marked.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Distinguishing navigation links from controls: Navigation links should be clearly distinguishable from controls activating some action.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Typical action types in user interfaces include manipulating application data, performing searches, communication actions, such as opening a new e-mail window or starting a chat function, and presentation-related actions, such as sorting a list of search results.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Providing printable document versions: If a document is either too long, dispersed over several pages or in a specific layout that is not suitable for online reading, a printer-friendly version of the document should be provided that prints the content in a form acceptable to the user (e.g.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the document"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "in the expected layout, paper format, or orientation).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Use of “white space”: “White space” on a page i.e.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "space filled only with the background color should be used in such a way that it does not impair the visual skimming of the page.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "While white space is an important means of visually organizing the different content elements on a page, if the distance between the blocks of information displayed becomes too large, rapid skimming of the page can be impeded.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Selecting appropriate page lengths The length of a page should be selected so as to support the primary purpose and use of the page.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Short pages are generally more appropriate for homepages, navigation pages, or overview pages that need to be read quickly.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Longer pages can be more appropriate when users want to read the content without interruptions or when the page needs to match a paper counterpart.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Using colour: Colour should be used with care, taking into account human capabilities and restrictions in perceiving colour, and not as the only means of conveying information.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Color should never be the only means of coding.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Some users may have difficulties in perceiving certain colors or color combinations (color-blindness).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Using frames with care: If frames are used, care should be taken to avoid possible problems, for example, those involving the use of the back button, bookmarking of pages, or scrolling of information.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "When frames are used, it is important to title each frame, and to describe its purpose and how frames relate to one another other.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Providing alternatives to frame-based presentation: If frames are used, an alternative way of presenting relevant information without frames should be provided.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Providing alternative text-only pages: When style sheets and/or frames are turned off it should be possible for the user to read and understand the page; alternatively, the user should be provided with an equivalent alternative text-only page.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the page",
+        "style sheets and/or frames",
+        "an equivalent alternative text-only page"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "style sheets and/or frames",
+          "the user"
+        ],
+        [
+          "the page",
+          "the user"
+        ],
+        [
+          "an equivalent alternative text-only page",
+          "the user"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Consistent page layout: Pages should be designed using consistent layout schemes, supporting the user in finding similar information at the same position on different pages.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "finding similar information at the same position"
+      ],
+      "Shared Phenomena": [
+        "Pages"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the user",
+          "Pages"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "the user",
+          "finding similar information at the same position"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "Overall layout schemes apply to all pages and are preferable when all pages have a similar structure.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Frequently, however, different pages have different purposes and types of content.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In such cases, pages can usually be grouped in different categories, using one layout scheme for each category consistently.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Placing title information consistently: Page titles should be placed in a consistent location on the different pages.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Observing principles of human perception When designing application pages, the general principles of human perception should be taken into account.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The International Standards mentioned below shall be consulted for guidance.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Practical guidelines for presenting information to the user are to be found in ISO 9241-12.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Guidance on selecting and using different forms of interaction techniques is to be found in ISO 9241-14 to ISO 9241-17.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "ISO 9241-14 gives guidance about menus, ISO 9241-15 about command dialogues, ISO 9241-16 about direct manipulation and ISO 9241-17 about forms.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In addition, when designing multimedia information presentations, the design principles and recommendations described in ISO 14915-1 to ISO 14915-3 should be taken into account.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Appropriate content presentation also plays a key role in accessibility.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Linking back to the home page or landmark pages: Each page should contain a link leading to the home page of the application or to a landmark page that is easy to recognize for the user.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [
+        "Each page"
+      ],
+      "Requirements": [
+        "is easy to recognize"
+      ],
+      "Shared Phenomena": [
+        "a link",
+        "a landmark page"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Each page",
+          "a link"
+        ],
+        [
+          "the user",
+          "a link"
+        ],
+        [
+          "Each page",
+          "a landmark page"
+        ],
+        [
+          "the user",
+          "a landmark page"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "the user",
+          "is easy to recognize"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "Providing a site map: A separate navigation overview such as a site map should be provided for application showing the structure of the site in an overview form.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Consistency between navigation components and content: If navigation components (or overviews) are shown in conjunction with associated content, consistency between the navigation component and the content shown should be maintained by indicating in the navigation component (e.g.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "highlighting) the topic currently visible in the content area.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Placing navigation components consistently: Navigation components should be placed consistently on the pages or in the framesets in the pages of the application.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Individualization and user adaptation : Adapting the content and the navigation of a user interface to individual users or user groups can be a useful mechanism for providing information that is of interest to the users and for making access to relevant information more efficient.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "individual users",
+        "user groups",
+        "users"
+      ],
+      "Design Domain": [
+        "a user interface"
+      ],
+      "Requirements": [
+        "making access to relevant information more efficient"
+      ],
+      "Shared Phenomena": [
+        "the content and the navigation",
+        "information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a user interface",
+          "the content and the navigation"
+        ],
+        [
+          "individual users",
+          "the content and the navigation"
+        ],
+        [
+          "user groups",
+          "the content and the navigation"
+        ],
+        [
+          "individual users",
+          "information"
+        ],
+        [
+          "user groups",
+          "information"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "users",
+          "making access to relevant information more efficient"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "User adaptation can also be important for making the user interface more accessible.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the user interface"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Different approaches can be used for achieving these goals, like providing users with means for customizing the user interface to their personal needs i.e.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users"
+      ],
+      "Design Domain": [
+        "the user interface"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "individualization designing content and navigation differently for varying user groups or roles i.e.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "such as employees of different levels, citizens etc, monitoring the user’s behaviour and adapting to the user’s goals that are inferred from the behaviour observed, recommending information that is potentially more relevant or interesting to the specific user, based on the behaviour of all users or a user group.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "employees",
+        "citizens"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "monitoring the user’s behaviour and adapting to the user’s goals",
+        "recommending information"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Taking account of the users’ tasks and information needs: When providing different access paths or navigation structures for different user groups, the tasks and information needs of these user groups should be taken into consideration.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "user groups"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "navigation structures",
+        "access paths"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "user groups",
+          "navigation structures"
+        ],
+        [
+          "user groups",
+          "access paths"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Making individualization and adaptation evident: It should be made evident to the user when individualization and/or adaptation are used.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Making user profiles evident: If predefined user profiles or user-specified profiles are used for individualizing or adapting content, the profile currently used should be made evident.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "user profiles",
+        "user-specified profiles"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If profiles are used, it is important to provide users with information about this concept and its implications.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "users",
+          "information"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Allowing users to see and change profiles: If user-specified profiles are used, users should be able to see, modify and delete that profile on demand.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users",
+        "users"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "see, modify and delete that profile on demand"
+      ],
+      "Shared Phenomena": [
+        "user-specified profiles"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "users",
+          "see, modify and delete that profile on demand"
+        ],
+        [
+          "users",
+          "user-specified profiles"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The user interfaces of the CCTNS system should follow the guidelines specified under www.usability.gov ",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must be available to users: from <xx:00> to <xx:00>; on <all weekdays/xxx days per year>.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "users"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The planned downtime for the CCTNS system must not exceed <xx> hours per <rolling three month period>.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system is considered to be down if any user is unable to perform any normal System function and if this failure is attributed to any component of the CCTNS system other than the workstation.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system",
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "user"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Unplanned downtime for the CCTNS system must not exceed <xx hours/minutes> per <rolling three month period>.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The number of incidents of unplanned downtime for the CCTNS system must not exceed <x> per <rolling three month period>.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In the event of any software or hardware failure, it must be possible to restore the CCTNS system (with inline synchronization) within no more than <xx> hours.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must provide adequate response times for commonly performed functions under both standard and peak conditions ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "provide adequate response times"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "provide adequate response times"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system must be able to perform a simple search within 5-8 seconds and a advanced search (multiple search criteria) within 10-15 seconds regardless of the storage capacity or number of cases in the CCTNS system.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system",
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to perform a simple search within 5-8 seconds and a advanced search (multiple search criteria) within 10-15 seconds"
+      ],
+      "Shared Phenomena": [
+        "the storage capacity",
+        "number of cases"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the CCTNS system",
+          "the storage capacity"
+        ],
+        [
+          "the CCTNS system",
+          "number of cases"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "to perform a simple search within 5-8 seconds and a advanced search (multiple search criteria) within 10-15 seconds"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In this context, performing a search means returning a result list.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It does not include retrieving the records themselves.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the records"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must be able to retrieve and display within 5-8 seconds the case which has been accessed within the previous 2 months, regardless of storage capacity or number of cases in the CCTNS system.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system",
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to retrieve and display within 5-8 seconds the case"
+      ],
+      "Shared Phenomena": [
+        "storage capacity",
+        "number of cases"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the CCTNS system",
+          "storage capacity"
+        ],
+        [
+          "the CCTNS system",
+          "number of cases"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "to retrieve and display within 5-8 seconds the case"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "This requirement is intended to allow for rapid retrieval of frequently-used cases, on the understanding that frequency of use is typically correlated with recent use.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to allow for rapid retrieval of frequently-used cases"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must be able to retrieve and display within 20 seconds the case which has not been accessed within the previous 2 months, regardless of storage capacity or number of cases in the CCTNS system.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system",
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to retrieve and display within 20 seconds the case"
+      ],
+      "Shared Phenomena": [
+        "storage capacity",
+        "number of cases"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the CCTNS system",
+          "storage capacity"
+        ],
+        [
+          "the CCTNS system",
+          "number of cases"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "to retrieve and display within 20 seconds the case"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This requirement is intended to allow for cases where cases used infrequently are stored on slower media than more active records.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system be scaleable and must not have any features which would preclude use in small or large police stations, with varying numbers of cases handled.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The proposed functional architecture is modeled around centralized deployment to facilitate ease of maintenance and leverage advancement in open standards and web technologies.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The 3 C’s (Core-Configuration-Customization) forms the guiding principle for the architecture.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The functional architecture of the CCTNS solution is given in the figure below.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The functional architecture is composed of 4 major components based on SOA principles.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Each of the components contains multiple services as defined by Service Definition.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The core services, support layer and security and access control components can be deployed as standard components with necessary configuration changes.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The customization layer can override and add to the core services based on the specific state requirements and can be plugged with the core services.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The deployment of the application will be at state level and will be configured and customized as per the state specific extensions.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS systems should be designed with the following broad guidelines: ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS systems"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should support multilingual interface ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "support multilingual interface"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "support multilingual interface"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should be designed in manner that operational data is not lost in case of any failure of equipment or communication network.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [
+        "equipment"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "communication network"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "operational data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "operational data"
+        ],
+        [
+          "equipment",
+          "operational data"
+        ],
+        [
+          "communication network",
+          "operational data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should work even in an offline mode with the critical functionality ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should be designed to have satisfactory performance even in Police Stations connected on low-bandwidth ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to have satisfactory performance"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "to have satisfactory performance"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should be implemented using Service Oriented Architecture (SOA) and have a modular design ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should be developed on Open Standards ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should be built on a common User Access and Authentication Service to ensure Single-Sign on for the end-user ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the end-user"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to ensure Single-Sign"
+      ],
+      "Shared Phenomena": [
+        "a common User Access",
+        "Authentication Service"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "a common User Access"
+        ],
+        [
+          "The CCTNS system",
+          "Authentication Service"
+        ],
+        [
+          "the end-user",
+          "a common User Access"
+        ],
+        [
+          "the end-user",
+          "Authentication Service"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the end-user",
+          "to ensure Single-Sign"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should be developed for a centralized deployment and maintenance ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should be developed to be deployed in a 3-tier datacenter architecture ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should be designed to have a n-tier architecture with the presentation logic separated from the business logic that is again separated from the data-access logic ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to have a n-tier architecture"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should be extensible to provide access to the interfaces through PDA’s and mobile data terminals ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to provide access to the interfaces"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should adopt standardized formats and common metadata elements ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should be designed for access through browser-based systems and must impose minimal requirements on the client device ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must support multiple types of communication services for remote access ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "support multiple types of communication services for remote access"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "support multiple types of communication services for remote access"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should have capability to support public access to a subset of data and functionality ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to support public access to a subset of data and functionality"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "to support public access to a subset of data and functionality"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should support multi-tier authentication where required ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "support multi-tier authentication"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "support multi-tier authentication"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should support SSL encrypted connections ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "support SSL encrypted connections"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "support SSL encrypted connections"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should support secure virtual private network connections ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "support secure virtual private network connections"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "support secure virtual private network connections"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should use HTTPS as the communication protocol, i.e., HTTP over an encrypted secure socket layer (SSL) ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should run on multiple browsers.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "run on multiple browsers"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "run on multiple browsers"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should support selective encryption of the stored data.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "selective encryption"
+      ],
+      "Shared Phenomena": [
+        "the stored data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "the stored data"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "selective encryption"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure secure transmission of data over the network and utilize SSL and 2-way digital signatures.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "ensure secure transmission"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "ensure secure transmission"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high standards of security and access control through preventing cross-site scripting.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "ensure high standards of security and access control"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "ensure high standards of security and access control"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high standards of security and access control through preventing SQL Injection.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "SQL Injection"
+      ],
+      "Requirements": [
+        "ensure high standards of security and access control"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "SQL Injection"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "SQL Injection",
+          "ensure high standards of security and access control"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high standards of security and access control through utilizing parameterized queries.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "ensure high standards of security and access control"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "ensure high standards of security and access control"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high standards of security and access control through sanitizing the user-inputs.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "ensure high standards of security and access control"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "ensure high standards of security and access control"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high standards of security and access control through validating the incoming data or user request.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "ensure high standards of security and access control"
+      ],
+      "Shared Phenomena": [
+        "the incoming data",
+        "user request"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "the incoming data"
+        ],
+        [
+          "The CCTNS system",
+          "user request"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "ensure high standards of security and access control"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high standards of security and access control through encoding the incoming data or user request.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "ensure high standards of security and access control"
+      ],
+      "Shared Phenomena": [
+        "the incoming data",
+        "user request"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "the incoming data"
+        ],
+        [
+          "The CCTNS system",
+          "user request"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "ensure high standards of security and access control"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high standards of security and access control through validating the data both at the client and server.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the client",
+        "server"
+      ],
+      "Requirements": [
+        "ensure high standards of security and access control through"
+      ],
+      "Shared Phenomena": [
+        "the data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "the data"
+        ],
+        [
+          "the client",
+          "the data"
+        ],
+        [
+          "server",
+          "the data"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "ensure high standards of security and access control through"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high standards of security and access control through do not allow hard delete and perform only soft tagging the row for deletion.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "ensure high standards of security and access control"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "ensure high standards of security and access control"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high scalability and performance through using of cache for storing frequent data.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        " ensure high scalability and performance"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          " ensure high scalability and performance"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high scalability and performance through using of AJAX based technology to improve user experience.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "ensure high scalability and performance"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "ensure high scalability and performance"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high scalability and performance through leveraging Asynchronous HTTP socket capabilities of web server for scalability and performance.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "ensure high scalability and performance"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "ensure high scalability and performance"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high scalability and performance through hosting all the static content (documents, images) on the web server.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the web server"
+      ],
+      "Requirements": [
+        "ensure high scalability and performance"
+      ],
+      "Shared Phenomena": [
+        "the static content"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "the static content"
+        ],
+        [
+          "the web server",
+          "the static content"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "ensure high scalability and performance"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The search results should be fetched from the database in batches of 10 or 20 maximum as configured within the application.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the database"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should ensure high scalability and performance through displaying of records on the screen in batches/paged manner. ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [
+        "the screen"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "ensure high scalability and performance"
+      ],
+      "Shared Phenomena": [
+        "records"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "records"
+        ],
+        [
+          "the screen",
+          "records"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "ensure high scalability and performance"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The search should fetch only the fields that need to be displayed to the user.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Only when the user clicks on a particular record to view its further details should a query be fired to fetch the additional details for this particular record only.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A hierarchical cache should be configured and used for caching of results of most frequently used searches.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Database Indexes should be applied on the key columns used for searching.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  }
+]

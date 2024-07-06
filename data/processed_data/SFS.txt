@@ -1,0 +1,163 @@
+This is the Software Requirements Specification (SRS) for the "Space Fractions" system.
+The purpose of the document is to describe the purpose and functionality of the software product requested by Ms.
+The SRS will include the details of the system's requirements, interface, design issues, and components.
+The Space Fractions system is a learning tool created to help improve fraction-solving skills for sixth-grade students.
+The product will be a web-based, interactive system.
+At the end of the system, students will be given feedback based on their system scores.
+We are also providing an umbrella for the past systems created.
+The umbrella will be a web-based menu system allowing the user to choose between the systems.
+This document is designed to provide information to both the client and the technical designers of the software.
+Section one is a brief overview of the product, including definitions and references.
+The definitions section is intended to assist the technical designers as well as the client in clarifying the terms used throughout the document.
+Section two is a general description of the product requirements from a user's perspective.
+This section includes information such as functional and data requirements, general constraints, and assumptions.
+Section three is a detailed requirements specification targeted toward technical designers.
+Specific requirements and expectations regarding the components of the product are given in this portion of the SRS document.
+The target clients for our software are students in the sixth grade and their teacher.
+These students are in the process of learning how to solve arithmetic problems involving fractions.
+Moreover, these students (as well as the teacher) are assumed to have basic computer and Internet skills that will enable them to use this software.
+The personas we will use to model our intended users are a sixth grade female student called Alice learning fractions who does not like to use computers, a sixth grade male student called Bobby learning fractions who is very competitive and a sixth grade teacher with computer skills called Claire.
+Alice is a sixth grade female student learning fractions who does not like to use computers.
+Although Alice has used computers for email and systems, Alice considers computers to be boring.
+Alice would rather read a story or talk with friends.
+However, Alice is really interested in learning fractions and enjoys working with other students.
+Bobby is a sixth grade male student learning fractions who is very competitive.
+Bobby enjoys playing competitive sports and using computers, especially to play systems.
+Bobby has used computers since age five.
+Bobby particularly likes to play systems where Bobby can excel.
+Bobby is only somewhat interested in learning about fractions.
+Claire is a sixth grade teacher who has computer skills.
+Claire enjoys teaching sixth graders and is interested in finding innovative ways to teach her students.
+Claire has been teaching the sixth grade for six years now.
+Claire finds that students have a particularly hard time learning about the concepts related to fractions.
+The Space Fractions system requires a web browser capable of running Flash movies.
+The Space Fractions system will not be dependent on any other software and is not a component of another program.
+Since the Space Fractions system requires a Flash-supporting browser, the external interface will depend on the configuration of the browser.
+Therefore, various environments may yield different interfaces, but the behavior of the program will be the same.
+The Space Fractions system does not require any new hardware.
+The umbrella will be a singular component, providing links to projects relating to fractions, decimals, and percents in a format accessible over the World Wide Web.
+The Space Fractions system will have an introductory movie to set up the storyline.
+The Space Fractions system will have a main menu, including a brief help section.
+The Space Fractions system will have a series of fraction questions (testing arithmetic, equivalence, graphical interpretation, and improper versus proper fraction skills) that sequentially form a storyline related to the introduction.
+The Space Fractions system will have an ending scene where the user's score is calculated and ranked, with an option to quit the system or try again.
+In addition, a component accessible over the World Wide Web will allow the series of fraction questions to be updated by an administrator of the Space Fractions system.
+The administrator of the Space Fractions system may wish to design a custom system complete with custom fraction questions.
+This information must be saved in a file on the web server where the Space Fractions system is hosted and will be easily edited through simplified administrative screens.
+The user's score must be kept as local data within the Space Fractions system so that the results may be given at the end of the Space Fractions system.
+Input will consist entirely of mouse clicks for the user to choose answer options and to set preferences.
+Output will be sounds and animations through Flash movies to acknowledge success or failure in answering the fraction questions.
+The Space Fractions system will run on any Internet-accessible computer with a web browser that supports Upon starting the Space Fractions system, the user is taken through a brief introductory movie to provide background story and information that will help them complete the fraction questions.
+Otherwise, they will watch the movie to its completion and be taken to the main screen.
+At the main title screen, the user will be able to view a general help screen to reveal basic instructions on system play.
+Also, a short summary of our team and a link to our website will be provided.
+To start the Space Fractions system, the user will click on the corresponding button.
+The information and interface will be effective so that Bobby will easily recognize what to do to start the system immediately and Alice will have no problems navigating through the help section to understand the rules and systemplay.
+Claire will be assured that the students will know what to do from this main screen.
+Next, the user progresses through a series of questions in the form of cartoon images that comprise the main story.
+These questions will test the user's knowledge of basic fraction operations and will be presented as a multiple-choice questionnaire.
+The user will be given a problem and then must click the correct solution.
+A friendly robotic sidekick will assist with general usability issues and give hints towards the correct response.
+Bobby will be captivated by the storyline and will wish to progress as fast as possible.
+The systemplay will be dynamic and adaptive to provide different storylines based on the user's progress.
+After the last question, the main character's adventure will come to an end.
+The last scene will be determined by the user's response on certain critical questions that impact the story's plot, and an option to try again will be presented.
+In addition, the player's exact score will be given with a customized message.
+This gives Bobby the competition he requires and allows Alice to have a unique experience the next time through the program.
+Either way, the user will be encouraged to try again and further better their fraction skills.
+As the system administrator, Claire can use the question updater to change any of the questions in the system.
+She navigates to the updater page, which asks for a password.
+Upon correct submission of her password, she uses an intuitive web forms interface to update the system to her desiring.
+The following table summarizes the external interface requirements for the Space Fractions system.
+The purpose of the Space Fractions system is to process player inputs during gameplay, specifically for calculating spaceship velocity adjustments based on fraction inputs.
+This is crucial for navigating through space obstacles and reaching destinations within the system.
+The inputs will consist of fractions entered by the player using the game's interface.
+These inputs will be in the form of two integers representing the numerator and denominator of a fraction.
+The source of these inputs is the player's interaction with the game's user interface during specific gameplay moments that require velocity adjustment.
+Upon receiving the fraction inputs, the Space Fractions system will validate the integrity and format of the data to ensure they are integers and that the denominator is not zero.
+If the input is valid, the Space Fractions system calculates the velocity adjustment by converting the fraction into a decimal value and applying it to the spaceship's current velocity.
+The processing includes error handling for invalid inputs, such as displaying an error message to the player and requesting a new input.
+The output of this process is the adjusted velocity of the spaceship, represented as a decimal value.
+This adjusted velocity is applied to the game's physics engine to update the spaceship's speed in real-time.
+The output timing is immediate, ensuring responsive gameplay.
+The range of output values is determined by the game's physics rules and the maximum and minimum velocity constraints set within the Space Fractions system.
+In cases of invalid inputs, the output is an error message displayed on the user interface, guiding the player to provide a valid fraction.
+The introductory movie serves to immerse players into the game's universe, setting the stage for the storyline and providing critical information to assist users in solving fraction-related puzzles.
+This engaging start is designed to enhance understanding and interest in the game's educational objectives.
+The primary input for this component is the user's interaction in the form of a mouse click.
+This action allows players the option to skip the introductory movie at any point, facilitating a direct transition to the main menu of the game for those who prefer to dive straight into gameplay or who are revisiting the game and already familiar with its storyline.
+As soon as the player enters the introductory movie component, the movie begins to play automatically.
+The system continuously listens for a mouse click event during the playback.
+If a click is detected, the movie is immediately terminated, and the system transitions the user to the game's main menu, bypassing the rest of the movie.
+If no click is registered, the movie plays in its entirety, after which the Space Fractions system automatically proceeds to the main menu.
+This process ensures a seamless experience, whether the player chooses to watch the movie or skip it.
+The output of this functional requirement is the visual and auditory presentation of the movie on the player's screen.
+If the movie is skipped or once it concludes, the subsequent output is the transition to the game's main menu, where players can start their adventure or access various game settings.
+The main menu is designed to serve as the initial interface that players interact with upon starting the game or returning to it after a session.
+It offers a concise help section that guides players on how to engage with the game effectively and also includes links to both the primary game component and an external educational resource, the Denominators' web page.
+This menu aims to equip players with the necessary knowledge to start playing and offer additional learning resources, thereby enriching the overall game experience.
+Players interact with the main menu through mouse clicks on specific buttons.
+One button initiates the game, leading players directly into the gameplay experience.
+Another button or hyperlink connects players to the Denominators' web page, providing an opportunity to explore educational content or resources related to the game's thematic elements.
+The system remains in a passive listening state until an input is received in the form of a mouse click on one of the menu options.
+Depending on the player's choice, the system then executes one of two actions: either initiating the game sequence or redirecting the player to the Denominators' web page.
+This decision-making process ensures that the player's intent is accurately interpreted and the corresponding action is taken swiftly, maintaining a seamless transition from the menu to the player's selected activity.
+The output of interacting with the main menu is determined by the player's choice.
+Alternatively, if the player selects the option to visit the Denominators' web page, the system facilitates this redirection, opening the web page either within the game environment or in a separate browser window, depending on the game's design and platform capabilities.
+This dual-path output allows for a customized experience that caters to the player's immediate preference, whether it be diving into the game or seeking additional information and resources.
+The primary function of the system sequence is to engage players with a series of multiple-choice questions focused on fractions.
+These questions are integrated within a storyline that naturally follows the introductory narrative of the game.
+This sequence is designed to challenge and educate players on fractions while advancing the plot, thereby keeping the educational content engaging and contextually relevant.
+Players interact with this component by responding to the displayed questions.
+The interaction involves selecting their answer from a set of multiple-choice options provided for each question.
+This method ensures a straightforward and accessible approach for users to demonstrate their understanding and apply their knowledge of fractions.
+If the player selects the correct answer, a confirmation message is displayed, and the component transitions to the next question, maintaining engagement and providing positive reinforcement.
+For incorrect answers, the player is informed of the mistake and given another opportunity to answer the question, albeit without the possibility of earning points for that question, fostering a learning environment that encourages understanding through trial and error.
+The system sequence includes "critical points" where the storyline can diverge based on whether the player answers these pivotal questions correctly, adding an element of narrative depth and personalization to the gameplay experience.
+After completing a predetermined set of questions, the player is directed to the concluding scene of the game, providing closure to the educational journey.
+The output from this component consists of plot-based questions that incorporate fractions, tailored to both challenge the player's mathematical skills and advance the game's narrative.
+Additionally, the sequence customizes the storyline's progression based on the player's performance at critical junctures, offering a dynamic and personalized gaming experience.
+Feedback is provided after each question to help players understand their performance and learn from their mistakes, reinforcing the educational goals of the game.
+The ending scene serves as the culmination of the player's journey through the system, providing a conclusion to the storyline that reflects their performance across critical decision points.
+his scene not only showcases the player's overall score but also offers a narrative conclusion that ties directly back to the choices made during gameplay, reinforcing the impact of educational achievements within the game's context.
+Additionally, it presents players with the option to either conclude their current session or navigate back to the main menu for further exploration or replay.
+Player interaction with the ending scene is facilitated through mouse clicks, allowing them to choose between exiting the system or returning to the main menu.
+This simple, intuitive input method ensures that players of all ages and skill levels can easily make their selection without confusion or frustration.
+Upon reaching the ending scene, the system momentarily pauses to allow the player to make their choice between continuing their exploration of the game's content by returning to the main menu or concluding their session by exiting the game.
+The component actively listens for the player's input and, upon selection, proceeds according to the player's decision.
+This process is designed to be straightforward and user-friendly, ensuring a smooth transition to the player's chosen next step.
+The primary outputs of the ending scene include the display of the player's total score accumulated throughout the system and a tailored narrative conclusion.
+This conclusion reflects the outcomes of key decisions made during the system, specifically at critical junctures that were influenced by the player's understanding and application of fractions.
+The dynamic nature of the conclusion serves to emphasize the educational progress and decisions of the player, offering a personalized ending that varies from one session to another based on the player's performance.
+Furthermore, this component offers a clear and direct pathway for the player to either revisit the game's content through the main menu or gracefully exit the game, thereby closing their current session.
+The Question Updater is envisioned as a web-accessible tool designed specifically for system administrators.
+Its primary function is to facilitate the updating and editing of questions within the system sequence, ensuring that the game's educational content remains current, accurate, and engaging for players.
+By providing an easy-to-use interface for content modification, this tool supports the game's adaptability and longevity in educational settings.
+Administrators interact with the Question Updater through a user-friendly interface consisting of pulldown menus and text fields.
+This design allows for the efficient input of new data or modifications to existing questions.
+Each question is managed on a separate page within the tool, and navigation between questions is streamlined through the use of a button to progress from one question to the next, ensuring a smooth and organized content update process.
+Upon the completion of data entry for a question, the administrator will use a submission button to initiate the update process.
+The tool then performs a validation check on the submitted data to ensure completeness and contextual relevance to the game's educational objectives.
+This step is crucial for maintaining the quality and integrity of the system content.
+Once the data passes the validation process, the update for that specific question is finalized.
+This file contains the updated question data, structured in a format that the system sequence can dynamically read and incorporate into the gameplay.
+This system allows for real-time updates to the game's content without the need for system restarts or interruptions, enabling a seamless integration of new or revised educational material into the game sequence.
+The Math Umbrella component is designed to serve as an educational resource hub within the system, providing players with easy access to a curated selection of external S2S projects that are specifically tailored to sixth graders.
+These projects are organized by mathematical topics, such as fractions, to complement and enhance the learning experience within the game.
+This component aims to extend the educational value of the system by integrating additional, topic-relevant resources that support and deepen the player's understanding of mathematics.
+Players interact with the Math Umbrella through a series of links.
+These links are presented within the system interface and lead to various World Wide Web documents.
+Each link corresponds to a different S2S project, allowing players to choose which external resources they wish to explore based on their interests or areas where they seek further understanding.
+Upon the player's selection of a link, the Math Umbrella component momentarily pauses to process this action.
+The system is designed to detect and respond to the player's choice by initiating the process to open the selected S2S project.
+This ensures a smooth transition from the system to the external educational content, without disrupting the user's engagement or learning experience.
+The chosen S2S project is opened in a separate window, allowing the player to explore the additional mathematical content without leaving or closing the Space Fractions system.
+This functionality facilitates a seamless integration of supplemental educational resources, ensuring that players have the opportunity to engage with a broader range of topics and materials at their own pace.
+By presenting these resources in a separate window, the system maintains the player's context within the main system environment, enabling easy return to the system after exploring the external content.
+Only one person can use a single instance of the Space Fractions system.
+However, the Space Fractions system will reside on the Internet so more than one user can access the product and download its content for use on their computer.
+Due to the relatively small size of the introductory and main menu movies, they can be downloaded in approximately one minute with a modem connection.
+Because Flash movies do not have to be fully downloaded to play, the main system can be played within a few minutes with a regular modem connection to the Internet.
+The Space Fractions system will be as secure as the web browser that will run the product.
+The Space Fractions system will be available over the Internet via the S2S website.
+Reliability will be ensured by extensive testing by the team members and mentors, if available.
+Maintainability is a primary goal for this project.

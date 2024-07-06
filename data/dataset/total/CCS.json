@@ -1,0 +1,3510 @@
+[
+  {
+    "text": "The primary goal of this document is to provide a complete and accurate list of requirements for the VLA Expansion Project Correlator Monitor and Control System.",
+    "entity": {
+      "Machine Domain": [
+        "the VLA Expansion Project Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The primary audience of this document includes, but is not limited to, project leaders, the designers and developers of the EVLA Correlator Monitor and Control System and the end user.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the end user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The document may also be of interest to VLA Expansion Project project scientists and engineers or as a reference for individuals involved in similar projects with similar requirements.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The requirements contained in this document are numbered based on the section/subsection in which they appear.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System provides the physical link between the WIDAR Correlator hardware and the VLA Expansion Project monitor and control system.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [
+        "the WIDAR Correlator hardware"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the VLA Expansion Project monitor and control system"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the physical link"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Correlator Monitor and Control System",
+          "the physical link"
+        ],
+        [
+          "the WIDAR Correlator hardware",
+          "the physical link"
+        ],
+        [
+          "the VLA Expansion Project monitor and control system",
+          "the physical link"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It is the primary interface by which the correlator is configured, operated, and serviced.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "the correlator"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System shall receive configuration information from the VLA Expansion Project Monitor and Control System system and translate this info into a physical correlator hardware configuration.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the VLA Expansion Project Monitor and Control System"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "configuration information",
+        "a physical correlator hardware configuration"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Correlator Monitor and Control System",
+          "configuration information"
+        ],
+        [
+          "the VLA Expansion Project Monitor and Control System",
+          "configuration information"
+        ],
+        [
+          "The Correlator Monitor and Control System",
+          "a physical correlator hardware configuration"
+        ],
+        [
+          "the VLA Expansion Project Monitor and Control System",
+          "a physical correlator hardware configuration"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System shall process and transfer dynamic control data and monitor data.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "transfer dynamic control data",
+        "monitor data"
+      ],
+      "Shared Phenomena": [
+        "dynamic control data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Correlator Monitor and Control System",
+          "dynamic control data"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The Correlator Monitor and Control System",
+          "transfer dynamic control data"
+        ],
+        [
+          "The Correlator Monitor and Control System",
+          "monitor data"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System shall monitor correlator and correlator subsystem health and take corrective action autonomously to recover from hardware and computing system faults.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "monitor correlator and correlator subsystem health",
+        "recover from hardware and computing system faults"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The Correlator Monitor and Control System",
+          "monitor correlator and correlator subsystem health"
+        ],
+        [
+          "The Correlator Monitor and Control System",
+          "recover from hardware and computing system faults"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System shall perform limited amounts of real-time data processing and probing such as providing tools to collect and display auto correlation products.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to collect and display auto correlation products"
+      ],
+      "Shared Phenomena": [
+        "limited amounts of real-time data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Correlator Monitor and Control System",
+          "limited amounts of real-time data"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The Correlator Monitor and Control System",
+          "to collect and display auto correlation products"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System shall allow for easy system access to aid testing and debugging.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The remainder of this document contains a more detailed description of the Correlator Monitor and Control System as well as the primary requirements necessary to design and build the EVLA Correlator Monitor and Control System.",
+    "entity": {
+      "Machine Domain": [
+        "the Correlator Monitor and Control System",
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The format of the document follows that outlined in the IEEE STD 830 document, IEEE The VLA Expansion Project Correlator Monitor and Control System is responsible for correlator configuration, real time monitor/control, and hardware testing/servicing.",
+    "entity": {
+      "Machine Domain": [
+        "Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "correlator configuration",
+        "real time monitor/control",
+        "hardware testing/servicing"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "Correlator Monitor and Control System",
+          "correlator configuration"
+        ],
+        [
+          "Correlator Monitor and Control System",
+          "real time monitor/control"
+        ],
+        [
+          "Correlator Monitor and Control System",
+          "hardware testing/servicing"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System exists as an integrated part of the overall VLA Expansion Project Monitor and Control Structure.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "VLA Expansion Project Monitor and Control Structure"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Correlator Monitor and Control System",
+          "VLA Expansion Project Monitor and Control Structure"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System will provide a level of abstraction to modularize the correlator system within the VLA Expansion Project environment.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the VLA Expansion Project environment"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Correlator Monitor and Control System",
+          "the VLA Expansion Project environment"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The gateway to the correlator will be through the Virtual Correlator Interface which will exist as a software entity on the The Correlator Monitor and Control System will be designed and implemented as a Master/Slave network with one computer system coordinating the activities of a number of intelligent hardware control processors.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [
+        "hardware control processors"
+      ],
+      "Environment Entity": [
+        "the correlator"
+      ],
+      "Design Domain": [
+        "the Virtual Correlator Interface",
+        "one computer system"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the correlator",
+          "the Virtual Correlator Interface"
+        ],
+        [
+          "The Correlator Monitor and Control System",
+          "one computer system"
+        ],
+        [
+          "one computer system",
+          "hardware control processors"
+        ],
+        [
+          "The Correlator Monitor and Control System",
+          "the Virtual Correlator Interface"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Master is expected to handle the bulk of the monitor or control interface with the outside world whereas the slaves will be only concerned with the correlator hardware systems under their direct control.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The Master",
+        "the monitor or control interface",
+        "the slaves"
+      ],
+      "Design Domain": [
+        "the correlator hardware systems"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Master",
+          "the monitor or control interface"
+        ],
+        [
+          "the slaves",
+          "the correlator hardware systems"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This topology will place the real-time computing requirements in the slave layer and the quasi real-time, network-chaotic loads into the master layer.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the slave layer",
+        "the master layer"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "the real-time computing",
+        "the quasi real-time, network-chaotic"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "the slave layer",
+          "the real-time computing"
+        ],
+        [
+          "the master layer",
+          "the quasi real-time, network-chaotic"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "One of the primary benefits of this structure is isolation of the correlator hardware from the the EVLA Correlator Monitor and Control System is expected to be redundant in critical areas and highly modular.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [
+        "the correlator hardware"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "the correlator hardware"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator monitor subsystem will provide VLA Expansion Project system wide access to all correlator system states including the Monitor and Control System supervisor system state.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator monitor subsystem "
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "VLA Expansion Project system"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "all correlator system states",
+        "the Monitor and Control System supervisor system state"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Correlator monitor subsystem ",
+          "all correlator system states"
+        ],
+        [
+          "The Correlator monitor subsystem ",
+          "the Monitor and Control System supervisor system state"
+        ],
+        [
+          "VLA Expansion Project system",
+          "all correlator system states"
+        ],
+        [
+          "VLA Expansion Project system",
+          "the Monitor and Control System supervisor system state"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Some of this information will be provided on a time synchronous basis as required by other systems and other information will only be presented on a request basis.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System will be a fully observable system with the only limits placed on information access being those imposed by hardware, bandwidth, and/or security restrictions.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Error and status messages will be provided in a concise time/location referenced format to upper system levels in a content controllable manner.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "upper system"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Error and status messages "
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "upper system",
+          "Error and status messages "
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Correlator configurations and control instructions will be received from the VLA Expansion Project Monitor and Control System system in a form suitable for translation by the Master Correlator Control Computer.",
+    "entity": {
+      "Machine Domain": [
+        "the VLA Expansion Project Monitor and Control System "
+      ],
+      "Physical Device": [
+        "the Master Correlator Control Computer"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Correlator configurations",
+        "control instructions"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the VLA Expansion Project Monitor and Control System ",
+          "Correlator configurations"
+        ],
+        [
+          "the VLA Expansion Project Monitor and Control System ",
+          "control instructions"
+        ],
+        [
+          "the Master Correlator Control Computer",
+          "Correlator configurations"
+        ],
+        [
+          "the Master Correlator Control Computer",
+          "control instructions"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The translation will provide the correlator with specific goal oriented hardware configuration tables to satisfy the configuration requested by the A second interface with a human GUI will also allow for configuration of the correlator hardware, preferably through the same table structures used above.",
+    "entity": {
+      "Machine Domain": [
+        "a human GUI"
+      ],
+      "Physical Device": [
+        "the correlator ",
+        "the correlator hardware"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to satisfy the configuration"
+      ],
+      "Shared Phenomena": [
+        "hardware configuration tables",
+        " configuration"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the correlator ",
+          "hardware configuration tables"
+        ],
+        [
+          "a human GUI",
+          " configuration"
+        ],
+        [
+          "the correlator hardware",
+          " configuration"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the correlator ",
+          "to satisfy the configuration"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This translation interface will be called the Virtual Correlator Interface.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Specific data sets required by the Backend Data Processing System will be provided in a timely and robust fashion over a secondary virtual network.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "a secondary virtual network"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the Backend Data Processing System"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Specific data sets"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Backend Data Processing System",
+          "Specific data sets"
+        ],
+        [
+          "a secondary virtual network",
+          "Specific data sets"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Ancillary monitor data including system health, error messages and configuration echoes will be spooled such that temporary loss of network communication with the VLA Expansion Project Monitor and Control System network will not result in loss of monitor data.",
+    "entity": {
+      "Machine Domain": [
+        "the VLA Expansion Project Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "not result in loss of monitor data"
+      ],
+      "Shared Phenomena": [
+        "Ancillary monitor data",
+        "system health",
+        "error messages",
+        "configuration echoes"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the VLA Expansion Project Monitor and Control System",
+          "Ancillary monitor data"
+        ],
+        [
+          "the VLA Expansion Project Monitor and Control System",
+          "system health"
+        ],
+        [
+          "the VLA Expansion Project Monitor and Control System",
+          "error messages"
+        ],
+        [
+          "the VLA Expansion Project Monitor and Control System",
+          "configuration echoes"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the VLA Expansion Project Monitor and Control System",
+          "not result in loss of monitor data"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Data sample rates and contents will be fully controllable via either the VLA Expansion Project Monitor and Control System or the Backend processing controller.",
+    "entity": {
+      "Machine Domain": [
+        "the VLA Expansion Project Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the Backend processing controller"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Data sample rates",
+        "contents"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the VLA Expansion Project Monitor and Control System",
+          "Data sample rates"
+        ],
+        [
+          "the VLA Expansion Project Monitor and Control System",
+          "contents"
+        ],
+        [
+          "the Backend processing controller",
+          "Data sample rates"
+        ],
+        [
+          "the Backend processing controller",
+          "contents"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Master Correlator Control Computer will accept external data feeds for models, time standards, fiber-link phase corrections and other required data to be packaged with control data delivered to the correlator hardware.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The Master Correlator Control Computer",
+        "the correlator hardware"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "models",
+        "time standards",
+        "fiber-link phase corrections",
+        "control data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Master Correlator Control Computer",
+          "models"
+        ],
+        [
+          "The Master Correlator Control Computer",
+          "time standards"
+        ],
+        [
+          "The Master Correlator Control Computer",
+          "fiber-link phase corrections"
+        ],
+        [
+          "the correlator hardware",
+          "models"
+        ],
+        [
+          "the correlator hardware",
+          "time standards"
+        ],
+        [
+          "the correlator hardware",
+          "fiber-link phase corrections"
+        ],
+        [
+          "the correlator hardware",
+          "control data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The ability to attempt recovery from failure or hot-swapped hardware devices will be built into this system.",
+    "entity": {
+      "Machine Domain": [
+        "this system"
+      ],
+      "Physical Device": [
+        "hot-swapped hardware devices"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "recovery from failure"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "this system",
+          "hot-swapped hardware devices"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "this system",
+          "recovery from failure"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Should a CMIB subsystem fail and not respond to reboot requests or other self-heal attempts, an alert notice will be issued so appropriate personnel can affect a hardware repair.",
+    "entity": {
+      "Machine Domain": [
+        "a CMIB subsystem"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "personnel"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "a hardware repair"
+      ],
+      "Shared Phenomena": [
+        "reboot requests",
+        "self-heal attempts",
+        "an alert notice "
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a CMIB subsystem",
+          "reboot requests"
+        ],
+        [
+          "a CMIB subsystem",
+          "self-heal attempts"
+        ],
+        [
+          "a CMIB subsystem",
+          "an alert notice "
+        ],
+        [
+          "personnel",
+          "an alert notice "
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "personnel",
+          "a hardware repair"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CMIB subsystem will then be automatically restarted and configured back into the current operational environment.",
+    "entity": {
+      "Machine Domain": [
+        "The CMIB subsystem"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the current operational environment"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CMIB subsystem",
+          "the current operational environment"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It is intended that both primary and secondary Master Correlator Control Computer systems maintain full Correlator Monitor and Control System state information such that any hard failure in the primary node can be corrected by simply rerouting Monitor and Control System communications to the secondary.",
+    "entity": {
+      "Machine Domain": [
+        "Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "primary and secondary Master Correlator Control Computer systems"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "hard failure in the primary node can be corrected"
+      ],
+      "Shared Phenomena": [
+        "Correlator Monitor and Control System state information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "primary and secondary Master Correlator Control Computer systems",
+          "Correlator Monitor and Control System state information"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "primary and secondary Master Correlator Control Computer systems",
+          "hard failure in the primary node can be corrected"
+        ]
+      ],
+      "requirements constraints": [
+        [
+          "Monitor and Control System",
+          "hard failure in the primary node can be corrected"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "Watchdog processes and the Master Correlator Control Computer will likewise monitor Correlator Power Control Computer health.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "Correlator Power Control Computer",
+        "the Master Correlator Control Computer"
+      ],
+      "Environment Entity": [
+        "Watchdog processes"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Correlator Power Control Computer health"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Master Correlator Control Computer",
+          "Correlator Power Control Computer health"
+        ],
+        [
+          "Watchdog processes",
+          "Correlator Power Control Computer health"
+        ],
+        [
+          "Correlator Power Control Computer",
+          "Correlator Power Control Computer health"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Due to the more hardware specific connections and controls of the Correlator Power Control Computer, actions taken by external system upon hard failures are TBD.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "the Correlator Power Control Computer,"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "external system"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "actions"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Correlator Power Control Computer,",
+          "actions"
+        ],
+        [
+          "external system",
+          "actions"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All use of the Correlator Monitor and Control System will be through the VCI or Master Correlator Control Computer.",
+    "entity": {
+      "Machine Domain": [
+        "the Correlator Monitor and Control System"
+      ],
+      "Physical Device": [
+        "Master Correlator Control Computer"
+      ],
+      "Environment Entity": [
+        "VCI"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Correlator Monitor and Control System",
+          "VCI"
+        ],
+        [
+          "the Correlator Monitor and Control System",
+          "Master Correlator Control Computer"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Software tools will be provided to assist the user at all access levels from system wide configuration and control to a low level CMIB command line instruction.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [
+        "Software tools"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        " system wide configuration ",
+        "a low level CMIB command line instruction"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Software tools",
+          " system wide configuration "
+        ],
+        [
+          "the user",
+          " system wide configuration "
+        ],
+        [
+          "the user",
+          "a low level CMIB command line instruction"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The primary contact with array operations will be via status and error messages channeled through the Monitor and Control System.",
+    "entity": {
+      "Machine Domain": [
+        "the Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status and error messages"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Monitor and Control System",
+          "status and error messages"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The ability of the Correlator System to achieve and maintain high reliability and uptime will be vitally dependent upon reliable operation and rapid diagnosis and repair of faults in the hardware and software systems.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "These individuals will be responsible for performing corrective and preventive maintenance along with periodic performance tests and upgrades.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Engineers and technicians will need tools to inspect and monitor individual CMIB layer devices from remote locations and have the ability to fault trace to a specific hot-swappable subsystem.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "tools"
+      ],
+      "Environment Entity": [
+        "Engineers",
+        "technicians",
+        "individual CMIB layer devices"
+      ],
+      "Design Domain": [
+        "a specific hot-swappable subsystem"
+      ],
+      "Requirements": [
+        "inspect and monitor individual CMIB layer devices"
+      ],
+      "Shared Phenomena": [
+        "fault trace"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Engineers",
+          "tools"
+        ],
+        [
+          "technicians",
+          "tools"
+        ],
+        [
+          "individual CMIB layer devices",
+          "tools"
+        ],
+        [
+          "Engineers",
+          "fault trace"
+        ],
+        [
+          "technicians",
+          "fault trace"
+        ],
+        [
+          "a specific hot-swappable subsystem",
+          "fault trace"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "individual CMIB layer devices",
+          "inspect and monitor individual CMIB layer devices"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "These individuals are responsible for developing the software and will interact with the EVLA Correlator Monitor and Control System to ensure that it is functioning properly.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "These individuals"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to ensure that it is functioning properly."
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "These individuals"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "to ensure that it is functioning properly."
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The software developer requires remote access to the EVLA Correlator Monitor and Control System so that troubleshooting can be accomplished away from the the VLA Expansion Project and during non-working hours.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The software developer"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "troubleshooting"
+      ],
+      "Shared Phenomena": [
+        "remote access"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "remote access"
+        ],
+        [
+          "The software developer",
+          "remote access"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "troubleshooting"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "A few authorized individuals may be allowed access to parts of the EVLA Correlator Monitor and Control System that are usually considered restricted.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control is a critical component in the Astronomical data path.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "The Correlator Monitor and Control"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If it is unavailable, incoming astronomical data will be lost.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "incoming astronomical data"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The ultimate determiner of a reliable and available correlator is dependent on the stability of the Functionality needs to be modularized to provide the easiest means of fault detection and repair.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The ultimate ease of use and flexibility of the correlator is rooted in the Correlator Monitor and Control System software.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Full access is required with a high level of data integration to provide the user with a logical and coherent interface.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a logical and coherent interface"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the user",
+          "a logical and coherent interface"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It is assumed that the Correlator will receive configuration data in a format that is unambiguous and results in a convergent hardware configuration.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "the Correlator"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "configuration data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Correlator",
+          "configuration data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It is assumed that all auxiliary data needed for real time update of correlator parameters will be provided directly by the VLA Expansion Project Monitor and Control System system or by dedicated servers.",
+    "entity": {
+      "Machine Domain": [
+        "the VLA Expansion Project Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "dedicated servers"
+      ],
+      "Requirements": [
+        "real time update of correlator parameters"
+      ],
+      "Shared Phenomena": [
+        "all auxiliary data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the VLA Expansion Project Monitor and Control System",
+          "all auxiliary data"
+        ],
+        [
+          "dedicated servers",
+          "all auxiliary data"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the VLA Expansion Project Monitor and Control System",
+          "real time update of correlator parameters"
+        ]
+      ],
+      "requirements constraints": [
+        [
+          "dedicated servers",
+          "real time update of correlator parameters"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "It is assumed that the backend data processing and VLA Expansion Project Monitor and Control System systems will be capable of accepting output data rates generated by the Correlator Monitor and Control System.",
+    "entity": {
+      "Machine Domain": [
+        "the backend data processing",
+        "VLA Expansion Project Monitor and Control System",
+        "the Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "data rates"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the backend data processing",
+          "data rates"
+        ],
+        [
+          "VLA Expansion Project Monitor and Control System",
+          "data rates"
+        ],
+        [
+          "the Correlator Monitor and Control System",
+          "data rates"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The interface between the CMIB, Master Correlator Control Computer, and Correlator Power Control Computer shall be Ethernet of 100 Mbits/sec or better data rate.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The interface shall be transformer coupled copper twisted pair unless other materials are required for noise, ground isolation, or physical layout constraints.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Network switches shall be employed to distribute traffic within a correlator rack and where their use will significantly reduce overall network wiring complexity.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "Network switches",
+        "a correlator rack"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Network switches",
+          "a correlator rack"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Master Correlator Control Computer-CMIB, Master Correlator Control Computer-Correlator Power Control Computer, and Master Correlator Control Computer-VLA Expansion Project Monitor and Control System networks shall be on separate physical interfaces.",
+    "entity": {
+      "Machine Domain": [
+        "Master Correlator Control Computer-VLA Expansion Project Monitor and Control System"
+      ],
+      "Physical Device": [
+        "The Master Correlator Control Computer-CMIB",
+        "Master Correlator Control Computer-Correlator Power Control Computer"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "There shall be a redundant communication path between the Master Correlator Control Computer and Correlator Power Control Computer to provide for remote reboot in the event of a networking or computing failure.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "the Master Correlator Control Computer",
+        "Correlator Power Control Computer"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to provide for remote reboot"
+      ],
+      "Shared Phenomena": [
+        "a redundant communication path"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Master Correlator Control Computer",
+          "a redundant communication path"
+        ],
+        [
+          "Correlator Power Control Computer",
+          "a redundant communication path"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Master Correlator Control Computer",
+          "to provide for remote reboot"
+        ],
+        [
+          "Correlator Power Control Computer",
+          "to provide for remote reboot"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The interface between the Master Correlator Control Computer and external networks shall be Ethernet of 100 Pathways penetrating the correlator shielded room shall be fiber optic or other low RFI material to meet RFI specifications.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Network routers/switches shall be employed at the Master Correlator Control Computer-VLA Expansion Project Monitor and Control System interface level to protect the Master Correlator Control Computer from unauthorized access and irrelevant network traffic.",
+    "entity": {
+      "Machine Domain": [
+        "the Master Correlator Control Computer-VLA Expansion Project Monitor and Control System"
+      ],
+      "Physical Device": [
+        "Network routers/switches",
+        "the Master Correlator Control Computer"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to protect the Master Correlator Control Computer from unauthorized access"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Master Correlator Control Computer-VLA Expansion Project Monitor and Control System",
+          "Network routers/switches"
+        ],
+        [
+          "the Master Correlator Control Computer-VLA Expansion Project Monitor and Control System",
+          "the Master Correlator Control Computer"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Master Correlator Control Computer-VLA Expansion Project Monitor and Control System",
+          "to protect the Master Correlator Control Computer from unauthorized access"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CMIB daughter board shall communicate with the correlator carrier boards via either the PCI or ISA busses.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The CMIB daughter board",
+        "the correlator carrier boards"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the PCI",
+        "ISA busses"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CMIB daughter board",
+          "the PCI"
+        ],
+        [
+          "The CMIB daughter board",
+          "ISA busses"
+        ],
+        [
+          "the correlator carrier boards",
+          "the PCI"
+        ],
+        [
+          "the correlator carrier boards",
+          "ISA busses"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Alternative communication paths may be through a serial or parallel connection as required.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CMIB shall be capable of reading a 16-bit identifier from the host correlator board.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The CMIB",
+        "the host correlator board."
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a 16-bit identifier"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CMIB",
+          "a 16-bit identifier"
+        ],
+        [
+          "the host correlator board.",
+          "a 16-bit identifier"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This identifier will be used to form a unique IP address for CMIB network addressing and allow carry over IP addressing for hot swap modules.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CMIB shall be able to read back the contents of all writeable hardware control registers where meaningful.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The CMIB",
+        "all writeable hardware control registers "
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the contents"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CMIB",
+          "the contents"
+        ],
+        [
+          "all writeable hardware control registers ",
+          "the contents"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It is desired that the state of the correlator hardware be available through interrogation across the CMIB bus for monitoring and fault tolerance.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "the correlator hardware",
+        "the CMIB"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "monitoring and fault tolerance"
+      ],
+      "Shared Phenomena": [
+        "the state"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the correlator hardware",
+          "the state"
+        ],
+        [
+          "the CMIB",
+          "the state"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the CMIB",
+          "monitoring and fault tolerance"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CMIB shall have control of hardware warm boots such that an external command from the Master Correlator Control Computer to reboot the CMIB shall have an option to force a hardware warm boot.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The CMIB",
+        "hardware",
+        "the Master Correlator Control Computer",
+        "the CMIB"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to force a hardware warm boot"
+      ],
+      "Shared Phenomena": [
+        "an external command"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CMIB",
+          "hardware"
+        ],
+        [
+          "the Master Correlator Control Computer",
+          "an external command"
+        ],
+        [
+          "the CMIB",
+          "an external command"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "the CMIB",
+          "to force a hardware warm boot"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The carrier board for the CMIB shall have an externally visible indicator that will provide a user with a physical indication of CMIB operational status.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The carrier board for the CMIB",
+        "visible indicator "
+      ],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a physical indication of CMIB operational status"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The carrier board for the CMIB",
+          "visible indicator "
+        ],
+        [
+          "visible indicator ",
+          "a physical indication of CMIB operational status"
+        ],
+        [
+          "a user",
+          "a physical indication of CMIB operational status"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Where applicable, all computers and peripherals shall be powered though UPS type devices with sufficient capacity for the computers to safely coordinate a system wide shutdown of the correlator hardware in the event of a prolonged power outage.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The UPS devices need the ability to signal the Correlator Monitor and Control System when a power outage has occurred and keep the Correlator Monitor and Control System apprised of time remaining on backup power.",
+    "entity": {
+      "Machine Domain": [
+        "the Correlator Monitor and Control System",
+        "the Correlator Monitor and Control System"
+      ],
+      "Physical Device": [
+        "The UPS devices"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "signal",
+        "time remaining on backup power"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The UPS devices",
+          "signal"
+        ],
+        [
+          "the Correlator Monitor and Control System",
+          "signal"
+        ],
+        [
+          "The UPS devices",
+          "time remaining on backup power"
+        ],
+        [
+          "the Correlator Monitor and Control System",
+          "time remaining on backup power"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All computers within the Correlator Monitor and Control System system shall have the ability for authorized users to directly access individual systems for maintenance and monitoring through remote logins.",
+    "entity": {
+      "Machine Domain": [
+        " the Correlator Monitor and Control System"
+      ],
+      "Physical Device": [
+        "All computers"
+      ],
+      "Environment Entity": [
+        "users"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "maintenance and monitoring through remote logins"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          " the Correlator Monitor and Control System",
+          "All computers"
+        ],
+        [
+          "All computers",
+          "users"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "users",
+          "maintenance and monitoring through remote logins"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Each computer system in the Correlator Monitor and Control System shall have a hardware based watchdog timer configured to reboot the EVLA Correlator Monitor and Control System in the case of a system hang.",
+    "entity": {
+      "Machine Domain": [
+        "the Correlator Monitor and Control System"
+      ],
+      "Physical Device": [
+        "Each computer system",
+        "watchdog timer"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "reboot the EVLA Correlator Monitor and Control System"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Correlator Monitor and Control System",
+          "Each computer system"
+        ],
+        [
+          "Each computer system",
+          "watchdog timer"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "watchdog timer",
+          "reboot the EVLA Correlator Monitor and Control System"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "Reboots should result in minimal system interruptions with the offending CPU reconfiguring and returning to service autonomously.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CMIB shall conform to both electrical and physical The CMIB shall contain 64 Mbytes or greater of SDRAM, IDE hard disk interface, minimum of one serial and one parallel interface, PCI/ISA buses, 100BaseT network interface, capacity to boot and run a generic COTS operating system in a near real-time environment from local non-volatile storage.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The operating system/module combination shall be capable of supporting the real-time requirements of the correlator hardware, hardware monitor/control/diagnostics with support for standalone test bench operation with simulated control data generation, and the ability to access and upgrade correlator hardware The Master Correlator Control Computer shall be a high availability type general- purpose computer capable of supporting multiple Ethernet interfaces, COTS operating systems, and support server/host services for the CMIB operating system.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This computer may exist as a hot swappable or redundant CPU device capable of self-healing where possible.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "This computer",
+        "CPU device"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "self-healing"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "This computer",
+          "CPU device"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "CPU device",
+          "self-healing"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Master Correlator Control Computer shall have all required disk and file system facilities installed locally such that the EVLA Correlator Monitor and Control System can boot and run in a stand-alone configuration.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [
+        "The Master Correlator Control Computer "
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "disk",
+        "file system facilities"
+      ],
+      "Requirements": [
+        "boot and run in a stand-alone configuration"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "The Master Correlator Control Computer "
+        ],
+        [
+          "The Master Correlator Control Computer ",
+          "disk"
+        ],
+        [
+          "The Master Correlator Control Computer ",
+          "file system facilities"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The Master Correlator Control Computer ",
+          "boot and run in a stand-alone configuration"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This should allow the correlator CMIBs to boot, configure, and run without any communication outside of the correlator Monitor and Control System network.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "the correlator CMIBs"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the correlator Monitor and Control System network"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the correlator CMIBs",
+          "the correlator Monitor and Control System network"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Power Control Computer shall be a high availability type general purpose computer capable of supporting a COTS operating system and have the ability to accept a large number of external hardware status signals either directly or through external interface hardware.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The Correlator Power Control Computer",
+        "external interface hardware"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "a COTS operating system"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "external hardware status signals"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Correlator Power Control Computer",
+          "a COTS operating system"
+        ],
+        [
+          "The Correlator Power Control Computer",
+          "external hardware status signals"
+        ],
+        [
+          "external interface hardware",
+          "external hardware status signals"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This computer may exist as a hot swappable or redundant CPU device capable of self-healing where possible.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "This computer ",
+        "CPU device"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "self-healing"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "This computer ",
+          "CPU device"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "CPU device",
+          "self-healing"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Power Control Computer shall have all required disk and file system facilities installed locally such that the EVLA Correlator Monitor and Control System can boot and run in a stand-alone configuration.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [
+        "The Correlator Power Control Computer"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "disk",
+        "file system facilities"
+      ],
+      "Requirements": [
+        "boot and run in a stand-alone configuration"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "The Correlator Power Control Computer"
+        ],
+        [
+          "The Correlator Power Control Computer",
+          "disk"
+        ],
+        [
+          "The Correlator Power Control Computer",
+          "file system facilities"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "boot and run in a stand-alone configuration"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "This requirement is to allow correlator power monitoring and control to continue in the event of an Monitor and Control System network failure.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System processors shall be capable of meeting all data processing deadlines and anticipated future requirements The Correlator Monitor and Control System processors shall be capable of responding to correlator hardware inputs in a deterministic fashion with sufficient performance to avoid data loss, corruption or overflows.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The Correlator Monitor and Control System processors",
+        "The Correlator Monitor and Control System"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to avoid data loss, corruption or overflows"
+      ],
+      "Shared Phenomena": [
+        "all data processing deadlines",
+        "anticipated future requirements",
+        "correlator hardware inputs"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Correlator Monitor and Control System processors",
+          "all data processing deadlines"
+        ],
+        [
+          "The Correlator Monitor and Control System processors",
+          "anticipated future requirements"
+        ],
+        [
+          "The Correlator Monitor and Control System",
+          "correlator hardware inputs"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The Correlator Monitor and Control System",
+          "to avoid data loss, corruption or overflows"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All lower system error and debug messages shall be present at the Master Correlator Control Computer layer.",
+    "entity": {
+      "Machine Domain": [
+        "the Master Correlator Control Computer layer"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "error",
+        "debug messages"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Master Correlator Control Computer layer",
+          "error"
+        ],
+        [
+          "the Master Correlator Control Computer layer",
+          "debug messages"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Aside from a networking or CPU failure, it should never be necessary to directly access a CPU to display error messages.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All system error and debug messages shall be categorized in a logical fashion such that message traffic can be filtered as to content, detail, and message rate.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Personnel interested in error messages should be able to easily filter the error message stream.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All messages passed between Correlator Monitor and Control System system layers shall have both UTC and wall clock time stamp information appropriate for the message type.",
+    "entity": {
+      "Machine Domain": [
+        "Correlator Monitor and Control System system layers"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "messages"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Correlator Monitor and Control System system layers",
+          "messages"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Error messages will be stamped with their discovery time, control messages will be stamped with their generation time.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Other message internal time stamps can be used as monitor/control parameters as deemed necessary.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Software shall be provided that allows an authorized user full access to all messaging, monitor, and control traffic.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "an authorized user"
+      ],
+      "Design Domain": [
+        "Software"
+      ],
+      "Requirements": [
+        "access to all messaging,",
+        "monitor, and control traffic"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Software",
+          "an authorized user"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "an authorized user",
+          "access to all messaging,"
+        ],
+        [
+          "an authorized user",
+          "monitor, and control traffic"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This software will provide full system access for testing, debugging, and control while the correlator is off line or under the control of the VLA Expansion Project Monitor and Control System system.",
+    "entity": {
+      "Machine Domain": [
+        "the VLA Expansion Project Monitor and Control System system"
+      ],
+      "Physical Device": [
+        "the correlator"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "This software"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "full system access"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "This software",
+          "full system access"
+        ],
+        [
+          "the correlator",
+          "full system access"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A Graphical User Interface shall be provided as an interface to the Correlator Monitor and Control System test software that allows for a convenient and configurable tool to access the Correlator Monitor and Control System remotely through the VCI.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System shall be self-monitoring.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "self-monitoring"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The Correlator Monitor and Control System",
+          "self-monitoring"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It will be capable of detecting, reporting on and automatically taking action to remedy or lessen the impact of the following types of abnormal conditions: processor hardware failure, operating system hangs or crashes, temperature or voltage deviations, computational performance below minimum specifications, computational error rates above maximum specification, internal communications failures.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The software part of the EVLA Correlator Monitor and Control System shall be able to perform without total system restart due to internal failure between system maintenance windows.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The hardware part of the EVLA Correlator Monitor and Control System shall be able to perform indefinitely without complete loss of service, except in the event of total failure of primary and backup power.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [
+        "primary and backup power"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The EVLA Correlator Monitor and Control System shall be able to continue processing of all correlator configuration/control events until the queues of parameters are exhausted and external communications are restored.",
+    "entity": {
+      "Machine Domain": [
+        "The EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [
+        "all correlator"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "all correlator configuration/control events"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The EVLA Correlator Monitor and Control System",
+          "all correlator configuration/control events"
+        ],
+        [
+          "all correlator",
+          "all correlator configuration/control events"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The EVLA Correlator Monitor and Control System shall be able to sit at idle and resume operations with minimal delay.",
+    "entity": {
+      "Machine Domain": [
+        "The EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All system processing and interconnect hardware shall be readily accessible for maintenance, repair, replacement and reconfiguration.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This excludes items that due to their physical location, are not practical to configure for ready access.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All systems and application source code shall be available to or on the EVLA Correlator Monitor and Control Systems that execute it.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All software application modules shall be debuggable.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "They should be organized such that all inputs and outputs can be simulated if necessary.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All software processes shall be killable, restartable, debuggable and testable with minimal impact on normal system operations.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Software tools and pre-built applications that do not have source code available shall come with a complete diagnostic package and customer support.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Operating system software shall either have source code available or come with sufficient diagnostics and customer support.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "I/O, communications, and processing hardware shall be easily expandable, reconfigurable, augmentable and replaceable to meet increasing data traffic and processing demands imposed by VLA Expansion Project science, Correlator changes, and availability of new hardware.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Transparency shall be accomplished in manner that is transparent to processing, communications and I/O software functions with the possible exception of recompilation of executables.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Seamlessness shall be accomplished in a manner that is seamless, in that it does not affect hardware modules or software functionality that it meets at interfaces.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator Monitor and Control System needs a robust security mechanism in place so that unauthorized users are not allowed access.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "unauthorized users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Correlator Monitor and Control System",
+          "unauthorized users"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Authorized users are expected to be restricted to software and hardware development, testing, maintenance and operations personnel.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All users of the Correlator Monitor and Control System must be uniquely identified.",
+    "entity": {
+      "Machine Domain": [
+        "the Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "All users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Correlator Monitor and Control System",
+          "All users"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This could be done via a username and associated password scheme that would authenticate and authorize the user access to the EVLA Correlator Monitor and Control System and, if applicable, grant the user access to restricted or controlled parts of the EVLA Correlator Monitor and Control System.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If a user cannot be identified, they will not be given access.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "access"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a user",
+          "access"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In order to monitor all past access to the EVLA Correlator Monitor and Control System, all attempts to access the EVLA Correlator Monitor and Control System should be logged.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System",
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "all past access",
+        "all attempts"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "all past access"
+        ],
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "all attempts"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Users’ needs and expectations from the EVLA Correlator Monitor and Control System will be different.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "needs and expectations"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Users",
+          "needs and expectations"
+        ],
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "needs and expectations"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Systems operations should be given unrestricted access to all aspects of the EVLA Correlator Monitor and Control System and should have the authority to grant and revoke privileges on a per-user basis.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Development, testing and maintenance personnel, on the other hand, require access to some parts of the EVLA Correlator Monitor and Control System, but not all, indicating that an access level is needed that allows privileges to be granted on a per-user and what-do-you-need-to-do basis.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Development",
+        "testing and maintenance personnel"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "access"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Development",
+          "access"
+        ],
+        [
+          "testing and maintenance personnel",
+          "access"
+        ],
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "access"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All users of the EVLA Correlator Monitor and Control System shall login using some form of unique identification.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "All users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "unique identification"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "All users",
+          "unique identification"
+        ],
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "unique identification"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All login attempts shall be done in a secure manner.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A system administrator shall have unrestricted access to all aspects of the EVLA Correlator Monitor and Control System.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "A system administrator"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "unrestricted access"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "A system administrator",
+          "unrestricted access"
+        ],
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "unrestricted access"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Each user shall have a set of system access properties that defines the user’s privileges within the EVLA Correlator Monitor and Control System.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Each user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a set of system access properties"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Each user",
+          "a set of system access properties"
+        ],
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "a set of system access properties"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The administrator shall have the ability to create and add a new user to the EVLA Correlator Monitor and Control System.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The administrator",
+        "a new user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "create and add a new user"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "create and add a new user"
+        ],
+        [
+          "The administrator",
+          "create and add a new user"
+        ],
+        [
+          "create and add a new user",
+          "a new user"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The administrator shall have the ability to remove a user from the EVLA Correlator Monitor and Control System.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The administrator",
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "remove a user"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The administrator",
+          "remove a user"
+        ],
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "remove a user"
+        ],
+        [
+          "a user",
+          "remove a user"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The administrator shall have the ability to edit a user’s system access properties.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The administrator"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to edit a user’s system access properties"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The administrator",
+          "to edit a user’s system access properties"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The administrator shall have the ability to block all access to the EVLA Correlator Monitor and Control System for all users or selectively by user.",
+    "entity": {
+      "Machine Domain": [
+        "the EVLA Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The administrator",
+        "all users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "block all access"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the EVLA Correlator Monitor and Control System",
+          "The administrator"
+        ],
+        [
+          "The administrator",
+          "block all access"
+        ],
+        [
+          "all users",
+          "block all access"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The EVLA Correlator Monitor and Control System shall continue operations, although not Description necessarily at full capacity, on all unaffected resources during partial shutdowns for maintenance, repair and/or upgrade.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Replaceability modular design principles shall be employed to the maximum extent possible.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Maximal practical use of available hot swappable devices and components shall be made.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Complete and comprehensible hardware systems specifications and configuration information shall be readily available.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Software system and application code shall be well documented and written in a generally familiar language or languages.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Software shall be written in a style that is easily readable and using practices that allow for minimal confusion.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  }
+]

@@ -1,0 +1,3821 @@
+[
+  {
+    "text": "The user communicates through a personal web page on the DigitalHome web server or on a local home server.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The user"
+      ],
+      "Design Domain": [
+        "a local home server",
+        "the DigitalHome web server"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a personal web page"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The user",
+          "a personal web page"
+        ],
+        [
+          "the DigitalHome web server",
+          "a personal web page"
+        ],
+        [
+          "a local home server",
+          "a personal web page"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The sensor part of the thermostat has a sensitivity range between 14ºF and 104ºF (-10ºC and 40ºC).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The sensor part of the thermostat"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a sensitivity range"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The sensor part of the thermostat",
+          "a sensitivity range"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "For each humidistat, up to twenty-four one hour settings per day for every day of the week can be scheduled.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "humidistat"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The system shall be able to provide information about the state of a power switch (OFF or ON), indicating the whether an appliance connected to the power switch is OFF or ON.",
+    "entity": {
+      "Machine Domain": [
+        "The system"
+      ],
+      "Physical Device": [
+        "a power switch",
+        "the power switch"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information about the state"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The system",
+          "information about the state"
+        ],
+        [
+          "a power switch",
+          "information about the state"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome System must be highly reliable with no more than 1 failure per 10,000 hours of operation.",
+    "entity": {
+      "Machine Domain": [
+        "The DigitalHome System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This Software Requirements Specification (SRS) identifies the requirements for the ASPERA-3 Processing and Archiving Facility (APAF) ground data system for the Mars Express mission.",
+    "entity": {
+      "Machine Domain": [
+        "the ASPERA-3 Processing and Archiving Facility (APAF) ground data system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "the Mars Express mission"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "the ASPERA-3 Processing and Archiving Facility (APAF) ground data system",
+          "the Mars Express mission"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "ASPERA-3 contains a number of different sensors that will measure the particles, neutral atoms, and fields in the near Martian environment.",
+    "entity": {
+      "Machine Domain": [
+        "ASPERA-3"
+      ],
+      "Physical Device": [
+        "sensors"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the particles",
+        "neutral atoms"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "ASPERA-3",
+          "the particles"
+        ],
+        [
+          "ASPERA-3",
+          "neutral atoms"
+        ],
+        [
+          "sensors",
+          "the particles"
+        ],
+        [
+          "sensors",
+          "neutral atoms"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The APAF ground data system is to provide data processing algorithms and support to IRF for the ASPERA-3 science team (including Co-I’s) in preparation for the Mission Operations and Data Analysis (MO&DA) phase of the Mars Express mission.",
+    "entity": {
+      "Machine Domain": [
+        "The APAF ground data system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "IRF",
+        "the ASPERA-3 science team"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "data processing algorithms and support"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The APAF ground data system",
+          "data processing algorithms and support"
+        ],
+        [
+          "IRF",
+          "data processing algorithms and support"
+        ],
+        [
+          "IRF",
+          "the ASPERA-3 science team"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Each requirement shall be: assigned a project-unique identifier.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Intermediate files of cleaned-up ASPERA-3 and MEX OA telemetry shall be generated in the event that cleaned-up telemetry is not provided by ESOC to support the ASPERA-3 team in meeting mission goals and objectives.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "ESOC",
+        "the ASPERA-3 team"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "meeting mission goals and objectives"
+      ],
+      "Shared Phenomena": [
+        "Intermediate files of cleaned-up ASPERA-3 and MEX OA telemetry",
+        "cleaned-up telemetry"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "ESOC",
+          "Intermediate files of cleaned-up ASPERA-3 and MEX OA telemetry"
+        ],
+        [
+          "ESOC",
+          "cleaned-up telemetry"
+        ],
+        [
+          "the ASPERA-3 team",
+          "Intermediate files of cleaned-up ASPERA-3 and MEX OA telemetry"
+        ],
+        [
+          "the ASPERA-3 team",
+          "cleaned-up telemetry"
+        ],
+        [
+          "the ASPERA-3 team",
+          "meeting mission goals and objectives"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "IDFS data access software developed by SwRI shall be made available to the ASPERA-3 Co-I’s to support the ASPERA-3 team in meeting mission goals and objectives.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "SwRI",
+        "the ASPERA-3 Co-I",
+        "the ASPERA-3 team"
+      ],
+      "Design Domain": [
+        "IDFS data access software"
+      ],
+      "Requirements": [
+        "meeting mission goals and objectives"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "IDFS data access software",
+          "SwRI"
+        ],
+        [
+          "IDFS data access software",
+          "the ASPERA-3 Co-I"
+        ],
+        [
+          "the ASPERA-3 Co-I",
+          "the ASPERA-3 team"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "the ASPERA-3 team",
+          "meeting mission goals and objectives"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "All internal interfaces are left to the design.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "There shall be a UNIX-based APAF system development computer.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "a UNIX-based APAF system development computer"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "SwRI shall provide software support for the APAF system.",
+    "entity": {
+      "Machine Domain": [
+        "the APAF system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "SwRI"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "software support"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "SwRI",
+          "software support"
+        ],
+        [
+          "the APAF system",
+          "software support"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The APAF data system will not impose hazards to personnel, property, or the environment.",
+    "entity": {
+      "Machine Domain": [
+        "The APAF data system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This is the Software Requirements Specification (SRS) for the \"Space Fractions\" system.",
+    "entity": {
+      "Machine Domain": [
+        "the \"Space Fractions\" system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Bobby particularly likes to play systems where Bobby can excel.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Space Fractions system will not be dependent on any other software and is not a component of another program.",
+    "entity": {
+      "Machine Domain": [
+        "The Space Fractions system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The purpose of the Space Fractions system is to process player inputs during gameplay, specifically for calculating spaceship velocity adjustments based on fraction inputs. ",
+    "entity": {
+      "Machine Domain": [
+        "the Space Fractions system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The source of these inputs is the player's interaction with the game's user interface during specific gameplay moments that require velocity adjustment.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the player"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Upon receiving the fraction inputs, the Space Fractions system will validate the integrity and format of the data to ensure they are integers and that the denominator is not zero.",
+    "entity": {
+      "Machine Domain": [
+        "the Space Fractions system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "validate the integrity and format of the data"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This adjusted velocity is applied to the game's physics engine to update the spaceship's speed in real-time.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The introductory movie serves to immerse players into the game's universe, setting the stage for the storyline and providing critical information to assist users in solving fraction-related puzzles.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "players",
+        "users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "players",
+          "information"
+        ],
+        [
+          "information",
+          "users"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The primary input for this component is the user's interaction in the form of a mouse click. ",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "a mouse"
+      ],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "As soon as the player enters the introductory movie component, the movie begins to play automatically.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the player"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If the movie is skipped or once it concludes, the subsequent output is the transition to the game's main menu, where players can start their adventure or access various game settings.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "players"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "One button initiates the game, leading players directly into the gameplay experience.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "players"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Additionally, it presents players with the option to either conclude their current session or navigate back to the main menu for further exploration or replay.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "players"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Math Umbrella component is designed to serve as an educational resource hub within the system, providing players with easy access to a curated selection of external S2S projects that are specifically tailored to sixth graders. ",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "players"
+      ],
+      "Design Domain": [
+        "The Math Umbrella"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This component aims to extend the educational value of the system by integrating additional, topic-relevant resources that support and deepen the player's understanding of mathematics.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Reliability will be ensured by extensive testing by the team members and mentors, if available.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the team members"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "There are no additional requirements at this time.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "FUNCTIONAL REQUIREMENTS SPECIFICATION V1.0 (DRAFT) ",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The key guiding principle behind the functional design of CCTNS V1.0 is to focus on the critical functionality that provides value to the police personnel at the cutting edge which in turn can improve the outcomes in the areas of “Investigation of Crime” and “Detection of Criminals”.",
+    "entity": {
+      "Machine Domain": [
+        "CCTNS V1.0"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the police personnel"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to focus on the critical functionality",
+        "improve the outcomes"
+      ],
+      "Shared Phenomena": [
+        "value"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "CCTNS V1.0",
+          "value"
+        ],
+        [
+          "the police personnel",
+          "value"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "CCTNS V1.0",
+          "to focus on the critical functionality"
+        ],
+        [
+          "CCTNS V1.0",
+          "improve the outcomes"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Based on the guiding principles stated above, nine different function blocks have been identified and the detailed functionality of each block was determined.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It makes reporting easy for police by enabling them to execute different types of queries such as monthly reporting, RTI related etc.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "police"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to execute different types of queries",
+        "reporting easy"
+      ],
+      "Shared Phenomena": [
+        "RTI related",
+        "monthly reporting"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "police",
+          "reporting easy"
+        ],
+        [
+          "police",
+          "to execute different types of queries"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must be able to capture and store violations (i.e.A user’s attempts to access a case to which he is denied access), and (where violations can validly be attempted) attempted violations, of access control mechanisms.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to capture and store violations",
+        "attempted violations"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "to capture and store violations"
+        ],
+        [
+          "The CCTNS system",
+          "attempted violations"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should provide for role-based control for the functionality within the CCTNS system ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system",
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "role-based control"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "role-based control"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system must allow only admin-users to set up user profiles and allocate users to groups.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "admin-users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "user profiles",
+        "groups"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "user profiles"
+        ],
+        [
+          "The CCTNS system",
+          "groups"
+        ],
+        [
+          "admin-users",
+          "user profiles"
+        ],
+        [
+          "admin-users",
+          "groups"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If a user performs a quick or advanced search, the CCTNS system must never include in the search result list any record which the user does not have the right to access.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the search result",
+        "search"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a user",
+          "search"
+        ],
+        [
+          "the CCTNS system",
+          "search"
+        ],
+        [
+          "the CCTNS system",
+          "the search result"
+        ],
+        [
+          "a user",
+          "the search result"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Frequently-executed System transactions must be designed so that they can be completed with a small number of interactions (e.g.mouse clicks).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Providing text equivalents for non-text media objects: All non-text media objects, such as graphical images or video, should be provided with alternative equivalent textual descriptions and/or with equivalent text-based functionality.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "graphical images",
+        "video",
+        "alternative equivalent textual descriptions",
+        "equivalent text-based functionality"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Acceptable opening / download times: Application pages should be designed and implemented so that there are acceptable opening times and download times for the expected range of technical contexts of use (e.g.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "Application pages"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Providing clear error messages: The content of error messages shown on the pages or special error pages should clearly state the reason why the error occurred and, if possible, actions the user can take to resolve the error.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [
+        "the pages",
+        "special error pages"
+      ],
+      "Requirements": [
+        "resolve the error"
+      ],
+      "Shared Phenomena": [
+        "The content of error messages",
+        "actions"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the pages",
+          "The content of error messages"
+        ],
+        [
+          "special error pages",
+          "The content of error messages"
+        ],
+        [
+          "the user",
+          "The content of error messages"
+        ],
+        [
+          "the user",
+          "actions"
+        ],
+        [
+          "the pages",
+          "actions"
+        ],
+        [
+          "special error pages",
+          "actions"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the user",
+          "resolve the error"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Text quality: The quality of textual content with respect to spelling and grammar should be sufficient so as not to impede readability.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Readability of text: Text presented on the pages should be readable taking into account the expected display characteristics and spatial arrangement.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Use of “white space”: “White space” on a page i.e.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Color should never be the only means of coding.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Some users may have difficulties in perceiving certain colors or color combinations (color-blindness).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "users"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In addition, when designing multimedia information presentations, the design principles and recommendations described in ISO 14915-1 to ISO 14915-3 should be taken into account.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "highlighting) the topic currently visible in the content area.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The planned downtime for the CCTNS system must not exceed <xx> hours per <rolling three month period>.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The number of incidents of unplanned downtime for the CCTNS system must not exceed <x> per <rolling three month period>.",
+    "entity": {
+      "Machine Domain": [
+        "the CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This requirement is intended to allow for rapid retrieval of frequently-used cases, on the understanding that frequency of use is typically correlated with recent use.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to allow for rapid retrieval of frequently-used cases"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS systems should be designed with the following broad guidelines: ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS systems"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should support multilingual interface ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "support multilingual interface"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The CCTNS system",
+          "support multilingual interface"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The CCTNS system should work even in an offline mode with the critical functionality ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should be developed to be deployed in a 3-tier datacenter architecture ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should adopt standardized formats and common metadata elements ",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The CCTNS system should support selective encryption of the stored data.",
+    "entity": {
+      "Machine Domain": [
+        "The CCTNS system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "selective encryption"
+      ],
+      "Shared Phenomena": [
+        "the stored data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The CCTNS system",
+          "the stored data"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The CCTNS system",
+          "selective encryption"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The search results should be fetched from the database in batches of 10 or 20 maximum as configured within the application.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the database"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The requirements contained in this document are numbered based on the section/subsection in which they appear.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The format of the document follows that outlined in the IEEE STD 830 document, IEEE The VLA Expansion Project Correlator Monitor and Control System is responsible for correlator configuration, real time monitor/control, and hardware testing/servicing.",
+    "entity": {
+      "Machine Domain": [
+        "Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "correlator configuration",
+        "real time monitor/control",
+        "hardware testing/servicing"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "Correlator Monitor and Control System",
+          "correlator configuration"
+        ],
+        [
+          "Correlator Monitor and Control System",
+          "real time monitor/control"
+        ],
+        [
+          "Correlator Monitor and Control System",
+          "hardware testing/servicing"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This topology will place the real-time computing requirements in the slave layer and the quasi real-time, network-chaotic loads into the master layer.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the slave layer",
+        "the master layer"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "the real-time computing",
+        "the quasi real-time, network-chaotic"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "the slave layer",
+          "the real-time computing"
+        ],
+        [
+          "the master layer",
+          "the quasi real-time, network-chaotic"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Correlator monitor subsystem will provide VLA Expansion Project system wide access to all correlator system states including the Monitor and Control System supervisor system state.",
+    "entity": {
+      "Machine Domain": [
+        "The Correlator monitor subsystem "
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "VLA Expansion Project system"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "all correlator system states",
+        "the Monitor and Control System supervisor system state"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Correlator monitor subsystem ",
+          "all correlator system states"
+        ],
+        [
+          "The Correlator monitor subsystem ",
+          "the Monitor and Control System supervisor system state"
+        ],
+        [
+          "VLA Expansion Project system",
+          "all correlator system states"
+        ],
+        [
+          "VLA Expansion Project system",
+          "the Monitor and Control System supervisor system state"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The translation will provide the correlator with specific goal oriented hardware configuration tables to satisfy the configuration requested by the A second interface with a human GUI will also allow for configuration of the correlator hardware, preferably through the same table structures used above.",
+    "entity": {
+      "Machine Domain": [
+        "a human GUI"
+      ],
+      "Physical Device": [
+        "the correlator ",
+        "the correlator hardware"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to satisfy the configuration"
+      ],
+      "Shared Phenomena": [
+        "hardware configuration tables",
+        " configuration"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the correlator ",
+          "hardware configuration tables"
+        ],
+        [
+          "a human GUI",
+          " configuration"
+        ],
+        [
+          "the correlator hardware",
+          " configuration"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the correlator ",
+          "to satisfy the configuration"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Should a CMIB subsystem fail and not respond to reboot requests or other self-heal attempts, an alert notice will be issued so appropriate personnel can affect a hardware repair.",
+    "entity": {
+      "Machine Domain": [
+        "a CMIB subsystem"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "personnel"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "a hardware repair"
+      ],
+      "Shared Phenomena": [
+        "reboot requests",
+        "self-heal attempts",
+        "an alert notice "
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a CMIB subsystem",
+          "reboot requests"
+        ],
+        [
+          "a CMIB subsystem",
+          "self-heal attempts"
+        ],
+        [
+          "a CMIB subsystem",
+          "an alert notice "
+        ],
+        [
+          "personnel",
+          "an alert notice "
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "personnel",
+          "a hardware repair"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "It is assumed that the backend data processing and VLA Expansion Project Monitor and Control System systems will be capable of accepting output data rates generated by the Correlator Monitor and Control System.",
+    "entity": {
+      "Machine Domain": [
+        "the backend data processing",
+        "VLA Expansion Project Monitor and Control System",
+        "the Correlator Monitor and Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "data rates"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the backend data processing",
+          "data rates"
+        ],
+        [
+          "VLA Expansion Project Monitor and Control System",
+          "data rates"
+        ],
+        [
+          "the Correlator Monitor and Control System",
+          "data rates"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The interface shall be transformer coupled copper twisted pair unless other materials are required for noise, ground isolation, or physical layout constraints.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It is desired that the state of the correlator hardware be available through interrogation across the CMIB bus for monitoring and fault tolerance.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "the correlator hardware",
+        "the CMIB"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "monitoring and fault tolerance"
+      ],
+      "Shared Phenomena": [
+        "the state"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the correlator hardware",
+          "the state"
+        ],
+        [
+          "the CMIB",
+          "the state"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the CMIB",
+          "monitoring and fault tolerance"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This computer may exist as a hot swappable or redundant CPU device capable of self-healing where possible.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "This computer ",
+        "CPU device"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "self-healing"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "This computer ",
+          "CPU device"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "CPU device",
+          "self-healing"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All lower system error and debug messages shall be present at the Master Correlator Control Computer layer.",
+    "entity": {
+      "Machine Domain": [
+        "the Master Correlator Control Computer layer"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "error",
+        "debug messages"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Master Correlator Control Computer layer",
+          "error"
+        ],
+        [
+          "the Master Correlator Control Computer layer",
+          "debug messages"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Operating system software shall either have source code available or come with sufficient diagnostics and customer support.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Software system and application code shall be well documented and written in a generally familiar language or languages.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "During Phase 2, Tactical Control System Low Rate Initial Production (LRIP) will commence.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Although developed as a total package, the Tactical Control System will be scaleable to meet the user's requirements for deployment.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To the extent possible, the Tactical Control System will use standard Department of Defense (DoD) software components to achieve commonality.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "Department of Defense (DoD) software components"
+      ],
+      "Requirements": [
+        "achieve commonality"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "Department of Defense (DoD) software components"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "achieve commonality",
+          "Department of Defense (DoD) software components"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The Tactical Control System will be connected with All Source Analysis System (ASAS).",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "All Source Analysis System"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "All Source Analysis System"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System will be connected with Contingency Airborne Reconnaissance System (CARS)",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "Contingency Airborne Reconnaissance System"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "Contingency Airborne Reconnaissance System"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System will be connected with Joint Maritime Command Information System (JMCIS)",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "Joint Maritime Command Information System"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "Joint Maritime Command Information System"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System will be connected with Air Force Mission Support System (AFMSS)",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "Air Force Mission Support System"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "Air Force Mission Support System"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System system will be capable of controlling the Predator and Outrider AVs with a single control system, using existing military services standard hardware and software, and supporting interfaces with various C4I systems.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System system"
+      ],
+      "Physical Device": [
+        "the Predator",
+        "Outrider AVs",
+        "military services standard hardware"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "single control system",
+        "software",
+        "C4I systems"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System system",
+          "single control system"
+        ],
+        [
+          "single control system",
+          "the Predator"
+        ],
+        [
+          "single control system",
+          "Outrider AVs"
+        ],
+        [
+          "the Predator",
+          "military services standard hardware"
+        ],
+        [
+          "the Predator",
+          "software"
+        ],
+        [
+          "Outrider AVs",
+          "military services standard hardware"
+        ],
+        [
+          "Outrider AVs",
+          "software"
+        ],
+        [
+          "the Predator",
+          "C4I systems"
+        ],
+        [
+          "Outrider AVs",
+          "C4I systems"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System will provide receipt and transmission of secondary imagery and/or data from UAV.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [
+        "UAV"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "secondary imagery",
+        "data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "secondary imagery"
+        ],
+        [
+          "Tactical Control System",
+          "data"
+        ],
+        [
+          "UAV",
+          "secondary imagery"
+        ],
+        [
+          "UAV",
+          "data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System will provide control of the UAV payload in addition to direct receipt of imagery/data for UAV.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [
+        "UAV"
+      ],
+      "Environment Entity": [
+        "UAV payload"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "imagery",
+        "data",
+        "control"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "control"
+        ],
+        [
+          "UAV payload",
+          "control"
+        ],
+        [
+          "Tactical Control System",
+          "imagery"
+        ],
+        [
+          "UAV",
+          "imagery"
+        ],
+        [
+          "Tactical Control System",
+          "data"
+        ],
+        [
+          "UAV",
+          "data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System will provide control of the UAV, less launch and recovery, plus all the functions of level three from UAV.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [
+        "UAV",
+        "UAV"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "control"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "control"
+        ],
+        [
+          "UAV",
+          "control"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In the Training Operations Mode the Tactical Control System shall support mission control and monitoring.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "support mission control and monitoring"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "Tactical Control System",
+          "support mission control and monitoring"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In the Maintenance Operations Mode, if computer workstation Human Computer Interface (HCI) is required, the Tactical Control System shall perform software upgrades.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [
+        "Human Computer Interface"
+      ],
+      "Environment Entity": [
+        "computer workstation"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "perform software upgrades"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "computer workstation"
+        ],
+        [
+          "Tactical Control System",
+          "Human Computer Interface"
+        ],
+        [
+          "Tactical Control System",
+          "perform software upgrades"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "As an objective, the Tactical Control System shall have the capability to import as well as create and modify map display overlays for fire support coordination measures [SSS547], airspace control measures [SSS548], and threat identification measures.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "create and modify map display overlays"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "Tactical Control System",
+          "create and modify map display overlays"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide the operator with a clearly indicated map scale.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "operator"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "clearly indicated map scale"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "clearly indicated map scale"
+        ],
+        [
+          "operator",
+          "clearly indicated map scale"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall display an icon indicating payload center field of view and footprint when receiving downlink from the desired AV.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [
+        "AV"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "an icon indicating payload center field",
+        "downlink"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "an icon indicating payload center field"
+        ],
+        [
+          "AV",
+          "downlink"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall be able to generate payload planning information to be uplinked to the AV separate from a flight route plan.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "AV"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "payload planning information",
+        "flight route plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "payload planning information"
+        ],
+        [
+          "Tactical Control System",
+          "flight route plan"
+        ],
+        [
+          "AV",
+          "payload planning information"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide the capability to pass control of an AV to another Tactical Control System, and receive control of an AV from another Tactical Control System [SSS115].",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System",
+        "Tactical Control System",
+        "another Tactical Control System"
+      ],
+      "Physical Device": [
+        "AV",
+        "AV"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "pass control of an AV to another Tactical Control System, and receive control of an AV from another Tactical Control System"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "AV"
+        ],
+        [
+          "Tactical Control System",
+          "another Tactical Control System"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "pass control of an AV to another Tactical Control System, and receive control of an AV from another Tactical Control System",
+          "AV"
+        ],
+        [
+          "pass control of an AV to another Tactical Control System, and receive control of an AV from another Tactical Control System",
+          "another Tactical Control System"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide the necessary system capabilities required for AV flight control BLOS via uplink command to two MAE air vehicles.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System",
+        "system"
+      ],
+      "Physical Device": [
+        "AV",
+        "air vehicles"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "AV flight control BLOS via uplink command to two MAE air vehicles"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "air vehicles"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "AV flight control BLOS via uplink command to two MAE air vehicles",
+          "air vehicles"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This control will include control of the ADT antenna and of the ADT transmitter and receiver.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "ADT antenna",
+        "ADT transmitter",
+        "receiver"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide override of payload automated as well as preprogrammed inputs.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "provide override of payload automated as well as preprogrammed inputs"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall display the current search footprint and the search history of the payload on the map.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "map"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "display the current search footprint and the search history of the payload on the map"
+      ],
+      "Shared Phenomena": [
+        "current search footprint",
+        "search history of the payload"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "current search footprint"
+        ],
+        [
+          "Tactical Control System",
+          "search history of the payload"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "display the current search footprint and the search history of the payload on the map",
+          "current search footprint"
+        ],
+        [
+          "display the current search footprint and the search history of the payload on the map",
+          "search history of the payload"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall have the capability to simultaneously control and monitor a line-of-sight as well as a BLOS data terminal.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "BLOS data terminal"
+      ],
+      "Requirements": [
+        "simultaneously control and monitor a line-of-sight as well as a BLOS data terminal"
+      ],
+      "Shared Phenomena": [
+        "line-of-sight"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "line-of-sight"
+        ],
+        [
+          "Tactical Control System",
+          "BLOS data terminal"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "simultaneously control and monitor a line-of-sight as well as a BLOS data terminal",
+          "line-of-sight"
+        ],
+        [
+          "simultaneously control and monitor a line-of-sight as well as a BLOS data terminal",
+          "BLOS data terminal"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "As a minimum the Tactical Control System LOS data terminal control modes shall include acquisition, autotrack, search, manual point, omni directional, as well as directional modes of operation, if applicable to the selected data link.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "data terminal"
+      ],
+      "Design Domain": [
+        "data link"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The operator shall be able to manually override the automatic function selection of the selected data terminal, if desired.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "operator",
+        "data terminal"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "manually override the automatic function selection of the selected data terminal, if desired"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "manually override the automatic function selection of the selected data terminal, if desired",
+          "data terminal"
+        ],
+        [
+          "manually override the automatic function selection of the selected data terminal, if desired",
+          "operator"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall be capable of monitoring and displaying the signal quality of the received and transmitted signals for the selected data terminal.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "data terminal"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "monitoring and displaying the signal quality of the received and transmitted signals for the selected data terminal"
+      ],
+      "Shared Phenomena": [
+        "signal quality"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "signal quality"
+        ],
+        [
+          "Tactical Control System",
+          "data terminal"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "monitoring and displaying the signal quality of the received and transmitted signals for the selected data terminal",
+          "signal quality"
+        ],
+        [
+          "monitoring and displaying the signal quality of the received and transmitted signals for the selected data terminal",
+          "data terminal"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This functionality, as a minimum, shall include: formatting, storing, internally routing, and recording the video [SSS190]; creating and storing a freeze frame of the video [SSS191]; retrieving and displaying the video [SSS192]; printing a hard copy of freeze frame video [SSS193]; and processing digital imagery for export and dissemination [SSS194].",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "video",
+        "video",
+        "hard copy"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "formatting, storing, internally routing, and recording the video [SSS190]; creating and storing a freeze frame of the video [SSS191]; retrieving and displaying the video [SSS192]; printing a hard copy of freeze frame video [SSS193]; and processing digital imagery for export and dissemination"
+      ],
+      "Shared Phenomena": [
+        "digital imagery"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "formatting, storing, internally routing, and recording the video [SSS190]; creating and storing a freeze frame of the video [SSS191]; retrieving and displaying the video [SSS192]; printing a hard copy of freeze frame video [SSS193]; and processing digital imagery for export and dissemination",
+          "video"
+        ],
+        [
+          "formatting, storing, internally routing, and recording the video [SSS190]; creating and storing a freeze frame of the video [SSS191]; retrieving and displaying the video [SSS192]; printing a hard copy of freeze frame video [SSS193]; and processing digital imagery for export and dissemination",
+          "video"
+        ],
+        [
+          "formatting, storing, internally routing, and recording the video [SSS190]; creating and storing a freeze frame of the video [SSS191]; retrieving and displaying the video [SSS192]; printing a hard copy of freeze frame video [SSS193]; and processing digital imagery for export and dissemination",
+          "hard copy"
+        ],
+        [
+          "formatting, storing, internally routing, and recording the video [SSS190]; creating and storing a freeze frame of the video [SSS191]; retrieving and displaying the video [SSS192]; printing a hard copy of freeze frame video [SSS193]; and processing digital imagery for export and dissemination",
+          "digital imagery"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall have the ability to interface with Service specific ground and airborne Ultra High Frequency (UHF), Very High Frequency (VHF), UHF/VHF, and High Frequency (HF) radios for digital message transmission while using the same radios for record traffic.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System"
+      ],
+      "Physical Device": [
+        "Ultra High Frequency (UHF), Very High Frequency (VHF), UHF/VHF, and High Frequency (HF) radios",
+        "radios"
+      ],
+      "Environment Entity": [
+        "Service specific ground"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to interface with Service specific ground",
+        "airborne Ultra High Frequency (UHF), Very High Frequency (VHF), UHF/VHF, and High Frequency (HF) radios"
+      ],
+      "Shared Phenomena": [
+        "digital message transmission",
+        "record traffic"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Tactical Control System",
+          "digital message transmission"
+        ],
+        [
+          "The Tactical Control System",
+          "record traffic"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All erroneous messages that cannot be corrected by Tactical Control System shall be flagged to the operator.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the operator"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "flagged to the operator"
+      ],
+      "Shared Phenomena": [
+        "All erroneous messages that cannot be corrected"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "All erroneous messages that cannot be corrected"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Tactical Control System shall be capable of executing AV maintenance software and displaying appropriate status results.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "AV maintenance software"
+      ],
+      "Requirements": [
+        "executing AV maintenance software and displaying appropriate status results"
+      ],
+      "Shared Phenomena": [
+        "displaying appropriate status results"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "displaying appropriate status results"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "AV maintenance software",
+          "Tactical Control System"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "Tactical Control System shall be capable of executing data terminal maintenance software and displaying appropriate status results.",
+    "entity": {
+      "Machine Domain": [
+        "Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "data terminal maintenance software"
+      ],
+      "Requirements": [
+        "executing data terminal maintenance software"
+      ],
+      "Shared Phenomena": [
+        "displaying appropriate status results",
+        "displaying appropriate status results"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Tactical Control System",
+          "displaying appropriate status results"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "data terminal maintenance software",
+          "Tactical Control System"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide external interfaces to launch and recovery systems.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "external interfaces"
+      ],
+      "Requirements": [
+        "provide external interfaces to launch and recovery systems"
+      ],
+      "Shared Phenomena": [
+        "launch and recovery systems"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Tactical Control System",
+          "launch and recovery systems"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with JSTARS GSM.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System",
+        "the Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "JSTARS GSM"
+      ],
+      "Requirements": [
+        "to allow the Tactical Control System to integrate with JSTARS GSM"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with CARS.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System",
+        "the Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "CARS"
+      ],
+      "Requirements": [
+        "to allow the Tactical Control System to integrate with CARS"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with CCTV.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System",
+        "the Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "CCTV"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to allow the Tactical Control System to integrate with CCTV"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with TAMPS.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System",
+        "the Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "TAMPS"
+      ],
+      "Requirements": [
+        "to allow the Tactical Control System to integrate with TAMPS"
+      ],
+      "Shared Phenomena": [
+        "integrate with TAMPS"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Tactical Control System",
+          "integrate with TAMPS"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with MIES.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System",
+        "the Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "MIES"
+      ],
+      "Requirements": [
+        "to allow the Tactical Control System to integrate with MIES"
+      ],
+      "Shared Phenomena": [
+        "integrate with MIES"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Tactical Control System",
+          "integrate with MIES"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with COMPASS.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System",
+        "the Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "COMPASS"
+      ],
+      "Requirements": [
+        "to allow the Tactical Control System to integrate with COMPASS"
+      ],
+      "Shared Phenomena": [
+        "integrate with COMPASS"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Tactical Control System",
+          "integrate with COMPASS"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide an interface between the Tactical Control System and an external hard copy printer.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System",
+        "the Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "an external hard copy printer"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "provide an interface"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System will provide an interface between the Tactical Control System and a video cassette recorder.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System",
+        "the Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a video cassette recorder"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "provide an interface"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall have an interface to an uninterruptible power supply.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "have an interface"
+      ],
+      "Shared Phenomena": [
+        "an uninterruptible power supply"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Tactical Control System",
+          "an uninterruptible power supply"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide sufficient cues to allow the operator to safely take-off, land and navigate under Instrument Flight Rules.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the operator"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "provide sufficient cues"
+      ],
+      "Shared Phenomena": [
+        "safely take-off, land and navigate under Instrument Flight Rules"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Tactical Control System",
+          "safely take-off, land and navigate under Instrument Flight Rules"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "For mission planning, the Tactical Control System shall provide terrain avoidance warning and minimum reception altitude calculations for line of sight flights.",
+    "entity": {
+      "Machine Domain": [
+        "the Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "mission planning",
+        "line of sight flights"
+      ],
+      "Requirements": [
+        "provide terrain avoidance warning and minimum reception altitude calculations for line of sight flights"
+      ],
+      "Shared Phenomena": [
+        "terrain avoidance warning",
+        "minimum reception altitude"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Tactical Control System",
+          "terrain avoidance warning"
+        ],
+        [
+          "the Tactical Control System",
+          "minimum reception altitude"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide the required information to allow the operator to maintain safe separation from other aircraft and a safe altitude in civilian airspace per Federal Aviation Administration (FAA) rules.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the operator"
+      ],
+      "Design Domain": [
+        "Federal Aviation Administration (FAA) rules"
+      ],
+      "Requirements": [
+        "provide the required information to allow the operator to maintain safe separation from other aircraft and a safe altitude"
+      ],
+      "Shared Phenomena": [
+        "the required information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Tactical Control System",
+          "the required information"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "Federal Aviation Administration (FAA) rules",
+          "The Tactical Control System"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Additional local site procedures shall be developed to prevent the intentional or unintentional disclosure of sensitive information to unauthorized individuals.",
+    "entity": {
+      "Machine Domain": [
+        "Additional local site procedures"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "unauthorized individuals"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "developed to prevent the intentional or unintentional disclosure of sensitive information to unauthorized individuals"
+      ],
+      "Shared Phenomena": [
+        "prevent the intentional or unintentional disclosure of sensitive information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Additional local site procedures",
+          "prevent the intentional or unintentional disclosure of sensitive information"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall be capable of providing a 50% spare memory storage capacity over delivered storage used.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "providing a 50% spare memory storage capacity over delivered storage used"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall have software based on Defense Information Infrastructure/Common Operating Environment per Assistant Secretary of Defense for Command, Control, Communications, and Intelligence (ASD(C3I)) Joint Technical Architecture (JTA).",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "Defense Information Infrastructure/Common Operating Environment per Assistant Secretary of Defense for Command, Control, Communications, and Intelligence (ASD(C3I)) Joint Technical Architecture (JTA)."
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "Defense Information Infrastructure/Common Operating Environment per Assistant Secretary of Defense for Command, Control, Communications, and Intelligence (ASD(C3I)) Joint Technical Architecture (JTA).",
+          "The Tactical Control System"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "auto-search and automatic target tracking), and future Tactical UAVs.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "future Tactical UAVs"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The controls shall allow the air vehicle and payload operators to perform mission control, mission monitoring, and mission updates and modifications while wearing cold weather clothing and in a Mission Oriented Protective Posture.",
+    "entity": {
+      "Machine Domain": [
+        "The controls"
+      ],
+      "Physical Device": [
+        " air vehicle"
+      ],
+      "Environment Entity": [
+        "payload operators",
+        "cold weather clothing"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "perform mission control",
+        "mission monitoring",
+        "mission updates and modifications"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The controls",
+          "perform mission control"
+        ],
+        [
+          "The controls",
+          "mission monitoring"
+        ],
+        [
+          "The controls",
+          "mission updates and modifications"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System operator shall be required to enter an acknowledgment prior to disabling the display of critical warning flags for any AV, Payload, ADT, GDT, and Tactical Control System faults.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System",
+        "Tactical Control System faults"
+      ],
+      "Physical Device": [
+        "any AV",
+        "ADT",
+        "GDT"
+      ],
+      "Environment Entity": [
+        "The Tactical Control System operator",
+        "Payload"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "be required to enter an acknowledgment prior to disabling the display of critical warning flags"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A combination of visual and auditory outputs will be provided to alert the Tactical Control System operator to situations which may require operator response.",
+    "entity": {
+      "Machine Domain": [
+        "the Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the Tactical Control System operator",
+        "operator"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "A combination of visual and auditory outputs"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System shall provide access to the DII Style Manager so that pointing device characteristics can be modified.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "DII Style Manager"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "access to the DII Style Manager"
+      ],
+      "Shared Phenomena": [
+        "pointing device characteristics can be modified"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Tactical Control System",
+          "pointing device characteristics can be modified"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Tactical Control System HCI shall provide for the capability to automatically designate target locations from the payload screen onto the map screen.",
+    "entity": {
+      "Machine Domain": [
+        "The Tactical Control System HCI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the payload screen",
+        "the map screen"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "provide for the capability to automatically designate target locations from the payload screen onto the map screen"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Any data that is passed into the “cloud” in the above figure will be based on the ITS standards.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the ITS standards"
+      ],
+      "Design Domain": [
+        "the “cloud”"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Any data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the “cloud”",
+          "Any data"
+        ],
+        [
+          "the ITS standards",
+          "Any data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the information about each incident, including network identifier, incident description and roadway.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the information about each incident",
+        "network identifier",
+        "incident description",
+        "roadway"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "the information about each incident"
+        ],
+        [
+          "The Center",
+          "network identifier"
+        ],
+        [
+          "The Center",
+          "incident description"
+        ],
+        [
+          "The Center",
+          "roadway"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Parking Lot, including network identifier, parking lot identifier, parking lot name, location and status.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Parking Lot"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "parking lot identifier,",
+        "parking lot name",
+        "location",
+        "status"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Parking Lot",
+          "status information"
+        ],
+        [
+          "Parking Lot",
+          "network identifier"
+        ],
+        [
+          "Parking Lot",
+          "parking lot identifier,"
+        ],
+        [
+          "Parking Lot",
+          "parking lot name"
+        ],
+        [
+          "Parking Lot",
+          "location"
+        ],
+        [
+          "Parking Lot",
+          "status"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following information about network device status, including network identifier, number of DMSs, number of LCSs, DMS status data, LCS status data and CCTV status data.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information about network device status",
+        "network identifier",
+        "number of DMSs",
+        "number of LCSs",
+        "DMS status data",
+        "LCS status data",
+        "CCTV status data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "information about network device status"
+        ],
+        [
+          "The Center",
+          "network identifier"
+        ],
+        [
+          "The Center",
+          "number of DMSs"
+        ],
+        [
+          "The Center",
+          "number of LCSs"
+        ],
+        [
+          "The Center",
+          "DMS status data"
+        ],
+        [
+          "The Center",
+          "LCS status data"
+        ],
+        [
+          "The Center",
+          "CCTV status data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The device status requestor and Center shall support the following information for command timeframe request, including network identifier and device type.",
+    "entity": {
+      "Machine Domain": [
+        "Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The device status requestor"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information for command timeframe request",
+        "network identifier",
+        "device type"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The device status requestor",
+          "information for command timeframe request"
+        ],
+        [
+          "The device status requestor",
+          "network identifier"
+        ],
+        [
+          "The device status requestor",
+          "device type"
+        ],
+        [
+          "Center",
+          "information for command timeframe request"
+        ],
+        [
+          "Center",
+          "network identifier"
+        ],
+        [
+          "Center",
+          "device type"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "TCP/IP shall be used to transmit the DATEX/ASN data.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "TCP/IP"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the DATEX/ASN data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "TCP/IP",
+          "the DATEX/ASN data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The map shall display interstates and state highways on the graphical map.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "The map"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "interstates and state highways"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The map",
+          "interstates and state highways"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The basemap data shall be derived from the North Central Texas Council of Governments (NCTCOG) GeoData warehouse.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "GeoData warehouse"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "The basemap data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "GeoData warehouse",
+          "The basemap data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All current incidents shall be displayed in tabular format with the following information contained in the table.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The GUI shall allow a user to delete a previously entered incident.",
+    "entity": {
+      "Machine Domain": [
+        "The GUI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "delete a previously entered incident"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The GUI",
+          "delete a previously entered incident"
+        ],
+        [
+          "a user",
+          "delete a previously entered incident"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to select a School Zone from a list and provide the following information, including Target School Zone and Plan.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "a School Zone"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Target School Zone and Plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a School Zone"
+        ],
+        [
+          "the user",
+          "a School Zone"
+        ],
+        [
+          "an Center",
+          "Target School Zone and Plan"
+        ],
+        [
+          "the user",
+          "Target School Zone and Plan"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center shall be implemented in the C/C++ programming language.",
+    "entity": {
+      "Machine Domain": [
+        "The Center-to-Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  }
+]

@@ -1,0 +1,150 @@
+A patient monitoring program is required for the ICU in a hospital.
+Each patient is monitored by an analog device which meteasures factors such as pulse, temperature, blood pressure, and skin resistance.
+The program reads these factors on a periodic basis (specified for each patient) and stores the factors in a database.
+For each patient, safe ranges for each factor are also specified by medical staff.
+If a factor falls outside a patient's safe range, or if an analog device fails, the nurses' station is notified.
+A secure door is to be controlled by a computer that recognises facial features.
+The face of each successive person desiring admission is captured in a video stream, and the features are compared with entries in a database of the features of people who have been cleared for entry.
+Our customer is the visitor admissions manager of a private zoo.
+The zoo has bought a small turnstile system, consisting of a rotating barrier and a coin-accepting device, that can be connected to two ports of a small computer.
+Our job is to build the software to operate the turnstile system.
+The requirement is, essentially, in two parts.
+First, no visitor should be able to enter the zoo without having paid the entry price (which is two coins).
+Second, any visitor who has paid the two coins should be allowed to enter.
+A home heating system uses hot water radiators.
+Each room has a temperature sensor and control knob, an infra-red occupancy sensor, one or more radiators, and one on-off computer-controlled radiator valve.
+Water is heated by an oil-burning furnace.
+Oil admitted through a valve is blown into the combustion chamber and ignited.
+A pump circulates the water through the system.
+There is a control panel at which the controller can be commanded manually to turn the furnace on or off; the panel also provides a display that indicates the system state and any malfunction.
+The computer must regulate the behaviour of the system to maintain room temperatures as set on the control knobs.
+For economy, the temperature of an unoccupied room should be 5 degrees below the knob setting.
+The system should use information from the occupancy sensors to anticipate room use, starting to raise the temperature 30 minutes before occupancy is expected.
+A program is to be developed to display the configuration of currently installed components – BIOS, RAM and disk storage, peripheral devices, etc – in a PC.
+The program must also display the current assignment of IRQs and input-output ports.
+The program operates when the PC user enters a request at the keyboard.
+The user can select the information to be reported, and can terminate execution of the program.
+The repairers put one unit at each end of the one-way section, and connect it to a small com.
+Each unit has a Stop light and a Go light.
+The computer controls the lights by emitting Pulses and Guises, to which the units respond by turning the lights on and off.
+The regime for the lights repeats a fixed cycle of four phases.
+First, for 50 seconds, both units show Stop; then, for 120 seconds, one unit shows Stop and the other Go; then for 50 seconds both show Stop again; then for 120 seconds the unit that previously showed Go shows Stop, and the other shows Go.
+Then the cycle is repeated.
+A microchip computer is required to control a digital electronic speedometer and odometer in a car.
+One of the car's rear wheels generates pulses as it rotates.
+The computer can detect these pulses and must use them to set the current speed and total number of miles travelled in the two visible counters on the car fascia.
+The underlying registers of the counters are shared by the computer and the visible display.
+There is a control panel at which the furnace can be turned on or off manually; the panel also provides a display that indicates the system state and any malfunction.
+A patient-monitoring program is required for the intensive care unit (JCU) in a hospital.
+Each patient is monitored by an analogue device which measures factors such as pulse, tempera ture, blood pressure, and skin resistance.
+The program reads these factors on a periodic basis (specified for each patient) and stores the factors in a database.
+For each patient, safe ranges for each factor are also specified by medical staff.
+If a factor falls outside a patient's safe range, or if an analogue device fails, the nurses' station is notified.
+A system is needed to administer a lending library.
+Membership is required for borrowing books, but not for reading them on the library premises.
+Books may be ordered and can be obtained from associated libraries.
+Overdue books incur fines.
+Various management reports are required.
+Water is heated by an oil-burning furnace.
+Oil admitted through a valve is blown into the combustion chamber and ignited.
+A pump circulates the water through the system.
+A small sluice, with a rising and falling gate, is used in a simple irrigation system.
+A computer system is needed to control the sluice gate: the requirement is that the gate should be held in the fully open position for ten minutes in every three hours and otherwise kept in the fully closed position.
+The gate is opened and closed by rotating vertical screws.
+The screws are driven by a small motor, which can be controlled by clockwise, anticlockwise, on and off pulses.
+There are sensors at the top and bottom of the gate travel; at the top it's fully open, at the bottom it's fully shut.
+The connection to the computer consists of four pulse lines for motor control and two status lines for the gate sensors.
+A small sluice, with a rising and falling gate, is used in a simple irrigation system.
+A computer system is needed to raise and lower the sluice gate in response to the commands of an operator.
+The gate is opened and closed by rotating vertical screws.
+The screws are driven by a small motor, which can be controlled by clockwise, anticlockwise, on and off pulses.
+There are sensors at the top and bottom of the gate travel; at the top it's fully open, and at the bottom, it's fully shut.
+The connection to the computer consists of four pulse lines for motor control, two status lines for the gate sensors, and a status line for each class of operator command.
+The traffic in a narrow, one-way residential street is to be monitored.
+Four sensor tubes are positioned across the road in a pattern like adjacent equal signs '=='.
+When a car passes along the street, it crosses the sensors in the pattern '=†=': first its front wheels activate the two lower sensors, then they activate the two upper sensors, then its rear wheels activate the two lower sensors and finally its rear wheels activate the two upper sensors.
+A motorbike will activate only one lower sensor and one upper sensor.
+The sensors are connected to a computer equipped with a time-of-day clock.
+The report has a line for each passing vehicle, showing the date and time, and the vehicle type; it also has a cumulative total for each type, printed hourly.
+The vehicle types to be distinguished are motorbikes, cars and commercial delivery vehicles with three or more axles.
+Lucy and John need a system to keep track of the many parties they give and the many guests they invite to them.
+They want a simple editor to maintain the information, which they call their party plan.
+Essentially, the party plan is just a list of parties, a list of guests, and a note of who's invited to each party.
+The editor will accept command-line text input, in a very old-fashioned DOS or Unix style.
+To begin with, at least, we are not concerned with presenting or printing the information, just with creating and editing it.
+The report contains a line for each of his correspondents.
+The line shows the correspondent's name, how many days the report covers, the number of messages received from the correspondent and their maximum and average lengths, and the same information for the messages sent to the correspondent by Fred.
+A package router is a large mechanical device used by postal and delivery organisations to sort packages into bins according to their destinations.
+The packages carry bar-coded labels.
+They move along a conveyor to a reading station where their package ids and destinations are read.
+They then slide by gravity down pipes fitted with sensors at top and bottom.
+The pipes are connected by two-position switches that the computer can flip (when no package is present between the incoming and outgoing pipes).
+A package cannot overtake another either in a pipe or in a switch.
+Also, the pipes are bent near the sensors so that the sensors are guaranteed to detect each package separately.
+However, packages slide at unpredictable speeds and may get too close together to allow a switch to be set correctly.
+A misrouted package may be routed to any bin, an appropriate message being displayed.
+The problem is to build the controlling computer to obey the operator's commands, to route packages to their destination bins by setting the switches appropriately, and to report misrouted packages.
+An airport is equipped with a light monorail shuttle to move passengers from the gate area to the airport concourse.
+The shuttle moves on its own fixed track between the two areas.
+It is equipped with a bi-directional motor and a brake.
+The motor has an on/off state, a direction state, and five power levels; the brake has four braking levels.
+A sensor device detects the position of the shuttle on the track.
+The value of the sensor state is an integer in the range 0 - 9999.
+When the shuttle is at its rest position in the gate area, the sensor state value is 0; when it is at its rest position in the concourse area, the value is 9999; intermediate values represent positions equally spaced between the rest positions.
+The control computer has direct access to the position sensor state and can set the motor and brake states directly.
+It is required to control the shuttle by computer so that it moves continually backwards and forwards between the areas, stopping for 60 seconds in each area to allow passengers to embark and disembark.
+The journey should be as fast as possible, subject to certain limits on the speed, acceleration and deceleration.
+These limits are designed to give the passengers a comfortable ride and to avoid excessive wear on the motor and brakes.
+In a simple laboratory experiment electrical voltages are measured at 32 points in a circuit and communicated to a computer by analog-digital devices.
+The devices convert the voltages into register values that are directly accessible to the computer.
+The points are identified by integer values 1-32.
+The computer must maintain a display showing the 32 voltages as columns side by side on the screen.
+It must also display the average voltage over all the points, and, eventually, certain other information yet to be determined.
+The one-way traffic light system now needs a little display to show the Stop and Go states of the light units on a small panel that the road repairers can easily see.
+To avoid disturbing the existing design, it is decided to add the display to it as a separate module.
+The new module will share the RPulse and GPulse events of the existing system.
+The equipment company that manufactures the traffic light units has realised that its existing product is very inflexible.
+The regime of Stop and Go lights is preset in the factory.
+Sometimes this preset regime doesn't fit the road conditions very well.
+In a new design the manufacturers have incorporated a magnetic card reader.
+The regime is encoded on the card as a simple ASCII text.
+When the road repairers set up the lights they first select a card carrying the encoding of the desired regime and then insert it into the card reader.
+The computer reads the card and controls the lights accordingly.
+To change the regime only the card needs to be changed.
+The manufacturers supply a range of cards to suit any condition tolerably well and most conditions perfectly.
+As part of a small and simple compiler you need a program to perform lexical analysis on the input text.
+The lexical analyser must recognise tokens appearing in the input - integers, floating-point numbers, identifiers, comments and so on - and produce an output stream in which each token appears as a separate record with a field for the token type and a field for the token value.
+A patient-monitoring program is required for the intensive care unit in a hospital.
+Each patient is monitored by an analog device which measures factors such as pulse, temperature, blood pressure, and skin resistance.
+If an analogue device fails the nurses' station is notified.
+An alternative new version of the one-way traffic lights provides for a traffic overseer who can override the default regime of Stop and Go lights.
+The machine is equipped with two buttons marked 'Hold' and Change'.
+The overseer can extend the current phase of the light sequence by pressing the Hold button, or curtail it by pressing the Change button.
+An automatic lathe is a computer-controlled metal-working tool that makes metal parts by cutting or drilling, the parts being held in a rotating clamp during the process.
+We are to develop the lathe controller for using the lathe to make brass bushes from brass rod.
+A bush is a cylindrical part, made from a blank piece of metal that must be drilled, shaped to fit into a housing, and cut to length, all on the automatic lathe.
+The automatic lathe system needs to be much more flexible.
+The dimensions and shape of the bushes to be turned are described in a file held on floppy disk.
+This allows not only bushes of different sizes and proportions, but also such variations as flanged and stepped bushes.
+In addition, the system is to be applied to several different lathes in the factory, each with a slightly different set of commands.
+For example, the control screws by which the cutting tool holder is moved are of different pitches, so they need different amounts of rotation to produce the same tool movement.
+The properties of the particular lathe to be controlled are described in a second floppy disk file.
+The computer is equipped with two floppy disk readers.
+It is required to restrict the way library membership is acquired and exercised.
+The membership rules must be enforced, as they relate to the privileges and obligations of membership in terms of enrolling, resigning, paying fees, and similar matters.
+A stream editor is to be built to support simple editing operations on ASCII text files.
+The sequence of operations to be performed is given in a command file, each operation being a simple global find-and-replace; Find-and-delete operations can be specified as find-and-replace with an empty replacement string.
+The operations are to be performed in the order in which they appear in the command file.
+A tennis club has a new and very expensive indoor court.
+'Indoors' members pay a special extra subscription, and pay for lighting.
+An indoor game must include at least one indoors member.
+The lighting cost is billed to an 'indoors' member included in the game.
+'Indoors' members are issued with magnetic cards.
+The court entrance lock and the lighting control box can read these cards.
+To use the indoor court a member inserts the card into the lock and gains entry.
+Inside the court, the card is inserted into the lighting control box and the desired playing time is entered.
+The lights then come on and remain on for that length of time.
+A computer system is needed: to manage general and 'indoors' subscriptions; to operate the lights by managing the lighting control box and the court entrance lock; and to manage the billing and receipts for lighting.
+A university library has a rare original copy of William Tyndale's English translation of the Hebrew Pentateuch, published in 1530.
+A photographic facsimile has been made of the origi-nal, but the university's scholars want to be able to analyse the language of the main text, along with the frontispiece, the general prologue ('W.T.to the Reader'), the prologue to each of the five books, the marginal notes, the captions to the woodcut pictures, the pagination, and the division of each book into chapters.
+Since the available OCR equipment cannot handle the typography, every part of the text of the whole book must be communicated to the computer by keyboard.

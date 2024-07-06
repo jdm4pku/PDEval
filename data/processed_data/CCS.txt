@@ -1,0 +1,133 @@
+The primary goal of this document is to provide a complete and accurate list of requirements for the VLA Expansion Project Correlator Monitor and Control System.
+The primary audience of this document includes, but is not limited to, project leaders, the designers and developers of the EVLA Correlator Monitor and Control System and the end user.
+The document may also be of interest to VLA Expansion Project project scientists and engineers or as a reference for individuals involved in similar projects with similar requirements.
+The requirements contained in this document are numbered based on the section/subsection in which they appear.
+The Correlator Monitor and Control System provides the physical link between the WIDAR Correlator hardware and the VLA Expansion Project monitor and control system.
+It is the primary interface by which the correlator is configured, operated, and serviced.
+The Correlator Monitor and Control System shall receive configuration information from the VLA Expansion Project Monitor and Control System system and translate this info into a physical correlator hardware configuration.
+The Correlator Monitor and Control System shall process and transfer dynamic control data and monitor data.
+The Correlator Monitor and Control System shall monitor correlator and correlator subsystem health and take corrective action autonomously to recover from hardware and computing system faults.
+The Correlator Monitor and Control System shall perform limited amounts of real-time data processing and probing such as providing tools to collect and display auto correlation products.
+The Correlator Monitor and Control System shall allow for easy system access to aid testing and debugging.
+The remainder of this document contains a more detailed description of the Correlator Monitor and Control System as well as the primary requirements necessary to design and build the EVLA Correlator Monitor and Control System.
+The format of the document follows that outlined in the IEEE STD 830 document, IEEE The VLA Expansion Project Correlator Monitor and Control System is responsible for correlator configuration, real time monitor/control, and hardware testing/servicing.
+The Correlator Monitor and Control System exists as an integrated part of the overall VLA Expansion Project Monitor and Control Structure.
+The Correlator Monitor and Control System will provide a level of abstraction to modularize the correlator system within the VLA Expansion Project environment.
+The gateway to the correlator will be through the Virtual Correlator Interface which will exist as a software entity on the The Correlator Monitor and Control System will be designed and implemented as a Master/Slave network with one computer system coordinating the activities of a number of intelligent hardware control processors.
+The Master is expected to handle the bulk of the monitor or control interface with the outside world whereas the slaves will be only concerned with the correlator hardware systems under their direct control.
+This topology will place the real-time computing requirements in the slave layer and the quasi real-time, network-chaotic loads into the master layer.
+One of the primary benefits of this structure is isolation of the correlator hardware from the the EVLA Correlator Monitor and Control System is expected to be redundant in critical areas and highly modular.
+The Correlator monitor subsystem will provide VLA Expansion Project system wide access to all correlator system states including the Monitor and Control System supervisor system state.
+Some of this information will be provided on a time synchronous basis as required by other systems and other information will only be presented on a request basis.
+The Correlator Monitor and Control System will be a fully observable system with the only limits placed on information access being those imposed by hardware, bandwidth, and/or security restrictions.
+Error and status messages will be provided in a concise time/location referenced format to upper system levels in a content controllable manner.
+Correlator configurations and control instructions will be received from the VLA Expansion Project Monitor and Control System system in a form suitable for translation by the Master Correlator Control Computer.
+The translation will provide the correlator with specific goal oriented hardware configuration tables to satisfy the configuration requested by the A second interface with a human GUI will also allow for configuration of the correlator hardware, preferably through the same table structures used above.
+This translation interface will be called the Virtual Correlator Interface.
+Specific data sets required by the Backend Data Processing System will be provided in a timely and robust fashion over a secondary virtual network.
+Ancillary monitor data including system health, error messages and configuration echoes will be spooled such that temporary loss of network communication with the VLA Expansion Project Monitor and Control System network will not result in loss of monitor data.
+Data sample rates and contents will be fully controllable via either the VLA Expansion Project Monitor and Control System or the Backend processing controller.
+The Master Correlator Control Computer will accept external data feeds for models, time standards, fiber-link phase corrections and other required data to be packaged with control data delivered to the correlator hardware.
+The ability to attempt recovery from failure or hot-swapped hardware devices will be built into this system.
+Should a CMIB subsystem fail and not respond to reboot requests or other self-heal attempts, an alert notice will be issued so appropriate personnel can affect a hardware repair.
+The CMIB subsystem will then be automatically restarted and configured back into the current operational environment.
+It is intended that both primary and secondary Master Correlator Control Computer systems maintain full Correlator Monitor and Control System state information such that any hard failure in the primary node can be corrected by simply rerouting Monitor and Control System communications to the secondary.
+Watchdog processes and the Master Correlator Control Computer will likewise monitor Correlator Power Control Computer health.
+Due to the more hardware specific connections and controls of the Correlator Power Control Computer, actions taken by external system upon hard failures are TBD.
+All use of the Correlator Monitor and Control System will be through the VCI or Master Correlator Control Computer.
+Software tools will be provided to assist the user at all access levels from system wide configuration and control to a low level CMIB command line instruction.
+The primary contact with array operations will be via status and error messages channeled through the Monitor and Control System.
+The ability of the Correlator System to achieve and maintain high reliability and uptime will be vitally dependent upon reliable operation and rapid diagnosis and repair of faults in the hardware and software systems.
+These individuals will be responsible for performing corrective and preventive maintenance along with periodic performance tests and upgrades.
+Engineers and technicians will need tools to inspect and monitor individual CMIB layer devices from remote locations and have the ability to fault trace to a specific hot-swappable subsystem.
+These individuals are responsible for developing the software and will interact with the EVLA Correlator Monitor and Control System to ensure that it is functioning properly.
+The software developer requires remote access to the EVLA Correlator Monitor and Control System so that troubleshooting can be accomplished away from the the VLA Expansion Project and during non-working hours.
+A few authorized individuals may be allowed access to parts of the EVLA Correlator Monitor and Control System that are usually considered restricted.
+The Correlator Monitor and Control is a critical component in the Astronomical data path.
+If it is unavailable, incoming astronomical data will be lost.
+The ultimate determiner of a reliable and available correlator is dependent on the stability of the Functionality needs to be modularized to provide the easiest means of fault detection and repair.
+The ultimate ease of use and flexibility of the correlator is rooted in the Correlator Monitor and Control System software.
+Full access is required with a high level of data integration to provide the user with a logical and coherent interface.
+It is assumed that the Correlator will receive configuration data in a format that is unambiguous and results in a convergent hardware configuration.
+It is assumed that all auxiliary data needed for real time update of correlator parameters will be provided directly by the VLA Expansion Project Monitor and Control System system or by dedicated servers.
+It is assumed that the backend data processing and VLA Expansion Project Monitor and Control System systems will be capable of accepting output data rates generated by the Correlator Monitor and Control System.
+The interface between the CMIB, Master Correlator Control Computer, and Correlator Power Control Computer shall be Ethernet of 100 Mbits/sec or better data rate.
+The interface shall be transformer coupled copper twisted pair unless other materials are required for noise, ground isolation, or physical layout constraints.
+Network switches shall be employed to distribute traffic within a correlator rack and where their use will significantly reduce overall network wiring complexity.
+The Master Correlator Control Computer-CMIB, Master Correlator Control Computer-Correlator Power Control Computer, and Master Correlator Control Computer-VLA Expansion Project Monitor and Control System networks shall be on separate physical interfaces.
+There shall be a redundant communication path between the Master Correlator Control Computer and Correlator Power Control Computer to provide for remote reboot in the event of a networking or computing failure.
+The interface between the Master Correlator Control Computer and external networks shall be Ethernet of 100 Pathways penetrating the correlator shielded room shall be fiber optic or other low RFI material to meet RFI specifications.
+Network routers/switches shall be employed at the Master Correlator Control Computer-VLA Expansion Project Monitor and Control System interface level to protect the Master Correlator Control Computer from unauthorized access and irrelevant network traffic.
+The CMIB daughter board shall communicate with the correlator carrier boards via either the PCI or ISA busses.
+Alternative communication paths may be through a serial or parallel connection as required.
+The CMIB shall be capable of reading a 16-bit identifier from the host correlator board.
+This identifier will be used to form a unique IP address for CMIB network addressing and allow carry over IP addressing for hot swap modules.
+The CMIB shall be able to read back the contents of all writeable hardware control registers where meaningful.
+It is desired that the state of the correlator hardware be available through interrogation across the CMIB bus for monitoring and fault tolerance.
+The CMIB shall have control of hardware warm boots such that an external command from the Master Correlator Control Computer to reboot the CMIB shall have an option to force a hardware warm boot.
+The carrier board for the CMIB shall have an externally visible indicator that will provide a user with a physical indication of CMIB operational status.
+Where applicable, all computers and peripherals shall be powered though UPS type devices with sufficient capacity for the computers to safely coordinate a system wide shutdown of the correlator hardware in the event of a prolonged power outage.
+The UPS devices need the ability to signal the Correlator Monitor and Control System when a power outage has occurred and keep the Correlator Monitor and Control System apprised of time remaining on backup power.
+All computers within the Correlator Monitor and Control System system shall have the ability for authorized users to directly access individual systems for maintenance and monitoring through remote logins.
+Each computer system in the Correlator Monitor and Control System shall have a hardware based watchdog timer configured to reboot the EVLA Correlator Monitor and Control System in the case of a system hang.
+Reboots should result in minimal system interruptions with the offending CPU reconfiguring and returning to service autonomously.
+The CMIB shall conform to both electrical and physical The CMIB shall contain 64 Mbytes or greater of SDRAM, IDE hard disk interface, minimum of one serial and one parallel interface, PCI/ISA buses, 100BaseT network interface, capacity to boot and run a generic COTS operating system in a near real-time environment from local non-volatile storage.
+The operating system/module combination shall be capable of supporting the real-time requirements of the correlator hardware, hardware monitor/control/diagnostics with support for standalone test bench operation with simulated control data generation, and the ability to access and upgrade correlator hardware The Master Correlator Control Computer shall be a high availability type general- purpose computer capable of supporting multiple Ethernet interfaces, COTS operating systems, and support server/host services for the CMIB operating system.
+This computer may exist as a hot swappable or redundant CPU device capable of self-healing where possible.
+The Master Correlator Control Computer shall have all required disk and file system facilities installed locally such that the EVLA Correlator Monitor and Control System can boot and run in a stand-alone configuration.
+This should allow the correlator CMIBs to boot, configure, and run without any communication outside of the correlator Monitor and Control System network.
+The Correlator Power Control Computer shall be a high availability type general purpose computer capable of supporting a COTS operating system and have the ability to accept a large number of external hardware status signals either directly or through external interface hardware.
+This computer may exist as a hot swappable or redundant CPU device capable of self-healing where possible.
+The Correlator Power Control Computer shall have all required disk and file system facilities installed locally such that the EVLA Correlator Monitor and Control System can boot and run in a stand-alone configuration.
+This requirement is to allow correlator power monitoring and control to continue in the event of an Monitor and Control System network failure.
+The Correlator Monitor and Control System processors shall be capable of meeting all data processing deadlines and anticipated future requirements The Correlator Monitor and Control System processors shall be capable of responding to correlator hardware inputs in a deterministic fashion with sufficient performance to avoid data loss, corruption or overflows.
+All lower system error and debug messages shall be present at the Master Correlator Control Computer layer.
+Aside from a networking or CPU failure, it should never be necessary to directly access a CPU to display error messages.
+All system error and debug messages shall be categorized in a logical fashion such that message traffic can be filtered as to content, detail, and message rate.
+Personnel interested in error messages should be able to easily filter the error message stream.
+All messages passed between Correlator Monitor and Control System system layers shall have both UTC and wall clock time stamp information appropriate for the message type.
+Error messages will be stamped with their discovery time, control messages will be stamped with their generation time.
+Other message internal time stamps can be used as monitor/control parameters as deemed necessary.
+Software shall be provided that allows an authorized user full access to all messaging, monitor, and control traffic.
+This software will provide full system access for testing, debugging, and control while the correlator is off line or under the control of the VLA Expansion Project Monitor and Control System system.
+A Graphical User Interface shall be provided as an interface to the Correlator Monitor and Control System test software that allows for a convenient and configurable tool to access the Correlator Monitor and Control System remotely through the VCI.
+The Correlator Monitor and Control System shall be self-monitoring.
+It will be capable of detecting, reporting on and automatically taking action to remedy or lessen the impact of the following types of abnormal conditions: processor hardware failure, operating system hangs or crashes, temperature or voltage deviations, computational performance below minimum specifications, computational error rates above maximum specification, internal communications failures.
+The software part of the EVLA Correlator Monitor and Control System shall be able to perform without total system restart due to internal failure between system maintenance windows.
+The hardware part of the EVLA Correlator Monitor and Control System shall be able to perform indefinitely without complete loss of service, except in the event of total failure of primary and backup power.
+The EVLA Correlator Monitor and Control System shall be able to continue processing of all correlator configuration/control events until the queues of parameters are exhausted and external communications are restored.
+The EVLA Correlator Monitor and Control System shall be able to sit at idle and resume operations with minimal delay.
+All system processing and interconnect hardware shall be readily accessible for maintenance, repair, replacement and reconfiguration.
+This excludes items that due to their physical location, are not practical to configure for ready access.
+All systems and application source code shall be available to or on the EVLA Correlator Monitor and Control Systems that execute it.
+All software application modules shall be debuggable.
+They should be organized such that all inputs and outputs can be simulated if necessary.
+All software processes shall be killable, restartable, debuggable and testable with minimal impact on normal system operations.
+Software tools and pre-built applications that do not have source code available shall come with a complete diagnostic package and customer support.
+Operating system software shall either have source code available or come with sufficient diagnostics and customer support.
+I/O, communications, and processing hardware shall be easily expandable, reconfigurable, augmentable and replaceable to meet increasing data traffic and processing demands imposed by VLA Expansion Project science, Correlator changes, and availability of new hardware.
+Transparency shall be accomplished in manner that is transparent to processing, communications and I/O software functions with the possible exception of recompilation of executables.
+Seamlessness shall be accomplished in a manner that is seamless, in that it does not affect hardware modules or software functionality that it meets at interfaces.
+The Correlator Monitor and Control System needs a robust security mechanism in place so that unauthorized users are not allowed access.
+Authorized users are expected to be restricted to software and hardware development, testing, maintenance and operations personnel.
+All users of the Correlator Monitor and Control System must be uniquely identified.
+This could be done via a username and associated password scheme that would authenticate and authorize the user access to the EVLA Correlator Monitor and Control System and, if applicable, grant the user access to restricted or controlled parts of the EVLA Correlator Monitor and Control System.
+If a user cannot be identified, they will not be given access.
+In order to monitor all past access to the EVLA Correlator Monitor and Control System, all attempts to access the EVLA Correlator Monitor and Control System should be logged.
+Users’ needs and expectations from the EVLA Correlator Monitor and Control System will be different.
+Systems operations should be given unrestricted access to all aspects of the EVLA Correlator Monitor and Control System and should have the authority to grant and revoke privileges on a per-user basis.
+Development, testing and maintenance personnel, on the other hand, require access to some parts of the EVLA Correlator Monitor and Control System, but not all, indicating that an access level is needed that allows privileges to be granted on a per-user and what-do-you-need-to-do basis.
+All users of the EVLA Correlator Monitor and Control System shall login using some form of unique identification.
+All login attempts shall be done in a secure manner.
+A system administrator shall have unrestricted access to all aspects of the EVLA Correlator Monitor and Control System.
+Each user shall have a set of system access properties that defines the user’s privileges within the EVLA Correlator Monitor and Control System.
+The administrator shall have the ability to create and add a new user to the EVLA Correlator Monitor and Control System.
+The administrator shall have the ability to remove a user from the EVLA Correlator Monitor and Control System.
+The administrator shall have the ability to edit a user’s system access properties.
+The administrator shall have the ability to block all access to the EVLA Correlator Monitor and Control System for all users or selectively by user.
+The EVLA Correlator Monitor and Control System shall continue operations, although not Description necessarily at full capacity, on all unaffected resources during partial shutdowns for maintenance, repair and/or upgrade.
+Replaceability modular design principles shall be employed to the maximum extent possible.
+Maximal practical use of available hot swappable devices and components shall be made.
+Complete and comprehensible hardware systems specifications and configuration information shall be readily available.
+Software system and application code shall be well documented and written in a generally familiar language or languages.
+Software shall be written in a style that is easily readable and using practices that allow for minimal confusion.

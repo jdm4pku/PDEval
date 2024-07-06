@@ -1,0 +1,123 @@
+This document specifies the requirements for the development of a “Smart House”, called DigitalHome (DH), by the DigitalHomeOwner Division of HomeOwner Inc.
+A “Smart House” is a home management system that allows home residents to easily manage their daily lives by providing for a lifestyle that brings together security, environmental and energy management (temperature, humidity and lighting), entertainment, and communications.
+The Smart House components consist of household devices (e.g., a heating and air conditioning unit, a security system, and small appliances and lighting units, etc.), sensors and controllers for the devices, communication links between the components, and a computer system, which will manage the components.
+The DigitalHome Software Requirements Specification (SRS) is based on the DigitalHome Customer Need Statement.
+It is made up of a list of the principal features of the system.
+This initial version of DigitalHome will be a limited prototype version, which will be used by HomeOwner management to make business decisions about the future commercial development of DigitalHomeOwner products and services.
+Hence, the SRS is not intended as a comprehensive or complete specification of DigitalHome requirements.
+There is a supplementary document that provides additional detail and information about the DigitalHome requirements: the Digital Home Use Case Model.
+These document were prepared by the DigitalHomeOwner Division, in consultation with the Marketing Division of HomeOwner Inc.
+The Digital Home system, for the purposes of this document, is a system that will allow a home user to manage devices that control the environment of a home.
+The user communicates through a personal web page on the DigitalHome web server or on a local home server.
+The DigitalHome web server communicates, through a home wireless gateway device, with the sensor and controller devices in the home.
+The product is based on the Digital Home High Level Requirements Definition.
+The Digital Home High Level Requirements Definition is intended as a prototype, which will allow business decisions to be made about future development of a commercial product.
+The scope of the project will be limited to the management of devices which control temperature, humidity, security, and power to small appliances and lighting units, through the use of a web-ready device.
+The prototype DigitalHome software system will be situated in a simulated environment.
+There will be no actual physical home and all sensors and controllers will be simulated.
+The general user shall be able to use the DigitalHome system capabilities to monitor and control the environment in his/her home.
+The general user is familiar with the layout of his/her home and the location of sensor and control devices (for temperature, for humidity, and for power to small appliances and lighting units).
+Although the general user is not familiar with the technical features of the DigitalHome system, he/she is familiar with the use of a web interface and can perform simple web operations (logging in and logging out, browsing web pages, and submitting information and requests via a web interface).
+A Master user will be designated, who shall be able to change the configuration of the system.
+For example, a Master User shall be able to add a user account or change the default parameter settings.
+He/she will have the same right as the DigitalHome Technician.
+A DigitalHome Technician is responsible for setting up and maintaining the configuration of a DigitalHome system.
+A DigitalHome Technician has experience with the type of hardware, software, and web services associated with a system like the DigitalHome system.
+A DigitalHome Technician is specially trained by DigitalHomeOwner to be familiar with the functionality, architecture, and operation of the DigitalHome system product.
+A DigitalHome Technician will have rights beyond the DigitalHome General User, capable of setting up and making changes in the configuration of the system (e.g.,setting system parameters and establishing user accounts), and starting and stopping operation of the DigitalHome System.
+The “prototype” version of the DigitalHome System (as specified in this document) must be completed within twelve months of inception.
+The development team will consist of five engineers.
+DigitalHomeOwner Director will provide management and communication support.
+The development team will use the development process specified by the Digital HomeOwner Inc.
+Where possible, the DigitalHome project will employ widely used, accepted, and available hardware and software technology and standards, both for product elements and for development tools.
+Because of potential market competition for DigitalHome products, the cost of DigitalHome elements (sensors, controllers, server, tools, etc.), for this project should be minimized.
+As part of the final project report the development team will describe their efforts to minimize costs, including price comparisons between DigitalHome elements and comparable/competitive elements.
+The DigitalHome system will be tested in a simulated environment.
+There will be no actual physical home and all sensors and controllers will be simulated.
+However, the simulated environment will be realistic and adhere to the physical properties and constraints of an actual home and to real sensors and controllers.
+Major changes to this document (e.g., changes in requirements) must be approved by the Director of the DigitalHomeOwner Division.
+Although the system to be developed is a “proof of concept” system intended to help Homeowner Inc.
+To make marketing and development decisions, the following sections describe operational environment concerns and constraints.
+Some of them are related to issues of long-term production and marketing of a DigitalHome product.
+The home system shall require an Internet Service Provider (ISP).
+The Internet Service Provider should be widely available (cable modem, high speed DSL), such as Bright House or Bellsouth FastAccess.
+A DigitalHome System shall have the capability to establish an individual home web server hosted on a home computer.
+The home web server will provide interaction with and control of the DigitalHome elements.
+The home web server will provide storage of DigitalHome plans and data.
+The home web server will provide ability to establish and maintain DigitalHome User Accounts.
+The home web server will provide backup service for user account information, user plans and a home database.
+The DigitalHome Gateway device shall provide communication with all the DigitalHome devices and shall connect with a broadband Internet connection.
+The Gateway shall contain an RF Module, which shall send and receive wireless communications between the Gateway and the other DigitalHome devices (sensors and controllers).
+The Gateway device shall operate up to a 1000-foot range for indoor transmission.
+The system shall include digital programmable thermostats, which shall be used to monitor and regulate the temperature of an enclosed space.
+The thermostat shall provide a reading of the current temperature in the space where the thermostat is located.
+The controller part of thermostat shall provides a “set point” temperature that is used to control the flow of heat energy (by switching heating or cooling devices on or off as needed) to achieve the set point temperature.
+The sensor part of the thermostat has a sensitivity range between 14ºF and 104ºF (-10ºC and 40ºC).
+The system shall include digital programmable humidistats, which shall be used to monitor and regulate the humidity of an enclosed space.
+The humidistat shall provide a reading of the current humidity in the space where the humidistat is located.
+The humidistat shall provide a “set point” humidity that is used to control humidifiers and dehumidifiers achieve the set point humidity.
+The system shall include magnetic alarm contact switches which shall be used to monitor entry through a door or window when the switch is active.
+The system shall include security sound and light alarms, which can be activated when DigitalHome senses a security breach from a magnetic contact.
+The system shall include digital programmable power switches which shall be used to monitor the current state of an appliance (e.g., a coffee maker is off or on).
+The system shall be able to use a power switch to change the state of the appliance (e.g., from “off” to “on”).
+This section provides a description of the functional requirements.
+There is a DigitalHome Use Case Model in the Appendix, which provides an overview of the system functionality and shows the relationships between the DigitalHome System entities.
+The DigitalHome System shall allow a web-ready computer, cell phone or PDA to control a home's temperature, humidity, lights, security, and the state of small appliances.
+The communication center of the DigitalHome system shall be a DigitalHome home web server, through which a user shall be able to monitor and control home devices and systems.
+Each DigitalHome shall contain a master control device (the DigitalHome Gateway Device) that connects to the home’s broadband Internet connection, and uses wireless communication to send and receive communication between the DigitalHome system and the home devices and systems.
+The DigitalHome shall be equipped with various environmental controllers and sensors (temperature controller-sensors: thermostats, humidity controller-sensors: humidistats, contact sensors, security sound and light alarms, and power switches).
+Using wireless communication, sensor values can be read and saved in the home database.
+Controller values can be sent to controllers to change the DigitalHome environment.
+The DigitalHome programmable thermostat shall allow a user to monitor and control a home’s temperature from any location, using a web ready computer, cell phone, or PDA.
+A DigitalHome user shall be able to read the temperature at a thermostat position.
+A DigitalHome user shall be able to set the thermostat temperatures to between 60 °F and 80 °F, inclusive, at one degree increments.
+Up to eight thermostats shall be placed in rooms throughout the home.
+The thermostats may be controlled individually or collectively, so that temperature can be controlled at different levels in different home spaces.
+A single thermostat shall be placed in an enclosed space (e.g., a room in the house) for which the air temperature is to be controlled.
+For each thermostat, up to twenty-four one hour settings per day for every day of the week can be scheduled.
+If a thermostat device allows a user to make a manual temperature setting, the setting shall remain in effect until the end of the planned or default time period, at which time the planned or default setting will be used for the next time period.
+A thermostat unit shall communicate, through wireless signals, with the master control unit.
+The system shall support Fahrenheit and Celsius temperature values.
+The system shall be compatible with a centralized HVAC (Heating, Ventilation and Air Conditioning) systems: gas, oil, electricity, solar, or a combination of two or more.
+The system shall adhere to the standards, policies and procedures of the American Society of Heating, Refrigerating and Air-Conditioning Engineers [ASHRAE 2010].
+The DigitalHome programmable humidistat shall allow a user to monitor and control a home’s humidity from any location, using a web ready computer, cell phone, or PDA.
+A DigitalHome user shall be able to read the humidity at a humidistat position.
+A DigitalHome user shall be able to set the humidity level for a humidistat, from 30% to 60%, inclusive a 1% increments.
+Up to eight humidistats shall be placed in rooms throughout the home.
+A single humidistat shall be placed in an enclosed space (e.g., a room in the house) for which the humidity is to be controlled.
+If a humdistat device allows a user to make a manual temperature setting, the setting shall remain in effect until the end of the planned or default time period, at which time the planned or default setting will be used for the next time period.
+For each humidistat, up to twenty-four one hour settings per day for every day of the week can be scheduled.
+A DigitalHome system shall use wireless signals to communicate, through the master control unit, with the humidistats.
+The DigitalHome security system consists of contact sensors and a set security alarms.
+A DigitalHome system shall be able to manage up to fifty door and window contact sensors.
+A DigitalHome system shall be able to activate both light and sound alarms: one sound alarm and one light alarm subsystem, with multiple lights.
+When a security breach occurs and a contact sensor is set OPEN, the alarm system shall be activated.
+The DigitalHome programmable Appliance Manager shall provide for management of a home’s small appliances, including lighting units, by allowing a user to turn them on or off as desired.
+The Appliance Manager shall be able to manage up to one hundred 115 volt, 10 amp power switches.
+The system shall be able to provide information about the state of a power switch (OFF or ON), indicating the whether an appliance connected to the power switch is OFF or ON.
+The system shall be able to change the state of a power switch (OFF to ON, or ON to OFF), in turn changing the state of an appliance connected to the power switch.
+If a user changes the state of power switch device manually, the device shall remain in that state until the end of the planned or default time period, at which time the planned or default setting will be used for the next time period.
+DigitalHome Planner shall provide a user with the capability to direct the system to set various preset home parameters (temperature, humidity, security contacts, and on/off appliance/light status) for certain time periods.
+For a given month and year, a user shall be able to create or modify a month plan that specifies for each day, for up to four daily time periods, the environmental parameter settings (temperature, humidity, contact sensors and power switches).
+A user shall be able to override planned parameter values, through the DigitalHome website, or if available, through manual switches on household devices For a given month and year, in the past two years, DigitalHome shall be able to provide a report on the management and control of the home.
+The month report shall contain daily average, maximum (with time) and minimum (with time) values of temperature and humidity for each thermostat and humidistat, respectively.
+The month report shall provide the day and time for which any security breaches occurred, that is, when the security alarms were activated.
+The month report shall provide a section that indicates the periods of time when the DigitalHome System was not in operation.
+Displays of environmental conditions (temperature, humidity, contact sensors and power switches) shall be updated at least every two seconds.
+Sensor (temperature, humidity, contact sensor, power state) shall have a minimum data acquisition rate of 10 Hz.
+An environmental sensor or controller device shall have to be within 1000 feet of the master control device, in order to be in communication with the system.
+The DigitalHome System must be highly reliable with no more than 1 failure per 10,000 hours of operation.
+The Digital Home System shall incorporate backup and recovery mechanisms.
+The DigitalHome System will backup all system data (configuration, default parameter settings, planning, and usage data) on a daily basis, with the backup time set by the DigitalHome Technician at system set up.
+If the DigitalHome System fails (due to power loss, loss of internet access, or other software or hardware failure), the system recovery mechanism shall restore system data (configuration, default parameter settings, planning, and usage data) from the most recent backup.
+All DigitalHome operations shall incorporate exception handling so that the system responds to a user with a clear, descriptive message when an error or an exceptional condition occurs.
+Although there are no specific safety requirements, high system reliability is important to insure there are no system failures in carrying out user requests.
+Such failures might affect the safety of home dwellers (e.g., security breaches, inadequate lighting in dark spaces, inappropriate temperature and humidity for people who are in ill-health, or powering certain appliances when young children are present).
+Upon installation, a DigitalHome user account shall be established.
+The DigitalHome web system shall provide for authentication and information encryption through a recognized reliable and effective security technology, such as Transport Layer Security.
+Log in to an account shall require entry of an account name and a password.
+The development of the DigitalHome system shall use methods and techniques such as the following to support system maintenance.
+Although the product produced under this document will be a “prototype” version, all modules and components of this prototype version shall be designed and implemented in such a manner that it may be incorporated in a fully specified commercial version of the DigitalHome System.
+All system documents (Software Requirements Specification, Architectural Design Specification, Module Detailed Design, Module Source Code, and all Test Plans) shall be up-to-date, use the Homeowner document format [HO2305] and reside in the HomeOwner Document Archive at completion of the project.
+HomeOwner has designated object-oriented development, using UML 2.0, as the preferred method for development of software for HomeOwner products.
+Exceptions to this rule must be approved by the CIO.

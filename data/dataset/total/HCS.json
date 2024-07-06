@@ -1,0 +1,3912 @@
+[
+  {
+    "text": "This document specifies the requirements for the development of a “Smart House”, called DigitalHome (DH), by the DigitalHomeOwner Division of HomeOwner Inc.",
+    "entity": {
+      "Machine Domain": [
+        "Smart House"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A “Smart House” is a home management system that allows home residents to easily manage their daily lives by providing for a lifestyle that brings together security, environmental and energy management (temperature, humidity and lighting), entertainment, and communications.",
+    "entity": {
+      "Machine Domain": [
+        "a home management system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "home residents"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to easily manage their daily lives"
+      ],
+      "Shared Phenomena": [
+        "a lifestyle"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a home management system",
+          "a lifestyle"
+        ],
+        [
+          "home residents",
+          "a lifestyle"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "home residents",
+          "to easily manage their daily lives"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Smart House components consist of household devices (e.g., a heating and air conditioning unit, a security system, and small appliances and lighting units, etc.), sensors and controllers for the devices, communication links between the components, and a computer system, which will manage the components.",
+    "entity": {
+      "Machine Domain": [
+        "The Smart House"
+      ],
+      "Physical Device": [
+        "a heating and air conditioning unit",
+        "lighting units",
+        "sensors",
+        "controllers"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "a security system",
+        "small appliances",
+        "a computer system"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "communication links"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Smart House",
+          "a heating and air conditioning unit"
+        ],
+        [
+          "The Smart House",
+          "a security system"
+        ],
+        [
+          "The Smart House",
+          "small appliances"
+        ],
+        [
+          "The Smart House",
+          "lighting units"
+        ],
+        [
+          "The Smart House",
+          "sensors"
+        ],
+        [
+          "The Smart House",
+          "controllers"
+        ],
+        [
+          "The Smart House",
+          "a computer system"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome Software Requirements Specification (SRS) is based on the DigitalHome Customer Need Statement.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "It is made up of a list of the principal features of the system.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This initial version of DigitalHome will be a limited prototype version, which will be used by HomeOwner management to make business decisions about the future commercial development of DigitalHomeOwner products and services.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "HomeOwner"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "DigitalHome",
+          "HomeOwner"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Hence, the SRS is not intended as a comprehensive or complete specification of DigitalHome requirements.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "There is a supplementary document that provides additional detail and information about the DigitalHome requirements: the Digital Home Use Case Model.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "These document were prepared by the DigitalHomeOwner Division, in consultation with the Marketing Division of HomeOwner Inc.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "HomeOwner"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Digital Home system, for the purposes of this document, is a system that will allow a home user to manage devices that control the environment of a home.",
+    "entity": {
+      "Machine Domain": [
+        "The Digital Home system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a home user ",
+        "a home"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "manage devices",
+        "control the environment of a home"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Digital Home system",
+          "a home user "
+        ],
+        [
+          "The Digital Home system",
+          "a home"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "a home user ",
+          "manage devices"
+        ],
+        [
+          "a home user ",
+          "control the environment of a home"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The user communicates through a personal web page on the DigitalHome web server or on a local home server.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The user"
+      ],
+      "Design Domain": [
+        "a local home server",
+        "the DigitalHome web server"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a personal web page"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The user",
+          "a personal web page"
+        ],
+        [
+          "the DigitalHome web server",
+          "a personal web page"
+        ],
+        [
+          "a local home server",
+          "a personal web page"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome web server communicates, through a home wireless gateway device, with the sensor and controller devices in the home.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "a home wireless gateway device",
+        "the sensor",
+        "controller devices"
+      ],
+      "Environment Entity": [
+        "the home"
+      ],
+      "Design Domain": [
+        "The DigitalHome web server"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The DigitalHome web server",
+          "a home wireless gateway device"
+        ],
+        [
+          "a home wireless gateway device",
+          "the sensor"
+        ],
+        [
+          "a home wireless gateway device",
+          "controller devices"
+        ],
+        [
+          "the sensor",
+          "the home"
+        ],
+        [
+          "controller devices",
+          "the home"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The product is based on the Digital Home High Level Requirements Definition.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Digital Home High Level Requirements Definition is intended as a prototype, which will allow business decisions to be made about future development of a commercial product.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The scope of the project will be limited to the management of devices which control temperature, humidity, security, and power to small appliances and lighting units, through the use of a web-ready device.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "a web-ready device",
+        "lighting units"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "control temperature, humidity, security, and power to small appliances and lighting units,"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "a web-ready device",
+          "control temperature, humidity, security, and power to small appliances and lighting units,"
+        ],
+        [
+          "lighting units",
+          "control temperature, humidity, security, and power to small appliances and lighting units,"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The prototype DigitalHome software system will be situated in a simulated environment.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome software system "
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "There will be no actual physical home and all sensors and controllers will be simulated.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "controllers",
+        "sensors"
+      ],
+      "Environment Entity": [
+        "physical home"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "physical home",
+          "sensors"
+        ],
+        [
+          "physical home",
+          "controllers"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The general user shall be able to use the DigitalHome system capabilities to monitor and control the environment in his/her home.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The general user",
+        "home"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "monitor and control the environment"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "DigitalHome system",
+          "The general user"
+        ],
+        [
+          "DigitalHome system",
+          "home"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The general user",
+          "monitor and control the environment"
+        ],
+        [
+          "home",
+          "monitor and control the environment"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The general user is familiar with the layout of his/her home and the location of sensor and control devices (for temperature, for humidity, and for power to small appliances and lighting units).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "sensor",
+        "control devices",
+        " lighting units"
+      ],
+      "Environment Entity": [
+        "The general user",
+        "home"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The general user",
+          "home"
+        ],
+        [
+          "The general user",
+          "sensor"
+        ],
+        [
+          "The general user",
+          "control devices"
+        ],
+        [
+          "The general user",
+          " lighting units"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Although the general user is not familiar with the technical features of the DigitalHome system, he/she is familiar with the use of a web interface and can perform simple web operations (logging in and logging out, browsing web pages, and submitting information and requests via a web interface).",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the general user"
+      ],
+      "Design Domain": [
+        "a web interface"
+      ],
+      "Requirements": [
+        "perform simple web operations"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "DigitalHome system",
+          "a web interface"
+        ],
+        [
+          "a web interface",
+          "the general user"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the general user",
+          "perform simple web operations"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A Master user will be designated, who shall be able to change the configuration of the system.",
+    "entity": {
+      "Machine Domain": [
+        "the system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "A Master user"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "change the configuration"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the system",
+          "A Master user"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "change the configuration",
+          "A Master user"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "For example, a Master User shall be able to add a user account or change the default parameter settings.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a Master User"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "add a user account",
+        "change the default parameter settings"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "a Master User",
+          "add a user account"
+        ],
+        [
+          "a Master User",
+          "change the default parameter settings"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "He/she will have the same right as the DigitalHome Technician.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "DigitalHome Technician."
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DigitalHome Technician is responsible for setting up and maintaining the configuration of a DigitalHome system.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "A DigitalHome Technician"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "setting up and maintaining the configuration"
+      ],
+      "Shared Phenomena": [
+        "the configuration"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "DigitalHome system",
+          "the configuration"
+        ],
+        [
+          "A DigitalHome Technician",
+          "the configuration"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "A DigitalHome Technician",
+          "setting up and maintaining the configuration"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DigitalHome Technician has experience with the type of hardware, software, and web services associated with a system like the DigitalHome system.",
+    "entity": {
+      "Machine Domain": [
+        "the DigitalHome system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "A DigitalHome Technician"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the DigitalHome system",
+          "A DigitalHome Technician"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DigitalHome Technician is specially trained by DigitalHomeOwner to be familiar with the functionality, architecture, and operation of the DigitalHome system product.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "A DigitalHome Technician"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "DigitalHome system",
+          "A DigitalHome Technician"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DigitalHome Technician will have rights beyond the DigitalHome General User, capable of setting up and making changes in the configuration of the system (e.g.,setting system parameters and establishing user accounts), and starting and stopping operation of the DigitalHome System.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome System",
+        "DigitalHome System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "A DigitalHome Technician",
+        "the DigitalHome General User"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "setting up and making changes in the configuration ",
+        "starting and stopping operation"
+      ],
+      "Shared Phenomena": [
+        "the configuration"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "A DigitalHome Technician",
+          "the configuration"
+        ],
+        [
+          "DigitalHome System",
+          "the configuration"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "A DigitalHome Technician",
+          "setting up and making changes in the configuration "
+        ],
+        [
+          "A DigitalHome Technician",
+          "starting and stopping operation"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The “prototype” version of the DigitalHome System (as specified in this document) must be completed within twelve months of inception.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The development team will consist of five engineers.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "DigitalHomeOwner Director will provide management and communication support.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "DigitalHomeOwner Director"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "management and communication support"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "DigitalHomeOwner Director",
+          "management and communication support"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The development team will use the development process specified by the Digital HomeOwner Inc.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The development team",
+        "the Digital HomeOwner Inc"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the development process"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The development team",
+          "the development process"
+        ],
+        [
+          "the Digital HomeOwner Inc",
+          "the development process"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Where possible, the DigitalHome project will employ widely used, accepted, and available hardware and software technology and standards, both for product elements and for development tools.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Because of potential market competition for DigitalHome products, the cost of DigitalHome elements (sensors, controllers, server, tools, etc.), for this project should be minimized.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome products"
+      ],
+      "Physical Device": [
+        "sensors",
+        "controllers",
+        "server",
+        "tools"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "DigitalHome products",
+          "sensors"
+        ],
+        [
+          "DigitalHome products",
+          "controllers"
+        ],
+        [
+          "DigitalHome products",
+          "server"
+        ],
+        [
+          "DigitalHome products",
+          "tools"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "As part of the final project report the development team will describe their efforts to minimize costs, including price comparisons between DigitalHome elements and comparable/competitive elements.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome system will be tested in a simulated environment.",
+    "entity": {
+      "Machine Domain": [
+        "The DigitalHome system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "There will be no actual physical home and all sensors and controllers will be simulated.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "sensors",
+        "controllers"
+      ],
+      "Environment Entity": [
+        "physical home"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "physical home",
+          "sensors"
+        ],
+        [
+          "physical home",
+          "controllers"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "However, the simulated environment will be realistic and adhere to the physical properties and constraints of an actual home and to real sensors and controllers.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "sensors ",
+        "controllers"
+      ],
+      "Environment Entity": [
+        "an actual home"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "an actual home",
+          "sensors "
+        ],
+        [
+          "an actual home",
+          "controllers"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Major changes to this document (e.g., changes in requirements) must be approved by the Director of the DigitalHomeOwner Division.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Director of the DigitalHomeOwner Division"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Although the system to be developed is a “proof of concept” system intended to help Homeowner Inc.",
+    "entity": {
+      "Machine Domain": [
+        "the system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "help Homeowner Inc"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [
+        [
+          "the system",
+          "help Homeowner Inc"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To make marketing and development decisions, the following sections describe operational environment concerns and constraints.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Some of them are related to issues of long-term production and marketing of a DigitalHome product.",
+    "entity": {
+      "Machine Domain": [
+        "a DigitalHome product"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The home system shall require an Internet Service Provider (ISP).",
+    "entity": {
+      "Machine Domain": [
+        "The home system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "an Internet Service Provider (ISP)"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The home system",
+          "an Internet Service Provider (ISP)"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Internet Service Provider should be widely available (cable modem, high speed DSL), such as Bright House or Bellsouth FastAccess.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "cable modem",
+        "high speed DSL"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "The Internet Service Provider"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Internet Service Provider",
+          "cable modem"
+        ],
+        [
+          "The Internet Service Provider",
+          "high speed DSL"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DigitalHome System shall have the capability to establish an individual home web server hosted on a home computer.",
+    "entity": {
+      "Machine Domain": [
+        "A DigitalHome System"
+      ],
+      "Physical Device": [
+        "a home computer"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "an individual home web server"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "A DigitalHome System",
+          "an individual home web server"
+        ],
+        [
+          "a home computer",
+          "an individual home web server"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The home web server will provide interaction with and control of the DigitalHome elements.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "DigitalHome elements."
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "The home web server "
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The home web server ",
+          "DigitalHome elements."
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The home web server will provide storage of DigitalHome plans and data.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "The home web server "
+      ],
+      "Requirements": [
+        "provide storage"
+      ],
+      "Shared Phenomena": [
+        "DigitalHome plans and data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The home web server ",
+          "DigitalHome plans and data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The home web server ",
+          "provide storage"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The home web server will provide ability to establish and maintain DigitalHome User Accounts.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "The home web server"
+      ],
+      "Requirements": [
+        "establish and maintain DigitalHome User Accounts"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The home web server",
+          "establish and maintain DigitalHome User Accounts"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The home web server will provide backup service for user account information, user plans and a home database.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "The home web server",
+        "a home database"
+      ],
+      "Requirements": [
+        "provide backup service"
+      ],
+      "Shared Phenomena": [
+        "user account information",
+        "user plans"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The home web server",
+          "user account information"
+        ],
+        [
+          "The home web server",
+          "user plans"
+        ],
+        [
+          "The home web server",
+          "a home database"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "provide backup service",
+          "a home database"
+        ]
+      ],
+      "requirements constraints": [
+        [
+          "provide backup service",
+          "user account information"
+        ],
+        [
+          "provide backup service",
+          "user plans"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The DigitalHome Gateway device shall provide communication with all the DigitalHome devices and shall connect with a broadband Internet connection.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The DigitalHome Gateway device",
+        "DigitalHome devices"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "a broadband Internet connection"
+      ],
+      "Requirements": [
+        "provide communication"
+      ],
+      "Shared Phenomena": [
+        "communication"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The DigitalHome Gateway device",
+          "communication"
+        ],
+        [
+          "DigitalHome devices",
+          "communication"
+        ],
+        [
+          "The DigitalHome Gateway device",
+          "a broadband Internet connection"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The DigitalHome Gateway device",
+          "provide communication"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The Gateway shall contain an RF Module, which shall send and receive wireless communications between the Gateway and the other DigitalHome devices (sensors and controllers).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The Gateway ",
+        " Gateway ",
+        "an RF Module",
+        "sensors",
+        "controllers"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "wireless communications"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Gateway ",
+          "an RF Module"
+        ],
+        [
+          "an RF Module",
+          "wireless communications"
+        ],
+        [
+          " Gateway ",
+          "wireless communications"
+        ],
+        [
+          "sensors",
+          "wireless communications"
+        ],
+        [
+          "controllers",
+          "wireless communications"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Gateway device shall operate up to a 1000-foot range for indoor transmission.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The Gateway device"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The system shall include digital programmable thermostats, which shall be used to monitor and regulate the temperature of an enclosed space.",
+    "entity": {
+      "Machine Domain": [
+        "The system"
+      ],
+      "Physical Device": [
+        "digital programmable thermostats"
+      ],
+      "Environment Entity": [
+        "an enclosed space"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "monitor and regulate the temperature of an enclosed space"
+      ],
+      "Shared Phenomena": [
+        "the temperature"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The system",
+          "digital programmable thermostats"
+        ],
+        [
+          "digital programmable thermostats",
+          "the temperature"
+        ],
+        [
+          "an enclosed space",
+          "the temperature"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "digital programmable thermostats",
+          "monitor and regulate the temperature of an enclosed space"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The thermostat shall provide a reading of the current temperature in the space where the thermostat is located.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The thermostat"
+      ],
+      "Environment Entity": [
+        "the space"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "provide a reading of the current temperature in the space"
+      ],
+      "Shared Phenomena": [
+        "the current temperature"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The thermostat",
+          "the current temperature"
+        ],
+        [
+          "the space",
+          "the current temperature"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The thermostat",
+          "provide a reading of the current temperature in the space"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The controller part of thermostat shall provides a “set point” temperature that is used to control the flow of heat energy (by switching heating or cooling devices on or off as needed) to achieve the set point temperature.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The controller part of thermostat"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to control the flow of heat energy",
+        "to achieve the set point temperature"
+      ],
+      "Shared Phenomena": [
+        "a “set point” temperature"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The controller part of thermostat",
+          "a “set point” temperature"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The controller part of thermostat",
+          "to control the flow of heat energy"
+        ],
+        [
+          "The controller part of thermostat",
+          "to achieve the set point temperature"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The sensor part of the thermostat has a sensitivity range between 14ºF and 104ºF (-10ºC and 40ºC).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The sensor part of the thermostat"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a sensitivity range"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The sensor part of the thermostat",
+          "a sensitivity range"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The system shall include digital programmable humidistats, which shall be used to monitor and regulate the humidity of an enclosed space.",
+    "entity": {
+      "Machine Domain": [
+        "The system"
+      ],
+      "Physical Device": [
+        "digital programmable humidistats"
+      ],
+      "Environment Entity": [
+        "an enclosed space"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "monitor and regulate the humidity of an enclosed space"
+      ],
+      "Shared Phenomena": [
+        "the humidity"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The system",
+          "digital programmable humidistats"
+        ],
+        [
+          "digital programmable humidistats",
+          "the humidity"
+        ],
+        [
+          "an enclosed space",
+          "the humidity"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "digital programmable humidistats",
+          "monitor and regulate the humidity of an enclosed space"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The humidistat shall provide a reading of the current humidity in the space where the humidistat is located.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The humidistat ",
+        "the humidistat"
+      ],
+      "Environment Entity": [
+        "the space"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the current humidity"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The humidistat ",
+          "the current humidity"
+        ],
+        [
+          "the space",
+          "the current humidity"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The humidistat shall provide a “set point” humidity that is used to control humidifiers and dehumidifiers achieve the set point humidity.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The humidistat",
+        "dehumidifiers",
+        "humidifiers"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "achieve the set point humidity"
+      ],
+      "Shared Phenomena": [
+        "a “set point” humidity"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The humidistat",
+          "a “set point” humidity"
+        ],
+        [
+          "humidifiers",
+          "a “set point” humidity"
+        ],
+        [
+          "dehumidifiers",
+          "a “set point” humidity"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "humidifiers",
+          "achieve the set point humidity"
+        ],
+        [
+          "dehumidifiers",
+          "achieve the set point humidity"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The system shall include magnetic alarm contact switches which shall be used to monitor entry through a door or window when the switch is active.",
+    "entity": {
+      "Machine Domain": [
+        "The system"
+      ],
+      "Physical Device": [
+        "magnetic alarm contact switches",
+        " switch"
+      ],
+      "Environment Entity": [
+        " a door",
+        "window"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "entry"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The system",
+          "magnetic alarm contact switches"
+        ],
+        [
+          "magnetic alarm contact switches",
+          "entry"
+        ],
+        [
+          " a door",
+          "entry"
+        ],
+        [
+          "window",
+          "entry"
+        ],
+        [
+          "magnetic alarm contact switches",
+          " switch"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The system shall include security sound and light alarms, which can be activated when DigitalHome senses a security breach from a magnetic contact.",
+    "entity": {
+      "Machine Domain": [
+        "The system",
+        "DigitalHome"
+      ],
+      "Physical Device": [
+        "security sound and light alarms",
+        "a magnetic contact"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a security breach"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The system",
+          "security sound and light alarms"
+        ],
+        [
+          "DigitalHome",
+          "a security breach"
+        ],
+        [
+          "a magnetic contact",
+          "a security breach"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The system shall include digital programmable power switches which shall be used to monitor the current state of an appliance (e.g., a coffee maker is off or on).",
+    "entity": {
+      "Machine Domain": [
+        "The system"
+      ],
+      "Physical Device": [
+        "digital programmable power switches",
+        "coffee maker"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to monitor the current state of an appliance"
+      ],
+      "Shared Phenomena": [
+        "the current state of an appliance"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The system",
+          "digital programmable power switches"
+        ],
+        [
+          "digital programmable power switches",
+          "the current state of an appliance"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "digital programmable power switches",
+          "to monitor the current state of an appliance"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The system shall be able to use a power switch to change the state of the appliance (e.g., from “off” to “on”).",
+    "entity": {
+      "Machine Domain": [
+        "The system"
+      ],
+      "Physical Device": [
+        "a power switch"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "change the state of the appliance"
+      ],
+      "Shared Phenomena": [
+        "the state of the appliance"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The system",
+          "a power switch"
+        ],
+        [
+          "a power switch",
+          "the state of the appliance"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "a power switch",
+          "change the state of the appliance"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "This section provides a description of the functional requirements.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "There is a DigitalHome Use Case Model in the Appendix, which provides an overview of the system functionality and shows the relationships between the DigitalHome System entities.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome System shall allow a web-ready computer, cell phone or PDA to control a home's temperature, humidity, lights, security, and the state of small appliances.",
+    "entity": {
+      "Machine Domain": [
+        "The DigitalHome System"
+      ],
+      "Physical Device": [
+        "a web-ready computer",
+        "cell phone",
+        "PDA"
+      ],
+      "Environment Entity": [
+        "a home"
+      ],
+      "Design Domain": [
+        "small appliances"
+      ],
+      "Requirements": [
+        "to control a home"
+      ],
+      "Shared Phenomena": [
+        "temperature",
+        "humidity",
+        "lights",
+        "security",
+        "the state"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The DigitalHome System",
+          "a web-ready computer"
+        ],
+        [
+          "The DigitalHome System",
+          "cell phone"
+        ],
+        [
+          "The DigitalHome System",
+          "PDA"
+        ],
+        [
+          "a web-ready computer",
+          "temperature"
+        ],
+        [
+          "a web-ready computer",
+          "humidity"
+        ],
+        [
+          "a web-ready computer",
+          "lights"
+        ],
+        [
+          "a web-ready computer",
+          "security"
+        ],
+        [
+          "a web-ready computer",
+          "the state"
+        ],
+        [
+          "a home",
+          "temperature"
+        ],
+        [
+          "a home",
+          "humidity"
+        ],
+        [
+          "a home",
+          "lights"
+        ],
+        [
+          "small appliances",
+          "the state"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "a web-ready computer",
+          "to control a home"
+        ],
+        [
+          "cell phone",
+          "to control a home"
+        ],
+        [
+          "PDA",
+          "to control a home"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The communication center of the DigitalHome system shall be a DigitalHome home web server, through which a user shall be able to monitor and control home devices and systems.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome system"
+      ],
+      "Physical Device": [
+        "home devices"
+      ],
+      "Environment Entity": [
+        "a user "
+      ],
+      "Design Domain": [
+        " systems",
+        "a DigitalHome home web server"
+      ],
+      "Requirements": [
+        "monitor and control home devices and systems"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "DigitalHome system",
+          "a DigitalHome home web server"
+        ],
+        [
+          "a DigitalHome home web server",
+          "a user "
+        ],
+        [
+          "a user ",
+          "home devices"
+        ],
+        [
+          "a user ",
+          " systems"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "a user ",
+          "monitor and control home devices and systems"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Each DigitalHome shall contain a master control device (the DigitalHome Gateway Device) that connects to the home’s broadband Internet connection, and uses wireless communication to send and receive communication between the DigitalHome system and the home devices and systems.",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome",
+        "the DigitalHome system"
+      ],
+      "Physical Device": [
+        "the home’s broadband Internet connection",
+        "a master control device",
+        "the home devices"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "send and receive communication"
+      ],
+      "Shared Phenomena": [
+        "wireless communication"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "DigitalHome",
+          "a master control device"
+        ],
+        [
+          "a master control device",
+          "the home’s broadband Internet connection"
+        ],
+        [
+          "a master control device",
+          "wireless communication"
+        ],
+        [
+          "the DigitalHome system",
+          "wireless communication"
+        ],
+        [
+          "the home devices",
+          "wireless communication"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "a master control device",
+          "send and receive communication"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome shall be equipped with various environmental controllers and sensors (temperature controller-sensors: thermostats, humidity controller-sensors: humidistats, contact sensors, security sound and light alarms, and power switches).",
+    "entity": {
+      "Machine Domain": [
+        "DigitalHome"
+      ],
+      "Physical Device": [
+        " environmental controllers",
+        "thermostats",
+        "humidistats",
+        "contact sensors",
+        "security sound",
+        "light alarms",
+        "power switches"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "DigitalHome",
+          " environmental controllers"
+        ],
+        [
+          "DigitalHome",
+          "thermostats"
+        ],
+        [
+          "DigitalHome",
+          "humidistats"
+        ],
+        [
+          "DigitalHome",
+          "contact sensors"
+        ],
+        [
+          "DigitalHome",
+          "security sound"
+        ],
+        [
+          "DigitalHome",
+          "light alarms"
+        ],
+        [
+          "DigitalHome",
+          "power switches"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Using wireless communication, sensor values can be read and saved in the home database.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "sensor"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the home database"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "wireless communication",
+        "values"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "sensor",
+          "values"
+        ],
+        [
+          "the home database",
+          "values"
+        ],
+        [
+          "sensor",
+          "wireless communication"
+        ],
+        [
+          "the home database",
+          "wireless communication"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Controller values can be sent to controllers to change the DigitalHome environment.",
+    "entity": {
+      "Machine Domain": [
+        "the DigitalHome"
+      ],
+      "Physical Device": [
+        "controllers"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "to change the DigitalHome environment"
+      ],
+      "Shared Phenomena": [
+        "Controller values"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the DigitalHome",
+          "Controller values"
+        ],
+        [
+          "controllers",
+          "Controller values"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "controllers",
+          "to change the DigitalHome environment"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The DigitalHome programmable thermostat shall allow a user to monitor and control a home’s temperature from any location, using a web ready computer, cell phone, or PDA.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "cell phone",
+        "PDA",
+        "The DigitalHome programmable thermostat",
+        "a web ready computer"
+      ],
+      "Environment Entity": [
+        "a user",
+        "a home"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to monitor and control a home’s temperature"
+      ],
+      "Shared Phenomena": [
+        " temperature "
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a user",
+          "The DigitalHome programmable thermostat"
+        ],
+        [
+          "The DigitalHome programmable thermostat",
+          " temperature "
+        ],
+        [
+          "a home",
+          " temperature "
+        ],
+        [
+          "a web ready computer",
+          "a user"
+        ],
+        [
+          "cell phone",
+          "a user"
+        ],
+        [
+          "PDA",
+          "a user"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "a user",
+          "to monitor and control a home’s temperature"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DigitalHome user shall be able to read the temperature at a thermostat position.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "a thermostat"
+      ],
+      "Environment Entity": [
+        "A DigitalHome user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the temperature"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "A DigitalHome user",
+          "the temperature"
+        ],
+        [
+          "a thermostat",
+          "the temperature"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DigitalHome user shall be able to set the thermostat temperatures to between 60 °F and 80 °F, inclusive, at one degree increments.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "the thermostat"
+      ],
+      "Environment Entity": [
+        "A DigitalHome user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "temperatures "
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "A DigitalHome user",
+          "temperatures "
+        ],
+        [
+          "the thermostat",
+          "temperatures "
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Up to eight thermostats shall be placed in rooms throughout the home.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "thermostats"
+      ],
+      "Environment Entity": [
+        "rooms",
+        "home"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "thermostats",
+          "rooms"
+        ],
+        [
+          "thermostats",
+          "home"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The thermostats may be controlled individually or collectively, so that temperature can be controlled at different levels in different home spaces.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The thermostats"
+      ],
+      "Environment Entity": [
+        "home spaces"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "temperature"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The thermostats",
+          "temperature"
+        ],
+        [
+          "home spaces",
+          "temperature"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A single thermostat shall be placed in an enclosed space (e.g., a room in the house) for which the air temperature is to be controlled.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "thermostat "
+      ],
+      "Environment Entity": [
+        "an enclosed space "
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "the air temperature is to be controlled"
+      ],
+      "Shared Phenomena": [
+        "the air temperature"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "thermostat ",
+          "the air temperature"
+        ],
+        [
+          "an enclosed space ",
+          "the air temperature"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "thermostat ",
+          "the air temperature is to be controlled"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "For each thermostat, up to twenty-four one hour settings per day for every day of the week can be scheduled.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "thermostat"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If a thermostat device allows a user to make a manual temperature setting, the setting shall remain in effect until the end of the planned or default time period, at which time the planned or default setting will be used for the next time period.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "thermostat device"
+      ],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "make a manual temperature setting"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "thermostat device",
+          "a user"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "a user",
+          "make a manual temperature setting"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "A thermostat unit shall communicate, through wireless signals, with the master control unit.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "A thermostat unit",
+        "the master control unit"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "wireless signals"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "A thermostat unit",
+          "wireless signals"
+        ],
+        [
+          "the master control unit",
+          "wireless signals"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The system shall support Fahrenheit and Celsius temperature values.",
+    "entity": {
+      "Machine Domain": [
+        "The system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The system shall be compatible with a centralized HVAC (Heating, Ventilation and Air Conditioning) systems: gas, oil, electricity, solar, or a combination of two or more.",
+    "entity": {
+      "Machine Domain": [
+        "The system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "a centralized HVAC (Heating, Ventilation and Air Conditioning) systems"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The system",
+          "a centralized HVAC (Heating, Ventilation and Air Conditioning) systems"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The system shall adhere to the standards, policies and procedures of the American Society of Heating, Refrigerating and Air-Conditioning Engineers [ASHRAE 2010].",
+    "entity": {
+      "Machine Domain": [
+        "The system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome programmable humidistat shall allow a user to monitor and control a home’s humidity from any location, using a web ready computer, cell phone, or PDA.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "web ready computer",
+        "cell phone",
+        "PDA",
+        "The DigitalHome programmable humidistat"
+      ],
+      "Environment Entity": [
+        "a user",
+        "a home"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to monitor and control a home"
+      ],
+      "Shared Phenomena": [
+        "humidity"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a user",
+          "The DigitalHome programmable humidistat"
+        ],
+        [
+          "The DigitalHome programmable humidistat",
+          "humidity"
+        ],
+        [
+          "a home",
+          "humidity"
+        ],
+        [
+          "a user",
+          "web ready computer"
+        ],
+        [
+          "a user",
+          "cell phone"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "a user",
+          "to monitor and control a home"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "A DigitalHome user shall be able to read the humidity at a humidistat position.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "a humidistat"
+      ],
+      "Environment Entity": [
+        "A DigitalHome user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the humidity"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "A DigitalHome user",
+          "the humidity"
+        ],
+        [
+          "a humidistat",
+          "the humidity"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DigitalHome user shall be able to set the humidity level for a humidistat, from 30% to 60%, inclusive a 1% increments.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "a humidistat"
+      ],
+      "Environment Entity": [
+        "A DigitalHome user "
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the humidity level"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "A DigitalHome user ",
+          "the humidity level"
+        ],
+        [
+          "a humidistat",
+          "the humidity level"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Up to eight humidistats shall be placed in rooms throughout the home.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "humidistats"
+      ],
+      "Environment Entity": [
+        "rooms ",
+        "home"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "humidistats",
+          "rooms "
+        ],
+        [
+          "humidistats",
+          "home"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A single humidistat shall be placed in an enclosed space (e.g., a room in the house) for which the humidity is to be controlled.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "A single humidistat"
+      ],
+      "Environment Entity": [
+        "a room"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the humidity"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "A single humidistat",
+          "the humidity"
+        ],
+        [
+          "a room",
+          "the humidity"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If a humdistat device allows a user to make a manual temperature setting, the setting shall remain in effect until the end of the planned or default time period, at which time the planned or default setting will be used for the next time period.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "a humdistat device"
+      ],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a manual temperature setting"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a user",
+          "a manual temperature setting"
+        ],
+        [
+          "a humdistat device",
+          "a manual temperature setting"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "For each humidistat, up to twenty-four one hour settings per day for every day of the week can be scheduled.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "humidistat"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DigitalHome system shall use wireless signals to communicate, through the master control unit, with the humidistats.",
+    "entity": {
+      "Machine Domain": [
+        "A DigitalHome system"
+      ],
+      "Physical Device": [
+        "the master control unit",
+        "the humidistats"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "wireless signals"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "A DigitalHome system",
+          "wireless signals"
+        ],
+        [
+          "the master control unit",
+          "wireless signals"
+        ],
+        [
+          "the humidistats",
+          "wireless signals"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome security system consists of contact sensors and a set security alarms.",
+    "entity": {
+      "Machine Domain": [
+        "The DigitalHome security system"
+      ],
+      "Physical Device": [
+        "contact sensors",
+        "security alarms"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The DigitalHome security system",
+          "contact sensors"
+        ],
+        [
+          "The DigitalHome security system",
+          "security alarms"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DigitalHome system shall be able to manage up to fifty door and window contact sensors.",
+    "entity": {
+      "Machine Domain": [
+        "A DigitalHome system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "window contact sensors"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "A DigitalHome system",
+          "window contact sensors"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DigitalHome system shall be able to activate both light and sound alarms: one sound alarm and one light alarm subsystem, with multiple lights.",
+    "entity": {
+      "Machine Domain": [
+        "A DigitalHome system"
+      ],
+      "Physical Device": [
+        "light and sound alarms",
+        "sound alarm"
+      ],
+      "Environment Entity": [
+        "lights"
+      ],
+      "Design Domain": [
+        "light alarm subsystem"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "A DigitalHome system",
+          "light and sound alarms"
+        ],
+        [
+          "A DigitalHome system",
+          "sound alarm"
+        ],
+        [
+          "A DigitalHome system",
+          "light alarm subsystem"
+        ],
+        [
+          "light alarm subsystem",
+          "lights"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "When a security breach occurs and a contact sensor is set OPEN, the alarm system shall be activated.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "a security breach",
+        "a contact sensor"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the alarm system"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "OPEN"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a security breach",
+          "OPEN"
+        ],
+        [
+          "a contact sensor",
+          "OPEN"
+        ],
+        [
+          "the alarm system",
+          "OPEN"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome programmable Appliance Manager shall provide for management of a home’s small appliances, including lighting units, by allowing a user to turn them on or off as desired.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "lighting units"
+      ],
+      "Environment Entity": [
+        "The DigitalHome programmable Appliance Manager",
+        "a home’s small appliances",
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "provide for management"
+      ],
+      "Shared Phenomena": [
+        "on or off"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The DigitalHome programmable Appliance Manager",
+          "a home’s small appliances"
+        ],
+        [
+          "a user",
+          "on or off"
+        ],
+        [
+          "lighting units",
+          "on or off"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "a home’s small appliances",
+          "provide for management"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Appliance Manager shall be able to manage up to one hundred 115 volt, 10 amp power switches.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "power switches"
+      ],
+      "Environment Entity": [
+        "The Appliance Manager"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Appliance Manager",
+          "power switches"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The system shall be able to provide information about the state of a power switch (OFF or ON), indicating the whether an appliance connected to the power switch is OFF or ON.",
+    "entity": {
+      "Machine Domain": [
+        "The system"
+      ],
+      "Physical Device": [
+        "a power switch",
+        "the power switch"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information about the state"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The system",
+          "information about the state"
+        ],
+        [
+          "a power switch",
+          "information about the state"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The system shall be able to change the state of a power switch (OFF to ON, or ON to OFF), in turn changing the state of an appliance connected to the power switch.",
+    "entity": {
+      "Machine Domain": [
+        "The system"
+      ],
+      "Physical Device": [
+        "a power switch",
+        "the power switch"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [
+        "an appliance"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the state",
+        "the state"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The system",
+          "the state"
+        ],
+        [
+          "a power switch",
+          "the state"
+        ],
+        [
+          "an appliance",
+          "the state"
+        ],
+        [
+          "the power switch",
+          "the state"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If a user changes the state of power switch device manually, the device shall remain in that state until the end of the planned or default time period, at which time the planned or default setting will be used for the next time period.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "power switch device"
+      ],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the state"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a user",
+          "the state"
+        ],
+        [
+          "power switch device",
+          "the state"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "DigitalHome Planner shall provide a user with the capability to direct the system to set various preset home parameters (temperature, humidity, security contacts, and on/off appliance/light status) for certain time periods.",
+    "entity": {
+      "Machine Domain": [
+        "the system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "DigitalHome Planner",
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "temperature",
+        "humidity",
+        "security contacts",
+        "on/off appliance/light status",
+        "home parameters"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "DigitalHome Planner",
+          "a user"
+        ],
+        [
+          "a user",
+          "home parameters"
+        ],
+        [
+          "a user",
+          "temperature"
+        ],
+        [
+          "a user",
+          "humidity"
+        ],
+        [
+          "a user",
+          "security contacts"
+        ],
+        [
+          "a user",
+          "on/off appliance/light status"
+        ],
+        [
+          "the system",
+          "home parameters"
+        ],
+        [
+          "the system",
+          "temperature"
+        ],
+        [
+          "the system",
+          "humidity"
+        ],
+        [
+          "the system",
+          "security contacts"
+        ],
+        [
+          "the system",
+          "on/off appliance/light status"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "For a given month and year, a user shall be able to create or modify a month plan that specifies for each day, for up to four daily time periods, the environmental parameter settings (temperature, humidity, contact sensors and power switches).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "contact sensors ",
+        "power switches"
+      ],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "environmental parameter settings",
+        "temperature",
+        "humidity",
+        "a month plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "a user",
+          "a month plan"
+        ],
+        [
+          "a user",
+          "environmental parameter settings"
+        ],
+        [
+          "a user",
+          "temperature"
+        ],
+        [
+          "a user",
+          "humidity"
+        ],
+        [
+          "a user",
+          "contact sensors "
+        ],
+        [
+          "a user",
+          "power switches"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A user shall be able to override planned parameter values, through the DigitalHome website, or if available, through manual switches on household devices ",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "switches ",
+        "household devices"
+      ],
+      "Environment Entity": [
+        "A user"
+      ],
+      "Design Domain": [
+        "the DigitalHome website"
+      ],
+      "Requirements": [
+        "override planned parameter values,"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "A user",
+          "switches "
+        ],
+        [
+          "A user",
+          "household devices"
+        ],
+        [
+          "the DigitalHome website",
+          "switches "
+        ],
+        [
+          "the DigitalHome website",
+          "household devices"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "switches ",
+          "override planned parameter values,"
+        ],
+        [
+          "household devices",
+          "override planned parameter values,"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "For a given month and year, in the past two years, DigitalHome shall be able to provide a report on the management and control of the home.",
+    "entity": {
+      "Machine Domain": [
+        " DigitalHome"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the home"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a report"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          " DigitalHome",
+          "a report"
+        ],
+        [
+          "the home",
+          "a report"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The month report shall contain daily average, maximum (with time) and minimum (with time) values of temperature and humidity for each thermostat and humidistat, respectively.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "thermostat",
+        "humidistat"
+      ],
+      "Environment Entity": [
+        "The month report"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "temperature",
+        "humidity"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The month report",
+          "temperature"
+        ],
+        [
+          "The month report",
+          "humidity"
+        ],
+        [
+          "thermostat",
+          "temperature"
+        ],
+        [
+          "humidistat",
+          "humidity"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The month report shall provide the day and time for which any security breaches occurred, that is, when the security alarms were activated.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "security alarms",
+        "security breaches"
+      ],
+      "Environment Entity": [
+        "The month report"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the day and time"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "security alarms",
+          "The month report"
+        ],
+        [
+          "The month report",
+          "the day and time"
+        ],
+        [
+          "security breaches",
+          "the day and time"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The month report shall provide a section that indicates the periods of time when the DigitalHome System was not in operation.",
+    "entity": {
+      "Machine Domain": [
+        "the DigitalHome System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The month report"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the periods of time"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the DigitalHome System",
+          "the periods of time"
+        ],
+        [
+          "The month report",
+          "the periods of time"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Displays of environmental conditions (temperature, humidity, contact sensors and power switches) shall be updated at least every two seconds.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "contact sensors",
+        "power switches"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Displays of environmental conditions",
+        "temperature",
+        "humidity"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Sensor (temperature, humidity, contact sensor, power state) shall have a minimum data acquisition rate of 10 Hz.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "Sensor"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "An environmental sensor or controller device shall have to be within 1000 feet of the master control device, in order to be in communication with the system.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "controller device",
+        "An environmental sensor"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome System must be highly reliable with no more than 1 failure per 10,000 hours of operation.",
+    "entity": {
+      "Machine Domain": [
+        "The DigitalHome System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Digital Home System shall incorporate backup and recovery mechanisms.",
+    "entity": {
+      "Machine Domain": [
+        "The Digital Home System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome System will backup all system data (configuration, default parameter settings, planning, and usage data) on a daily basis, with the backup time set by the DigitalHome Technician at system set up.",
+    "entity": {
+      "Machine Domain": [
+        "The DigitalHome System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the DigitalHome Technician"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "system data",
+        "configuration",
+        "default parameter settings",
+        "planning",
+        "usage data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The DigitalHome System",
+          "system data"
+        ],
+        [
+          "The DigitalHome System",
+          "configuration"
+        ],
+        [
+          "The DigitalHome System",
+          "default parameter settings"
+        ],
+        [
+          "The DigitalHome System",
+          "planning"
+        ],
+        [
+          "The DigitalHome System",
+          "usage data"
+        ],
+        [
+          "the DigitalHome Technician",
+          "system data"
+        ],
+        [
+          "the DigitalHome Technician",
+          "configuration"
+        ],
+        [
+          "the DigitalHome Technician",
+          "default parameter settings"
+        ],
+        [
+          "the DigitalHome Technician",
+          "planning"
+        ],
+        [
+          "the DigitalHome Technician",
+          "usage data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "If the DigitalHome System fails (due to power loss, loss of internet access, or other software or hardware failure), the system recovery mechanism shall restore system data (configuration, default parameter settings, planning, and usage data) from the most recent backup.",
+    "entity": {
+      "Machine Domain": [
+        "the DigitalHome System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the system recovery mechanism"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "system data",
+        "configuration",
+        "default parameter settings",
+        "planning",
+        "usage data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the DigitalHome System",
+          "system data"
+        ],
+        [
+          "the DigitalHome System",
+          "configuration"
+        ],
+        [
+          "the DigitalHome System",
+          "default parameter settings"
+        ],
+        [
+          "the DigitalHome System",
+          "planning"
+        ],
+        [
+          "the DigitalHome System",
+          "usage data"
+        ],
+        [
+          "the system recovery mechanism",
+          "system data"
+        ],
+        [
+          "the system recovery mechanism",
+          "configuration"
+        ],
+        [
+          "the system recovery mechanism",
+          "default parameter settings"
+        ],
+        [
+          "the system recovery mechanism",
+          "planning"
+        ],
+        [
+          "the system recovery mechanism",
+          "usage data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All DigitalHome operations shall incorporate exception handling so that the system responds to a user with a clear, descriptive message when an error or an exceptional condition occurs.",
+    "entity": {
+      "Machine Domain": [
+        "the system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "message"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the system",
+          "message"
+        ],
+        [
+          "a user",
+          "message"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Although there are no specific safety requirements, high system reliability is important to insure there are no system failures in carrying out user requests.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Such failures might affect the safety of home dwellers (e.g., security breaches, inadequate lighting in dark spaces, inappropriate temperature and humidity for people who are in ill-health, or powering certain appliances when young children are present).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "home dwellers",
+        "young children"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Upon installation, a DigitalHome user account shall be established.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a DigitalHome user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The DigitalHome web system shall provide for authentication and information encryption through a recognized reliable and effective security technology, such as Transport Layer Security.",
+    "entity": {
+      "Machine Domain": [
+        "The DigitalHome web system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "authentication and information encryption"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The DigitalHome web system",
+          "authentication and information encryption"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Log in to an account shall require entry of an account name and a password.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a password",
+        "an account name"
+      ]
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The development of the DigitalHome system shall use methods and techniques such as the following to support system maintenance.",
+    "entity": {
+      "Machine Domain": [
+        "the DigitalHome system"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Although the product produced under this document will be a “prototype” version, all modules and components of this prototype version shall be designed and implemented in such a manner that it may be incorporated in a fully specified commercial version of the DigitalHome System.",
+    "entity": {
+      "Machine Domain": [
+        "the DigitalHome System"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All system documents (Software Requirements Specification, Architectural Design Specification, Module Detailed Design, Module Source Code, and all Test Plans) shall be up-to-date, use the Homeowner document format [HO2305] and reside in the HomeOwner Document Archive at completion of the project.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "HomeOwner has designated object-oriented development, using UML 2.0, as the preferred method for development of software for HomeOwner products.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Exceptions to this rule must be approved by the CIO.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  }
+]

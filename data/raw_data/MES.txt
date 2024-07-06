@@ -1,0 +1,83 @@
+This Software Requirements Specification (SRS) identifies the requirements for the ASPERA-3 Processing and Archiving Facility (APAF) ground data system for the Mars Express mission.
+The ASPERA-3 instrument package will be flown on the Mars Express mission of the European Space Agency (ESA) and will be launched in June 2003 according to the current schedule.
+ASPERA-3 contains a number of different sensors that will measure the particles, neutral atoms, and fields in the near Martian environment.
+Southwest Research Institute is providing the data system to produce data products in a form suitable for analysis and archiving.
+These data products will be put into a form known as the Instrument Data File Set (IDFS).
+The ASPERA-3 Processing and Archiving Facility (APAF) is a ground data system responsible for processing all of the ASPERA-3 telemetry.
+The APAF data system acquires the telemetry data via NISN, processes the data into IDFS data sets, distributes the IDFS data sets to the ASPERA-3 team, provides web-based displays of the most current data for public view, stores the telemetry and IDFS data sets on a local SwRI archive, and submits the ASPERA-3 IDFS data sets to PDS for long-term archival.
+The first step in defining the IDFS data sets is to identify the physical instruments that make up the ASPERA-3 experiment and any ancillary data necessary for scientific analysis.
+There are six components of the ASPERA-3 package, plus the orbit and attitude data from the spacecraft: Data Processing Unit(DPU), Electron Spectrometer(ELS), Ion Mass Analyzer(IMA), Neutral Particle Detector(NPD), Neutral Particle Imager(NPI), Scanning Unit(SU), Orbit/Attitude(OA).
+Each of the physical components will be divided into logical groups (called virtual instruments) in which each logical group will be formatted as an IDFS data set.
+Each of the seven components described above will have an associated Software Design Document (SDD) that will define and fully describe all of the data products contained within each individual virtual instrument.
+The APAF ground data system is to provide data processing algorithms and support to IRF for the ASPERA-3 science team (including Co-I’s) in preparation for the Mission Operations and Data Analysis (MO&DA) phase of the Mars Express mission.
+In addition, validation and archiving of all ASPERA-3 scientific data in the NASA Planetary Data System (PDS) within 6 months of receipt in a form useable by the general scientific community is to be provided by the APAF.
+Section 2 is an overview of the descriptions of requirement determination, qualification procedures, rationale, and traceability that are used in the identification and the definitions of the requirements.
+The requirements of the APAF data system are categorized and defined in Section 3.
+Section 4 contains general information to aid in the understanding of this specification.
+Each requirement shall be: assigned a project-unique identifier.
+The APAF ground data system requirements are categorized according to functional areas and are defined in the following sections in table format.
+The requirements associated with the functionality of the APAF ground data system are itemized in the table below.
+The mnemonic, FR, is used in the requirement identifiers to show that these requirements are Functional Requirements unless otherwise specified.
+The APAF system shall acquire from ESOC the telemetry data of the ASPERA-3 Experiment and Mars Express Orbit/Attitude to automatically process the data on a daily basis.
+The APAF system shall process all ASPERA-3 science data into IDFS data sets.
+The APAF system shall process the engineering and ancillary information necessary for calibration and science validation into IDFS data sets.
+Intermediate files of cleaned-up ASPERA-3 and MEX OA telemetry shall be generated in the event that cleaned-up telemetry is not provided by ESOC to support the ASPERA-3 team in meeting mission goals and objectives.
+The ASPERA-3 and MEX OA telemetry data shall be stored on a local SwRI archive for data availability and re-processing.
+The ASPERA-3 and MEX OA IDFS data sets shall be stored on a local SwRI archive for data availability and analysis.
+Any APAF-generated intermediate files of ASPERA-3 and MEX OA cleaned-up telemetry shall be stored on a local SwRI archive for data availability and re-processing, and to support the ASPERA-3 team.
+Web-based displays of the most current ASPERA-3 data shall be provided for public view to monitor instrument performance.
+Web-based displays defined by ASPERA-3 team shall be provided where any available ASPERA-3 data (as opposed to just the most current) can be used for science analysis to support the ASPERA-3 team in meeting mission goals and objectives.
+The web-based displays defined by the ASPERA-3 team to be used for science analysis shall be password protected until the ASPERA-3 data is made public to support the ASPERA-3 team in meeting mission goals and objectives.
+The APAF ground data system shall have built-in error handling for better data integrity.
+ASPERA-3 and MEX OA IDFS data and any APAF-generated intermediate files of ASPERA-3 and MEX OA cleaned-up telemetry shall be provided to all ASPERA-3 Co-I’s.
+IDFS data access software developed by SwRI shall be made available to the ASPERA-3 Co-I’s to support the ASPERA-3 team in meeting mission goals and objectives.
+Science analysis software developed by SwRI to analyze IDFS-formatted data shall be made available to the ASPERA-3 Co-I’s to support the ASPERA-3 team in meeting mission goals and objectives.
+All internal interfaces are left to the design.
+The Software Design Documents of each of the seven components shall contain the detailed information of the internal interfaces.
+All internal data requirements are left to the design.
+The Software Design Documents of each of the seven components shall contain the detailed information of the virtual instrument data items.
+There are no security requirements associated with the APAF ground data system.
+However, there are privacy issues related to intellectual property and sensitive information and data.
+The requirement associated with the privacy of the APAF ground data system is in the table below.
+The mnemonic, PR, is used in the requirement identifier to show that this requirement is a Privacy Requirement.
+The APAF system web server shall be password protected where appropriate to allow only pertinent ASPERA-3 team members access.
+The requirements associated with computer resources are listed in the table below.
+Computer resources include computer hardware, computer software, and computer communication.
+The mnemonic, CR, is used in the requirement identifiers to show that these requirements are Computer resource Requirements.
+There shall be a UNIX-based APAF system development computer.
+There shall be a UNIX-based APAF system production computer with an archival system.
+There shall be a web server for the APAF system for web-based displays and information change.
+There shall be a network connection between SwRI and NISN for data transfers and distribution.
+The SwRI software team shall provide system maintenance and software support.
+The logistics-related requirements of the APAF ground data system are itemized in the following table.
+The mnemonic, LR, is used in the requirement identifiers to show that these requirements are Logistical SwRI shall provide APAF system maintenance.
+SwRI shall provide software support for the APAF system.
+The APAF data system requirements for delivering the ASPERA-3 IDFS data, Mars Express Orbit/Attitude IDFS data, and software are described in the following table.
+The mnemonic, DR, is used in the requirement identifiers to show that these requirements are Delivery Requirements.
+ASPERA-3 and MEX OA IDFS data and any APAF-generated intermediate files of ASPERA-3 and MEX OA cleaned-up telemetry shall be provided to all ASPERA-3 Co-I's.
+ASPERA-3 IDFS data that are electronically distributed shall be provided to the ASPERA-3 Co-I’s within 24 hours of acquiring ASPERA-3 telemetry as long as the transmission and processing are error-free to support the ASPERA-3 team in meeting MEX mission goals and objectives MEX OA IDFS data that are electronically distributed shall be provided to the ASPERA-3 Co-I’s within 24 hours of acquiring MEX OA telemetry as long as the transmission and processing are error-free to support the ASPERA-3 team in meeting MEX mission goals and objectives.
+Any APAF-generated intermediate files of ASPERA-3 and MEX OA cleaned-up telemetry that are electronically distributed shall be provided to the ASPERA-3 Co-I’s within 24 hours of acquiring ASPERA-3 and MEX OA telemetry as long as the transmission and processing are error-free to support the ASPERA-3 team in meeting MEX mission goals and objectives.
+ASPERA-3 IDFS data and MEX OA IDFS data shall be provided to NASA PDS.
+ASPERA-3 data shall be provided to NASA PDS in PDS-compliant form.
+ASPERA-3 data shall be calibrated and validated prior to depositing in the NASA PDS.
+ASPERA-3 data shall be provided to NASA PDS no later than 6 months after acquisition.
+SwRI shall provide IDFS data processing algorithms to IRF.
+Science analysis software shall be integrated into the NASA approved data repository.
+IDFS data access software developed by SwRI shall be made available to the ASPERA-3 Co-I’s to support the ASPERA-3 team in meeting mission goals and objectives.
+Science analysis software developed by SwRI to analyze IDFS-formatted data shall be made avaiable to the ASPERA=3 Co-I’s to support the ASPERA-3 team in meeting mission goals and objectives.
+How the ASPERA-3 and MEX OA data and exactly what data sets are to be distributed to each Co-I shall be determined by the needs and resources available six months prior to MEX launch.
+The distribution mechanisms shall be clearly defined/described in the APAF Operation Procedures Document.
+This section identifies the requirements considered but not part of the APAF ground data system requirements.
+The APAF data system is not required to operate in more than one state or mode.
+There are no installation-dependent requirements for the operation of the APAF data system.
+However, if any are identified, they shall be documented in the APAF Operations Procedures Document.
+The APAF data system will not impose hazards to personnel, property, or the environment.
+Therefore, there are no safety requirements of the APAF ground data system.
+Although the APAF data system and associated software will be developed with the highest quality possible, there are no requirements concerned with software quality.
+Some of the software quality factors that will be considered when developing the APAF data system include: reliability, maintainability, availability, flexibility, portability, testability, and usability.
+There are no requirements that constrain the design and implementation of the APAF software.
+There are no identified requirements related to personnel that will use the software.
+However, the APAF Operations Procedures Document will aid personnel in the operational use of the APAF system.
+Since the members of the SwRI software team are experienced with data system and IDFS processing software development, there are no training-related requirements for developers of the APAF data system.
+In addition, the APAF Operations Procedures Document shall provide installation and operations procedures of the APAF system in enough detail where there are no training-related requirements for users and operators of the APAF data system.
+There are no requirements of the APAF data system that need special treatment or consideration at this time.

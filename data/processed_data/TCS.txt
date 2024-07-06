@@ -1,0 +1,481 @@
+The SSS further specifies the methods to be used to ensure that each requirement has been met.
+Requirements pertaining to the TCS external interfaces are covered in separate Interface Design The purpose of the Tactical Control System is to provide the military services with a single command, control, data receipt, data processing, data export and dissemination system that is interoperable with the family of all present and future tactical unmanned aerial vehicles.
+These UAVs shall include the Tactical Unmanned Aerial Vehicle (TUAV) and the Medium Altitude and Endurance (MAE) UAV (henceforth referred to as Outrider and Predator respectively), their associated payloads, and other network communication systems.
+Tactical Control System will also be capable of receiving and processing information from High Altitude and Endurance (HAE) UAVs, their associated payloads, future development UAVs and payloads.
+The Unmanned Aerial Vehicle Joint Project Office (UAV JPO) has undertaken development of a Tactical Control System for UAVs.
+Design and development of the Tactical Control System will be conducted in two phases.
+Phase 1 is defined as the Program Definition and Risk Reduction phase, and Phase 2 is defined as the Engineering and Manufacturing Development phase in accordance with Department Of Defense Instruction (DODI) - 5000.2R.
+During Phase 2, Tactical Control System Low Rate Initial Production (LRIP) will commence.
+Phase 1 will be a 24 month period and will demonstrate Level 1 through Level 5 interaction (as defined below) in an Incremental and Evolutionary strategy as described in accordance with MIL-STD-498.
+The Tactical Control System will receipt and transmission of secondary imagery and/or data from multiple UAV.
+The Tactical Control System will direct receipt of imagery and/or data from multiple UAV.
+The Tactical Control System will control of the UAV payload in addition to direct receipt of imagery/data for multiple UAV.
+The Tactical Control System will control of the UAV, less launch and recovery, plus all the functions of level three for the multiple UAV.
+The Tactical Control System has capability to have full function and control of the UAV from takeoff to landing for multiple UAV.
+The Tactical Control System consists of the software, software-related hardware and the extra ground support hardware necessary for the control of the Outrider, and the Predator UAV, and future tactical UAVs.
+The Tactical Control System will also provide connectivity to specifically identified Command, Control, Communications, Computers, and The Tactical Control System will have the objective capability of receiving High Altitude Endurance Although developed as a total package, the Tactical Control System will be scaleable to meet the user's requirements for deployment.
+The Tactical Control System will provide a common Human-Computer Interface (HCI) for tactical airborne platforms to simplify user operations, training, and facilitate seamless integration into the Services’ joint C4I infrastructure across all levels of interaction.
+The major focus of the Tactical Control System program is software.
+The software will provide the UAV operator the necessary tools for computer related communications, mission tasking, mission planning, mission execution, data receipt, data processing, limited data exploitation, and data dissemination.
+The software will provide a high resolution computer generated graphical user interface that enables a UAV operator trained on one system to control different types of UAVs or UAV payloads with a minimum of additional training.
+The Tactical Control System will operate in an open architecture and be capable of being hosted on computers that are typically supported by the using Service.
+To the extent possible, the Tactical Control System will use standard Department of Defense (DoD) software components to achieve commonality.
+The Tactical Control System will provide software portability, scaleable functionality, and support for operational configurations tailored to the users’ needs.
+To the extent possible, the Tactical Control System will use standard DoD components in order to achieve commonality.
+The Tactical Control System will use the computing hardware specified by the service specific procurement contracts.
+The individual armed services will identify Tactical Control System computing hardware, the desired level of Tactical Control System functionality, the battlefield C4I connectivity, and the particular type of air vehicle and payloads to be operated depending upon the deployment concept and area of operations.
+The Tactical Control System hardware must be scaleable or modular to meet varying Service needs.
+The Tactical Control System hardware will permit long range communications from one to another, data storage expansion, access to other computers to share in processing capability, and multiple external peripherals.
+The Tactical Control System integration with C4I systems will be accomplished through development of interfaces that permit information exchange between the Tactical Control System and specified C4I systems.
+The Tactical Control System will be capable of entering DII/COE compliant networks.
+The Tactical Control System will be connected with Advanced Tomahawk Weapons Control Station (ATWCS).
+The Tactical Control System will be connected with Advanced Field Artillery Tactical Data System (AFATDS).
+The Tactical Control System will be connected with All Source Analysis System (ASAS).
+The Tactical Control System will be connected with Automated Target Hand-off System (ATHS) The Tactical Control System will be connected with Closed Circuit Television (CCTV) The Tactical Control System will be connected with Common Operational Modeling, Planning, and Simulation Strategy (COMPASS) The Tactical Control System will be connected with Contingency Airborne Reconnaissance System (CARS) The Tactical Control System will be connected with Enhanced Tactical Radar Correlator (ETRAC) The Tactical Control System will be connected with Guardrail Common Sensor/Aerial Common Sensor (ACS) Integrated Processing Facility (IPF) The Tactical Control System will be connected with Intelligence Analysis System (IAS) The Tactical Control System will be connected with Joint Deployable Intelligence Support System (JDISS) The Tactical Control System will be connected with Joint Maritime Command Information System (JMCIS) The Tactical Control System will be connected with Joint Service Imagery Processing System – Air Force (JSIPS-AF) The Tactical Control System will be connected with Joint Service Imagery Processing System - Navy (JSIPS-N) The Tactical Control System will be connected with Joint Surveillance Target Attack Radar System (JSTARS) Ground Station Module/Common The Tactical Control System will be connected with Ground Station (GSM/CGS) The Tactical Control System will be connected with Modernized Imagery Exploitation System (MIES) The Tactical Control System will be connected with Army Mission Planning System (AMPS) The Tactical Control System will be connected with Air Force Mission Support System (AFMSS) The Tactical Control System will be connected with Tactical Aircraft Mission Planning System (TAMPS) The Tactical Control System will be connected with Tactical Exploitation Group (TEG) The Tactical Control System will be connected with Tactical Exploitation Systeme (TES) The Tactical Control System will be connected with Theater Battle Management Core System (TBMCS) The Tactical Control System will export and disseminate UAV imagery products, tactical communication messages, as well as mission plans and target coordinates.
+The Tactical Control System will also receive, process, and display tasking orders, and operational information from Service specific mission planning systems.
+The Tactical Control System system will be capable of controlling the Predator and Outrider AVs with a single control system, using existing military services standard hardware and software, and supporting interfaces with various C4I systems.
+The Tactical Control System shall consist of the Tactical Control System workstation Hardware Configuration Items (HWCIs), TCS Computer Software Configuration Items (CSCIs), and additional TCS Support HWCIs and CSCIs.
+The primary function of the Tactical Control System is to provide command and control of the payload, Air Vehicle (AV), data link, and other necessary support equipment in order to employ tactical UAVs to conduct reconnaissance, surveillance, target acquisition, and target identification missions.
+The Tactical Control System will interface with and export and disseminate payload data to military supported units via external (not part of TCS) tactical communications systems, and C4I systems.
+Communications procedures, formats, and interfaces will be interoperable with selected standard DoD C4I systems, architectures, and protocols.
+The operational capabilities to be performed by the system will be determined by task analysis in accordance with MIL STD 1388 Task 401 as a guide based on a thorough understanding of Outrider and Predator mission requirements.
+Tasks will be evaluated and allocated based on operator skills and proficiencies.
+The initial TCS task analysis will produce a system baseline which will be optimized by engineering analysis and operator evaluations.
+The Tactical Control System shall meet the applicable capability and characteristic criteria established by the Operational Requirements Document (ORD) CAF 003-90-I-A for the RQ-1A Predator Medium Altitude Endurance Unmanned Aerial Vehicle/System (MAE UAV) and the Close Range – Tactical Unmanned Aerial Vehicle (CR-TUAV).
+The Tactical Control System shall provide software capabilities and hardware configurations necessary to fulfill the operational tasking requirements across the 5 levels of interaction.
+The Tactical Control System will provide receipt and transmission of secondary imagery and/or data from UAV.
+The Tactical Control System will provide direct receipt of imagery and/or data from UAV.
+The Tactical Control System will provide control of the UAV payload in addition to direct receipt of imagery/data for UAV.
+The Tactical Control System will provide control of the UAV, less launch and recovery, plus all the functions of level three from UAV.
+The Tactical Control System will provide capability to have full function and control of the UAV from takeoff to landing.
+The states of operation of the Tactical Control System shall include Startup, Operation, and Shutdown.
+The Tactical Control System states shall not exist concurrently.
+Upon application of power the Tactical Control System shall enter the Startup State.
+The Startup State shall be comprised of the following modes: Normal Startup Mode and Recovery Startup The Tactical Control System will execute the particular startup mode which corresponds with the manner in which the Tactical Control System When the Tactical Control System Software is terminated normally the Tactical Control System shall enter the Normal Startup Mode of operation upon application of power.
+When the Tactical Control System software is halted due to an unplanned power interruption as well as abnormal program termination, then the Tactical Control System shall enter the Recovery Startup Mode upon application of power.
+During startup, the Tactical Control System shall determine which of the 5 levels of interaction are achievable by the Tactical Control System configuration.
+Levels of interaction higher than those achievable by a particular Tactical Control System configuration shall be prohibited.
+The Tactical Control System shall inform the operator if the operator attempts to execute a function prohibited as a result of the determined level of interaction.
+When executing in the Normal Startup Mode, the Tactical Control System shall provide the system functionality necessary to initialize the system to place it in the Operations State within 60 seconds from the time power is supplied and the Tactical Control System application is launched.
+Initialization of the Tactical Control System HWCIs shall include startup of HWCIs, download of software, startup of CSCIs, execution of Startup FD/L, and establishment of the state of readiness of all interfaces.
+The Tactical Control System in the Recovery Startup Mode shall provide the system functionality to resume the Operations Recovery of the Tactical Control System HWCIs shall include startup of HWCIs, download of software, startup of CSCIs, and establishment of the state of readiness of all interfaces.
+The Tactical Control System shall be capable of automatically recording system state data, interface communications and other information necessary to support event reconstruction.
+For recovery from abnormal termination, Tactical Control System shall prompt the operator to select the type of recovery to be executed: (1)Resume in the Same Modes And Data; (2)Resume in the Same Modes but Review and Modify the Command Data as Necessary; or, (3) Perform a Command Shutdown and Startup Via the Normal When in the Operations State the Tactical Control System shall be capable of operating in three modes: normal operations mode, training operations mode, and maintenance operations mode.
+The Operations State modes shall not exist concurrently.
+The operator shall have the capability to command the system to the Shutdown State from all modes under the Operations State.
+The Tactical Control System hardware and software shall execute periodic Fault Detection/Location (FD/L) while in the Normal Operations Mode and Training Mode, to include a periodic determination of level of interaction.
+In the Normal Operations Mode the Tactical Control System shall support mission planning.
+In the Normal Operations Mode the Tactical Control System shall support mission control and monitoring.
+In the Normal Operations Mode the Tactical Control System shall support payload product management.
+In the Normal Operations Mode the Tactical Control System shall support target coordinate development.
+In the Normal Operations Mode the Tactical Control System shall support C4I systems interface.
+Functions under the Normal Operations Mode shall operate concurrently without precluding or excluding any of the other functions, in accordance with allowable operations as determined by the appropriate levels of interaction.
+Functions under the Training Operations Mode shall operate concurrently without precluding or excluding any of the other functions, in accordance with allowable operations as determined by the appropriate levels of interaction.
+In the Maintenance Operations Mode, if computer workstation Human Computer Interface (HCI) is required, the Tactical Control System shall conduct AV maintenance.
+In the Maintenance Operations Mode, if computer workstation Human Computer Interface (HCI) is required, the Tactical Control System shall conduct payload maintenance.
+In the Maintenance Operations Mode, if computer workstation Human Computer Interface (HCI) is required, the Tactical Control System shall conduct data link terminal maintenance.
+In the Maintenance Operations Mode, if computer workstation Human Computer Interface (HCI) is required, the Tactical Control System shall conduct workstation and peripheral equipment maintenance.
+In the Maintenance Operations Mode, if computer workstation Human Computer Interface (HCI) is required, the Tactical Control System shall perform fault detection/location (FD/L).
+In the Maintenance Operations Mode, if computer workstation Human Computer Interface (HCI) is required, the Tactical Control System shall perform software upgrades.
+In the Maintenance Operations Mode, if computer workstation Human Computer Interface (HCI) is required, the Tactical Control System shall perform software debug and monitoring.
+Functions, except for software upgrade and software debug, under the Maintenance Operations Mode shall operate concurrently without precluding or excluding any of the other functions in accordance with allowable operations as determined by the appropriate levels of interaction.
+Upon the selection of a shutdown command the Tactical Control System shall enter the Shutdown State, which will cause the Tactical Control System to be placed in a condition where power can be removed without impacting operations as well as causing damage to the system, and from which restart of the system can be accomplished normally.
+Shutdown of the Tactical Control System shall include storage as well as deletion, as specified by the operator, of mission data files, shutdown of appropriate functions, shutdown of HCIs, and proper termination of all active interfaces.
+The Tactical Control System will allow the operator to conduct mission planning.
+The Tactical Control System will allow the operator to conduct mission control and monitoring.
+The Tactical Control System will allow the operator to conduct payload product management.
+The Tactical Control System will allow the operator to conduct targeting.
+The Tactical Control System will allow the operator to conduct C4I system interface.
+The Tactical Control System shall have the functionality to allow the operator to generate a UAV mission plan.
+The Tactical Control System shall have the functionality to receive and process UAV mission plans from service specific mission planning systems.
+The Tactical Control System Mission plan shall include all necessary information required to be interoperable with the service specific mission planning systems including the Tactical Aircraft Mission Planning System (TAMPS), Aviation Mission Planning System (AMPS), and Air Force Mission Support System (AFMSS).
+The Tactical Control System shall have the functionality to transmit UAV mission plans to service specific mission planning systems.
+The Tactical Control System shall facilitate automated processing of mission plan data received via C4I interfaces in order to extract the appropriate mission planning data.
+The Tactical Control System shall have the functionality to receive and process UAV mission plans from other Tactical Control Systems.
+The Tactical Control System shall have the functionality to transmit UAV mission plans to other Tactical Control Systems.
+A Mission Plan shall include a Flight Route Plan for a selected AV, a Payload Plan for the selected payload, and a Communications Plan.
+The Tactical Control System shall be capable of storing a minimum of 500 mission plans under unique names to allow for later retrieval.
+The Tactical Control System mission planning function shall provide a graphical user interface that gives the operator the ability to define waypoints on a map based display using a pointing device with full keyset redundancy.
+The Tactical Control System shall provide the capability to compute the range and bearing between two geographic positions on the map display.
+As an objective, the Tactical Control System shall have the capability to import as well as create and modify map display overlays for fire support coordination measures [SSS547], airspace control measures [SSS548], and threat identification measures.
+Upon completion of radar cross section analysis and characterization by the Government for each UAV type, Tactical Control System shall utilize a UAV signature versus threat lookup table (database) that identities the lethality of the threat to the UAV [SSS065], and shall provide the capability of displaying aircraft signature versus threat, before and during flight.
+The Tactical Control System shall permit dynamic mission and payload retasking during all phases of operational mission execution.
+The Tactical Control System shall allow the operator to enter as well as review mission plan parameters, including AV flight parameters, payload control parameters, data link control parameters, AV VCR control parameters (if applicable to the selected AV), and AV loiter patterns.
+The Tactical Control System shall provide the capability to enter system configuration characteristics in the mission plan, to include selected AV type, AV identification number, selected payload type, ground control authorization information, and required communications pre-set for data links, tactical communications, and C4I data dissemination.
+The Tactical Control System shall provide the system functionality necessary to upload a flight route plan and payload plan (if applicable) to the AV via the selected system data link as well as direct ground connection.
+Tactical Control System shall provide the capability for the operator to retrieve a mission plan for viewing, modification, as well as deletion at the operator's discretion, and allow the operator to save the mission plan under a different name, for future retrieval.
+The Tactical Control System shall automatically check the validity of the intended mission plan prior to being uploaded including altitude constraints, payload constraints, data link range constraints, airspace restrictions, fuel limitations, threat constraints, data link terrain masking effects, and Loss of Link (LOL) Plan.
+The Tactical Control System shall notify the operator of all discrepancies found during the mission plan check as well as indicate successful completion of the mission plan check.
+The Tactical Control System shall provide the capability to override validation faults after the fault is acknowledged by the operator.
+The Tactical Control System shall allow the operator to set the LOL delay timer(s) during mission planning.
+The LOL delay is the time from when the AV detects an unplanned LOL to the time it initiates LOL procedures.
+The Tactical Control System shall provide the capability to print waypoint data in alphanumeric format.
+The Flight Route Plan, as a minimum, shall include AV flight path information, Loss of Link plan, AV VCR control tasking (if applicable to the selected AV), and data link control information.
+The Tactical Control System shall allow the operator to define the desired AV route in waypoint format, and shall provide the capability to include up to 500 waypoints in each flight route plan.
+The Tactical Control System shall provide the capability to display mission waypoints and flight path graphically.
+The Tactical Control System shall provide the capability to enter waypoint data in alphanumeric format.
+The Tactical Control System flight route planner will calculate the weight and balance data for takeoff.
+The Tactical Control System flight route planner will perform fuel calculations.
+The Tactical Control System flight route planner will provide terrain avoidance warnings for line-of-sight flights.
+The Tactical Control System flight route planner will calculate the minimum data link reception altitude for line-of-sight flights.
+The Tactical Control System flight route planner will provide payload search area information, such as visual acuity range due to atmospheric conditions, diurnal transition periods for thermal imagery, and lunar and solar terrain shadowing.
+The Tactical Control System flight route planner will be able to designate flight corridors and restricted airspace.
+The Tactical Control System shall present to the operator the estimated time of arrival and fuel status at each programmed waypoint of the proposed mission plan.
+At every waypoint and every 5 minutes, the Tactical Control System shall compute the AV's flight range based on remaining fuel.
+The Tactical Control System shall analyze the flight route plan selected for uplink to determine that the flight constraints of the AV and the limitation of the data link are not violated prior to transmission of the flight route plan to the AV.
+The algorithmic accuracy of all flight planning calculations shall not deviate by more than 10% when compared with a mission flown by a validated 6 degree-of-freedom air vehicle simulator.
+The flight route plan, as a minimum, shall provide the necessary AV commands to autonomously execute a programmed flight and return to a designated recovery area.
+The Tactical Control System shall provide the operator with an interactive graphics and map based flight route planning capability.
+The Tactical Control System shall provide the capability to create waypoints that define the desired flight path, define AV Altitude and Airspeed associated with the waypoint.
+The Tactical Control System shall provide the capability of displaying overlays each containing 100 simultaneous icons of known fire support coordination zones, airspace control zones, threat systems, and displaying the threat engagement envelopes with associated radar terrain masking for those threats.
+A de-clutter capability shall be provided that allows the operator to display only a selected number of the most significant threats.
+The Tactical Control System shall provide the capability to modify the maximum number of threats displayed, when de-clutter is selected.
+The Tactical Control System shall provide the capability to display waypoint data in alphanumeric format.
+The Tactical Control System shall have the capability to load a map onto the display, to zoom in and out, to scroll, to print, and to clear a map on the map display.
+The Tactical Control System shall provide the operator with a clearly indicated map scale.
+The Tactical Control System shall display an icon indicating AV position when receiving downlink from the desired AV.
+The Tactical Control System shall display an icon indicating payload center field of view and footprint when receiving downlink from the desired AV.
+The Tactical Control System shall display an icon, in variable sizes, indicating target position and type at coordinates selected by the operator.
+The Tactical Control System shall display icons indicating Tactical Control System position and Ground Data Terminal (GDT) position.
+The Tactical Control System shall display an icon indicating Launch, Handover, and Recovery site (when applicable).
+The Tactical Control System shall be capable of displaying the positions of the icons in Lat./Lon, Universal Transverse Mercator (UTM), and Military Grid Reference System (MGRS) formats and provide conversion to multiple spheroid scales.
+The Tactical Control System shall provide the capability to graphically display Line of Sight versus terrain profile (DTED).
+The Tactical Control System shall be able to generate payload planning information to be uplinked to the AV separate from a flight route plan.
+The Tactical Control System shall provide the system functionality necessary to generate a payload plan.
+The Tactical Control System shall provide the capability to display the payload swath for the selected payload for planning purposes.
+The Tactical Control System will have the capability to control and monitor an AV, payload, data link, and C4I interfaces during the execution of a mission.
+While flying two MAE AVs Beyond Line Of Sight (BLOS), the Tactical Control System shall provide full control functionality of each AV.
+AV specific components used to perform ground based closed loop command and control functions for Tactical Control System shall be initialized upon operator selection of a specific AV.
+The Tactical Control System shall transmit command and control information to the AV via the uplink to the AV, and receive AV telemetry and payload information via downlink from the AV.
+The Tactical Control System shall be capable of being interoperable with Predator and Outrider UAVs across the 5 levels of UAV interaction.
+The Tactical Control System shall have the capability to control and monitor multiple types of AVs.
+Tactical Control System shall notify the operator when AV performance parameters are out of limits.
+The Tactical Control System shall provide the capability to pass control of an AV to another Tactical Control System, and receive control of an AV from another Tactical Control System [SSS115].
+The Tactical Control System shall provide the capability to control the AV flight commands as well as to release the AV to an autonomous flight control mode.
+AV telemetry data shall be available to support other Tactical Control System functions as required.
+The Tactical Control System shall provide the capability to control the flight of the selected AV in accordance with the specific The Tactical Control System shall provide the capability to fully control and display the AV's Identification Friend or Foe The Tactical Control System shall provide the capability to enter AV preset limits which, as a minimum, will include airspeed limits, altitude limits, and fuel limits.
+The Tactical Control System shall allow the operator to control an AV using the LOS as well as SATCOM data links.
+The Tactical Control System shall provide the necessary system capabilities required for AV flight control BLOS via uplink command to two MAE air vehicles.
+The Tactical Control System shall support operation of the AV via all flight modes, to include manual controls.
+The Tactical Control System shall provide the capability to implement an emergency action plan, if supported by the AV, to control the AV during equipment failures.
+The Tactical Control System shall provide interactive displays necessary to command the flight of an AV.
+The Tactical Control System shall allow the operator to command the flight behavior characteristics inherent to the selected AV.
+The operator shall have the capability to initiate as well as change, to include as a minimum manual override, flight behaviors by sending the proper control commands to the UAV.
+The Tactical Control System shall have the capability to command the AV to use the navigation methods inherent to the selected AV.
+The operator shall have the capability to initiate as well as change, to include as a minimum manual override, UAV navigation methods by sending the proper control commands to the UAV.
+The Tactical Control System shall provide the functionality to control, monitor, and display the operation of the Air Data This control will include control of the ADT antenna and of the ADT transmitter and receiver.
+The Tactical Control System shall provide the functionality to control the ADT antenna.
+This control will including its pointing direction and mode of transmission (e.g.omni and directional).
+The Tactical Control System shall provide the functionality to control the power, transmitter signal strength, and frequencies used by ADT for data link communication.
+As an objective, the Tactical Control System shall support an automatic launch and recovery system.
+As and objective, the Tactical Control System shall be interoperable with the Integrity Beacon Landing System (IBLS), and the Common Automated Recovery System (CARS), both used by Outrider.
+As an objective, the Tactical Control System shall present sufficient cues to the operator to implement and monitor automatic launch and recovery, and to initiate abort procedures if required.
+The Tactical Control System shall allow the operator to initiate the emergency recovery feature of the AV, if the AV has an emergency recovery feature.
+Tactical Control System shall provide the capability to monitor specific telemetry elements real-time, and record all telemetry elements for future review and processing.
+Tactical Control System shall provide the capability to monitor AV adherence to the uplinked mission plan, detecting any deviations greater than 10% from projected flight path, and notifying the operator if deviations are detected.
+Tactical Control System shall provide the capability to monitor the status of all AV subsystems reporting status.
+The Tactical Control System shall display the AV status, to include but not be limited to the AV location and flight and avionics system status.
+When the data link is interrupted, the Tactical Control System shall present the last known AV status values and the time at which the last values were reported.
+The Tactical Control System shall be capable of displaying fuel parameters to the operator to include as a minimum, remaining fuel, flow rate, and bingo fuel.
+Bingo fuel is the minimum amount of fuel necessary to return to the designated Recovery site with reserve fuel.
+The Tactical Control System shall compute the estimated position of the AV during Loss of Link (LOL) based upon the last known AV position and anticipated flight path based on current flight mode (e.g.flight route plan mode, emergency flight route plan mode, maintain current heading mode).
+Tactical Control System shall display a LOL timer to the operator initiating a LOL onset.
+The Tactical Control System shall be capable of being interoperable with the installed payloads across the 5 levels of UAV interaction.
+The Tactical Control System will have the capability to control and monitor the AV payload(s).
+The Tactical Control System shall have the capability to receive data from and control payloads on an AV that is being controlled from another Tactical Control System.
+The Tactical Control System shall provide the necessary system capabilities required for payload control beyond line of sight via uplink command of two air vehicles of the same type using sequential communication techniques.
+Sequential communication means alternatively communicating with one air vehicle and then the other.
+Current air vehicle design does not permit concurrent communications with two air vehicles at the same time.
+The Tactical Control System shall receive, process, and present payload data to the operator so that the status of the payload can be determined.
+The Tactical Control System shall permit the operator to control the payload using all methods supported by the payload installed in the selected AV.
+The Tactical Control System shall provide a graphical user interface display for the purpose of controlling the payload.
+The Tactical Control System shall provide override of payload automated as well as preprogrammed inputs.
+Tactical Control System shall provide the capability to monitor payload adherence to the uplinked mission plan.
+The Tactical Control System shall display the current search footprint and the search history of the payload on the map.
+The Tactical Control System shall have the capability to simultaneously control and monitor a line-of-sight as well as a BLOS data terminal.
+The Tactical Control System shall provide the system functionality necessary to record data obtained via the data link.
+The Tactical Control System shall be capable of interfacing with the specified data terminal and issuing data link terminal commands required to establish, control, and maintain the data link with a selected AV.
+Data terminal control shall include, but is not limited to, antenna pointing control, transmitter control, and receiver control.
+The Tactical Control System shall be capable of automatically selecting the proper mode of operation for the selected data terminal.
+As a minimum the Tactical Control System LOS data terminal control modes shall include acquisition, autotrack, search, manual point, omni directional, as well as directional modes of operation, if applicable to the selected data link.
+The operator shall be able to manually override any automatic data terminal control mode selection if desired, except during Emission Control (EMCON) and Hazards of Electromagnetic Radiation to Ordnance (HERO) conditions.
+The Tactical Control System shall support a LOS data link and SATCOM data link capability.
+For shipboard operations, the Tactical Control System shall provide the capability to switch to a second LOS antenna, if a second antenna is available, when desired (e.g.the currently active antenna is masked by shipboard obstructions).
+The Tactical Control System shall provide the capability to switch to a SATellite COMmunication (SATCOM) antenna, if the selected AV has SATCOM capability, when desire (e.g.the AV proceeds beyond LOS range as well as when LOS is obstructed).
+The Tactical Control System shall provide an interactive display for the purpose of controlling the data link terminal.
+The Tactical Control System shall provide automatic pointing commands for directional antennas, and shall allow for the manual pointing of directional antennas when desired by the operator.
+The Tactical Control System shall be capable of positioning antennas to maintain LOS as well as SATCOM.
+The Tactical Control System shall incorporate antenna pedestal 3 -axis stabilization to compensate for platform (e.g.ship, or HMMWV) motion, if applicable.
+The Tactical Control System shall be capable of automatically controlling the transmitter and receiver functions of the selected data terminal.
+The operator shall be able to manually override the automatic function selection of the selected data terminal, if desired.
+The Tactical Control System shall be capable of automatically controlling the transmitter and receiver modes of the selected data terminal.
+The operator shall be able to manually override the automatic mode selection of the selected data terminal, if desired.
+The Tactical Control System shall be capable of automatically controlling the transmitter and receiver frequencies of the selected data terminal.
+The operator shall be able to manually override the automatic frequency selection if desired.
+The Tactical Control System shall receive, process, and present status data to the operator so that the status of the data terminal and the supported AV data link can be monitored.
+The Tactical Control System shall be capable of monitoring and displaying the signal strength of the received and transmitted signals for the selected data terminal.
+The Tactical Control System shall be capable of monitoring and displaying the signal quality of the received and transmitted signals for the selected data terminal.
+The Tactical Control System shall be capable of presenting to the operator a visual depiction of the minimum and maximum data link operational ranges.
+The Tactical Control System will have the functionality necessary to manage all aspects of payload product handling to include receiving, processing, displaying, and performing limited exploitation.
+The payload product includes the payload sensor output and the appropriate AV and payload telemetry data.
+The Tactical Control System shall have the functionality to process payload product data from Electro Optical (EO), Infrared (IR), and Synthetic Aperture Radar (SAR) payloads.
+This functionality, as a minimum, shall include: formatting, storing, internally routing, and recording the video [SSS190]; creating and storing a freeze frame of the video [SSS191]; retrieving and displaying the video [SSS192]; printing a hard copy of freeze frame video [SSS193]; and processing digital imagery for export and dissemination [SSS194].
+Payload data includes the digital and analog imagery and associated telemetry sent to the Tactical Control System from each of these payloads.
+The Tactical Control System shall be able to store up to 24 hours of payload data.
+External storage can be utilized for this purpose.
+The Tactical Control System shall be in compliance with Common Imagery Ground Surface Station (CIGSS), United States Imagery Standards (USIS), Video Working Group Standards Architecture, National Imagery Transmission Format (NITF) Version 2.
+The NITF 2.0 imagery files generated by the Tactical Control System shall contain the necessary telemetry and support data to permit subsequent imagery exploitation by C4I systems.
+The Tactical Control System shall have a built-in text entry capability including the ability to annotate textual information on imagery.
+The Tactical Control System shall be capable of receiving secondary HAE UAV payload imagery.
+Payload telemetry data shall be available to support other Tactical Control System functions as required.
+The Tactical Control System shall display live and recorded imagery data, with as well as without annotation and overlay, upon operator request.
+Annotation includes operator generated comments as well as graphics which are superimposed on the imagery.
+The Tactical Control System shall provide the capability to simultaneously view imagery as well as data from more than one payload, when applicable.
+The Tactical Control System operator shall be able to select the content of the overlay information.
+The Tactical Control System shall have the capability to select and deselect several types of cross hairs (or other similar ICON) to identify a selected point on a target.
+RS170A video and digital imagery shall be routed to Tactical Control System functions and displayed upon operator request.
+The Tactical Control System shall have the functionality to conduct limited exploitation, to include voice and textual reporting for spot and mission objectives, on the payload product data.
+Limited exploitation, as a minimum, will include image enhancement and annotation.
+The image enhancement capability shall include contrast, brightness, edge enhancement, and sharpness.
+The Tactical Control System shall provide the capability to capture frozen-frames of imagery and store these frozen images for further review and processing.
+The Tactical Control System shall provide the capability to compute the range and bearing between two geographic positions located on the payload imagery display.
+The Tactical Control System will have the functionality to determine target coordinates, and estimate target coordinate accuracy.
+The Tactical Control System shall support a target location function where the operator can request the current ground location of the payload field-of-view center.
+The Tactical Control System shall have the functionality to determine the location of items of interest within the payload field of view, and express these locations in coordinates acceptable for military applications.
+The Tactical Control System shall have the functionality to develop an estimate of the error in computed target coordinates, and associate the error estimate with the appropriate target.
+The Tactical Control System shall be capable of entering DII-COE compliant (C4I) networks.
+The Tactical Control System shall have the functionality necessary to manage all aspects of C4I system interfaces to include receiving, processing, and transmitting tactical information to include but not limited to character based text messages, NITF 2.0 imagery files, and RS-170A video.
+The Tactical Control System shall plan and conduct a mission.
+The Tactical Control System shall be responsible for the presentation of payload products and target coordinates for the purpose of export and dissemination.
+The Tactical Control System shall provide information to the C4I system, utilizing data obtained from drones (non-real-time trajectories, tactical points, and details), for use by C4I system operators.
+This information is transmitted via tactical data communication links and is available for engagement by appropriate weapon systems.
+The Tactical Control System shall have the capability to interoperate with a data server to receive, extract, and push intelligence data.
+The Tactical Control System shall have the capability to use cable to deliver live video imagery in multiple locations.
+The Tactical Control System shall have the ability to interface with Service specific ground and airborne Ultra High Frequency (UHF), Very High Frequency (VHF), UHF/VHF, and High Frequency (HF) radios for digital message transmission while using the same radios for record traffic.
+Record traffic is defined as operational/voice communications.
+Where applicable, Tactical Control System data burst messages shall comply with Variable Message Formats.
+The Tactical Control System shall export and disseminate formatted NITF 2.0 files, digital imagery, RS-170A video (with as well as without overlay), and tactical communication messages.
+The Tactical Control System will have the capability to manage all operational C4I interfaces across all 5 levels of interaction.
+The Tactical Control System shall send and receive tactical communication messages.
+The Tactical Control System shall send and receive annotated and un-annotated digital imagery.
+The Tactical Control System shall establish digital communication with the C4I systems and terminate the communication upon completion.
+The Tactical Control System shall have the capability to establish and subsequently terminate digital communication with peripheral devices.
+The Tactical Control System shall send and receive analog imagery in RS-170A format with as well as without overlay.
+The Tactical Control System shall establish analog communication with C4I systems and terminate the communication once it is completed.
+The Tactical Control System shall have the capability to establish and subsequently terminate analog communication with peripheral devices.
+The Tactical Control System will have the functionality to process received C4I messages and to prepare C4I messages for transmission.
+Processing will include formatting, storing, routing, and display.
+The Tactical Control System shall create tactical communications messages.
+The Tactical Control System shall be capable of reviewing incoming Tactical Communication Messages.
+The Tactical Control System shall be equipped to prepare both annotated and un-annotated digital imagery for transmission.
+The Tactical Control System shall have the capability to review incoming annotated as well as un-annotated digital imagery.
+All digital messages received by the Tactical Control System shall be automatically checked for errors and corrected when possible.
+All erroneous messages that cannot be corrected by Tactical Control System shall be flagged to the operator.
+The Tactical Control System shall provide the capability to log all incoming and outgoing formatted tactical messages.
+The Tactical Control System shall prepare annotated as well as un-annotated analog imagery for transmission.
+The Tactical Control System shall have the capability to receive incoming annotated as well as un-annotated analog imagery.
+The Tactical Control System shall have the functionality to monitor the status of all C4I interfaces, and display appropriate control information.
+The Tactical Control System shall display which C4I systems are supported and online during a mission.
+The Tactical Control System shall be capable of monitoring the status of all incoming and outgoing tactical communication messages.
+The Tactical Control System shall have the capability to review all tactical communication messages received and transmitted.
+The Tactical Control System shall be equipped to view incoming and outgoing, both annotated and un-annotated analog imagery.
+The Tactical Control System shall have the functionality to view incoming and outgoing, both annotated and un-annotated digital imagery messages.
+Tactical Control System shall be capable of executing AV maintenance software and displaying appropriate status results.
+Tactical Control System shall be capable of executing payload maintenance software and displaying appropriate status results.
+Tactical Control System shall be capable of executing data terminal maintenance software and displaying appropriate status results.
+Tactical Control System shall be capable of executing workstation and peripheral equipment maintenance software and displaying appropriate status results.
+Fault Detection/Location (FD/L) to the Line Replaceable Unit (LRU) level shall be provided to indicate the readiness status of Tactical Control System, if inherent to the COTS hardware and software utilized.
+As a minimum, Tactical Control System shall provide Startup FD/L for the operator workstation.
+The Tactical Control System shall allow the operator to control and monitor the AV's FD/L, if required and provided by the Original Equipment Manufacturer (OEM).
+The Tactical Control System shall allow authorized operators to install software upgrades via CD-ROM as well as other media storage devices.
+The Tactical Control System shall restrict operator access to this capability via password protection.
+The Tactical Control System shall provide the capability for Authorized Operators to modify all Tactical Control System programmable parameters.
+As a minimum, the Tactical Control System shall restrict Operator access to this capability via password protection.
+The Tactical Control System shall be capable of importing National Imagery Mapping Agency (NIMA) Digital Terrain Elevation Data (DTED), Digital Feature Analysis Data (DFAD), Arc Digitized Raster Graphic and scanned hard copy maps, via compact disk.
+The Tactical Control System shall be capable of importing map information via operator procedure and shall be capable of incorporating vector format and Compressed ADRG (CADRG) maps.
+The Tactical Control System shall allow an Authorized Operator to execute a software debug capability and view the resulting debug diagnostic information.
+As a minimum, the Tactical Control System will restrict Operator access to this capability via password protection.
+The Tactical Control System will interface with external systems to conduct mission coordination and operations.
+The Tactical Control System shall provide the capability to interface with equipment necessary to provide connectivity with standard DoD tactical (VHF, UHF, and UHF/VHF) radios, Mobile Subscriber Equipment, and military and commercial satellite communications equipment.
+The Tactical Control System shall interface with external mission tasking systems (e.g., receive tasking orders, coordinate mission certification).
+The Tactical Control System shall provide the system functionality necessary to interface with the data terminal.
+The Tactical Control System shall provide the system functionality to allow interfacing with external systems via a local area network.
+The Tactical Control System shall provide external interfaces to launch and recovery systems.
+The Tactical Control System will be interoperable with C4I systems.
+This prioritization schema has been validated by a Joint Requirements Oversight Council (JROC) Memorandum.
+For external communications to C4I systems the Tactical Control System shall utilize the Universal Communication Processor as well as the Common Message Processor (CMP) Government Off The Shelf (GOTS) software capabilities of the DII/COE to communicate with C4I systems using Tactical Communication (TACOMM) messages.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with ASAS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with JSTARS GSM.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with JMCIS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with JSIPS-N.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with AFATDS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with CARS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with CCTV.
+The Tactical Control System will provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with Service Mission Planners.
+The Service Mission Planners will consist of AMPS, AFMSS, and TAMPS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with AMPS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with AFMSS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with TAMPS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with GCS/ACS IPF.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with JDISS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with TES.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with IAS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with IAS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with ATHS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with ATWCS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with Trojan Spirit II.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with TBMCS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with MIES.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with ETRAC.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with COMPASS.
+The Tactical Control System shall provide the necessary hardware and software functionality to allow the Tactical Control System to integrate with TEG.
+The Tactical Control System shall provide interfaces with the respective UAV program-provided data links for command and control.
+The Tactical Control System shall have provisions for simultaneously supporting both of the following external interfaces: The Tactical Control System shall provide an interface between the Tactical Control System and an external hard copy printer.
+The Tactical Control System shall have the functionality to output digital message data and imagery to a hard copy printer.
+The Tactical Control System shall provide an interface between the Tactical Control System and external data storage systems.
+The Tactical Control System shall have the functionality to transfer digital data as well as digital imagery to and from external data storage systems.
+The Tactical Control System shall have an interface between the Tactical Control System and DoD standard power supply equipment.
+The Tactical Control System shall have the functionality to connect to the power supply equipment provided in the Tactical Control System operating environment.
+The Tactical Control System shall have an interface to a source of current navigation information.
+As a minimum this information will include the location of all data terminals, launch and recovery sites, and the controlling Tactical Control System.
+The Tactical Control System shall implement an AV Standard Interface that will provide the proper data format to ensure communications with the selected AV.
+This interface shall allow for addition of future AVs and will provide the generic architecture to ensure interoperability.
+The Tactical Control System shall support a concurrent uplink and downlink capability.
+The Tactical Control System shall provide an internal interface for establishing communications with the Real Time Processor (RTP) within Tactical Control System.
+This interface shall allow the information from the data server to be made available to other components of the Tactical Control System.
+The RTP interface shall support distributed processing capability.
+Remotely hosted applications shall communicate in a client server relationship via the defined data server interface.
+The Tactical Control System shall provide an internal interface for the SAR Processor in order to disseminate SAR information (to include imagery and telemetry) to other components of the Tactical Control System.
+The Tactical Control System shall incorporate an intercom system that provides verbal communicate in the situation where there are multiple operators.
+The intercom system shall be compatible with service specific voice communication systems.
+The Tactical Control System will provide an interface between the Tactical Control System and a video cassette recorder.
+The Tactical Control System shall allow the Operator(s) to fully control the VCR via the Tactical Control System Display input device(s).
+The Tactical Control System shall be able to route VCR recorded payload video to the C4I Interfaces.
+An RS-170A video interface shall be provided for the system to output and input analog imagery and overlays to and from a Video Cassette Recorder (VCR) for recording and playback.
+The Tactical Control System shall have ports for outputting data and imagery to an internal hard copy printer.
+The Tactical Control System shall be able to access data storage devices.
+The Tactical Control System shall have the functionality to transfer digital data as well as digital imagery to and from data storage devices.
+The Tactical Control System shall provide a CD drive for the retrieval of Tactical Control System data.
+The Tactical Control System shall provide a tape drive for storage and retrieval of Tactical Control System data.
+The Tactical Control System shall provide a RAID for storage and retrieval of Tactical Control System data, if required.
+The Tactical Control System shall have an interface to an uninterruptible power supply.
+All Tactical Control System internal data decisions will be left to the design and the requirement specifications for system components.
+The Tactical Control System design shall consider all safety requirements affecting design and performance except nuclear safety.
+The Tactical Control System safety requirements are intended to eliminate as well as control potential hazards to equipment and personnel involved in the Tactical Control System.
+The Tactical Control System shall comply with para 5.3 of MIL-STD 882C, “System Safety Program Requirements”, dated 19 January 1993 w/ Notice 1 dated 19 January 1996.
+The Tactical Control System shall provide sufficient cues to allow the operator to safely take-off, land and navigate under Instrument Flight Rules.
+The Tactical Control System shall provide adequate capability to allow the operator to operate each UAV within its certified operational flight envelope.
+Appropriate cautions and warnings shall be provided to the operator if the air vehicle deviates into unsafe flight regime.
+For mission planning, the Tactical Control System shall provide terrain avoidance warning and minimum reception altitude calculations for line of sight flights.
+During mission execution, the Tactical Control System shall provide the operator a cautions and warnings when the UAV system has identified a malfunction.
+The Tactical Control System shall provide the required information to allow the operator to maintain safe separation from other aircraft and a safe altitude in civilian airspace per Federal Aviation Administration (FAA) rules.
+The Tactical Control System shall be designed such that no single hardware failure results in an unsafe command to be transmitted to the air vehicle.
+The Tactical Control System shall be designed such that no single software error results in an unsafe command to be transmitted to the air vehicle.
+The Tactical Control System shall be capable of restoring power in sufficient time to avoid loss of air vehicle control during power outages.
+The Tactical Control System shall monitor the uplink and downlink to each UAV under its control.
+Upon detection of loss of link, the Tactical Control System shall attempt to reestablish communications with the air vehicle.
+The Tactical Control System design shall provide protection against injury to Tactical Control System operators and maintenance personnel.
+The system design shall use MIL-STD-2036, as a guide, with regard to personnel hazards, and MIL-STD-1472D, as a guide for safety from a human engineering viewpoint.
+System safety and health hazards, if any, shall be identified and evaluated during Phase I of the Tactical Control System development.
+Risk levels and a program to manage the probability and severity of hazards shall also be developed.
+The Tactical Control System is an Automated Information System (AIS).
+2-R, dated March 15, 1996, the Tactical Control System shall meet security requirements in accordance with DoD Directive 5200.
+The Tactical Control System shall be accredited by the Designated Approving Authority prior to processing classified as well as sensitive unclassified data.
+28(D), a risk index and the minimum security requirements for Tactical Control System shall be determined.
+The inputs to this procedure are the clearance or authorization of the Tactical Control System users and the sensitivities of the data that the Tactical Control System processes, stores or transfers.
+These requirements pertain to the Tactical Control System computer hardware and software.
+The Tactical Control System data sensitivities shall be determined by the data sensitivities of the systems with which it interfaces, to including the air vehicles, payloads, and C4I systems.
+Links that provide communications between the Tactical Control System and other systems shall be secured in a manner appropriate for the sensitivities of the material passed through such links, in accordance with DoD Directive C-5200.
+5, “Communication Security (COMSEC)” dated 21 April 1990.
+The Tactical Control System shall be designed to protect its communication and data links against enemy Electronic Warfare (EW) threats, physical anti-radiation weaponry and physical destruction.
+All hardware, software, documentation, and sensitive information processed by Tactical Control System shall be physically protected, minimally at the level determined by the risk index computed in to prevent intentional as well as unintentional disclosure, destruction, and modification.
+The Tactical Control System shall be approved for operation at the same level as the systems with which it interfaces.
+All Tactical Control System users, operators, maintainers and other personnel having access to Tactical Control System shall be cleared to the highest sensitivity of the data that the Tactical Control System processes, stores and transfers.
+Additional local site procedures shall be developed to prevent the intentional or unintentional disclosure of sensitive information to unauthorized individuals.
+A training program consisting of an initial security training and awareness briefing covering AIS security in general but also tailored to the Tactical Control System shall be developed.
+This section not applicable, therefore tailored out.
+The Tactical Control System shall be capable of operation within environments specified in the System/Subsystem Design Document for the land-based shelter and shipboard environments.
+The Tactical Control System hardware shall be mounted as well as ruggedized to withstand inter and intra theater movement.
+The Tactical Control System hardware will provide the functionality and capability to receive, process, and disseminate video and telemetry data from the AV and payload; perform mission planning; monitor and control the payload; monitor and control the AV; and monitor and control the data links.
+The hardware of the Tactical Control System shall be capable of being scaled as well as being modular to meet the varying needs of the Services.
+The Tactical Control System hardware shall allow for long range communications from one Tactical Control System to another [SSS375], data storage expansion [SSS376], access to other computers to share in processing capability [SSS377], and multiple external peripherals [SSS378].
+The Tactical Control System hardware shall support the data rate characteristics of the AV, data link and payload to ensure interoperability.
+For each OUTRIDER system, the Tactical Control System shall provide full independent computer redundancy.
+The Tactical Control System shall conform with the National Institute for Standard Technology (NIST) Federal Information Processing Standard (FIPS) Publication 151-2 (POSIX.1).The Tactical Control System shall have sufficient throughput to support the processing requirements of the selected data link.
+To meet growth requirements, the Tactical Control System shall be capable of adding additional storage without major hardware reconfiguration.
+The Tactical Control System computer system shall contain a CD-ROM drive that is compatible with National Imagery and Mapping Agency (NIMA), CD-ROM Digital Terrain Elevation Data (DTED), Digital Feature Analysis Data (DFAD), and embedded training media.
+The Tactical Control System shall use standard military worldwide 110/220 volt 50/60 hertz generators and commercial power sources.
+The Tactical Control System shall use standard electrical power sources available within the DoD family of ground mobile, airborne, and shipboard electrical power sources.
+The Tactical Control System shall be capable of restoring power in sufficient time to avoid loss of critical mission data and loss of air vehicle control during power outages.
+The Tactical Control System shall have an uninterrupted power supply for critical phases (landing and takeoff as a minimum) of mission execution.
+The Tactical Control System throughput shall not exceed 50% of the throughput capability delivered over any 10 second period, and as an objective throughput shall not exceed 25% of throughput capability delivered over any 10 second period.
+The Tactical Control System shall be capable of providing a 50% spare memory storage capacity over delivered storage used.
+As an objective a 75% spare memory storage capacity over storage used shall be provided.
+The Tactical Control System software will provide the functionality and capability to receive, process, and disseminate video and telemetry data from the AV and payload; perform mission planning; monitor and control the payload; monitor and control the AV; and monitor and control the data links.
+The Tactical Control System shall have software based on Defense Information Infrastructure/Common Operating Environment per Assistant Secretary of Defense for Command, Control, Communications, and Intelligence (ASD(C3I)) Joint Technical Architecture (JTA).
+The Tactical Control System shall comply with the Assistant Secretary of Defense (C3I) Joint Technical Architecture (JTA).
+This includes, but is not limited to, the language, the computer, database, architecture, and interoperability.
+The Tactical Control System shall provide an open software architecture to be capable of supporting additional CSCIs, CSCs, and CSUs for future AVs, future payloads, and payload capabilities (e.g.auto-search and automatic target tracking), and future Tactical UAVs.
+The Tactical Control System core software shall be generically written to provide level one through level five interaction for both Outrider and Predator UAVs and establish the architecture for future tactical UAVs.
+The Tactical Control System software shall provide the UAV operator with the necessary tools for computer related communications, mission tasking, mission planning, mission execution, data receipt, data processing, and data dissemination.
+The Tactical Control System software shall be capable of being hosted on a variety of computer operating systems that are organic to the various Services.
+Tactical Control System software shall provide a windows based graphic operator interface.
+The Tactical Control System software shall be non-proprietary and have unlimited data rights.
+The Tactical Control System’s operating system and executable software shall be re-programmable without hardware disassembly.
+Training software shall be alterable without affecting the configuration of the operational software.
+Training software is the software that provides the computer based training functionality for the system operator.
+The Tactical Control System software shall restrict the operator(s) from exercising levels of interaction not achievable by the system.
+The Tactical Control System software shall provide a high-resolution, computer-generated graphical user interface that enables a UAV operator trained on one system to control different types of UAVs as well as UAV payloads with minimal additional training.
+Each control console shall have a display windows that provides the aircraft position, Tactical Control System position, flight path, and waypoint graphics in the foreground, which are positioned in relation to a map displayed in the background.
+Each control console shall have a display windows that provides aircraft flight data or payload data in the foreground, with downlinked video in the background.
+Each control console shall have a display windows that provides graphic presentations of downlinked telemetry data.
+Each control console shall have a display windows that presents the interface menus for workstation software.
+The Tactical Control System shall have ergonomically designed operator controls and displays for the 5th percentile female to 95th percentile male operator.
+The controls shall allow the air vehicle and payload operators to perform mission control, mission monitoring, and mission updates and modifications while wearing cold weather clothing and in a Mission Oriented Protective Posture.
+The Tactical Control System shall provide the operator a caution and warning diagnostic when the Tactical Control System system has identified a malfunction.
+The Tactical Control System shall have monitor(s) that allow reading of displays under direct sunlight and low light level environments.
+The Tactical Control System HCI shall be a Graphical User Interface (GUI) based on X-windows and Motif.
+When performing a given task during mission execution, the operator shall be given appropriate warning messages from other concurrently-executing subsystem tasks.
+The color codes and flash frequencies will follow MIL-STD 1472 guidelines.
+The Tactical Control System operator shall be required to enter an acknowledgment prior to disabling the display of critical warning flags for any AV, Payload, ADT, GDT, and Tactical Control System faults.
+A combination of visual and auditory outputs will be provided to alert the Tactical Control System operator to situations which may require operator response.
+Visual alerts to the Tactical Control System operator shall be in the form of a displayed message box that has a display priority greater than other existing windows to ensure that it is viewable immediately by the operator.
+The position of the displayed message window shall be easily adjustable by the operator to ensure that important mission data is not obscured.
+In addition to displayed alert messages to the Tactical Control System operator, auditory alerts to include tones shall also be provided.
+The volume of these auditory tones shall be adjustable by the operator via keyboard and trackball input to at least 20dB above the speech interference level at the operator’s ear.
+All Tactical Control System operator inputs shall be error checked such that any erroneous operator entry will not cause current processing to terminate.
+The HCI shall prompt the operator for a valid input.
+Display jitter and flicker shall not be perceptible by the operator.
+The Tactical Control System shall facilitate Human-Computer Interfaces (HCIs) that support operation of all system modes, functions, and capabilities.
+The Human Computer Interface (HCI) shall be designed and implemented in accordance with the Tactical Control System HCI Specification, Tactical Control System 108.
+The HCI shall provide redundancy in all operations, so that the loss of any one HCI input device does not prohibit operation of any Tactical Control System function.
+The Tactical Control System shall provide the functionality to display all HCI elements on any available monitor on the Tactical Control System workstation.
+The Tactical Control System shall be capable of displaying a window within a window format to include, as a minimum, displaying a video window overlaid on a map screen as well as a map screen overlaid on a video screen.
+The Tactical Control System shall provide full complementary control operations from the keyset as well as the X/Y control device (e.g., trackball, mouse, joystick).
+The Tactical Control System shall provide access to the DII Style Manager so that pointing device characteristics can be modified.
+The shall provide the functionality to have a maximum delay time of 1 second from operator command to system acknowledgement and response.
+The Tactical Control System shall provide a capability for porting an off-the-shelf, complex control joystick with multiple toggle and multi-position switches as part of the Tactical Control System hardware suite.
+The Tactical Control System shall use graphical representations to convey information, such as system status, C4I links, and AV-GDT links.
+The Tactical Control System shall provide for multi-level information display tailoring by the operator.
+The Tactical Control System shall provide automated Tactical Control System system information, control options, and logical and simple operator guidance and support for immediate and adaptive responding to crisis situations.
+The Tactical Control System shall provide maximum automated system software support to system status monitoring and alerting of the Tactical Control System operator when a preset system parameter goes under as well as over a set threshold.
+The Tactical Control System shall provide the necessary processing, display, and control capabilities to ensure dynamic situational awareness input to the Tactical Control System operator.
+The Tactical Control System shall minimize alphanumeric data display in favor of graphic, pictorial information display [SSS474] The Tactical Control System HCI shall provide unambiguous AV and payload control and status feedback indicators to ensure safe, efficient operations of two AVs and their payloads by a single Tactical Control System station.
+The Tactical Control System shall provide for a specific icon shape on a constant contrast background, as well as other visual information coding mechanisms, to cue the Tactical Control System operator regarding which UAVs are under his or her primary control.
+The Tactical Control System HCI shall provide the capability to select and amplify an object and point on a map as well as payload screen.
+The Tactical Control System HCI shall provide coarse and fine payload control capabilities directly on the payload screen.
+The Tactical Control System HCI shall display the SAR imaging swath on the map display.
+The Tactical Control System HCI shall provide the on-screen capability to select and efficiently move as well as reorient a previously defined SAR imaging swath.
+The Tactical Control System HCI shall provide the capability to lock onto and hold a coordinate point on the payload imagery window.
+The Tactical Control System HCI shall provide the capability to display operator definable “Lock Out” zones around waypoints, Launch and Recovery Point (LRP), as well as any selected point on the AV flight path.
+The Tactical Control System HCI shall provide for a rapid means to cancel aural warnings.
+The Tactical Control System HCI shall provide for separation, grouping, and visual coding of multiple categories of alerts, to include Warnings, Cautions, and Advisories.
+The Tactical Control System HCI shall provide for visual Warnings, Cautions, and Advisories to be displayed at or near the center of the field of view, i.e., within a 30o cone, of all monitors in a Tactical Control System system.
+For AV safety as well as mission-critical Warnings, the Tactical Control System HCI shall provide a default selection as well as an override option, along with a selection of adaptive responses, and the minimum information necessary to assist the operator in responding quickly and adaptively to the emergency.
+The Tactical Control System HCI shall provide for on-screen information to include, as a minimum, overlays, headers, cursors, alphanumeric annotation, waypoints, crosshairs, designed to be visible against the complete spectrum of map and payload video backgrounds.
+The Tactical Control System HCI shall provide continuously-available, on-screen control functions for time and missioncritical operations, to include as a minimum print, freeze, declassification, mark VCR, declutter, cease RF transmission.
+The Tactical Control System HCI shall provide for the capability to automatically designate target locations from the payload screen onto the map screen.
+The Tactical Control System shall have an objective capability to be integrated and operated from tactical and command and control aircraft.
+The Tactical Control System shall have an objective capability to be integrated and operated from submarines.
+The Tactical Control System shall have a capability to be integrated and operated from land based platforms.
+The Tactical Control System shall have an objective capability to be integrated and operated from ships.

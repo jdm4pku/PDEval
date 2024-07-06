@@ -1,0 +1,4405 @@
+[
+  {
+    "text": "This Software Requirements Specification (SRS) provides the requirements for the Center-to-Center (C2C) Communications Network that is based on a Texas Department of Transportation (TxDOT) C2C project.",
+    "entity": {
+      "Machine Domain": [
+        "the Center-to-Center (C2C) Communications Network"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "a Texas Department of Transportation (TxDOT) C2C project"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center-to-Center (C2C) Communications Network",
+          "a Texas Department of Transportation (TxDOT) C2C project"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The TxDOT Center-to-Center project initially connected the DFW TxDOT Traffic Management Centers (TMCs).",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the DFW TxDOT Traffic Management Centers (TMCs)"
+      ],
+      "Design Domain": [
+        "The TxDOT Center-to-Center project"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The TxDOT Center-to-Center project",
+          "the DFW TxDOT Traffic Management Centers (TMCs)"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This Center-to-Center infrastructure implements a repository for traffic data and provides a mechanism to exchange device control information between TMCs.",
+    "entity": {
+      "Machine Domain": [
+        "This Center-to-Center infrastructure"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "TMCs"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to exchange device control information between TMCs"
+      ],
+      "Shared Phenomena": [
+        "traffic data",
+        "device control information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "This Center-to-Center infrastructure",
+          "traffic data"
+        ],
+        [
+          "This Center-to-Center infrastructure",
+          "device control information"
+        ],
+        [
+          "TMCs",
+          "device control information"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "This Center-to-Center infrastructure",
+          "to exchange device control information between TMCs"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center project will be implemented using the evolving ITS Traffic Management Data Dictionary (TMDD) standard, the message sets associated with TMDD, other ITS Data Elements and Message Sets.",
+    "entity": {
+      "Machine Domain": [
+        "The Center-to-Center project"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the evolving ITS Traffic Management Data Dictionary (TMDD) standard,",
+        "the message sets associated with TMDD",
+        "other ITS Data Elements",
+        "Message Sets"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center-to-Center project",
+          "the evolving ITS Traffic Management Data Dictionary (TMDD) standard,"
+        ],
+        [
+          "The Center-to-Center project",
+          "the message sets associated with TMDD"
+        ],
+        [
+          "The Center-to-Center project",
+          "other ITS Data Elements"
+        ],
+        [
+          "The Center-to-Center project",
+          "Message Sets"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The use of ITS standards will create a system that is reusable for other ITS application areas and will provide the State of Texas with a baseline system that can be cost effectively extended in the future.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center infrastructure must interconnect several dissimilar traffic management systems.",
+    "entity": {
+      "Machine Domain": [
+        "The Center-to-Center infrastructure"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "traffic management systems"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In order to create the Center-to-Center infrastructure, interfaces to the existing systems will be created.",
+    "entity": {
+      "Machine Domain": [
+        "the Center-to-Center infrastructure"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the existing systems"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center-to-Center infrastructure",
+          "the existing systems"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The data from these interfaces will communicate with the existing system in a “system specific” format.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "these interfaces"
+      ],
+      "Design Domain": [
+        "the existing system"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "The data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "these interfaces",
+          "The data"
+        ],
+        [
+          "the existing system",
+          "The data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center infrastructure is being created using a series of building blocks.",
+    "entity": {
+      "Machine Domain": [
+        "The Center-to-Center infrastructure"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "building blocks"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center-to-Center infrastructure",
+          "building blocks"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "These building blocks allow the software to be utilized in a number of configurations (by simply altering the configuration parameters of the software).",
+    "entity": {
+      "Machine Domain": [
+        "the software"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "building blocks"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "be utilized in a number of configurations"
+      ],
+      "Shared Phenomena": [
+        "the configuration parameters"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the software",
+          "the configuration parameters"
+        ],
+        [
+          "building blocks",
+          "the configuration parameters"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the software",
+          "be utilized in a number of configurations"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The software is being designed so that multiple instances of a building block can be deployed by simply “configuring” the building block of operation within a specific agency.",
+    "entity": {
+      "Machine Domain": [
+        "The software"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a building block"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "multiple instances of a building block can be deployed"
+      ],
+      "Shared Phenomena": [
+        "“configuring” the building block of operation"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The software",
+          "“configuring” the building block of operation"
+        ],
+        [
+          "a building block",
+          "“configuring” the building block of operation"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "The software",
+          "multiple instances of a building block can be deployed"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "Any data that is passed into the “cloud” in the above figure will be based on the ITS standards.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the ITS standards"
+      ],
+      "Design Domain": [
+        "the “cloud”"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Any data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the “cloud”",
+          "Any data"
+        ],
+        [
+          "the ITS standards",
+          "Any data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Systems will interface to the “cloud” using a project defined protocol.",
+    "entity": {
+      "Machine Domain": [
+        "Systems"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the “cloud”"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a project defined protocol"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "Systems",
+          "a project defined protocol"
+        ],
+        [
+          "the “cloud”",
+          "a project defined protocol"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "New systems that are deployed (based on the ITS standards) will not utilize the project defined protocol but will be moved “into” the cloud (because they themselves would be based on the ITS standards.",
+    "entity": {
+      "Machine Domain": [
+        "New systems"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the cloud"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "New systems",
+          "the cloud"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "This would allow a “local” common repository to be created by “linking” individual partners, a “regional” common repository to be created by “linking” local common repositories and a “statewide” common repository to be created by “linking” regional common repositories.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a “local” common repository",
+        "individual partners",
+        "a “regional” common repository",
+        "local common repositories",
+        "a “statewide” common repository",
+        "regional common repositories"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "a “local” common repository",
+          "individual partners"
+        ],
+        [
+          "a “regional” common repository",
+          "local common repositories"
+        ],
+        [
+          "a “statewide” common repository",
+          "regional common repositories"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The following sections define the requirements for the Center-to-Center project.",
+    "entity": {
+      "Machine Domain": [
+        "the Center-to-Center project"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Requirements are listed in separate sections and in table format for each functional area.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center project mnemonic uniquely identifies the Center-to-Center project to distinguish its requirements from the requirements of other ITS systems.",
+    "entity": {
+      "Machine Domain": [
+        "the Center-to-Center project"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "other ITS systems"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center-to-Center project",
+          "other ITS systems"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The mnemonic for the Center-to-Center project is Center-to-Center.",
+    "entity": {
+      "Machine Domain": [
+        "Center-to-Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Requirement Category Mnemonic is a two-letter mnemonic for each functional area.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Requirement Numbers are a combination of target Advanced Traffic Management System (ATMS) and sequential within a given functional area.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "Advanced Traffic Management System"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "For each roadway network it maintains, the Center shall provide the network name and link data information.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "each roadway network"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the network name",
+        "link data information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "the network name"
+        ],
+        [
+          "the Center",
+          "link data information"
+        ],
+        [
+          "each roadway network",
+          "the network name"
+        ],
+        [
+          "each roadway network",
+          "link data information"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall provide the link information, including link identifier, link name and link type.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the link information",
+        "link identifier",
+        "link name",
+        "link type"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "the link information"
+        ],
+        [
+          "The Center",
+          "link identifier"
+        ],
+        [
+          "The Center",
+          "link name"
+        ],
+        [
+          "The Center",
+          "link type"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall provide the node information, including node identifier, node name and node type description.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the node information",
+        "node identifier",
+        "node name ",
+        "node type description"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "the node information"
+        ],
+        [
+          "The Center",
+          "node identifier"
+        ],
+        [
+          "The Center",
+          "node name "
+        ],
+        [
+          "The Center",
+          "node type description"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the information about each incident, including network identifier, incident description and roadway.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the information about each incident",
+        "network identifier",
+        "incident description",
+        "roadway"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "the information about each incident"
+        ],
+        [
+          "The Center",
+          "network identifier"
+        ],
+        [
+          "The Center",
+          "incident description"
+        ],
+        [
+          "The Center",
+          "roadway"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the information about each lane closure, including network identifier, lane closure id, closure description.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "lane closure"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the information about each lane closure",
+        "network identifier",
+        "lane closure id",
+        "closure description"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "network identifier"
+        ],
+        [
+          "The Center",
+          "lane closure id"
+        ],
+        [
+          "The Center",
+          "closure description"
+        ],
+        [
+          "lane closure",
+          "the information about each lane closure"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "The Center",
+          "the information about each lane closure"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall provide the following status information about each DMS, including network identifier, DMS identifier, DMS name.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "each DMS"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "DMS identifier",
+        "DMS name"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "each DMS",
+          "status information"
+        ],
+        [
+          "The Center",
+          "network identifier"
+        ],
+        [
+          "each DMS",
+          "network identifier"
+        ],
+        [
+          "The Center",
+          "DMS identifier"
+        ],
+        [
+          "each DMS",
+          "DMS identifier"
+        ],
+        [
+          "The Center",
+          "DMS name"
+        ],
+        [
+          "each DMS",
+          "DMS name"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support DMS control in other centers, the Center shall be able to support the following device control command for a DMS, including network identifier, DMS identifier, username and Password.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "a DMS"
+      ],
+      "Requirements": [
+        "To support DMS control in other centers"
+      ],
+      "Shared Phenomena": [
+        "device control command"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "device control command"
+        ],
+        [
+          "a DMS",
+          "device control command"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": [
+        [
+          "a DMS",
+          "To support DMS control in other centers"
+        ]
+      ]
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each LCS, including network identifier, LCS identifier, LCS name, Location and Status.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "each LCS"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "LCS identifier,",
+        "LCS name",
+        "Location",
+        "Status"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "each LCS",
+          "status information"
+        ],
+        [
+          "each LCS",
+          "network identifier"
+        ],
+        [
+          "each LCS",
+          "LCS identifier,"
+        ],
+        [
+          "each LCS",
+          "LCS name"
+        ],
+        [
+          "each LCS",
+          "Location"
+        ],
+        [
+          "each LCS",
+          "Status"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support LCS control in other centers, the Center shall be able to support the following device control command for a LCS, including network identifier, LCS identifier, username and Password.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a LCS"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "To support LCS control in other centers"
+      ],
+      "Shared Phenomena": [
+        "device control command",
+        "network identifier",
+        "LCS identifier",
+        "username",
+        "Password"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "device control command"
+        ],
+        [
+          "a LCS",
+          "device control command"
+        ],
+        [
+          "the Center",
+          "network identifier"
+        ],
+        [
+          "the Center",
+          "LCS identifier"
+        ],
+        [
+          "the Center",
+          "username"
+        ],
+        [
+          "the Center",
+          "Password"
+        ],
+        [
+          "a LCS",
+          "network identifier"
+        ],
+        [
+          "a LCS",
+          "LCS identifier"
+        ],
+        [
+          "a LCS",
+          "username"
+        ],
+        [
+          "a LCS",
+          "Password"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "a LCS",
+          "To support LCS control in other centers"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall provide the information status information about each CCTV, including network identifier, CCTV identifier, CCTV name, Location and Status.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "each CCTV"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "CCTV identifier",
+        "CCTV name",
+        "Location",
+        "Status"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "each CCTV",
+          "status information"
+        ],
+        [
+          "each CCTV",
+          "network identifier"
+        ],
+        [
+          "each CCTV",
+          "CCTV identifier"
+        ],
+        [
+          "each CCTV",
+          "CCTV name"
+        ],
+        [
+          "each CCTV",
+          "Location"
+        ],
+        [
+          "each CCTV",
+          "Status"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support CCTV control in other centers, the Center shall be able to support the following CCTV control request, including network identifier, CCTV identifier, username, Password.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "To support CCTV control in other centers"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "CCTV control request,",
+        "network identifier",
+        "CCTV identifier",
+        "username",
+        "Password"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "CCTV control request,"
+        ],
+        [
+          "the Center",
+          "network identifier"
+        ],
+        [
+          "the Center",
+          "CCTV identifier"
+        ],
+        [
+          "the Center",
+          "username"
+        ],
+        [
+          "the Center",
+          "Password"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Center",
+          "To support CCTV control in other centers"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support video snapshots, the Center shall be able to support the status information, including network identifier, CCTV identifier, CCTV name and status.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "To support video snapshots"
+      ],
+      "Shared Phenomena": [
+        "network identifier",
+        "CCTV identifier",
+        "CCTV name",
+        "status"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "network identifier"
+        ],
+        [
+          "the Center",
+          "CCTV identifier"
+        ],
+        [
+          "the Center",
+          "CCTV name"
+        ],
+        [
+          "the Center",
+          "status"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Center",
+          "To support video snapshots"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support CCTV switching in other centers, the Center shall be able to support the following CCTV switching command, including network identifier, username, Password and video channel input identifier.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [
+        "To support CCTV switching in other centers"
+      ],
+      "Shared Phenomena": [
+        "CCTV switching command",
+        "network identifier",
+        "username",
+        "Password",
+        "video channel input identifier"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "CCTV switching command"
+        ],
+        [
+          "the Center",
+          "network identifier"
+        ],
+        [
+          "the Center",
+          "username"
+        ],
+        [
+          "the Center",
+          "Password"
+        ],
+        [
+          "the Center",
+          "video channel input identifier"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Center",
+          "To support CCTV switching in other centers"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the status information about each ramp meter, including network identifier, Ramp Meter identifier, Ramp Meter name, Location and Status.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "ramp meter"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the status information",
+        "network identifier",
+        "Ramp Meter identifier",
+        "Ramp Meter name",
+        "Location",
+        "Status"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "the status information"
+        ],
+        [
+          "ramp meter",
+          "the status information"
+        ],
+        [
+          "ramp meter",
+          "network identifier"
+        ],
+        [
+          "ramp meter",
+          "Ramp Meter identifier"
+        ],
+        [
+          "ramp meter",
+          "Ramp Meter name"
+        ],
+        [
+          "ramp meter",
+          "Location"
+        ],
+        [
+          "ramp meter",
+          "Status"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support Ramp Meter control in other centers, the Center shall be able to support the following device control command for a ramp meter, including network identifier, Ramp Meter identifier, username, password and plan.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a ramp meter"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "To support Ramp Meter control in other centers"
+      ],
+      "Shared Phenomena": [
+        "device control command",
+        "network identifier",
+        "Ramp Meter identifier",
+        "username",
+        "password",
+        "plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "device control command"
+        ],
+        [
+          "a ramp meter",
+          "device control command"
+        ],
+        [
+          "a ramp meter",
+          "network identifier"
+        ],
+        [
+          "a ramp meter",
+          "Ramp Meter identifier"
+        ],
+        [
+          "a ramp meter",
+          "username"
+        ],
+        [
+          "a ramp meter",
+          "password"
+        ],
+        [
+          "a ramp meter",
+          "plan"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Center",
+          "To support Ramp Meter control in other centers"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each HAR, including network identifier, HAR identifier, HAR name, location and status.",
+    "entity": {
+      "Machine Domain": [
+        "The Center "
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "HAR"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "HAR identifier",
+        "HAR name",
+        "location",
+        "status"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center ",
+          "status information"
+        ],
+        [
+          "HAR",
+          "status information"
+        ],
+        [
+          "HAR",
+          "network identifier"
+        ],
+        [
+          "HAR",
+          "HAR identifier"
+        ],
+        [
+          "HAR",
+          "HAR name"
+        ],
+        [
+          "HAR",
+          "location"
+        ],
+        [
+          "HAR",
+          "status"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support HAR control in other centers, the Center shall be able to support the following device control command for a HAR, including network identifier, HAR identifier, username, password and message.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a HAR"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "To support HAR control in other centers"
+      ],
+      "Shared Phenomena": [
+        "device control command",
+        "network identifier",
+        "HAR identifier",
+        "username",
+        "password",
+        "message"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "device control command"
+        ],
+        [
+          "a HAR",
+          "device control command"
+        ],
+        [
+          "a HAR",
+          "network identifier"
+        ],
+        [
+          "a HAR",
+          "HAR identifier"
+        ],
+        [
+          "a HAR",
+          "username"
+        ],
+        [
+          "a HAR",
+          "password"
+        ],
+        [
+          "a HAR",
+          "message"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Center",
+          "To support HAR control in other centers"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Traffic Signal, including network identifier,traffic signal identifier, traffic signal name,location and status.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Traffic Signal"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "traffic signal identifier",
+        "traffic signal name",
+        "location",
+        "status"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Traffic Signal",
+          "status information"
+        ],
+        [
+          "Traffic Signal",
+          "network identifier"
+        ],
+        [
+          "Traffic Signal",
+          "traffic signal identifier"
+        ],
+        [
+          "Traffic Signal",
+          "traffic signal name"
+        ],
+        [
+          "Traffic Signal",
+          "location"
+        ],
+        [
+          "Traffic Signal",
+          "status"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support Traffic Signal control in other centers, the Center shall be able to support the following device control command for a Traffic Signal, including network identifier, traffic signal identifier, username, password and traffic signal plan identifier.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a Traffic Signal"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "To support Traffic Signal control in other centers"
+      ],
+      "Shared Phenomena": [
+        "device control command",
+        "network identifier",
+        "traffic signal identifier",
+        "username",
+        "password",
+        "traffic signal plan identifier"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "device control command"
+        ],
+        [
+          "a Traffic Signal",
+          "device control command"
+        ],
+        [
+          "a Traffic Signal",
+          "network identifier"
+        ],
+        [
+          "a Traffic Signal",
+          "traffic signal identifier"
+        ],
+        [
+          "a Traffic Signal",
+          "username"
+        ],
+        [
+          "a Traffic Signal",
+          "password"
+        ],
+        [
+          "a Traffic Signal",
+          "traffic signal plan identifier"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Center",
+          "To support Traffic Signal control in other centers"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each ESS, including network identifier, environmental sensor identifier, environment sensor name, type, location and status.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [
+        "environmental sensor",
+        "environment sensor"
+      ],
+      "Environment Entity": [
+        "each ESS"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "environmental sensor identifier",
+        "environment sensor name",
+        "type",
+        "location",
+        "status"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "each ESS",
+          "status information"
+        ],
+        [
+          "each ESS",
+          "network identifier"
+        ],
+        [
+          "each ESS",
+          "environmental sensor identifier"
+        ],
+        [
+          "each ESS",
+          "environment sensor name"
+        ],
+        [
+          "each ESS",
+          "type"
+        ],
+        [
+          "each ESS",
+          "location"
+        ],
+        [
+          "each ESS",
+          "status"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each HOV, including network identifier, HOV identifier, HOV name, link identifier, status and plan.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "each HOV"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "following status information",
+        "network identifier",
+        "HOV identifier",
+        "HOV name",
+        "link identifier",
+        "status",
+        "plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "following status information"
+        ],
+        [
+          "each HOV",
+          "following status information"
+        ],
+        [
+          "each HOV",
+          "network identifier"
+        ],
+        [
+          "each HOV",
+          "HOV identifier"
+        ],
+        [
+          "each HOV",
+          "HOV name"
+        ],
+        [
+          "each HOV",
+          "link identifier"
+        ],
+        [
+          "each HOV",
+          "status"
+        ],
+        [
+          "each HOV",
+          "plan"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support HOV Lane control in other centers, the Center shall be able to support the following device control command for a HOV Lane, including network identifier, HOV Lane identifier, username, password and lane plan.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a HOV Lane"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "To support HOV Lane control in other centers"
+      ],
+      "Shared Phenomena": [
+        "device control command",
+        "network identifier",
+        "HOV Lane identifier",
+        "username",
+        "password",
+        "lane plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "device control command"
+        ],
+        [
+          "a HOV Lane",
+          "device control command"
+        ],
+        [
+          "a HOV Lane",
+          "network identifier"
+        ],
+        [
+          "a HOV Lane",
+          "HOV Lane identifier"
+        ],
+        [
+          "a HOV Lane",
+          "username"
+        ],
+        [
+          "a HOV Lane",
+          "password"
+        ],
+        [
+          "a HOV Lane",
+          "lane plan"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Center",
+          "To support HOV Lane control in other centers"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Parking Lot, including network identifier, parking lot identifier, parking lot name, location and status.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Parking Lot"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "parking lot identifier,",
+        "parking lot name",
+        "location",
+        "status"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Parking Lot",
+          "status information"
+        ],
+        [
+          "Parking Lot",
+          "network identifier"
+        ],
+        [
+          "Parking Lot",
+          "parking lot identifier,"
+        ],
+        [
+          "Parking Lot",
+          "parking lot name"
+        ],
+        [
+          "Parking Lot",
+          "location"
+        ],
+        [
+          "Parking Lot",
+          "status"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each School Zone, including network identifier, link identifier, school zone identifier and school zone name.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "School Zone"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        " link identifier",
+        "school zone identifier",
+        "school zone name"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "School Zone",
+          "status information"
+        ],
+        [
+          "School Zone",
+          "network identifier"
+        ],
+        [
+          "School Zone",
+          " link identifier"
+        ],
+        [
+          "School Zone",
+          "school zone identifier"
+        ],
+        [
+          "School Zone",
+          "school zone name"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support School Zone control in other centers, the Center shall be able to support the following device control command for a School Zone, including network identifier, school zone identifier, username, password and plan.",
+    "entity": {
+      "Machine Domain": [
+        "the Center "
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a School Zone"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "To support School Zone control in other centers"
+      ],
+      "Shared Phenomena": [
+        "device control command ",
+        "network identifier",
+        "school zone identifier",
+        "username",
+        "password",
+        "plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center ",
+          "device control command "
+        ],
+        [
+          "a School Zone",
+          "device control command "
+        ],
+        [
+          "a School Zone",
+          "network identifier"
+        ],
+        [
+          "a School Zone",
+          "school zone identifier"
+        ],
+        [
+          "a School Zone",
+          "username"
+        ],
+        [
+          "a School Zone",
+          "password"
+        ],
+        [
+          "a School Zone",
+          "plan"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Center ",
+          "To support School Zone control in other centers"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Railroad Crossing, including network identifier, link identifier, rail crossing identifier, rail crossing name, location and status.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Railroad Crossing"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "link identifier",
+        "rail crossing identifier",
+        "rail crossing name",
+        "location",
+        "status"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Railroad Crossing",
+          "status information"
+        ],
+        [
+          "Railroad Crossing",
+          "network identifier"
+        ],
+        [
+          "Railroad Crossing",
+          "link identifier"
+        ],
+        [
+          "Railroad Crossing",
+          "rail crossing identifier"
+        ],
+        [
+          "Railroad Crossing",
+          "rail crossing name"
+        ],
+        [
+          "Railroad Crossing",
+          "location"
+        ],
+        [
+          "Railroad Crossing",
+          "status"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Reversible Lane, including network identifier, reversible lane identifier, reversible lane name, link identifier, indicator status and indicator failure state.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Reversible Lane"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "reversible lane identifier",
+        "reversible lane name",
+        "link identifier",
+        "indicator status",
+        "indicator failure state"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Reversible Lane",
+          "status information"
+        ],
+        [
+          "Reversible Lane",
+          "network identifier"
+        ],
+        [
+          "Reversible Lane",
+          "reversible lane identifier"
+        ],
+        [
+          "Reversible Lane",
+          "reversible lane name"
+        ],
+        [
+          "Reversible Lane",
+          "link identifier"
+        ],
+        [
+          "Reversible Lane",
+          "indicator status"
+        ],
+        [
+          "Reversible Lane",
+          "indicator failure state"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support Reversible Lane control in other centers, the Center shall be able to support the following device control command for a Reversible Lane, including network identifier, reversible lane identifier, username, password, plan and duration.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a Reversible Lane"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "To support Reversible Lane control in other centers"
+      ],
+      "Shared Phenomena": [
+        "device control command",
+        "network identifier",
+        "reversible lane identifier",
+        "username",
+        "password",
+        "plan",
+        "duration"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "device control command"
+        ],
+        [
+          "a Reversible Lane",
+          "device control command"
+        ],
+        [
+          "a Reversible Lane",
+          "network identifier"
+        ],
+        [
+          "a Reversible Lane",
+          "reversible lane identifier"
+        ],
+        [
+          "a Reversible Lane",
+          "username"
+        ],
+        [
+          "a Reversible Lane",
+          "password"
+        ],
+        [
+          "a Reversible Lane",
+          "plan"
+        ],
+        [
+          "a Reversible Lane",
+          "duration"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Center",
+          "To support Reversible Lane control in other centers"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Dynamic Lane, including network identifier, link identifier, dynamic lane identifier, dynamic lane name and failure state.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Dynamic Lane"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "link identifier",
+        "dynamic lane identifier",
+        "dynamic lane name",
+        "failure state"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Dynamic Lane",
+          "status information"
+        ],
+        [
+          "Dynamic Lane",
+          "network identifier"
+        ],
+        [
+          "Dynamic Lane",
+          "link identifier"
+        ],
+        [
+          "Dynamic Lane",
+          "dynamic lane identifier"
+        ],
+        [
+          "Dynamic Lane",
+          "dynamic lane name"
+        ],
+        [
+          "Dynamic Lane",
+          "failure state"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "To support Dynamic Lane control in other centers, the Center shall be able to support the following device control command for a Dynamic Lane, including network identifier, dynamic lane identifier, username, password and lane plan.",
+    "entity": {
+      "Machine Domain": [
+        "the Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a Dynamic Lane"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "To support Dynamic Lane control in other centers"
+      ],
+      "Shared Phenomena": [
+        "device control command",
+        "network identifier",
+        "dynamic lane identifier",
+        "username",
+        "username",
+        "password",
+        "lane plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center",
+          "device control command"
+        ],
+        [
+          "a Dynamic Lane",
+          "device control command"
+        ],
+        [
+          "a Dynamic Lane",
+          "network identifier"
+        ],
+        [
+          "a Dynamic Lane",
+          "dynamic lane identifier"
+        ],
+        [
+          "a Dynamic Lane",
+          "username"
+        ],
+        [
+          "a Dynamic Lane",
+          "password"
+        ],
+        [
+          "a Dynamic Lane",
+          "lane plan"
+        ]
+      ],
+      "requirements reference": [
+        [
+          "the Center",
+          "To support Dynamic Lane control in other centers"
+        ]
+      ],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Bus Stop, including network identifier, link identifier, relative link location, name and location.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Bus Stop"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "link identifier",
+        "relative link location",
+        "name",
+        "location"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Bus Stop",
+          "status information"
+        ],
+        [
+          "Bus Stop",
+          "network identifier"
+        ],
+        [
+          "Bus Stop",
+          "link identifier"
+        ],
+        [
+          "Bus Stop",
+          "relative link location"
+        ],
+        [
+          "Bus Stop",
+          "name"
+        ],
+        [
+          "Bus Stop",
+          "location"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Bus Location, including network identifier, link identifier, bus identifier, bus name, location and schedule adherece.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Bus Location"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "link identifier",
+        "bus identifier",
+        "bus name",
+        "location",
+        "schedule adherece"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Bus Location",
+          "status information"
+        ],
+        [
+          "Bus Location",
+          "network identifier"
+        ],
+        [
+          "Bus Location",
+          "link identifier"
+        ],
+        [
+          "Bus Location",
+          "bus identifier"
+        ],
+        [
+          "Bus Location",
+          "bus name"
+        ],
+        [
+          "Bus Location",
+          "location"
+        ],
+        [
+          "Bus Location",
+          "schedule adherece"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Light/Commuter Stop, including network identifier, link identifier, commuter or light rail stop identifier, commuter or light rail stop name, location and routes.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Light/Commuter Stop"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "link identifier",
+        "commuter or light rail stop identifier",
+        "commuter or light rail stop name",
+        "location",
+        "routes"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Light/Commuter Stop",
+          "status information"
+        ],
+        [
+          "Light/Commuter Stop",
+          "network identifier"
+        ],
+        [
+          "Light/Commuter Stop",
+          "link identifier"
+        ],
+        [
+          "Light/Commuter Stop",
+          "commuter or light rail stop identifier"
+        ],
+        [
+          "Light/Commuter Stop",
+          "commuter or light rail stop name"
+        ],
+        [
+          "Light/Commuter Stop",
+          "location"
+        ],
+        [
+          "Light/Commuter Stop",
+          "routes"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Light/Commuter Location, including network identifier, link identifier, commuter or light rail identifier, commuter or light rail name, location and schedule adherence.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Light/Commuter Location"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        "link identifier",
+        "commuter or light rail identifier",
+        "commuter or light rail name",
+        "location",
+        "schedule adherence"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Light/Commuter Location",
+          "status information"
+        ],
+        [
+          "Light/Commuter Location",
+          "network identifier"
+        ],
+        [
+          "Light/Commuter Location",
+          "link identifier"
+        ],
+        [
+          "Light/Commuter Location",
+          "commuter or light rail identifier"
+        ],
+        [
+          "Light/Commuter Location",
+          "commuter or light rail name"
+        ],
+        [
+          "Light/Commuter Location",
+          "location"
+        ],
+        [
+          "Light/Commuter Location",
+          "schedule adherence"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Park and Ride Lot, including network identifier, park and ride lot identifier, park and ride lot name, location, status and capacity.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "Park and Ride Lot"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "network identifier",
+        " park and ride lot identifier",
+        "park and ride lot name",
+        "location",
+        "status",
+        "capacity"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Park and Ride Lot",
+          "status information"
+        ],
+        [
+          "Park and Ride Lot",
+          "network identifier"
+        ],
+        [
+          "Park and Ride Lot",
+          " park and ride lot identifier"
+        ],
+        [
+          "Park and Ride Lot",
+          "park and ride lot name"
+        ],
+        [
+          "Park and Ride Lot",
+          "location"
+        ],
+        [
+          "Park and Ride Lot",
+          "status"
+        ],
+        [
+          "Park and Ride Lot",
+          "capacity"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following status information about each Vehicle Priority, including vehicle identifier, network identifier, link identifier and intersection identifier.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [
+        "Vehicle Priority"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "status information",
+        "vehicle identifier",
+        "network identifier",
+        "link identifier",
+        "intersection identifier"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "status information"
+        ],
+        [
+          "Vehicle Priority",
+          "status information"
+        ],
+        [
+          "Vehicle Priority",
+          "vehicle identifier"
+        ],
+        [
+          "Vehicle Priority",
+          "network identifier"
+        ],
+        [
+          "Vehicle Priority",
+          "link identifier"
+        ],
+        [
+          "Vehicle Priority",
+          "intersection identifier"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center shall support the following information about network device status, including network identifier, number of DMSs, number of LCSs, DMS status data, LCS status data and CCTV status data.",
+    "entity": {
+      "Machine Domain": [
+        "The Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information about network device status",
+        "network identifier",
+        "number of DMSs",
+        "number of LCSs",
+        "DMS status data",
+        "LCS status data",
+        "CCTV status data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center",
+          "information about network device status"
+        ],
+        [
+          "The Center",
+          "network identifier"
+        ],
+        [
+          "The Center",
+          "number of DMSs"
+        ],
+        [
+          "The Center",
+          "number of LCSs"
+        ],
+        [
+          "The Center",
+          "DMS status data"
+        ],
+        [
+          "The Center",
+          "LCS status data"
+        ],
+        [
+          "The Center",
+          "CCTV status data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The device status requestor and Center shall support the following information for command timeframe request, including network identifier and device type.",
+    "entity": {
+      "Machine Domain": [
+        "Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The device status requestor"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information for command timeframe request",
+        "network identifier",
+        "device type"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The device status requestor",
+          "information for command timeframe request"
+        ],
+        [
+          "The device status requestor",
+          "network identifier"
+        ],
+        [
+          "The device status requestor",
+          "device type"
+        ],
+        [
+          "Center",
+          "information for command timeframe request"
+        ],
+        [
+          "Center",
+          "network identifier"
+        ],
+        [
+          "Center",
+          "device type"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The device status requestor and Center shall support the following information for command timeframe request, including network identifier, device type, days commands accepted and times commands accepted.",
+    "entity": {
+      "Machine Domain": [
+        "Center"
+      ],
+      "Physical Device": [
+        "The device status requestor"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information for command timeframe request",
+        "network identifier",
+        "device type",
+        "days commands accepted",
+        "times commands accepted"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The device status requestor",
+          "information for command timeframe request"
+        ],
+        [
+          "The device status requestor",
+          "network identifier"
+        ],
+        [
+          "The device status requestor",
+          "device type"
+        ],
+        [
+          "The device status requestor",
+          "days commands accepted"
+        ],
+        [
+          "The device status requestor",
+          "times commands accepted"
+        ],
+        [
+          "Center",
+          "information for command timeframe request"
+        ],
+        [
+          "Center",
+          "network identifier"
+        ],
+        [
+          "Center",
+          "device type"
+        ],
+        [
+          "Center",
+          "days commands accepted"
+        ],
+        [
+          "Center",
+          "times commands accepted"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Data Collector shall be designed to support the storage of TMDD data elements and message set information.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "The Data Collector"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "TMDD data elements",
+        "message set information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Data Collector",
+          "TMDD data elements"
+        ],
+        [
+          "The Data Collector",
+          "message set information"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center Project shall utilize the TMDD standard (including message sets) to transmit information.",
+    "entity": {
+      "Machine Domain": [
+        "The Center-to-Center Project"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the TMDD standard"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Center-to-Center Project",
+          "the TMDD standard"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "DATEX/ASN shall be used to transmit the TMDD message sets.",
+    "entity": {
+      "Machine Domain": [
+        "DATEX/ASN"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the TMDD message sets"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "DATEX/ASN",
+          "the TMDD message sets"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "TCP/IP shall be used to transmit the DATEX/ASN data.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [
+        "TCP/IP"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the DATEX/ASN data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "TCP/IP",
+          "the DATEX/ASN data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Web Map application generates a map that can be displayed on an Internet WWW server.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "The Web Map application",
+        "an Internet WWW server"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a map"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Web Map application",
+          "a map"
+        ],
+        [
+          "an Internet WWW server",
+          "a map"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The map provides a graphical depiction of the traffic conditions.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "The map"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the traffic conditions"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The map",
+          "the traffic conditions"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The map shall display interstates and state highways on the graphical map.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "The map"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "interstates and state highways"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The map",
+          "interstates and state highways"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The basemap data shall be derived from the North Central Texas Council of Governments (NCTCOG) GeoData warehouse.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "GeoData warehouse"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "The basemap data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "GeoData warehouse",
+          "The basemap data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The map user shall be able to alter the current magnification (zoom level) of the map.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The map user",
+        "the map"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the current magnification"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The map user",
+          "the current magnification"
+        ],
+        [
+          "the map",
+          "the current magnification"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The map user shall be able to pan the map in each of the following directions: North, South, East or West.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The map user",
+        "the map"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The map user",
+          "the map"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Each link displayed on the map shall be color coded to provide a graphical depiction of speeds.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the map",
+        "Each link"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to provide a graphical depiction of speeds"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "Each link",
+          "the map"
+        ],
+        [
+          "the map",
+          "to provide a graphical depiction of speeds"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A configuration file shall be provided to specify specific speed values.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "A configuration file"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to specify specific speed values"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "A configuration file",
+          "to specify specific speed values"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The map shall display the current incidents (as icons) known to the Center-to-Center Project.",
+    "entity": {
+      "Machine Domain": [
+        "the Center-to-Center Project"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The map"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the current incidents"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The map",
+          "the current incidents"
+        ],
+        [
+          "the Center-to-Center Project",
+          "the current incidents"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The user shall be able to click on an incident icon to obtain further information about the incident.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The user",
+        "an incident icon"
+      ],
+      "Design Domain": [],
+      "Requirements": [
+        "to obtain further information about the incident"
+      ],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The user",
+          "an incident icon"
+        ],
+        [
+          "The user",
+          "to obtain further information about the incident"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "All current incidents shall be displayed in tabular format with the following information contained in the table.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The map shall be capable of displaying the following for a DMS.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The map",
+        "a DMS"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The map",
+          "a DMS"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The map shall be capable of displaying the following for a LCS.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The map",
+        "a LCS"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "displaying the following"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The map",
+          "displaying the following"
+        ],
+        [
+          "a LCS",
+          "displaying the following"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The map shall be capable of displaying the following for a CCTV.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The map",
+        "a CCTV"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [
+        [
+          "The map",
+          "a CCTV"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Incident GUI shall allow the user to enter incident or lane closure information without the use of an Center.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [
+        "The Incident GUI"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "incident or lane closure information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Incident GUI",
+          "incident or lane closure information"
+        ],
+        [
+          "the user",
+          "incident or lane closure information"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Incident GUI shall allow the user to input the following information for each incident.",
+    "entity": {
+      "Machine Domain": [
+        "The Incident GUI "
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information for each incident"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Incident GUI ",
+          "information for each incident"
+        ],
+        [
+          "the user",
+          "information for each incident"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Incident GUI shall allow the user to input the following information for each lane closure.",
+    "entity": {
+      "Machine Domain": [
+        "The Incident GUI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        " lane closure"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "information for each lane closure"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The Incident GUI",
+          "the user"
+        ],
+        [
+          "the user",
+          "information for each lane closure"
+        ],
+        [
+          " lane closure",
+          "information for each lane closure"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The GUI shall provide a list of previously entered incidents.",
+    "entity": {
+      "Machine Domain": [
+        "The GUI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a list of previously entered incidents"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The GUI",
+          "a list of previously entered incidents"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The GUI shall allow the data about an incident to be modified.",
+    "entity": {
+      "Machine Domain": [
+        "The GUI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the data about an incident to be modified"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The GUI",
+          "the data about an incident to be modified"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The GUI shall allow a user to delete a previously entered incident.",
+    "entity": {
+      "Machine Domain": [
+        "The GUI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "delete a previously entered incident"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The GUI",
+          "delete a previously entered incident"
+        ],
+        [
+          "a user",
+          "delete a previously entered incident"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The GUI shall provide a list of previously entered lane closures.",
+    "entity": {
+      "Machine Domain": [
+        "The GUI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a list of previously entered lane closures"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The GUI",
+          "a list of previously entered lane closures"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The GUI shall allow a user to delete a previously entered lane closure.",
+    "entity": {
+      "Machine Domain": [
+        "The GUI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "delete a previously entered lane closure"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The GUI",
+          "delete a previously entered lane closure"
+        ],
+        [
+          "a user",
+          "delete a previously entered lane closure"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The GUI shall allow a user to delete a previously entered lane closure.",
+    "entity": {
+      "Machine Domain": [
+        "The GUI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "delete a previously entered lane closure"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The GUI",
+          "delete a previously entered lane closure"
+        ],
+        [
+          "a user",
+          "delete a previously entered lane closure"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The remote Center Control GUI shall be designed to execute on a public network (e.g., Internet) and transmit equipment requests to the C-2-C software system.",
+    "entity": {
+      "Machine Domain": [
+        "The remote Center Control GUI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "a public network"
+      ],
+      "Design Domain": [
+        "the C-2-C software system"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "equipment requests"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The remote Center Control GUI",
+          "equipment requests"
+        ],
+        [
+          "the C-2-C software system",
+          "equipment requests"
+        ],
+        [
+          "The remote Center Control GUI",
+          "a public network"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "When the GUI application is initiated, the user shall be prompted for the following information, including User name and Password.",
+    "entity": {
+      "Machine Domain": [
+        "the GUI application"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "User name",
+        "Password"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the GUI application",
+          "User name"
+        ],
+        [
+          "the GUI application",
+          "Password"
+        ],
+        [
+          "the user",
+          "User name"
+        ],
+        [
+          "the user",
+          "Password"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The user shall be provided with the capability to select a network identifier for a device command/control request.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [
+        "The user",
+        "a device command/control request"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a network identifier"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The user",
+          "a network identifier"
+        ],
+        [
+          "a device command/control request",
+          "a network identifier"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to select a DMS from a list and provide the following information, including Target DMS, Message to be displayed and Beacons On/Off.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "a DMS"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Target DMS",
+        "Message to be displayed ",
+        "Beacons On/Off"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a DMS"
+        ],
+        [
+          "the user",
+          "a DMS"
+        ],
+        [
+          "an Center",
+          "Target DMS"
+        ],
+        [
+          "the user",
+          "Target DMS"
+        ],
+        [
+          "an Center",
+          "Message to be displayed "
+        ],
+        [
+          "the user",
+          "Message to be displayed "
+        ],
+        [
+          "an Center",
+          "Beacons On/Off"
+        ],
+        [
+          "the user",
+          "Beacons On/Off"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to select a LCS from a list and provide the following information, including Target LCS and Assignment of lane arrows.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "a LCS"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Target LCS",
+        "Assignment of lane arrows"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a LCS"
+        ],
+        [
+          "the user",
+          "a LCS"
+        ],
+        [
+          "an Center",
+          "Target LCS"
+        ],
+        [
+          "the user",
+          "Target LCS"
+        ],
+        [
+          "an Center",
+          "Assignment of lane arrows"
+        ],
+        [
+          "the user",
+          "Assignment of lane arrows"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to issue a CCTV switching command, including Source (input) and Destination port (output).",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "a CCTV switching command",
+        "Source",
+        "Destination port"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a CCTV switching command"
+        ],
+        [
+          "the user",
+          "a CCTV switching command"
+        ],
+        [
+          "an Center",
+          "Source"
+        ],
+        [
+          "the user",
+          "Source"
+        ],
+        [
+          "an Center",
+          "Destination port"
+        ],
+        [
+          "the user",
+          "Destination port"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to select a CCTV from a list and provide the following information.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "a CCTV"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "the following information"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a CCTV"
+        ],
+        [
+          "the user",
+          "a CCTV"
+        ],
+        [
+          "an Center",
+          "the following information"
+        ],
+        [
+          "the user",
+          "the following information"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to select a Ramp Meter from a list and provide the following information, including Target Ramp Meter and Plan.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "a Ramp Meter"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Target Ramp Meter",
+        "Plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a Ramp Meter"
+        ],
+        [
+          "the user",
+          "a Ramp Meter"
+        ],
+        [
+          "an Center",
+          "Target Ramp Meter"
+        ],
+        [
+          "the user",
+          "Target Ramp Meter"
+        ],
+        [
+          "an Center",
+          "Plan"
+        ],
+        [
+          "the user",
+          "Plan"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to select a HAR from a list and provide the following information, including Target HAR and Text to be sent to the HAR.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "a HAR",
+        "o"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Target HAR",
+        "Text to be sent to the HAR"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a HAR"
+        ],
+        [
+          "the user",
+          "a HAR"
+        ],
+        [
+          "an Center",
+          "Target HAR"
+        ],
+        [
+          "an Center",
+          "Text to be sent to the HAR"
+        ],
+        [
+          "the user",
+          "Target HAR"
+        ],
+        [
+          "the user",
+          "the user"
+        ],
+        [
+          "the user",
+          "Text to be sent to the HAR"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to select a Traffic Signal from a list and provide the following information, including Target Traffic Signal and Plan.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "a Traffic Signal"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Target Traffic Signal and Plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a Traffic Signal"
+        ],
+        [
+          "the user",
+          "a Traffic Signal"
+        ],
+        [
+          "an Center",
+          "Target Traffic Signal and Plan"
+        ],
+        [
+          "the user",
+          "Target Traffic Signal and Plan"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to select a HOV from a list and provide the following information, including Target HOV and Plan.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "a HOV "
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Target HOV and Plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a HOV "
+        ],
+        [
+          "the user",
+          "a HOV "
+        ],
+        [
+          "an Center",
+          "Target HOV and Plan"
+        ],
+        [
+          "the user",
+          "Target HOV and Plan"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to select a School Zone from a list and provide the following information, including Target School Zone and Plan.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "a School Zone"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Target School Zone and Plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a School Zone"
+        ],
+        [
+          "the user",
+          "a School Zone"
+        ],
+        [
+          "an Center",
+          "Target School Zone and Plan"
+        ],
+        [
+          "the user",
+          "Target School Zone and Plan"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to select a Reversible Lane from a list and provide the following information, including Target Reversible Lane and Plan.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "a Reversible Lane"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Target Reversible Lane and Plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a Reversible Lane"
+        ],
+        [
+          "the user",
+          "a Reversible Lane"
+        ],
+        [
+          "an Center",
+          "Target Reversible Lane and Plan"
+        ],
+        [
+          "the user",
+          "Target Reversible Lane and Plan"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "Once an Center is selected, the user shall be able to select a Dynamic Lane from a list and provide the following information, including Target Dynamic Lane and Plan.",
+    "entity": {
+      "Machine Domain": [
+        "an Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [
+        "the user",
+        "a Dynamic Lane"
+      ],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "Target Dynamic Lane and Plan"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "an Center",
+          "a Dynamic Lane"
+        ],
+        [
+          "the user",
+          "a Dynamic Lane"
+        ],
+        [
+          "an Center",
+          "Target Dynamic Lane and Plan"
+        ],
+        [
+          "the user",
+          "Target Dynamic Lane and Plan"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "For each device command/control status request sent by the Remote GUI, the status returned from the network identifier will be displayed in a scrollable list on the GUI.",
+    "entity": {
+      "Machine Domain": [
+        "the Remote GUI",
+        "the GUI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "each device command/control status request",
+        "the status returned from the network identifier "
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Remote GUI",
+          "each device command/control status request"
+        ],
+        [
+          "the GUI",
+          "the status returned from the network identifier "
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center Server shall execute in a Microsoft Windows NT environment.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "The Center-to-Center Server"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "A DATEX/ASN runtime library shall be available on any computer communicating to the Center-to-Center project.",
+    "entity": {
+      "Machine Domain": [
+        "the Center-to-Center project"
+      ],
+      "Physical Device": [
+        "any computer"
+      ],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "A DATEX/ASN runtime library"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center-to-Center project",
+          "any computer"
+        ],
+        [
+          "any computer",
+          "A DATEX/ASN runtime library"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The web server application shall use ESRI's ARC Internet Map Server (ARC IMS) product for creating of map images.",
+    "entity": {
+      "Machine Domain": [
+        "The web server application"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "ESRI's ARC Internet Map Server (ARC IMS) product"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "map images."
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "The web server application",
+          "map images."
+        ],
+        [
+          "ESRI's ARC Internet Map Server (ARC IMS) product",
+          "map images."
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center shall execute in a Microsoft Windows NT environment.",
+    "entity": {
+      "Machine Domain": [
+        "The Center-to-Center "
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center shall be implemented in the C/C++ programming language.",
+    "entity": {
+      "Machine Domain": [
+        "The Center-to-Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center web interface shall be implemented using C/C++ and ESRI ARC IMS.",
+    "entity": {
+      "Machine Domain": [],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "The Center-to-Center web interface"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Incident GUI shall be implemented using C/C++ and ESRI Map Objects.",
+    "entity": {
+      "Machine Domain": [
+        "The Incident GUI"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Remote Control GUI shall be implemented using C/C++ and ESRI Map Objects.",
+    "entity": {
+      "Machine Domain": [
+        "The Remote Control GUI "
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center shall be able to operate in normal mode.",
+    "entity": {
+      "Machine Domain": [
+        "The Center-to-Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In this mode the Center-to-Center receives data from all connected systems, including the Incident GUI, and combines the data into a single data store (database).",
+    "entity": {
+      "Machine Domain": [
+        "the Center-to-Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [
+        "the Incident GUI",
+        "a single data store (database)"
+      ],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "data",
+        "the data"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center-to-Center",
+          "data"
+        ],
+        [
+          "the Incident GUI",
+          "data"
+        ],
+        [
+          "the Center-to-Center",
+          "the data"
+        ],
+        [
+          "a single data store (database)",
+          "the data"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "The Center-to-Center shall be able to operate in test mode.",
+    "entity": {
+      "Machine Domain": [
+        "The Center-to-Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": []
+    },
+    "relation": {
+      "interface": [],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  },
+  {
+    "text": "In this mode, the Center-to-Center performs normal mode operations and also logs activities.",
+    "entity": {
+      "Machine Domain": [
+        "the Center-to-Center"
+      ],
+      "Physical Device": [],
+      "Environment Entity": [],
+      "Design Domain": [],
+      "Requirements": [],
+      "Shared Phenomena": [
+        "mode operations",
+        "activities"
+      ]
+    },
+    "relation": {
+      "interface": [
+        [
+          "the Center-to-Center",
+          "mode operations"
+        ],
+        [
+          "the Center-to-Center",
+          "activities"
+        ]
+      ],
+      "requirements reference": [],
+      "requirements constraints": []
+    }
+  }
+]

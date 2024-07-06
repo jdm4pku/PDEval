@@ -1,0 +1,114 @@
+This Software Requirements Specification (SRS) provides the requirements for the Center-to-Center (C2C) Communications Network that is based on a Texas Department of Transportation (TxDOT) C2C project.
+The TxDOT Center-to-Center project initially connected the DFW TxDOT Traffic Management Centers (TMCs).
+This Center-to-Center infrastructure implements a repository for traffic data and provides a mechanism to exchange device control information between TMCs.
+The Center-to-Center project will be implemented using the evolving ITS Traffic Management Data Dictionary (TMDD) standard, the message sets associated with TMDD, other ITS Data Elements and Message Sets.
+The use of ITS standards will create a system that is reusable for other ITS application areas and will provide the State of Texas with a baseline system that can be cost effectively extended in the future.
+The Center-to-Center infrastructure must interconnect several dissimilar traffic management systems.
+In order to create the Center-to-Center infrastructure, interfaces to the existing systems will be created.
+The data from these interfaces will communicate with the existing system in a “system specific” format.
+The Center-to-Center infrastructure is being created using a series of building blocks.
+These building blocks allow the software to be utilized in a number of configurations (by simply altering the configuration parameters of the software).
+The software is being designed so that multiple instances of a building block can be deployed by simply “configuring” the building block of operation within a specific agency.
+Any data that is passed into the “cloud” in the above figure will be based on the ITS standards.
+Systems will interface to the “cloud” using a project defined protocol.
+New systems that are deployed (based on the ITS standards) will not utilize the project defined protocol but will be moved “into” the cloud (because they themselves would be based on the ITS standards.
+This would allow a “local” common repository to be created by “linking” individual partners, a “regional” common repository to be created by “linking” local common repositories and a “statewide” common repository to be created by “linking” regional common repositories.
+The following sections define the requirements for the Center-to-Center project.
+Requirements are listed in separate sections and in table format for each functional area.
+The Center-to-Center project mnemonic uniquely identifies the Center-to-Center project to distinguish its requirements from the requirements of other ITS systems.
+The mnemonic for the Center-to-Center project is Center-to-Center.
+The Requirement Category Mnemonic is a two-letter mnemonic for each functional area.
+The Requirement Numbers are a combination of target Advanced Traffic Management System (ATMS) and sequential within a given functional area.
+For each roadway network it maintains, the Center shall provide the network name and link data information.
+The Center shall provide the link information, including link identifier, link name and link type.
+The Center shall provide the node information, including node identifier, node name and node type description.
+The Center shall support the information about each incident, including network identifier, incident description and roadway.
+The Center shall support the information about each lane closure, including network identifier, lane closure id, closure description.
+The Center shall provide the following status information about each DMS, including network identifier, DMS identifier, DMS name.
+To support DMS control in other centers, the Center shall be able to support the following device control command for a DMS, including network identifier, DMS identifier, username and Password.
+The Center shall support the following status information about each LCS, including network identifier, LCS identifier, LCS name, Location and Status.
+To support LCS control in other centers, the Center shall be able to support the following device control command for a LCS, including network identifier, LCS identifier, username and Password.
+The Center shall provide the information status information about each CCTV, including network identifier, CCTV identifier, CCTV name, Location and Status.
+To support CCTV control in other centers, the Center shall be able to support the following CCTV control request, including network identifier, CCTV identifier, username, Password.
+To support video snapshots, the Center shall be able to support the status information, including network identifier, CCTV identifier, CCTV name and status.
+To support CCTV switching in other centers, the Center shall be able to support the following CCTV switching command, including network identifier, username, Password and video channel input identifier.
+The Center shall support the status information about each ramp meter, including network identifier, Ramp Meter identifier, Ramp Meter name, Location and Status.
+To support Ramp Meter control in other centers, the Center shall be able to support the following device control command for a ramp meter, including network identifier, Ramp Meter identifier, username, password and plan.
+The Center shall support the following status information about each HAR, including network identifier, HAR identifier, HAR name, location and status.
+To support HAR control in other centers, the Center shall be able to support the following device control command for a HAR, including network identifier, HAR identifier, username, password and message.
+The Center shall support the following status information about each Traffic Signal, including network identifier,traffic signal identifier, traffic signal name,location and status.
+To support Traffic Signal control in other centers, the Center shall be able to support the following device control command for a Traffic Signal, including network identifier, traffic signal identifier, username, password and traffic signal plan identifier.
+The Center shall support the following status information about each ESS, including network identifier, environmental sensor identifier, environment sensor name, type, location and status.
+The Center shall support the following status information about each HOV, including network identifier, HOV identifier, HOV name, link identifier, status and plan.
+To support HOV Lane control in other centers, the Center shall be able to support the following device control command for a HOV Lane, including network identifier, HOV Lane identifier, username, password and lane plan.
+The Center shall support the following status information about each Parking Lot, including network identifier, parking lot identifier, parking lot name, location and status.
+The Center shall support the following status information about each School Zone, including network identifier, link identifier, school zone identifier and school zone name.
+To support School Zone control in other centers, the Center shall be able to support the following device control command for a School Zone, including network identifier, school zone identifier, username, password and plan.
+The Center shall support the following status information about each Railroad Crossing, including network identifier, link identifier, rail crossing identifier, rail crossing name, location and status.
+The Center shall support the following status information about each Reversible Lane, including network identifier, reversible lane identifier, reversible lane name, link identifier, indicator status and indicator failure state.
+To support Reversible Lane control in other centers, the Center shall be able to support the following device control command for a Reversible Lane, including network identifier, reversible lane identifier, username, password, plan and duration.
+The Center shall support the following status information about each Dynamic Lane, including network identifier, link identifier, dynamic lane identifier, dynamic lane name and failure state.
+To support Dynamic Lane control in other centers, the Center shall be able to support the following device control command for a Dynamic Lane, including network identifier, dynamic lane identifier, username, password and lane plan.
+The Center shall support the following status information about each Bus Stop, including network identifier, link identifier, relative link location, name and location.
+The Center shall support the following status information about each Bus Location, including network identifier, link identifier, bus identifier, bus name, location and schedule adherece.
+The Center shall support the following status information about each Light/Commuter Stop, including network identifier, link identifier, commuter or light rail stop identifier, commuter or light rail stop name, location and routes.
+The Center shall support the following status information about each Light/Commuter Location, including network identifier, link identifier, commuter or light rail identifier, commuter or light rail name, location and schedule adherence.
+The Center shall support the following status information about each Park and Ride Lot, including network identifier, park and ride lot identifier, park and ride lot name, location, status and capacity.
+The Center shall support the following status information about each Vehicle Priority, including vehicle identifier, network identifier, link identifier and intersection identifier.
+The Center shall support the following information about network device status, including network identifier, number of DMSs, number of LCSs, DMS status data, LCS status data and CCTV status data.
+The device status requestor and Center shall support the following information for command timeframe request, including network identifier and device type.
+The device status requestor and Center shall support the following information for command timeframe request, including network identifier, device type, days commands accepted and times commands accepted.
+The Data Collector shall be designed to support the storage of TMDD data elements and message set information.
+The Center-to-Center Project shall utilize the TMDD standard (including message sets) to transmit information.
+DATEX/ASN shall be used to transmit the TMDD message sets.
+TCP/IP shall be used to transmit the DATEX/ASN data.
+The Web Map application generates a map that can be displayed on an Internet WWW server.
+The map provides a graphical depiction of the traffic conditions.
+The map shall display interstates and state highways on the graphical map.
+The basemap data shall be derived from the North Central Texas Council of Governments (NCTCOG) GeoData warehouse.
+The map user shall be able to alter the current magnification (zoom level) of the map.
+The map user shall be able to pan the map in each of the following directions: North, South, East or West.
+Each link displayed on the map shall be color coded to provide a graphical depiction of speeds.
+A configuration file shall be provided to specify specific speed values.
+The map shall display the current incidents (as icons) known to the Center-to-Center Project.
+The user shall be able to click on an incident icon to obtain further information about the incident.
+All current incidents shall be displayed in tabular format with the following information contained in the table.
+The map shall be capable of displaying the following for a DMS.
+The map shall be capable of displaying the following for a LCS.
+The map shall be capable of displaying the following for a CCTV.
+The Incident GUI shall allow the user to enter incident or lane closure information without the use of an Center.
+The Incident GUI shall allow the user to input the following information for each incident.
+The Incident GUI shall allow the user to input the following information for each lane closure.
+The GUI shall provide a list of previously entered incidents.
+The GUI shall allow the data about an incident to be modified.
+The GUI shall allow a user to delete a previously entered incident.
+The GUI shall provide a list of previously entered lane closures.
+The GUI shall allow a user to delete a previously entered lane closure.
+The GUI shall allow a user to delete a previously entered lane closure.
+The remote Center Control GUI shall be designed to execute on a public network (e.g., Internet) and transmit equipment requests to the C-2-C software system.
+When the GUI application is initiated, the user shall be prompted for the following information, including User name and Password.
+The user shall be provided with the capability to select a network identifier for a device command/control request.
+Once an Center is selected, the user shall be able to select a DMS from a list and provide the following information, including Target DMS, Message to be displayed and Beacons On/Off.
+Once an Center is selected, the user shall be able to select a LCS from a list and provide the following information, including Target LCS and Assignment of lane arrows.
+Once an Center is selected, the user shall be able to issue a CCTV switching command, including Source (input) and Destination port (output).
+Once an Center is selected, the user shall be able to select a CCTV from a list and provide the following information.
+Once an Center is selected, the user shall be able to select a Ramp Meter from a list and provide the following information, including Target Ramp Meter and Plan.
+Once an Center is selected, the user shall be able to select a HAR from a list and provide the following information, including Target HAR and Text to be sent to the HAR.
+Once an Center is selected, the user shall be able to select a Traffic Signal from a list and provide the following information, including Target Traffic Signal and Plan.
+Once an Center is selected, the user shall be able to select a HOV from a list and provide the following information, including Target HOV and Plan.
+Once an Center is selected, the user shall be able to select a School Zone from a list and provide the following information, including Target School Zone and Plan.
+Once an Center is selected, the user shall be able to select a Reversible Lane from a list and provide the following information, including Target Reversible Lane and Plan.
+Once an Center is selected, the user shall be able to select a Dynamic Lane from a list and provide the following information, including Target Dynamic Lane and Plan.
+For each device command/control status request sent by the Remote GUI, the status returned from the network identifier will be displayed in a scrollable list on the GUI.
+The Center-to-Center Server shall execute in a Microsoft Windows NT environment.
+A DATEX/ASN runtime library shall be available on any computer communicating to the Center-to-Center project.
+The web server application shall use ESRI's ARC Internet Map Server (ARC IMS) product for creating of map images.
+The Center-to-Center shall execute in a Microsoft Windows NT environment.
+The Center-to-Center shall be implemented in the C/C++ programming language.
+The Center-to-Center web interface shall be implemented using C/C++ and ESRI ARC IMS.
+The Incident GUI shall be implemented using C/C++ and ESRI Map Objects.
+The Remote Control GUI shall be implemented using C/C++ and ESRI Map Objects.
+The Center-to-Center shall be able to operate in normal mode.
+In this mode the Center-to-Center receives data from all connected systems, including the Incident GUI, and combines the data into a single data store (database).
+The Center-to-Center shall be able to operate in test mode.
+In this mode, the Center-to-Center performs normal mode operations and also logs activities.

@@ -1,0 +1,171 @@
+The main function of the sun search control system is to perform sun acquisition by collecting measurement data from gyroscopes and sun sensors to determine the current attitude of the satellite, and then control the satellite to rotate around the pitch or roll axis so that the sun sensor can detect the sun and maintain the spacecraft's sun-pointing attitude.
+The sun search control system can receive ground commands through a serial port, perform command verification, and set the satellite's operating mode word.
+The sun searchcontrol system sends a two-byte data acquisition command to the gyroscope through a serial port in each cycle, and then receives the gyroscope measurement data through another serial port. The serial port addresses used for sending and receiving commands are both 0x881.
+The angle measurement data is obtained by analog-to-digital conversion of the angle analog signal, which is a 12-bit measurement (offset binary code, range 0x000~0xFFF). 
+The minimum code corresponds to 5/2048. 
+The sun search control system collects the SP signal and the tuning element state signal through a stored circuit.
+The power status signal is collected by AD conversion. 
+When powered on, the sun search control system sends a gyroscope home appliance command (0xEB92) through a serial port, and then sends a gyroscope control command through another serial port with address 0x881A. 
+The interval between each byte sent is less than 5us.
+The sun sensor switching instruction is 190ms, with a positive pulse of 1ms. 
+The sun search control system controls the pulse output by writing the enable signal to the controller, as shown in the table below.
+The sun search software controller consists of gyroscopes, sun sensors, three-axis control thrusters, and a data management computer. There are four sun sensors and nine gyroscopes in total.
+The sun search control system needs to use a data management computer to receive ground operator commands for packaging telemetry data and sending telemetry commands.
+The sun search control system needs to use gyroscopes to monitor the satellite's three-axis angular velocity in order to obtain the angular velocity analog signal.
+The sun search control system needs to use sun sensors to monitor the sun's position in order to obtain the sun measurement angle and perceive the sun visible flag.
+The sun search control system needs to use three-axis control thrusters to control the three-axis torque in order to drive the satellite to rotate.
+The sun search control system needs to use a mode register to store the current operating mode word, the current mode duration, the target angle, and the target angular velocity in order to control the operating mode.
+The whole search process is divided into four stages: rate damping RDSM, pitching search PASM, rolling search RASM and sun cruise CSM.
+The function of rate damping is to reduce the angular velocity of the three-axis rotation of the star to maintain a stable attitude.
+The function of pitch search is to control the star to rotate along the pitch axis to search for the sun at a certain angular velocity.
+The function of roll search is to control the star to rotate along the roll axis at a certain angular velocity Searching for the sun.
+The functions of cruising towards the sun are to keep a stable attitude and keep tracking the sun after searching for the sun, 
+The satellite is composed of several subsystems, and the control system is the subsystem with the most functions and the most complex processing logic.
+The sun search control system includes Sensor, Actuator and Controller.
+The sensor includes 4 sun sensors and 9 gyroscopes.
+The actuator includes 12 10N thrusters, of which 2A/2B, 3A/3B provide the attitude control torque of the roll axis, 4A/4B, 5A/5B provide the attitude control torque of the pitch axis, 6A/6B, 7A/ 7B provides yaw axis control torque.
+The control computer CPU uses 80C32, PROM32K bytes, and SRAM8K bytes.
+The sun search control system composition is shown in the figure below.
+The control computer runs in the mode of main program plus interruption, the main program is an infinite loop, and the interruption is 32 milliseconds regular cycle interruption.
+At the 128th ms of each 160ms control cycle, the switch data of 12 10N thrusters will be sequentially output (the system needs to output the jet at a certain time).
+The control computer takes the microcontroller 80C32E as the core, the main frequency is 11.0592MHZ, including 32KB of PROM and 8KB of SRAM.
+Only one interrupt is processed in the sun search control system, that is, the 32ms timer interrupt.
+When the sun search control system is initialized, the timer can be started to generate a continuous 32ms timer interrupt signal by writing a '1' to the D[0] bit of the timing control register GTCR0.
+The address of register GTCR0 is 0x8083.
+The initialization setting of the sun search control system should be executed once in the main program upon power on or reset.
+The initialization process involves a call that utilizes the component switch control operation register address as input and produces a component power switch control signal as output. 
+To acheive the initialization setting, the processing sequence starts with the execution of controller parameter initialization, setting the initial working mode to rate damping. 
+Subsequently, the component power-on operation is carried out, which includes powering on the sun sensor, gyroscope, and thruster; the specific steps for this power-on process are detailed in section 3.2.8 of the documentation. 
+Finally, a 32ms timer interrupt is activated to manage and monitor the operation timing accurately.
+After the software is initialized, the timer can be started to generate a continuous 32ms cycle interrupt signal by writing '1' to the D[0] bit of the timing control register GTCR0. 
+The sun search control system needs to receive ground commands through the serial port, perform command verification, and set the satellite working mode word.
+This process is mandated to occur in a 160ms cycle. 
+Specifically, data is to be received from the asynchronous serial port every cycle, with the remote control receiving serial port being designated as address 0x88DA. 
+It's important to note that the digital control sub-system is restricted to sending no more than one remote command to the control software within each 160ms interval. 
+Following the receipt of data, the sun search control system must verify whether the data length, frame header, and checksum conform to the specifications detailed in Table 3.2-1. 
+Only commands that successfully pass this verification process will be executed, leading to the setting of the satellite's working mode for the next cycle.
+The sun search control system need to collect the power-on status of each component and the sensor measurement data.
+The sun search control system is designed to gather data from specified register addresses. 
+The outputs expected from this process include the power-on status of each component, the count of seconds pulsed by the gyroscope, as well as the visibility, sign, and angle of the sun as detected by the sun sensor. 
+Specifically, the power-on status and the pulse count of the gyroscope are collected via the serial port. 
+Meanwhile, the power-on state of the sun sensor, alongside the sun's visibility, sign, and the measurement angle – defined as the angle between the sunlight and the sensor's normal line – are obtained through Analog to Digital (AD) conversion. 
+Additionally, the power-on state of the thruster is also collected through AD conversion. 
+The sun search control system needs to acquire gyroscope data. 
+In order to acquire gyroscope data, the sun search control system sends a two-byte fetch command 0xEB91 to the gyro through the asynchronous serial port every cycle.
+The sun search control system receives the gyro measurement data through the asynchronous serial port, and the serial port address used for sending commands and receiving data is 0x881A.
+The time interval from sending fetch instruction to reading data from asynchronous serial port should be greater than 5ms.
+The sun search control system needs to judge the length, frame header and checksum of the collected data.
+The timing relationship of gyroscope data acquisition is shown in the figure below.
+The sun search control system needs to acquire sun sensor data, which must be carried out every 160ms.
+The sun sensor data acquisition involves the use of an Analog to Digital (AD) acquisition register address through which the system inputs data. 
+The expected outputs from the sun sensor include the power-on status of the component, the visibility of the sun (denoted as the sun visible sign), and the measurement angle of the sun.
+12-bit angle data is obtained through AD conversion of the angle analog quantity, and the SP signal and the power state signal are compared by the latch circuit to collect.
+The sun search control system needs to acquire thruster data, which is sheduled to occur every 160ms.
+The thruster receive AD acquisition register address and output the thruster power-on status. 
+In the process, the sun search control system can collect the power status signal through AD.
+The sun search control system needs to determine the three-axis attitude of the satellite, which is carried out every 160 ms.
+In order to determine the three-axis attitude of the satellite, the sun search control system receive angular velocity measured by the gyroscope, attitude angle collected by the sun sensor and visible sign of the sun.
+Then the sun search control system calculate the three-axis angular velocity based on the gyro measurement data, and estimate the attitude angle.
+Finally, the sun search control system output three-axis attitude angle, three-axis angular velocity and working mode word
+The sun search control system needs to have the sun search mode switching management, which must be scheduled to occur every 160ms.
+The sun search control system is tasked with managing the three-axis angular velocity of the satellite to ensure the stability of its attitude, meaning that the three-axis angular velocity should be maintained at minimal levels. 
+The sun search control system operates by receiving the current three-axis angular velocity of the satellite and the current working mode word as inputs. 
+Based on these inputs, the sun search control system is to control the satellite to achieve a target three-axis angular velocity, which is set to zero to stabilize the satellite's attitude.
+The sun search control system also needs to accumulate the working time in the current mode, allowing the sun search control system to monitor how long the satellite has been operating under specific conditions.
+Finally, the sun search control system can evaluate the operational status and decide whether there is a need to switch the working mode based on predefined criteria or thresholds, which could be detailed in a specific algorithm 
+The Sun Search Control System is designed to ensure the stability of a satellite's attitude by controlling its three-axis angular velocity, with the aim of keeping these velocities minimal. 
+This functionality is initiated either during the satellite's power-on initialization or when the sun search control system fails to detect the sun. 
+The process involves taking the current three-axis angular velocity and the working mode word as inputs. 
+In response, the sun search control system sets the satellite's target three-axis angular velocity to zero to stabilize its attitude and accumulates the working time of the current mode to track duration and efficiency. 
+It then evaluates whether a switch in the working mode is necessary based on the satellite's performance and operational conditions. 
+This approach ensures that the satellite maintains a stable position, which is crucial for its operational efficiency and the success of its mission objectives.
+The primary function of the sun search control system is to manage the three-axis angular velocity of the satellite to ensure its attitude remains stable, with minimal angular velocity across all axes. 
+This requirement is activated during two key events: the initial power-on of the satellite and situations where the sun is no longer detectable. 
+The sun search control system operates by assessing the current three-axis angular velocity and the operational mode of the satellite. 
+From these inputs, the sun search control system aims to achieve a stable satellite attitude by setting the target three-axis angular velocity to zero. 
+Additionally, it tracks the duration for which the satellite has operated in the current mode and evaluates whether there is a need to transition to a different working mode based on the satellite's performance and prevailing conditions. 
+This mechanism ensures that the satellite maintains optimal stability and operational efficiency under varying circumstances.
+The requirement for the sun search control system to rotate the satellite around the Y axis at a rate of -0.5 degrees per second as part of its sun-searching protocol. 
+This operation is initiated when rate damping has been successfully completed or if an initial attempt to search for the sun has failed. 
+The sun search control system takes the current three-axis angular velocity and the working mode word of the satellite as inputs. 
+Based on these, the sun search control system sets a new control target to rotate the satellite around the Y axis at the specified rate. 
+Additionally, it continues to track the time spent in the current operational mode and assesses whether a change in the working mode is warranted based on the outcomes of this sun-search procedure and other operational factors. 
+This process is critical for ensuring that the satellite can reorient itself to successfully locate the sun, especially after initial attempts have been unsuccessful or after completing rate damping activities.
+The requirement for the sun search control system to enable the satellite to rotate around the X axis at a rate of 0.5 degrees per second. 
+This procedure is initiated if a previous pitch search for the sun proves unsuccessful. 
+In response to this scenario, the sun search control system utilizes the satellite's current three-axis angular velocity and its operational mode as inputs to adjust its trajectory. 
+The designated output from this operation is a new control target, which directs the satellite to rotate around the X axis at the specified rate, alongside an updated working mode word if necessary. 
+The sun search control system then sets this control target, monitors the duration spent in the current working mode, and evaluates whether a transition to a different working mode is required based on the satellite's search performance and other contextual factors. 
+This ensures that the satellite can adjust its orientation effectively in its continued efforts to locate the sun.
+The requirement for the sun search control system's responsibilities for maintaining the satellite's stable attitude once the sun has been successfully located, either through tilting or scrolling search methods. 
+This condition is met following successful sun detection, which triggers the sun search control system to manage the satellite's orientation based on the inputs received: the satellite's three-axis angular velocity and the elapsed working time in the current mode.
+The response of the sun search control system is to set the satellite's control targets, aiming to reduce the three-axis angular velocity to zero, thereby stabilizing the satellite's attitude. 
+It continues to record the duration of time spent in the current operational mode. 
+This accumulation of time aids in assessing the effectiveness and efficiency of the current state, contributing to decisions on whether there is a need to adjust the working mode.
+This process ensures the satellite maintains a stable orientation after successfully locating the sun, crucial for operational effectiveness and subsequent mission phases. 
+It reflects a systematic approach to managing the satellite's posture and operational status, ensuring that it remains optimally positioned following successful sun-search maneuvers.
+The sun search control system is concerned with the protocol for switching to a backup sun sensor in the event that efforts to locate the sun prove unsuccessful. 
+When the sun's visible sign, or SP, remains undetected following two consecutive attempts at both pitch and roll searches, the sun search control system deduces that the search has been unsuccessful.
+The sun search control system sends a signal to switch off the primary sun sensor and activate the backup sun sensor. 
+The sun search control system emits a signal to adjust the thruster settings as necessary for the new search phase. 
+The sun search control system restarts the search for the sun using the backup sensor and re-enters rate damping mode to stabilize the satellite's attitude. 
+This process ensures that the satellite can continue to function effectively by attempting to re-establish a lock on the sun's position using alternate hardware, thereby maintaining operational integrity and continuing its mission without undue delay.
+--从这里开始
+The sun search control system addresses the diagnosis and management of faults characterized by frequent air injections from the thruster. 
+Operating under a routine review every 160ms, this aspect of the Sun Search Control System responds to the input of thruster injection interval times. 
+When the sun search control system detects that the thruster has been firing at intervals shorter than 1 second for a continuous duration of 5 seconds, it concludes that a fault condition of frequent jetting is occurring.
+To counteract this fault, the sun search control system outputs a signal to switch off the thruster, effectively halting its operation to prevent further erroneous behavior. 
+This measure ensures the satellite's safety and operational integrity by stopping the unnecessary and potentially harmful rapid firing of the thruster, thereby allowing for necessary adjustments or investigations into the cause of the fault.
+The sun search control system pertains to the diagnosis and resolution of communication issues with the gyroscope within the Sun Search Control System, which checks the system every 160ms. 
+The primary input for this process is the count of gyro communication error occurrences over time. 
+The expected output when a fault is detected is a command to power off the gyro to prevent further errors.
+If the control computer detects a gyro communication error, which could involve issues with data length, frame header, or checksum, it increments the communication error cycle count by one.
+Should the gyro experience communication errors for five consecutive cycles, the sun search control system is to initiate a power-off sequence for the gyroscope to halt its operation and prevent further errors.
+The sun search control system then enters a waiting period of five cycles post power-off before attempting a power-on operation to reset the gyro's communication capabilities.
+After re-powering the gyro, the sun search control system waits an additional five cycles before reinitiating data communication, which includes sending a fetch command to the gyro to test if the communication has been restored effectively.
+In cases where communication errors persist for another five consecutive cycles following the power-off and power-on sequence, the sun search control will issue another power-off command to the gyro. 
+Subsequently, the sun search control system will await further instructions from ground control to address the ongoing communication issue.
+This structured approach ensures that gyro communication faults are systematically addressed, potentially restoring proper function while maintaining the safety and operational integrity of the satellite system.
+The sun search control system deals with the control output for a three-floating gyro, a key component in maintaining the orientation and stability of the satellite. 
+This requirement is activated during the satellite's power-on initialization process. 
+The procedure requires the sun search control system to send a specific gyro power-on command, denoted as 0xEB92, via the asynchronous serial port. 
+The input for this operation is the gyro control switch register address, and the corresponding output is the gyro control switch signal, which activates the gyro.
+The detailed process involves transmitting the gyro power-on and control commands through the asynchronous serial port, with the specified address for these commands being 0x881A. 
+The commands must be sent in a sequence where each byte is transmitted at intervals of less than 5 microseconds to ensure the gyro is powered on and controlled correctly. 
+This precise timing and control sequence are essential for initializing the gyro's operation correctly, ensuring it provides accurate and stable readings for the satellite's orientation.
+When there is a failure in the visibility of the sun sensor, the sun search control system indicates that the sensor cannot detect the sun.
+The input for this operation is the address of the sun sensor switch control register. 
+The expected output from this procedure is the sun sensor switch control signal, which is crucial for enabling or disabling the sun sensor as required.
+The core of this process involves sending a specific switching command to the sun sensor, characterized as a positive pulse lasting for 190 milliseconds, with an allowable deviation of plus or minus 1 millisecond. 
+This precise control is achieved by the satellite's software, which writes an enable signal to the designated control register to initiate the pulse. 
+This operation ensures that the sun sensor can be accurately switched on or off in response to the satellite's operational needs or in reaction to specific failures, thereby maintaining its crucial role in the satellite's orientation and navigation systems.
+The sun search control system is designed to ensure the satellite's optimal operation and orientation in relation to the sun, critical for its energy and operational efficiency. 
+This sun search control system is triggered under specific conditions such as power-on initialization or when the satellite fails to detect the sun, indicating a need for realignment or adjustment in its operational mode.
+Upon activation, the sun search control system processes inputs like the current three-axis angular velocity, the sun visible sign, and the operational mode word. 
+Using these inputs, the sun search control system undertakes various actions including setting the satellite's target angular velocity, adjusting thruster outputs, and switching between primary and backup sun sensors to maintain or recover solar alignment.
+The processing involves calculating and applying the necessary control volumes to the thrusters based on the satellite's orientation needs, identified through three-axis control values. 
+The thrusters are selected and activated according to their operational states and the required adjustments to the satellite's orientation. 
+This includes initiating commands for thruster activation or deactivation, adjusting their output levels, and ensuring that the satellite's attitude is stabilized, especially after successful sun searches or during transitions between operational modes.
+The sun serch control system manages faults such as frequent thruster firings or gyro communication errors by implementing predefined protocols that include disabling faulty components and, if necessary, switching to backup systems. 
+This ensures the satellite's continuous operation and maintains its orientation and stability in space, particularly in relation to the sun's position, which is vital for its energy supply and mission success.
+Overall, the Sun Search Control System is a comprehensive framework that ensures the satellite remains functional and properly oriented throughout its mission, adapting to various operational scenarios and addressing any anomalies that arise during its operation.
+The sun search control system needs to collect and transmit the current operating status of its software. 
+This process is automatically initiated every 160 milliseconds and involves gathering critical telemetry data, including the satellite's current working mode word, its orientation angle, and its velocity.
+Once collected, this data is packaged into a predefined format suitable for transmission. 
+The packaged telemetry information is then sent to the digital tube for display, facilitating real-time monitoring of the satellite's status. 
+This transmission uses the asynchronous serial port designated by the address 0x88DB. 
+To ensure the integrity and timeliness of the data transfer, each byte of the telemetry data is sent with an interval of less than 5 microseconds between them.
+This systematic approach allows ground operators to continuously monitor the satellite's operational state, speed, and orientation, ensuring that any deviations from expected parameters are quickly identified and addressed. 
+The absence of a defined output in this context refers to external outputs beyond the system itself, as the primary focus here is on internal data handling and transmission.
+The main function of the sun search control software is to perform sun acquisition by collecting measurement data from gyroscopes and sun sensors to determine the current attitude of the satellite, and then control the satellite to rotate around the pitch or roll axis so that the sun sensor can detect the sun and maintain the spacecraft's sun-pointing attitude.
+The software can receive ground commands through a serial port, perform command verification, and set the satellite's operating mode word.
+The control software sends a two-byte data acquisition command to the gyroscope through a serial port in each cycle, and then receives the gyroscope measurement data through another serial port. The serial port addresses used for sending and receiving commands are both 0x881.
+The angle measurement data is obtained by analog-to-digital conversion of the angle analog signal, which is a 12-bit measurement (offset binary code, range 0x000~0xFFF). The minimum code corresponds to 5/2048. The software collects the SP signal and the tuning element state signal through a stored circuit.
+The power status signal is collected by AD conversion. When powered on, the software sends a gyroscope home appliance command (0xEB92) through a serial port, and then sends a gyroscope control command through another serial port with address 0x881A. The interval between each byte sent is less than 5us.
+The sun sensor switching instruction is 190ms, with a positive pulse of 1ms. The software controls the pulse output by writing the enable signal to the controller, as shown in the table below.
+The sun search software controller consists of gyroscopes, sun sensors, three-axis control thrusters, and a data management computer. There are four sun sensors and nine gyroscopes in total.
+The sun search control system needs to use a data management computer to receive ground operator commands for packaging telemetry data and sending telemetry commands.
+The sun search control system needs to use gyroscopes to monitor the satellite's three-axis angular velocity in order to obtain the angular velocity analog signal.
+The sun search control system needs to use sun sensors to monitor the sun's position in order to obtain the sun measurement angle and perceive the sun visible flag.
+The sun search control system needs to use three-axis control thrusters to control the three-axis torque in order to drive the satellite to rotate.
+The sun search control system needs to use a mode register to store the current operating mode word, the current mode duration, the target angle, and the target angular velocity in order to control the operating mode.

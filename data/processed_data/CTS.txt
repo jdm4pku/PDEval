@@ -1,0 +1,187 @@
+The Crime & Criminals Tracking Network and Systems (CCTNS) focus on the critical functionality that provides value to the police personnel at the cutting edge which in turn can improve the outcomes in the areas of “Investigation of Crime” and “Detection of Criminals.
+CCTNS functionality is designed to focus on delivering value to IOs, records room staff and citizens within the broad crime investigation area.
+Based on the guiding principles stated above, nine different function blocks have been identified and the detailed functionality of each block was determined.
+The functionality of the CCTNS application is focused on providing value to the police personnel, especially the officers operating at the cutting edge and easing the day to day operations of the police function.
+Citizens can register their complaints with police and then based on the evidence, facts and following investigation, police shall take the complaint forward.
+The Registration module acts as an interface between the police and citizens and it eases the approach, interaction and information exchange between police and complainants.
+After a complaint is initiated, police initiates the investigation process.
+The Investigation module of the CCTNS facilitates the investigation process and introduces operational efficiencies by automating most of the tasks that take place after initial entries are made during Registration.
+A designated constable from each police station constantly interfaces with the courts.
+The Prosecution module of the CCTNS aids this interfacing by providing a platform to record entries of the court interactions.
+The Search module of the CCTNS gives police personnel the ability to execute a basic or advanced search on cases.
+Using the search functionality, police personnel can search for a particular person, type of crime, modus operandi, property etc.
+It also gives the user the ability to customize the results view by criminal/accused or by cases.
+It makes reporting easy for police by enabling them to execute different types of queries such as monthly reporting, RTI related etc.
+The Citizen Interface module of the CCTNS acts as a conduit for the information exchange between citizens and police units/personnel.
+Citizens can use it as a tool to get information or acknowledgements from police.
+The police in turn can use it to respond to citizens with very little turnaround time.
+It improves overall productivity by helping citizens and police to cut short the drudgery of large amounts of paperwork.
+The Navigation module of the CCTNS provides role based landing pages which help in navigating through the CCTNS application.
+It shows information such as cases assigned, alerts, pending tasks etc hence helping police personnel to plan better and execute with greater efficiency.
+The functional requirements for each of the modules are provided as A1 to A7 in separate enclosures.
+The non-functional requirements specify the qualitative attributes such as user-friendliness and performance of the CCTNS system that are critical for the increased user-acceptance of the application.
+The solution should provide detailed context-sensitive help material for all the possible actions and scenarios on all user interfaces in the application.
+The solution should provide detailed context-sensitive help material for all the possible actions and scenarios on all user interfaces in the application.
+The solution should provide an interface for the user to log any defects or enhancement requests on the application and track thereafter.
+The solution should send alerts (e.g., email, SMS) to the user if the user chooses to whenever any action has been taken on the alert.
+The solution should enable the user to track the submitted defect or enhancement request.
+The solution should enable the help-desk user to view the reports on the submitted defects or enhancement requests category-wise, status-wise, and age- wise.
+The support solution should be accessible to the users both from within the application and also outside the application through a browser interface.
+This includes actions taken by users or Administrators, or actions initiated automatically by the CCTNS system as a result of system parameters.
+The CCTNS system must keep an unalterable audit trail capable of automatically capturing and storing information about all the actions (create/read/update/delete) that are taken upon the critical entities in the CCTNS system.
+The CCTNS system must keep an unalterable audit trail capable of automatically capturing and storing information about the user initiating and or carrying out the action.
+The CCTNS system must keep an unalterable audit trail capable of automatically capturing and storing information about the date and time of the event.
+The CCTNS system must keep an unalterable audit trail capable of automatically capturing and storing information about administrative parameters.
+The word “unalterable” is to mean that the audit trail data cannot be modified in any way or deleted by any user.
+It may be subject to re-department and copying to removable media if required, so long as its contents remain unchanged.
+Once the audit trail functionality has been activated, the CCTNS system must track events without manual intervention, and store in the audit trail information about them.
+The CCTNS system must maintain the audit trail for as long as required, which will be at least for the life of the case to which it refers.
+The CCTNS system must ensure that audit trail data is available for inspection on request, so that a specific event can be identified and all related data made accessible, and that this can be achieved by authorised external personnel who have little or no familiarity with the CCTNS system.
+The CCTNS system must be able to export audit trails for specified cases (without affecting the audit trail stored by The CCTNS system).
+This functionality can be used by external auditors who wish to examine or analyse system activity.
+The CCTNS system must be able to capture and store violations (i.e.A user’s attempts to access a case to which he is denied access), and (where violations can validly be attempted) attempted violations, of access control mechanisms.
+The CCTNS system should be able to provide reports for actions on cases organised by workstation and (where technically appropriate) by network address.
+The requirements specify the requirements to control the user access to correspondences, files, and records and various functionalities provided within the CCTNS system.
+The CCTNS system must allow the user to limit access to cases to specified users or user groups.
+The CCTNS system should provide for role-based control for the functionality within the CCTNS system The CCTNS system must allow a user to be a member of more than one group.
+The CCTNS system must allow only admin-users to set up user profiles and allocate users to groups.
+The CCTNS system should allow a user to stipulate which other users or groups can access cases.
+The CCTNS system must allow changes to security attributes for groups or users (such as access rights, security level, privileges, password allocation and management) to be made only by super-user.
+If a user requests access to, or searches for, a case which he does not have the right to access, the CCTNS system must provide one of the following responses (selectable at configuration time): display title and metadata;display the existence of a case but not its title or other metadata;do not display any case information or indicate its existence in any way.
+These options are presented in order of increasing security.
+Note that the requirement in the third option (i.e.the most stringent) implies that the CCTNS system must not include such cases in any count of search results; this level of security is normally appropriate for cases dealing with matters such as national security.
+If a user performs a quick or advanced search, the CCTNS system must never include in the search result list any record which the user does not have the right to access.
+If the CCTNS system allows users to make unauthorised attempts to access cases, it must log these in the audit trail.
+Any access to cases, and all other activities involving the cases and related documents or data should also need to be stored in the audit trail to ensure legal admissibility and to assist in data recovery.
+All error messages produced by the CCTNS system must be meaningful, so that they can be appropriately acted upon by the users who are likely to see them.
+Ideally, each error message will be accompanied by explanatory text and an indication of the action(s) which the user can take in response to the error.
+The CCTNS system must employ a single set of user interface rules, or a small number of sets to provide a familiar and common look and feel for the application.
+The CCTNS system must be able to display several entities (cases, suspects) simultaneously.
+The interfaces must be made customizable or user-configurable to the extent possible(e.g., the displayed columns in the table, move, resize, modify the appearance).
+Such configurations must be saved in the user profile.
+The CCTNS system must allow persistent defaults for data entry where desirable.
+These defaults should include: user-definable values; values same as previous item; values derived from context, e.g.date, file reference, user identifier; Frequently-executed System transactions must be designed so that they can be completed with a small number of interactions (e.g.mouse clicks).
+Where the CCTNS system employs a graphical user interface, it must allow users to customise it.
+Customisation should include, but need not be limited to the following changes: menu contents; layout of screens; use of function keys; on-screen colours, fonts and font sizes; The user interfaces should be designed to make them user-intuitive.
+The user interfaces of the CCTNS system should comply with Standard ISO 9241.
+ICT accessibility: ISO 9241-20 shall be the standard for guidance on ICT accessibility.
+Software accessibility ISO 9241-171 shall be the standard for guidance on software accessibility.
+User interfaces should meet its requirements and recommendations.
+0 shall be the standard used for guidance on content accessibility.
+The application logo to be available on all pages as a link to the home page.
+Providing text equivalents for non-text media objects: All non-text media objects, such as graphical images or video, should be provided with alternative equivalent textual descriptions and/or with equivalent text-based functionality.
+Making navigation self-descriptive: Navigation should be designed to help users understand where they are, where they have been and where they can go next.
+General guidance on achieving self-descriptiveness is given in ISO 9241-110.
+Showing users where they are: Each presentation segment (page or window) should provide the user with a clear and sufficient indication of where he or she is in the navigation structure and of the current segment position with respect to the overall structure.
+Offering alternative access paths: Alternative access paths for navigating to a specific unit of content should be offered to support different navigation strategies.
+Minimizing navigation effort: The number of navigation steps needed to reach a certain piece of content should be minimized as long as different mental models, navigation strategies and tasks of the user are taken into account.
+Splash screens should be avoided unless they provide useful content or feedback about the application state to the user.
+If a splash screen is used, a navigation option to skip it should be offered.
+Avoiding opening unnecessary windows: Additional windows such as new browser windows or pop-up windows should only be opened if this supports the user’s task.
+They can superimpose the primary window, hiding relevant information.
+They could make it cognitively more difficult to understand the navigation structure with negative effects on both usability and accessibility.
+They also require additional user actions for closing unwanted windows.
+This may be done by placing important information at the top and providing links to information that is further down the page.
+Horizontal scrolling should be avoided wherever possible.
+Designing for input device independence: User interfaces should be designed to allow activation of controls by a variety of input devices.
+The ability to choose between different input devices for activating controls such as links, fields and buttons is important both for users who prefer a certain input mode, mobile users and users with disabilities.
+In general, device independence can be achieved if the functionality is operable via a keyboard.
+Making user interfaces robust: User interfaces should be designed to be as robust as possible in the face of changing technology.
+This encompasses being able to present content containing newer technologies by older user agents as well as designing content to be usable with future technologies.
+Acceptable opening / download times: Application pages should be designed and implemented so that there are acceptable opening times and download times for the expected range of technical contexts of use (e.g.bandwidth between the application and the user).
+This is particularly important for frequently accessed pages or pages that are important for user navigation and exploration, such as the home page.
+Minimizing user errors: Potential user errors as well as the effort needed to recover from errors should be minimized.
+Providing clear error messages: The content of error messages shown on the pages or special error pages should clearly state the reason why the error occurred and, if possible, actions the user can take to resolve the error.
+Users expect error messages to be in the same language as the user interface.
+Using appropriate formats, units of measurement or currency: When designing user interfaces for use by diverse groups, input and output of information elements such as currency, units of measurement, temperatures, date and time, phone numbers, address or postal codes should be designed so that they are usable.
+Making text resizable by the user: Text should be able to be resized by the user, using functions provided by the user agent or other appropriate means i.e.Text quality: The quality of textual content with respect to spelling and grammar should be sufficient so as not to impede readability.
+Writing style: The reading and understanding of the textual content on the screen should be supported by suitable means, including the use of short sentences, the division of the text into shorter chunks or the presentation of content items in the form of bullet points.
+Supporting text skimming: Fast skimming of text should be supported by the provision of clear links, bulleted lists, highlighted keywords, logical headings, and short phrases and sentences.
+Readability of text: Text presented on the pages should be readable taking into account the expected display characteristics and spatial arrangement.
+ISO 9241-303 shall be consulted for screen text legibility requirements.
+Within-page links are shown with dashed rather than solid underlines Avoiding link overload: Text pages containing large proportions of links should be formatted so that the presence of links does not impede the readability of the text.
+Using familiar terminology for navigation links: Navigation links — particularly links representing the main navigation structure — should be labelled with terms that are familiar to the user, based on his/her general knowledge, prior experience in the application domain or experience of using other systems.
+Using descriptive link labels: The target or purpose of a link should be directly indicated by its label, avoiding generic labels such as “go” or “click here” except where the purpose of the link is clear from its context on the page or the labels have commonly understood semantics in the particular application domain.
+Marking links opening new windows: Links that open new browser windows or pop-up windows should be clearly marked.
+Distinguishing navigation links from controls: Navigation links should be clearly distinguishable from controls activating some action.
+Typical action types in user interfaces include manipulating application data, performing searches, communication actions, such as opening a new e-mail window or starting a chat function, and presentation-related actions, such as sorting a list of search results.
+Providing printable document versions: If a document is either too long, dispersed over several pages or in a specific layout that is not suitable for online reading, a printer-friendly version of the document should be provided that prints the content in a form acceptable to the user (e.g.in the expected layout, paper format, or orientation).
+Use of “white space”: “White space” on a page i.e.space filled only with the background color should be used in such a way that it does not impair the visual skimming of the page.
+While white space is an important means of visually organizing the different content elements on a page, if the distance between the blocks of information displayed becomes too large, rapid skimming of the page can be impeded.
+Selecting appropriate page lengths The length of a page should be selected so as to support the primary purpose and use of the page.
+Short pages are generally more appropriate for homepages, navigation pages, or overview pages that need to be read quickly.
+Longer pages can be more appropriate when users want to read the content without interruptions or when the page needs to match a paper counterpart.
+Using colour: Colour should be used with care, taking into account human capabilities and restrictions in perceiving colour, and not as the only means of conveying information.
+Color should never be the only means of coding.
+Some users may have difficulties in perceiving certain colors or color combinations (color-blindness).
+Using frames with care: If frames are used, care should be taken to avoid possible problems, for example, those involving the use of the back button, bookmarking of pages, or scrolling of information.
+When frames are used, it is important to title each frame, and to describe its purpose and how frames relate to one another other.
+Providing alternatives to frame-based presentation: If frames are used, an alternative way of presenting relevant information without frames should be provided.
+Providing alternative text-only pages: When style sheets and/or frames are turned off it should be possible for the user to read and understand the page; alternatively, the user should be provided with an equivalent alternative text-only page.
+Consistent page layout: Pages should be designed using consistent layout schemes, supporting the user in finding similar information at the same position on different pages.
+Overall layout schemes apply to all pages and are preferable when all pages have a similar structure.
+Frequently, however, different pages have different purposes and types of content.
+In such cases, pages can usually be grouped in different categories, using one layout scheme for each category consistently.
+Placing title information consistently: Page titles should be placed in a consistent location on the different pages.
+Observing principles of human perception When designing application pages, the general principles of human perception should be taken into account.
+The International Standards mentioned below shall be consulted for guidance.
+Practical guidelines for presenting information to the user are to be found in ISO 9241-12.
+Guidance on selecting and using different forms of interaction techniques is to be found in ISO 9241-14 to ISO 9241-17.
+ISO 9241-14 gives guidance about menus, ISO 9241-15 about command dialogues, ISO 9241-16 about direct manipulation and ISO 9241-17 about forms.
+In addition, when designing multimedia information presentations, the design principles and recommendations described in ISO 14915-1 to ISO 14915-3 should be taken into account.
+Appropriate content presentation also plays a key role in accessibility.
+Linking back to the home page or landmark pages: Each page should contain a link leading to the home page of the application or to a landmark page that is easy to recognize for the user.
+Providing a site map: A separate navigation overview such as a site map should be provided for application showing the structure of the site in an overview form.
+Consistency between navigation components and content: If navigation components (or overviews) are shown in conjunction with associated content, consistency between the navigation component and the content shown should be maintained by indicating in the navigation component (e.g.highlighting) the topic currently visible in the content area.
+Placing navigation components consistently: Navigation components should be placed consistently on the pages or in the framesets in the pages of the application.
+User adaptation can also be important for making the user interface more accessible.
+Different approaches can be used for achieving these goals, like providing users with means for customizing the user interface to their personal needs i.e.individualization designing content and navigation differently for varying user groups or roles i.e.such as employees of different levels, citizens etc, monitoring the user’s behaviour and adapting to the user’s goals that are inferred from the behaviour observed, recommending information that is potentially more relevant or interesting to the specific user, based on the behaviour of all users or a user group.
+Taking account of the users’ tasks and information needs: When providing different access paths or navigation structures for different user groups, the tasks and information needs of these user groups should be taken into consideration.
+Making individualization and adaptation evident: It should be made evident to the user when individualization and/or adaptation are used.
+Making user profiles evident: If predefined user profiles or user-specified profiles are used for individualizing or adapting content, the profile currently used should be made evident.
+If profiles are used, it is important to provide users with information about this concept and its implications.
+Allowing users to see and change profiles: If user-specified profiles are used, users should be able to see, modify and delete that profile on demand.
+The user interfaces of the CCTNS system should follow the guidelines specified under [www.
+The CCTNS system must be available to users: from xx:00 to xx:00; on <all weekdays/xxx days per year>.
+The planned downtime for the CCTNS system must not exceed <xx> hours per <rolling three month period>.
+The CCTNS system is considered to be down if any user is unable to perform any normal System function and if this failure is attributed to any component of the CCTNS system other than the workstation.
+Unplanned downtime for the CCTNS system must not exceed <xx hours/minutes> per <rolling three month period>.
+The number of incidents of unplanned downtime for the CCTNS system must not exceed <x> per <rolling three month period>.
+In the event of any software or hardware failure, it must be possible to restore the CCTNS system (with inline synchronization) within no more than <xx> hours.
+The CCTNS system must provide adequate response times for commonly performed functions under both standard and peak conditions The CCTNS system must be able to perform a simple search within 5-8 seconds and a advanced search (multiple search criteria) within 10-15 seconds regardless of the storage capacity or number of cases in the CCTNS system.
+It does not include retrieving the records themselves.
+The CCTNS system must be able to retrieve and display within 5-8 seconds the case which has been accessed within the previous 2 months, regardless of storage capacity or number of cases in the CCTNS system.
+This requirement is intended to allow for rapid retrieval of frequently-used cases, on the understanding that frequency of use is typically correlated with recent use.
+The CCTNS system must be able to retrieve and display within 20 seconds the case which has not been accessed within the previous 2 months, regardless of storage capacity or number of cases in the CCTNS system.
+This requirement is intended to allow for cases where cases used infrequently are stored on slower media than more active records.
+The CCTNS system be scaleable and must not have any features which would preclude use in small or large police stations, with varying numbers of cases handled.
+The proposed functional architecture is modeled around centralized deployment to facilitate ease of maintenance and leverage advancement in open standards and web technologies.
+The 3 C’s (Core-Configuration-Customization) forms the guiding principle for the architecture.
+The functional architecture of the CCTNS solution is given in the figure below.
+The functional architecture is composed of 4 major components based on SOA principles.
+Each of the components contains multiple services as defined by Service Definition.
+The core services, support layer and security and access control components can be deployed as standard components with necessary configuration changes.
+The customization layer can override and add to the core services based on the specific state requirements and can be plugged with the core services.
+The deployment of the application will be at state level and will be configured and customized as per the state specific extensions.
+The CCTNS systems should be designed with the following broad guidelines: The CCTNS system should support multilingual interface The CCTNS system should be designed in manner that operational data is not lost in case of any failure of equipment or communication network.
+The CCTNS system should work even in an offline mode with the critical functionality The CCTNS system should be designed to have satisfactory performance even in Police Stations connected on low-bandwidth The CCTNS system should be implemented using Service Oriented Architecture (SOA) and have a modular design The CCTNS system should be developed on Open Standards The CCTNS system should be built on a common User Access and Authentication Service to ensure Single-Sign on for the end-user The CCTNS system should be developed for a centralized deployment and maintenance The CCTNS system should be developed to be deployed in a 3-tier datacenter architecture The CCTNS system should be designed to have a n-tier architecture with the presentation logic separated from the business logic that is again separated from the data-access logic The CCTNS system should be extensible to provide access to the interfaces through PDA’s and mobile data terminals The CCTNS system should adopt standardized formats and common metadata elements The CCTNS system should be designed for access through browser-based systems and must impose minimal requirements on the client device The CCTNS system must support multiple types of communication services for remote access The CCTNS system should have capability to support public access to a subset of data and functionality The CCTNS system should support multi-tier authentication where required The CCTNS system should support SSL encrypted connections The CCTNS system should support secure virtual private network connections The CCTNS system should use HTTPS as the communication protocol, i.e, HTTP over an encrypted secure socket layer (SSL) The CCTNS system should run on multiple browsers.
+The CCTNS system should support selective encryption of the stored data.
+The CCTNS system should ensure secure transmission of data over the network and utilize SSL and 2-way digital signatures.
+The CCTNS system should ensure high standards of security and access control through preventing cross-site scripting.
+The CCTNS system should ensure high standards of security and access control through preventing SQL Injection.
+The CCTNS system should ensure high standards of security and access control through utilizing parameterized queries.
+The CCTNS system should ensure high standards of security and access control through sanitizing the user-inputs.
+The CCTNS system should ensure high standards of security and access control through validating the incoming data or user request.
+The CCTNS system should ensure high standards of security and access control through encoding the incoming data or user request.
+The CCTNS system should ensure high standards of security and access control through validating the data both at the client and server.
+The CCTNS system should ensure high standards of security and access control through do not allow hard delete and perform only soft tagging the row for deletion.
+The CCTNS system should ensure high scalability and performance through using of cache for storing frequent data.
+The CCTNS system should ensure high scalability and performance through using of AJAX based technology to improve user experience.
+The CCTNS system should ensure high scalability and performance through leveraging Asynchronous HTTP socket capabilities of web server for scalability and performance.
+The CCTNS system should ensure high scalability and performance through hosting all the static content (documents, images) on the web server.
+The search results should be fetched from the database in batches of 10 or 20 maximum as configured within the application.
+The CCTNS system should ensure high scalability and performance through displaying of records on the screen in batches/paged manner.
+The search should fetch only the fields that need to be displayed to the user.
+Only when the user clicks on a particular record to view its further details should a query be fired to fetch the additional details for this particular record only.
+A hierarchical cache should be configured and used for caching of results of most frequently used searches.
+Database Indexes should be applied on the key columns used for searching.

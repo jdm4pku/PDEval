@@ -1,0 +1,116 @@
+This document defines the software requirements for the Swift X-Ray Telescope (XRT) Control Processor (XCP) Flight Software (FSW). 
+This document is a Level 4 specification as defined in document GSFC-410.4-SPEC-0004,Swift Missions Requirements Document.
+The Swift observatory is the next in a series of National Aeronautics and Space Administration (NASA) mediumclass explorer (MIDEX) satellites and is the first-of-its-kind observatory for multi-wavelength transient astronomy.
+The goal of the Swift mission is to determine the origin of Gamma-Ray Bursts (GRBs) and to exploit data from these bursts to probe the early universe. 
+Swift instrumentation will exploit newly discovered GRB afterglow characteristics to make a comprehensive study of approximately 1000 bursts over its planned three-year mission.
+Swift will determine the origin of GRBs, reveal how GRB blast waves interact with surroundings, and identify different classes of bursts and associated physical processes. 
+To accomplish these mission goals, Swift employs three semi-autonomous science instruments. 
+The Burst Alert Telescope (BAT) is a wide-angle x-ray telescope that detects GRBs. 
+On detection, the spacecraft slews in the direction of the GRB, bringing it into the view of two narrow-field telescopes for higher-resolution multi-wavelength observation. 
+The narrow-field telescopes are the X-Ray Telescope (XRT), and the Ultraviolet/Optical Telescope (UVOT).
+The XRT is a sensitive, autonomous X-ray Charge-Coupled Device (CCD) imaging spectrometer designed to measure the flux, spectrum, and light curve of GRBs and afterglow over a wide dynamic range covering more than seven orders of magnitude in flux. 
+It will refine the BAT positions (~1-4' uncertainty) to 2.5" within 5 seconds of target acquisition for typical bursts, allowing ground-based optical telescopes to begin immediate spectroscopic observations of the afterglow.
+The XRT will reuse some components from the following previous projects: Cosmic Unresolved Background Instrument using CCDs (CUBIC), Imager for Magnetopause-to-Aurora Global Exploration (IMAGE), Joint European X-Ray Telescope (JET-X), and the X-Ray Multi-Mirror (XMM) satellite.
+The XRT electronics is split into two parts: the XRT Electronics Package (XEP), and the Camera Head.
+A one-meter maximum length cable electrically connects the XEP and Camera Head. 
+The XRT Interface Control Document (Pennsylvania State University [PSU] document # XRT-PSU-018) describes the interface between these two components.
+The major component of the XRT's electronics is the CCD camera. 
+The CCD camera collects science data in the form of images, light curves, photon-counts, and spectral data. 
+The CCD camera has three main modes of operation and up to sixty-four modes total.
+# 审核到这里啦
+The Camera Head is mounted on the telescope tube and is comprised of a CCD and two video preamplifiers.
+The CCD itself has an image section, a store section, and two readout registers with video outputs. There are four
+synchronized three-phase clocks that shift the pixel rows in the image and store sections and shift the individual
+pixels in the two readout registers. The Clock Sequencer in the XEP generates these clocks. Each readout register
+has five guard pixels at the output side, and the readout register will not be operated in the split mode; therefore, both
+readout registers will be clocked in the same direction transferring all of the pixels to one, but not both, of the video
+outputs. Since the readout registers are comprised of split-pixels, the readout registers have to be clocked twice
+(double-clocked) to shift out one pixel. The readout registers will be double-clocked an extra 30 times (overclocks)
+to produce an output row length of 640 pixels. The clocking of an empty output register produces overclocked
+pixels that are used to determine system noise information. To transfer an image from the Image Section to the Store
+Section, the Image Section and Store Section three-phase clocks must be clocked simultaneously 602 times. The
+Clock Sequencer can be programmed with up to 64 waveform patterns which corresponds to the 64 modes of
+operation previously mentioned.
+The CCD is cooled by a TEC. The CCD's temperature is closed-loop controlled by the FSW. Telecommands will
+control the temperature setpoint, the ramp rate, and the mode — open or closed loop. A digital potentiometer with
+100 wiper tap points will control the temperature setpoint. Two digital logic signals will control the wiper position:
+the up/down input and the clock input.
+The XRT is powered by the S/C by two 28VDC power buses. They are the Operational Power Bus (OPB) and the
+Survival Power Bus (SPB). During normal operation, both buses are on. If the XRT fails to communicate to the
+S/C, the S/C will turn off the XRT’s OPB, thereby deactivating the XEP. The hardware-reset function is exercised
+by cycling the OPB off then back on. The SPB supplies power to heaters that prevent the XRT from being damaged
+by low temperatures. The S/C may switch off the SPB, but it will only do this in an emergency condition. The OPB
+is dual redundant, and the SPB is single string.
+The XRT communicates to the S/C via a dual redundant MIL-STD-1553B serial interface. Data transmitted to the S/
+C from the XRT and commands received by the XRT from the S/C are formatted into "packets" within "frames" in
+accordance with the Swift 1553 Bus Protocol Interface Control Document (Spectrum Astro document # 1143-EIS19121). The BAT, UVOT, XRT, two Star Trackers, and the S/C are all networked together on the 1553 bus.
+A local copy of the spacecraft clock is maintained and is used to timestamp the data packets, which are formatted as
+Consultative Committee for Space Data Systems (CCSDS) Source Packets. To synchronize the clocks in the
+instruments with the clock in the S/C the S/C provides an At-The-Tone-The-Time-Will-Be message, delivered via
+the 1553 interface, and an RS422, One-Pulse-Per-Second (1PPS), hardwired signal that is the "Tone."
+The XRT's tube has uses a device called the Telescope Alignment Monitor (TAM) to measure the change in
+mechanical alignment of the XRT's tube. The TAM consists of a point source of light that is reflected by mirrors
+across the length of the telescope tube to a CCD camera. The change in the telescope's alignment is proportional to
+the change in the position of the point source of light shining on the CCD's pixel array. To obtain a resolution better
+than the pixel size, a centroid algorithm will be utilized. The TAM receives power from the XEP and delivers image
+data through an RS-422 serial interface. The TAM power can be turned on or off by a telecommand.
+The XRT has two doors: a telescope tube door and a camera door. The telescope tube door is controlled by the S/C.
+The camera door is controlled by circuitry in the XEP. Once opened, the camera door cannot be closed; therefore, it
+is important that the door is not inadvertently opened.
+The Sun Shutter is powered by the SPB and has its own solar panel for backup power. It is automatically opened
+and closed by a photosensor but can be overridden by a telecommand.
+The telescope tube has 36 heater groups. Each heater group is closed-loop controlled by the FSW with the
+temperature set point and hysteresis controlled by a telecommand. These controllers are simple on-off type with
+hysteresis.
+The Mirror Baffle has three heater groups: Survival, Control 1, and Control 2. The Survival Heaters are powered
+and controlled by the Spacecraft Bus. The Control Heaters are closed-loop controlled by the FSW with a
+temperature set point controlled by a telecommand. The Control Heaters will be driven by solid state relays to allow
+for the numerous on-off cycles that will be required to regulate the temperature. The XRT Thermal Design
+Specification (PSU document # XRT-PSU-012) describes the heaters in greater detail.
+This section provides an overview of the FSW including a system context, operational concepts, goals and
+constraints, and a list of the computer software components (CSCs) which comprise the FSW. Detailed functional,
+performance, error recovery, and interface requirements for the identified CSCs are provided in Appendix A.
+From a system (observatory) perspective, the FSW interfaces with the Spacecraft Control Unit (SCU) via the MILSTD-1553B bus and the one pulse per second (1PPS) interface. The interfaces of the FSW in this context are
+illustrated in the following figure.
+From a XCP hardware interface perspective, the FSW executes on the XCP, stores and retrieves data from XCP
+Electrically Erasable Programmable Read Only Memory (EEPROM), and communicates with the Spacecraft using
+the MIL-STD-1553B Bus. The MIL-STD-1553B and Camera Head Interfaces are contained on the XRT
+Communications Module (XCM). The interfaces of the FSW in this context are illustrated in the following figure.
+The following sections describe the operational concepts of the FSW, including its functions, interfaces, performance
+characteristics, error detection, reporting and recovery mechanisms, and ground systems concepts.
+Figure 6 and Figure 7 show a detailed flowchart for the observation types. The sequence shown in the figures
+assumes the software is in automatic mode and not presently engaged in performing an observation. The sequence
+starts when a SISCATTITUDE message is received with the IS_SETTLED indication set to false. The message also
+indicates IS_IN_10_ARCMIN, which is true when the S/C is within ten arc minutes of the target position. When the
+distance remaining to slew is greater than ten arc minutes, the S/C begins the first of up to three activities that
+precede an observation. Each activity is initiated when the distance remaining is greater than ten arc minutes and the
+previous activity is complete.
+The row bias map is maintained by the system so that it does not have to be recalculated prior to each observation;
+however, recalculation is preferred to provide the best results. One frame is acquired for the row bias map. Once the
+frame has been acquired, the software recalculates and stores the updated row bias map. Next, the software
+recalculates the image bias map, if more than ten arc minutes remain to the target location. The software accumulates
+3-6 frames for the recalculation of the row bias map. Otherwise, the existing image bias map is reused. Finally, if the
+acquire raw data image flag is true and the distance to the target location is more than ten arc minutes, then the
+software acquires a single raw data image which is saved for later download to the ground.
+At this point, the S/C has come to within ten arc minutes of the target or the observation preliminary activities are
+complete, and the software switches to the fast timing mode. When the SISCATTITUDE message indicates that the
+S/C is settled, the software starts the main portion of the observation sequence.
+The software now acquires a frame of data and begins counting the pixels above a detection threshold. To be
+considered of interest, this count of pixels must exceed a programmable threshold. If the count does not exceed the
+threshold, then another image is acquired and summed with the first image. This new image is subjected to the pixel
+count. This process continues until the count threshold is met or the timeout period is exceeded. If the timeout is
+exceeded, an “XRT Centroid Error” message is transmitted to UVOT and to the ground (via TDRSS). Otherwise,
+when the source is detected, the software performs a centroid calculation on the image. If the centroid calculation
+fails, an “XRT Centroid Error” message is sent; otherwise, an “XRT Position” message is sent.
+Next, the software enters the fast timing mode. In this mode, the CCD reports a single value representing the entire
+image. The CCD reports one pixel every 16 µsec, or approximately 60,000 pixels/sec. The software remains in this
+mode while the lit pixel rate exceeds 40 cps. Once the count falls below 40 cps, the software switches to normal
+timing mode. In this mode, the CCD reports one row every 5 msec. Each row report sums up the CCD columns.
+This method is used until the rate drops below 2 cps. At this point, the software switches to photon counting mode.
+In this mode, the entire image is collected and scanned for lit pixels. The update rate is approximately once every
+2.5 sec. The observation sequence ends when the target is occulted and the S/C slews to a new target.
+Preplanned observations differ from automatic ones in that the “XRT Position” message is not used. Processing is
+otherwise similar. The target of opportunity observations are treated like preplanned observations from an
+operational point of view of the software.
+The FSW has the following states: Off, Boot, Init, Manual, Red, and Auto. The following diagram illustrates these
+states and their transitions.

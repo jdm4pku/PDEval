@@ -1,0 +1,407 @@
+Reversible Lane Control System (RLCS) to be finalized by contractor 
+After the baseline version of this document is approved, any changes made to the document must be approved in accordance with the provisions of the established Change Management Plan.
+APPENDIX E – TRANSPORTATION ELECTRICAL EQUIPMENT SPECIFICATION (TEES) FOR THE 2070 APPENDIX F – INITIAL SYSTEM CONFIGURATION DATA FOR OPERATIONAL SEQUENCES AND This document defines the application software requirements for the Interstate -15 Reversible Lane The RLCS application software (‘RLCS Application’) will meet all of the software requirements listed in this document, and if any changes are made to the original set of requirements, this document will reflect those changes upon approval of project management and the appropriate stakeholders.
+The purpose of the (I-15 RLCS) is to open and close the reversible lanes for morning and evening peak traffic hours and any special events defined by operators of the system.
+The software developed from this specification will replace the current aging and non-expandable RLCS Application.
+In addition, new controller devices, as well as field device interface cards will be provided by the successful bidder, and the software will interface with these new field hardware components via interfaces to driver software.
+The RLCS Application must support the objectives listed in System Goals, in the System See Appendix B for a list of terms used in this document.
+The reference documents below were used to prepare this requirements document: System Requirements Document – Version D I-15 Reversible Lane Control System Project – User Requirements Document – Version D IEEE /EIA 12207.
+Guide for Appendix A provides a Traceability Matrix that maps the System Requirements to this document.
+The remainder of this document is divided into two sections.
+gives a high-level, user- and operationally-oriented view of the software.
+provides the detailed requirements including explicitly stated and derived functional requirements from which the RLCS Application will be designed.
+This section describes the general factors that affect the RLCS Application software requirements.
+This section does not state specific requirements, instead it provides a background for those requirements, which are defined in detail in.
+The RLCS Application will allow an operator to view system status and issue commands to change device status as well as configure the system and generate reports.
+The five major functions of the RLCS application software are a Graphical User Interface (GUI), Process Control and Monitoring, Sequencing, Data Processing and Security, and Reporting.
+This section describes how the RLCS Application software relates to other systems and software as well as how it functions internally.
+In addition to providing data to the system users and traffic operations management, the RLCS Application will provide data to other external systems via an external server data store accessible by other external systems such as The RLCS Application will also allow for remote access through a firewall via outside telecommunications networks by authorized users.
+The diagram below shows the flow of information to and from the different interfaces.
+External RLCS Application Interfaces The user will operate the RLCS Application software using a graphical user interface.
+RLCS application will seamlessly interface and control hardware devices.
+This section discusses interfaces between the RLCS application and other software, which may include but are not limited to: Workstation O/S, Network O/S, Controller O/S, a database management system, and a reporting tool The RLCS will provide access to system status data, to external systems through a firewall.
+This will be a one way data transfer to a computer outside of the RLCS network and making it available there for public use.
+The transfer will occur every 30 seconds.
+A one way serial data transfer will also be provided.
+RLCS workstations and controllers will reside on a private network to communicate field device information.
+The RLCS private network communication media will include fiber, Cat 5 wiring Leased lines and dial-up lines Communications from the TMC to the DCU controllers is through the FCU controller.
+In addition, wireless connections between the FCU and DCU controllers are not an option due to security and interference considerations The only memory constraints imposed on the software will depend on constraints associated with the intelligent controller selected for the system.
+For the 2070 controller, reference the The RLCS Application will support the operations described in ‘Operational Scenarios’ of the RLCS System Requirements Specification.
+The RLCS Application will operate as a component of the RLCS System, for which physical adaptations are described in ‘Physical’ of the System Requirements Specification The data flow diagram below shows the five major functions of the RCLCS Application : GUI, Process Control and Monitoring, Sequencing, Data Processing and Security, and Reporting.
+RLCS Product Functions Data Flow Solid lines indicate data flows between functions.
+Several classes of users will access the RLCS Application.
+A user is defined as anyone who has the ability to ‘log on’ to the RLCS.
+External entities such as ATMS and ValuePricing, which will retrieve data from a server external to the RLCS network, are not considered users.
+Also, the driving public will have access to system status via the changeable message signs, and eventually the Traveler Information Network, but are also not considered users of the system.
+Command control of the system during normal mode.
+Only one ‘operator’ may be logged onto the system at any given time.
+Reporting and status checking capabilities only Command control of the system only during maintenance mode.
+Ability to execute maintenance mode control sequences from FCU workstations or remote dial-in terminals, as well as from the maintenance building workstation, but not from the A member of the District 11 technical staff (usually a Software Systems staff member) authorized to create and modify system configuration data, including staff, devices, and scheduled operations.
+Security setup capabilities are defined in more detail in.
+The following constraints were factors in the development of the detailed requirements for the RLCS Application: a) Regulatory policies – There were no technical regulatory policies specifically covering the RLCS b) Hardware limitations – The RLCS Application will reside on a hardware platform compatible with Microsoft Windows NT or Unix-based operating systems.
+Interfaces to other applications – Other than system level interfaces, such as network, operating system, and database system, there will be no interfaces to other applications.
+Parallel operation – For a short time, while the RLCS Application is being deployed in the field, the existing system will be left in place and will only be disconnected after a successful, complete system test in the field during hours when the facility is closed to traffic.
+Audit functions – The RLCS Application will create and store log files which will track all I-15 RLCS Software Requirements Specification application activity.
+Higher-order language requirements – There are no specific high level language requirements, other than that a high level language be used to develop and maintain the RLCS Application for more cost-effective maintenance efforts.
+Reliability requirements – The RLCS Application must be available 24 hours per day, 7 days per week, 365 days per year.
+Criticality of the application – The RLCS Application is important to the traffic management goals of the Southern California region.
+Opening the lanes in the direction of the peak traffic flow to route traffic onto the reversible lanes is a critical operation in meeting these goals.
+Safety and security considerations – The safety of field maintenance staff and the traveling public is dependent on the correct functioning of the RLCS Application to open and close the facility.
+Reversible Lanes facilities, whether operated manually, or by a control system, present a fundamental risk: The risk is the possibility of opening an entrance for one direction of travel, with one or more entrances already open in the opposite direction.
+Should this type of event actually occur, it would be nothing less than catastrophic; for the motorists involved; for the traveling public in general, for the system operators, and for the Agency.
+Another potential control system risk, lies with the barrier gates used at Locations 1, 2, and 5.
+Should one of these gates be lowered across an otherwise open entrance, the results could be catastrophic.
+There are less serious, but possibly more common control system risks in closure device/sensor failures during the opening or closing of an entrance.
+In the absence of full system overrides, if the system allows, or causes, an entrance to be opened in one direction, when an entrance in the opposite direction is open, then the system has failed.
+A well designed, carefully implemented, and thoroughly tested control system, can reduce the chance of such an occurrence (due to operator error, control system or sensor failure).
+In order to achieve this, the nature of the risk must be understood and continually kept in mind by control system developers and testers.
+The RLCS will benefit from the deployment of the Fiber Optic Network along I-15 Reversible Lane corridor to include the RLCS lanes.
+The communications between the FCU and DCU locations will continue to be copper.
+The primary mode of communication is fiber and secondary is ISDN.
+The fail over will be transparent to the RLCS application.
+A dialup connection will be used for remote access to the RLCS.
+The RLCS software will not be apportioned, or split between multiple releases.
+The complete set of requirements will be included in one release.
+This section of the SRS contains the RLCS Application software requirements to a level of detail sufficient to enable designers to design the system, and acceptance testers to test that the system satisfies the requirements.
+These software requirements will be revised by the contractor to reflect the final approved RLCS architecture design.
+This will be done before high-level software design phase.
+Every stated requirement is externally perceivable by users, operators, or other external systems.
+This section describes each input into the software, every output from the software, and all functions performed by the software.
+Multiple field devices will interface with updated device input/output cards that in turn will interface with an intelligent controller.
+It is unknown at this time which particular controller will be used to control the field devices, but the software must interface with whichever controller is chosen to interface with the field devices.
+The field devices and controllers in the table on the following page are currently in use at the facility.
+See Appendix D for a table of current FCU-DCU and FCU-CMS interface pin configurations.
+The RLCS software shall send to and receive data from the field device I/O cards through I/O driver software.
+The tables below show the description and locations of the field devices currently installed and to be installed at the facility.
+Appendix D contains a chart with I/O card pin configurations.
+I-15 RLCS Controllers and Field Devices *The controllers at the FCU and DCU will be replaced with modern controllers such as the Department of Transportation 2070 Advanced Transportation Controller (ATC) or a controller with equal or better capabilities.
+RLCS Inputs to and outputs from the FCU and DCU Controllers Barrier Lights LHS and LHN Light Cabinet ID and DCUs Compressor Pressure Exhibit 3.
+Currently installed I-15 RLCS Field Sensors and Devices Devices to be added to the RLCS are shown in Exhibit 3.
+RLCS Inputs to and outputs from the FCU and DCU Controllers FCU-S FCU-N DCU 1 DCU 2 DCU 3 DCU 4 DCU 5 Total # Reset DET for I/P files Output Exhibit 3.
+Future Installation I-15 RLCS Field Device and Sensors All external systems shall retrieve RLCS status from a server outside the RLCS network.
+A single data file will include the following data elements: Status (e.g.: open northbound, open southbound, closed) Customers (e.g.: RLCS/FasTrak only, all traffic) Access (e.g.: location 1 open, location 2 closed) Signs (e.g.: Sign 1 “Express Lanes Open”, Sign2 “Express Lanes Closed”) There are two external communications interfaces with the RLCS Application The first is a connection to a Department of Transportation ISSC resource (possibly a WAN connection) via a firewall.
+All external systems will access RLCS data through this interface.
+This interface is a one-way output only interface.
+The second consists of a secure remote dial-in interface through a firewall via a dial-up modem.
+This is a two-way interface that allows connection into the RLCS network via a remote computer equipped with the application software, and with a user logon authorized for remote access.
+This section describes the fundamental actions that must occur to accept inputs and produce outputs.
+It includes explanations of validity checks on inputs, [vendor must complete the validity check information] sequences of operations, and responses to abnormal situations.
+See Appendix C for a collection of analysis diagrams that supplement this section.
+The system shall have a Graphical User Interface (GUI) that allows the operator to view system status, issue commands to change device status, configure the system, export log data, and generate reports.
+Input Entities (from list of entities and attributes in 3.4 Logical Database Requirements): All entities.
+The RLCS software shall have a logon screen for the GUI.
+The logon screen shall request user name and corresponding password.
+The logon screen shall activate command control for the user if the user requests it and has authorization.
+Command control shall be from only specified workstations.
+If command control is enabled by another user, and the logging in user is of higher security, the logging in user shall be requested to accept or deny command control.
+If another user is logged in with command control and the new user takes command control, the other user is notified Time Stamp, User, and Workstation ID Window The GUI shall indicate the current date and time, user’s name, and workstation location name.
+The GUI shall also show other users currently logged in the other units within the RLCS network.
+The GUI shall provide an option that allows the system user to issue commands that monitor and control opening and closing events.
+Based on the user’s security level, the control option shall provide the user with the appropriate level of control.
+The control option shall provide the user with the capability to set the operational status of failed devices.
+The RLCS software shall display information about active overrides: Which are active, and which devices have no currently active 'rules protection' against erroneous opening/closing.
+The GUI shall provide a display of the I-15 Reversible Lane Control System facility geographic area, including a layout of the mainline I-15, SR-163 freeway area in the same geographic area as the I-15 Reversible Lane.‘RLCS and FasTrak Only’, ‘All Traffic’) 
+Current facility boundaries extending one mile in either direction.
+Device sensor status using dynamic icons for all field device sensors and controllers.
+For alarm status, the GUI shall also issue an audible alarm, and the icon shall be different from the okay status for that device.
+The visual alarm shall include a change of color for the affected device.
+There shall be an option to turn off the audible alarm permanently or temporarily for a given period.
+The alarm icon shall change to the normal status icon automatically when the alarm condition is removed.
+Alarm conditions shall be configurable on the screen.
+When a device status has been overridden, on the screen it shall appear with different color from the normal and alarm status colors.
+Status information shall continue to display when no user is logged on to the workstation and shall continually be updated every 2 seconds.
+The GUI shall provide an option for “Configuration” that is only accessible by the RLCS Software user with System Administrative privileges.
+It shall display and allow modification of all database tables with the exception of log tables.
+When the system administrator modifies the database tables, the GUI shall analyze the data before storing in the database and notify the system administrator of any conflicting or redundant entries.
+The configuration option shall allow a security level and password to be assigned to each defined staff member.
+User security levels shall be assigned at the command level, device, mode, The configuration option shall also allow user accounts l to be changed remotely in the field units.
+When an operator is making changes on the system, the GUI configuration screen shall display to the user which device, controller, or workstation in the RLCS network will be affected by the changes.
+For example, when the user is making a changes in Pressure Calibration Parameters, it should be made clear which units will be affected.
+The option to configure device rules shall require an additional login password for that option.
+The GUI shall allow devices to be added and removed from the display without requiring programming effort.
+The GUI shall allow the facility map to be modified without requiring programming effort.
+The system shall display information logs and provide the capability to export the logs in common ASCII text for importing to commercial database, spreadsheet, or reporting programs.
+The Problem Work Order shall be a separate display that allows the user to enter information about a system problem.
+The Problem Work Order data shall be editable and exportable to Alarm Log (Critical and Warning Alarm) April 21, 2004 Section VID page 21 of 66 The “Daily Diary” shall be a separate display that allows the user to enter free form text comments.
+The user should not be able to update log entries other than for their own login, for the current day and current shift.
+The GUI shall provide the ability to display the status of one device at the detail level, showing all sensor data for that device.
+The GUI shall provide the ability to display the current status of a category of devices at the detail level, showing all sensor data for all devices of the same category.
+A category is all devices of the same category, such as gates, pop-ups, and CMS devices.
+The user shall be able to retrieve historic reports from the COTS reporting system based on date range and report name.
+Display/Modify parameters for the “Current Command Summary Report” Display/Modify parameters for the “Event Log Report” Display/Modify parameters for the “Current System Status Report” Display/Modify parameters for the “Schedule Report” Display/Modify parameters for the “Failure Summary Report” Display/Modify parameters for the “Current Command Report” Display/Modify parameters for the “Current User Report” Display/Modify parameters for the “Safety Report” Display/Modify parameters for the “Operations and Maintenance Report” Display/Modify parameters for the “External Systems & Benefits Report“ Display/Modify parameters for the “System Status Report” Display/Modify parameters for the “Inventory Report” The system shall display the appropriate emergency contact information in the event of an alarm condition.
+The GUI shall display a separate window requesting confirmation of the command upon receiving a command either from the user at the keyboard, or from a scheduled sequence of commands.
+The GUI shall allow the operator to acknowledge an alarm and have the option to silence the audible portion of the alarm for a configurable number of seconds or permanently for that device only.
+The GUI shall include diagnostic screen providing the user with the capability to diagnose failed devices at the sensor level.
+Change System Mode the GUI shall provide a screen for authorized users to change system mode.
+The GUI shall provide a screen for describing system features, functions, database tables, and fields.
+The RLCS software will monitor the status of all field devices and will process requests for changing field device status.
+Input Entities (from list of entities and attributes in 3.
+4 Logical Database Requirements): Alarm Type, Command Level, Device, Device Alarm Criteria, Device Command, Device Rules, Device Status, Diagnostic Command, Location, System Control Parameters, System Mode, System Operation Status, Output Entities: Alarm Type, Command Level, Device, Device Command, Device Command Log, Diagnostic Command, Location, Operator Daily Diary Log, System Operation Command Log, System Operation Command Log, System Operation Status, System Operational Command The RLCS shall monitor all field device sensors, and shall process operator requests for changing field device status.
+Any operator or system command, which changes the state of field control devices, must be checked for integrity at multiple levels in the RLCS.
+The RLCS software shall monitor, display, and update the database with the status of all system field elements.
+Any change in device state shall be reported on the screen not later than 2 seconds from the time it occurs.
+In addition to monitoring field devices the system shall also monitor field controllers and connected on the The system shall report any users logged in RLCS network computers any time and all commands issued in the field units.
+During ‘degraded’ mode, the system shall monitor device sensors at the frequency rate stored in the database to take effect only during ‘degraded’ mode.
+In general, the system shall monitor the status of all field devices at the frequency specified in the System Control Parameters for that mode.
+The system shall control all system field elements to device sensor level for those device sensors that may be controlled.
+For example, the temperature sensor at the controller cabinet is not a controllable sensor, whereas the ‘gate arm control lines’ sensor may be controlled.
+Each device control command shall check the current status of all closure devices in the system and shall abort if any closure control device status is unknown.
+Each command (at the device sensor command, device command(macro), or system operational command (super macro) level) shall only be executed when a valid or good status exists for all device sensors.
+An authorized user shall be able to log in and issue device status requests and control commands from specified computers in the network.
+April 21, 2004 Section VID based on the user’s access level and authorized workstations.
+The current status for all devices shall be maintained at each controller unit.
+Check Device Status for Alarm Condition Each status received from device sensors shall be checked against alarm conditions for that device sensor and the status will be updated to indicate an alarm.
+Critical alarms shall be generated when one or more of these conditions are met.
+A closure device changes from a known state to unknown state (status lost)  
+A closure device changes from legal state to illegal state.
+pop-ups in the down position when they are supposed to be up.
+The control system Integrity verification indicates a verification failure.
+When a user logs in any of the field units.
+When a command to override a device has been issued anywhere in the system.
+When there is a communication failure within the RLCS network 
+When a computer in the RLCS network goes down Power failure at any controller or workstation 
+When a cabinet ID is changed.
+When the DCUs are in manual mode.
+Warning alarms shall be generated when one or more of these conditions are security sensor activation at either the FCU or DCU.
+When Air pressure, Temperature in cabinets, and Voltages are outside the limits of established thresholds as stored in the database.
+If a critical alarm occurs during opening or closing operation, the system shall present the operator with possible actions that can be taken in order to complete the operation.
+If overriding a device status is needed in order to proceed, the system shall determine if the operator has high enough security and provide advise on how to proceed.
+In order for a command to be processed from any workstation or controller, the MCU field device shall be in the “Auto” mode.
+The system operator shall be able to override any device and continue with a system operational command sequence.
+To ‘override’ a device means to set the status to a normal value even if the device is not functioning in order to continue with a sequence.
+Field staff would manually operate any device that is not responding to a controller April 21, 2004 Section VID command prior to the operator ‘overriding’ the device status.
+The process of overriding a device status shall not affect the status of any other device.
+Business Rules / Interlocks / Safety Screening Each control command that is processed must be validated against the secured safety rules (stored in non-volatile memory) for the command.
+For example, if the operator issues a command to open the south gate while the north gate is open, the RLCS software will determine that opening the south gate cannot occur when the north gate is open, and will give an indication that the operation cannot be completed.
+The validation will occur at each control unit in the system that receives the command.
+Commands are only forwarded from superior units to inferior ones.
+This prevents a lower level unit from changing the state of a device which is controlled by either a higher level unit, or by a peer unit.
+The TSU is superior to the FCUs which are superior to the DCUs.
+Track and log all Failed Requests for Device Status and Control If a status from any device is not received upon request, the system shall automatically request the status again.
+Failure to receive a valid status after a configurable number of retries shall be considered a device failure.
+Identify units and Initialize all Devices When each workstation and control unit (workstation or intelligent controller at the FCU or DCU) comes online, the system shall identify it and all its associated device sensors.
+The RLCS software shall initialize each control unit and device sensor as it is identified.
+RLCS Software Startup PROCESS: The RLCS software in the field shall first identify the its unit when it starts, by reading the cabinet id.
+The RLCS software will then proceed to make sure that all the cards required in that unit are present and working properly.
+RLCS software will do a control system integrity check ( see requirement 3.0.9) and initialize all the specified tables.
+If everything is OK the start up process shall not exceed 30 seconds.
+The RLCS software shall then monitor all the devices and send the current status to the FCU or TSU every 2 seconds (or at the rate specified in the System Control Parameters for the current mode).
+The RLCS software shall be designed to allow for future changes to the roadway without requiring programming effort.
+Updating non-volatile memory-based tables shall be sufficient to accommodate future changes to the roadway.
+Some examples of future changes to the facility include, change in the number of closure devices.
+change in the number of entrances to lanes, change in the number of changeable message signs, Different closure devices, and different operational procedures.
+The system shall generate log files as follows for reports: Device Command Log: Contains device commands issued with time stamp, operator ID, unit where the command was issued at and shall include failed or aborted commands.
+Device command log shall not be editable by users.
+System Operation Command Log: Contains system operational commands issued with time stamp, operator ID, unit where the command was issued at and shall include failed or aborted commands.
+System Operation command shall not be editable by users The Problem Work Order Log will be generated automatically with failure information at the time of failure.
+Some input fields in this log will allow the operator to input status and emergency notification information.
+Alarm Log will contain information about warning and critical alarm events.
+The Daily Diary Log will be generated automatically when a user with Operator authority logs on to the system.
+Some input fields in this log will allow the operator to input free form text information.
+Special Event Log: This log will contain information about scheduled special events.
+System Operation Schedule Log: This log contains information about scheduled operations.
+Input Entities (from list of entities and attributes in 3.
+4 Logical Database Requirements): Alarm Type, Command Level, Device, Device Alarm Criteria, Device Command, Device Command Macro, Device Command Steps, Device Rules, Location, System Control Parameters, System Mode, System Operation Command Schedule, System Operation Status, System Operational Command Steps, Output Entities: Device Command Macro, System Operational Command The RLCS shall execute stored operational control command sequences based on the current system mode of operation and the schedule for each sequence.
+The operational control command sequences to be stored and executed with the initial configuration of the system are listed in Appendix F The RLCS shall present scheduled command operations to the operator at the GUI for confirmation prior to executing the command.
+At any point in an opening or closing sequence, the sequence shall be halted if: A device fails to report completion of the current sequence step within the response time window allotted for the step, or The status of a closure device, which was previously opened at the current entrance, changes to ‘unknown’ or ‘closed’, without an operator-initiated command.
+The status of a closure device, which was previously closed at the current entrance, changes to ‘unknown’ or ‘open’, without an operator- initiated command.
+At any point in an opening sequence, the sequence shall be halted if the status of a closure device for the opposite direction of travel changes to ‘unknown’ or ‘open’.
+To resume an opening or closing sequence after a halt has occurred, the operator shall be able to issue a command to resume if the offending device status can be corrected within a configurable time period as defined in the database and in non- volatile memory.
+The RLCS shall store, process, and retrieve all data necessary to operate the application software as well as generate current and historical reports of system operations, and export system status data to an external server data store.
+The RLCS shall also store, process, and retrieve all data necessary to secure the system from unauthorized use.
+A commercial off-the-shelf database management system shall be used for this function.
+The RLCS database stores information needed to operate the RLCS as well as historical transaction data to generate reports of system operations.
+Input Entities (from list of entities and attributes in 3.
+4 Logical Database Requirements): All entities The RLCS application software shall update and read database tables to support The RLCS application software shall Update and read password and device rule system operations.
+The Personnel Security Level entity stores information about the five attributes used to restrict access to the RLCS: Command Level, Device, Mode, Workstation, and Command levels are of three types: ‘Status Only’, ‘Control’, and ‘Override’.
+Users with ‘Status Only’ command level security may not issue any control commands at any level (device, macro, or super macro).
+‘Control’ allows a user to issue control commands, and is a higher level of security.
+‘Override’ allows a user to temporarily change the status of a device in the database for a configurable period of time in order to allow a command sequence to continue.
+Commands shall be classified in these categories device.
+Example: Raise gate at location 1 These are single commands that change the state of a This is a group of two or more sequentially executed commands that change the states of two or more closure devices.
+This is a group of two or more sequentially executed macros that change the states of an Entrance.
+These are commands that force the status of a device to a temporary known state for the purpose of completing an operation which otherwise I-15 RLCS Software Requirements Specification would not be completed if the device remained in an unknown state.
+This type of command changes the database value for the device only and does not send a device command to the field device.
+These are commands that request the status of a device.
+Example Get status of DCU1, or get the status of CMS12.
+These are commands that run diagnostic on devices or controllers.
+Example: Run diagnostics on the communication card in DCU1.
+The system shall will employ a one-way hash function as an aid to maintaining the integrity of the data and software in the field.
+The hash value returned by the function shall will be at least 128 bits in length.
+The MD5 algorithm is acceptable for this purpose.
+At each time, one or more of the above item types, listed under ‘Control Unit Non-Volatile Memory’, is created or modified, a UTC date/time stamp shall will be updated.
+The update of the time stamp shall will be the last step in the process which builds the time stamped code/data section.
+The system shall will also, for each control unit in the system, produce a table of the returned ‘one-way hash function’ (Message Digest) values, of each of the ‘Control Unit Non-Volatile Memory’ items.
+Digest’ values shall will be stored as hexadecimal characters.
+The appropriate ‘Message Digest’ table shall will be maintained in non-volatile memory in each system control unit.
+The system will provide for periodic verification that current, recomputed ‘Message Digest’ values, for each unit in the system, correspond with ‘record’ values computed by the development processMD5 algorithm.
+The periodic evaluation shall will occur at least once a day.
+The ‘Message Digest’ value verification results shall will be recorded in the system log.
+A verification failure shall will cause an alarm condition for the affected control unit.
+If the failure occurs in checking the non-volatile memory items, the system shall will prevent the affected unit from being used in control sequences.
+The system shall will provide for ‘Message Digest’ verification requests for a given unit by operator command.
+For system login purposes, the hash function shall will also be used to encrypt user passwords.
+[Harrison to ask Don Day why these are requirements.
+] To change device command rules on the production system, the System Administrator must upload a new database version after testing the rule changes in the Simulator environment.
+The system will use data exported from the RLCS database to create and format a variety of reports.
+A commercial off-the-shelf reporting tool shall be used for this function.
+Input Entities: All RLCS log data and any other entities exported to the COTS reporting tool.
+Output Entities: None to RLCS database, only output reporting parameters to COTS reporting package data store, and report output to display, print, or file storage.
+The following reports are representative of the reports to be produced by the system.
+Other reports could be produced from the data stored in the database.
+Create “Current Command Summary Report” from System Command (Super Macro), Device Command (Macro), Device Sensor Command, Device Sensor Rules, Device Rules, System Operation Schedule, and System Operational Command Create “Event Log Report” from “Device Sensor Command Log”, “Device Command Log”, and “System Operation Command Log” entities.
+Create “Current System Status Report” from System Operation Status Log entity for the current time.
+Create “Schedule Report” from the “System Operational Schedule” entity.
+Create “Failure Summary Report” from “Device Sensor Command Log”, “Device Command Log”, and “System Operation Command Log” entities, for status value indicating a “failure”.
+The system shall generate problem reports based on alarms and system status reports Create “Current User Report” from “Personnel Status” entity.
+Create “Safety Report” from “Device Sensor Rules” and “Device Rules” entities.
+Create “Operations and Maintenance Report” from “Device” entity using ”Last Create “System Status Report” from the ‘System Operation Status Log’ entity for Create “Inventory Report” from “Device”, “Device Status”, “Device Category”, and The external server data store containing RLCS status for use by external systems shall be updated once per minute.
+The field device status information logging to the database shall be 2 seconds, but can be configurable within the database to more than 2 seconds by the user.
+The field device status information display update frequency shall be 2 seconds, but can be configurable within the database to more than 2 seconds by the user.
+The RLCS shall receive device status information from devices sensors within 2 seconds of the status information being issued by the device sensor.
+Field devices shall receive respond to commands from the RLCS within 12 seconds of the command confirmation being issued by the operator using a keyboard (or other input device).
+The RLCS shall support multiple users logged on, up to the limit of the number of users defined in the database.
+Not including device and network response times, requests from the GUI for status updates shall not exceed 2 seconds to update the GUI display.
+Not including device and network response time, requests from the GUI for device status changes (control commands) shall not exceed 2 seconds.
+The facility map on the screen shall refresh every 2 seconds but can be configurable within the database to more than 2 seconds by the user.
+The RLCS notification to the operator workstation of any critical alarms shall occur within 2 seconds of alarm detection, and shall occur whether or not an operator is logged on to the system.
+The field units (controllers) shall continually monitor device status, controller status and the control system integrity and send the status to the central I-15 RLCS Software Requirements Specification computer in the TMC every 2 seconds or less.
+The RLCS shall detect alarm conditions within 2 seconds of occurrence.
+At a minimum of every 60 seconds, the system shall check the current date and time against a list of scheduled events for the current mode to determine if any event should be executed.
+The RLCS shall support at a minimum the 4 daily ‘normal’ mode open and close scheduled operations plus at least the same number of ‘emergency’ and The database retrieval and update response time shall not impact any other performance requirements such as the GUI response time or monitoring and control responses.
+In other words, the database performance is a component of the total response time for any other performance requirement.
+If the GUI is required to reflect change in status within 2 seconds, then the database update time must be less than 2 seconds.
+The operator shall be able to store and retrieve previously created report results from the RLCS for a minimum period of 60 days, but configurable for up to one year.
+The raw data used to create reports shall be kept in the RLCS for a minimum period of months prior to backing up to tapes or other secondary storage media.
+Report processing shall not impact any other performance requirements such as the GUI response time or monitoring and control responses Report response time shall be determined by the database resources allocated to the reporting function.
+Depending on user needs for fast report response times (such as for ad hoc reporting), database extracts may be created for reporting purposes only.
+RLCS system components will communicate via the private communications networks established by Department of Transportation District 11 prior to the development of the RLCS.
+Any operator or system command, which changes the state of field control devices, must be checked for integrity at multiple levels in I-15 RLCS Software Requirements Specification the system.
+Valid checksum algorithms must be employed to check the integrity of messages between units.
+The RLCS must support the following data transfer performance goals: The number of kbits transmitted for a single polling event of all device sensors is estimated to be: # of sensors x bytes/status command x 8bits/byte x 1k/1000= x 200 x 8 x 1/1000= 328 kbits Bytes per status command Polling Interval The transmission rate required to transfer this data in 2 seconds is: 328 kbits/2 sec.
+At a 30 second polling interval, the transmission rate drops to 10.9 kbits/s.
+Polling all system devices constitutes the majority (over 99.99%) of transactions on the network.
+The opening and closing sequences that occur four times daily, add only a small fraction to the total system load.
+At 164 kbits/s, in a 24-hour period, 14,169,600k bits will travel over the network: (164 kbits/sec) x (60 sec/min) x (60 min/hr) x (24 hrs/day) = 14,169,600k bits/day The following chart shows the number of kbits added by the daily opening and closing operations, which represent only 0.009% of the daily system load: (1,312 / 14,169,600 = 0.00009) # of Sensors Bytes per control Total k bits for control commands command # of control commands per day (200*205*4*8)/1000 = < 1,312 k bits The RLCS database stores information needed to operate the RLCS as well as historical transaction data to generate reports of system operations.
+The entities in the table below fulfill the functional requirements of the RLCS, but the list does not include any data that might be included with a vendor’s pre-packaged COTS system or custom-designed solution.
+Additional data entities required for design or included with a COTS system are not disallowed by this specification.
+Agency ID, Agency Name, Contact, Address, Phone Alarm Type ID, Description (critical, warning) Command Level ID, Name (examples: status, control, override), type(status/control) Customer Type ID, Name (examples: general public, FasTrak , HOV) Device ID, Name, Device Status ID, graphic image for display, location ID, direction, Device Category Device Alarm Criteria ID, Device ID, Alarm low range, Alarm high range, Alarm Description, Device Device Category ID, Name, Description of category Device Command ID, Device ID, Command String, Timeout, Command Level Device Command Macro ID, Device ID, Command Name, Command String, Timeout, Command Device Command Log ID, Device Command ID, Date, Time, Device Status ID, Operator ID Device Command Steps ID, Device Command ID, Step #, Device Command Device Rules ID, Mode, Device X desired status, Device Y prohibited status Device Status ID, Name, Description of status (e.g.Diagnostic Command ID, Name, Diagnostic Program Path and Name, Command Level Emergency Notification Profile ID, Schedule Shift, Alarm Type ID, Personnel ID, Pager #, Telephone # Location ID, Highway #, Segment, Direction, Lane #, geo code, Name Operator Daily Diary Log ID, Personnel ID, Date, Notes Personnel ID, Name, Initials for login, password, password date Personnel Classification ID, Name, Description of classification Personnel Security Level ID, Mode, Functions, Command Level, Devices, Workstation Personnel Security Level ID, Device ID Personnel Status ID, Name, Description of status (active & logged on, active & logged off, inactive) Problem Work Order ID, Date, Time, Operator, Problem Work Order Status ID, Description Problem Work Order ID, Personnel ID Problem Work Order Status ID, Name, Description of status Problem Work Order Type ID, Name, Description of type Report Parameters ID, Report name, Report number, Report begin date, Report end date “Express Lanes Open”, “Express Lanes Closed”) System Control Parameters ID, System Mode ID, Login retry count, Polling rate, Override timeout, Max users, Display colors, Software version, Database version, Username length, Password length System Mode ID, Name, (Normal, Degraded, Emergency, Maintenance, and others as defined) System Operation Schedule ID, Mode, Start day/time, End day/time, Frequency, System Operational Command ID or Device Command Macro ID, or Device Command ID.
+This entity can reflect items scheduled in advance that repeat at a set period, and can reflect items entered into the system for immediate execution.
+System Operation Status ID, Name (Open North, Open South, Closed), Customer Type ID System Operation Command Log System Operation Command Log ID, Date, Time, System Operational Command ID, System System Operational Command Steps System Operational Command Steps ID, System Operational Command ID, Step #, Device Command System Operational Command ID, Name, Description, Timeout, Command Level Exhibit 3.3: I-15 RLCS Entities and Attributes Workstation ID, Name, Location, Make, Model See the Entity Relationship Diagram and Relationship Descriptions in Appendix C for more details.
+The data processing and security, and reporting functions of the RLCS application software shall be implemented with commercial off-the-shelf software.client operating systems would preferably use the following: The data processing, security, and reporting functions as well as the server and Oracle 8i for the database server and clients HP UX or Solaris server operating system (latest version) Windows NT or Linux for the client operating system (latest version) OS/9 or other real time operating system for the controller operating system Crystal Reports, Brio or comparable for reporting package CCC/Harvest or comparable for change and configuration management.
+The RLCS shall incorporate a database to store, process, and retrieve all data necessary to secure the system from unauthorized use.
+The processing code at the FCU and DCU controllers shall be resident in non-volatile memory.
+The RLCS shall incorporate a database to store, process, and retrieve all data necessary to secure the system from unauthorized use.
+The application software processing code and application software data such as login information at the FCU and DCU controllers shall be resident in non-volatile memory.
+The MD5 algorithm shall be used to secure application data and software in the controllers and the application server.
+The RLCS must demonstrate the ability to function continuously without needing to be reset or rebooted due to an RLCS error for at least 30 consecutive days.
+Valid checksum algorithms must be employed to check the integrity of messages between units.
+The RLCS must be built with redundant capabilities to ensure uninterrupted operation.
+The RLCS will function in a degraded mode in the following manner: If the TMC workstations or network server fails, resulting in loss of field status at the TMC, alternate control shall be at FCU South or FCU North.
+The operator shall be able to dial in from a back up computer to either FCU North or FCU south and open and close the reversible lanes.
+If FCU North or South fails: (FCU Controller failures or FCU-TSU communications failure) Loss of changeable messages signs and DCUs associated with the failed FCU.
+Alternate control at the non-failed FCU If FCUs North and South both fail: (FCU Controller failures or FCUs-TSU and FCU-FCU communications failure) Loss of changeable message signs 1-12 and DCUs 1-5.
+Alternate control units: Direct control at DCUs 1-5, and CMS The operator shall be able to connect a lap top computer at the DCUs and operate the devices or perform manual operation from the MCU.
+The operator shall also be able to connect a lap top on the CMS cabinet and control the signs or perform manual operation of the signs from the cabinet.
+If any DCU 1-5 fails: Field devices related to the failed DCU.
+Alternate control unit: MCU and manual control at the field devices.
+If any MCU fails: Loss of field devices.
+Alternate control unit: Manual control at the field devices related to the failed MCU.
+The devices can be manually controlled/operated from their cabinets (e.g.: Gates) The current configuration information for each processing unit in the field shall be duplicated in a database at the TMC level.
+The RLCS must be available 24/7, 365 days per year.
+The normal operating mode is Monday through Friday, between 5:00am and 8:00pm, but the system must be functional in order to stay in its closed state after hours.
+If there is a failure, recovery time must be no greater than 10 minutes, and total yearly uptime must be at least 99.
+99% (.01% downtime, or approximately 50 minutes per year).
+The RLCS shall support remote system administration and maintenance of the The RLCS shall utilize an open architecture that is modular and scaleable.
+The system will be scaled up to a maximum of two additional DCU controllers, each with the number of devices currently at DCU Location 1, plus four additional CMS, and I-15 RLCS Software Requirements Specification twenty additional contact closures) Wherever possible open systems standards for hardware, software, software development tools, and communications shall be used.
+The original System Requirements Document – Version C produced by TransCore in December 1998, was the basis for this Software Requirements Specification.
+The two tables referenced in this appendix show the migration of requirements from the original document to this document.
+If a requirement was not used because it was no longer valid, it is labeled Some of the requirements in this Software Requirements Specification are new (not specified by the TransCore document), and therefore are not referenced in the matrix.
+Additionally, some system requirements are not software requirements, and will be referenced in the Request for Proposals and System Architectural Design documents, but not in this See SRSMatrixFromTransCore2.
+doc for the matrix in order by TransCore-produced system requirements.
+See SRSMatrixFromVIP2.doc for the matrix in order by the VIP-produced software requirements.
+The capability of the system to allow an operator with the proper security to continue an operating sequence through to the end even though any intermediate step resulted in a device control failure, by allowing the operator to input a device status thereby overriding the status coming from the field.
+The I-15 reversible lane physical roadway, field devices, and electronic components and software used to monitor and control the field devices.
+Gates, pop-ups, CMS, lights, loop detectors, power, pressure transducers, and any other controlled device.
+The capability of the system to allow an operator with proper security to issue device commands outside of a predetermined operational event, on demand.
+The electronic components and software used to monitor and control the field devices within the I- Can refer to the existing or proposed RLCS.
+Appendix C – Data Flow Diagrams, and Data Model External systems: AMS, Value Pricing/FasTrak, Traveler Info, and Solid lines indicate data flows between functions.
+L E G E N D Square Shapes: External Functions or Entities I-15 Reversible Lane Control System: Process Monitoring and Control 3.2.2 Entity Relationship Diagram - Device and Command Related Entities Entity Relationship Diagram - Device and Command Related Entities April 21, 2004 Section VID page 48 of 66 Entity Relationship Diagram - Personnel, Work Order, and Scheduling Related Entities Each Agency may be referenced in one or more System Operation Each Alarm Type may be referenced in one or more Device Alarm Each Command Level may be referenced in one or more Device Each Customer Type may be referenced in one or more System Each Device has one Device Type Each Device has one Device Status Each Device may have one or more Device Rules Each Device has one or more Alarm Criteria Each Device has one or more Device Commands Each Device may be referenced in one or more Personnel Security Each Device Alarm Criteria is for one Device Each Device Alarm Criteria references one Alarm Type Each Device Category describes one or more Devices Each Device Command refers to one Device Each Device Command may be referenced in one or more Device Each Device Command is described by one Command Level Each Device Command Macro has one or more Device Command Each Device Command Macro may be referenced in one or more Each Device Command Log entry is generated by one System Each Device Command Step refers to one Device Command\ Each Device Command Step refers to one Device Command Macro Each Device Rule references one Device Each Device Status may describe one or more Devices.
+Each Diagnostic Command has no associations or relationships with Each Location may describe one or more Devices Each Operator Daily Diary Log entry is for one Personnel Each Operator Daily Diary Log entry references one Workstation Each Personnel has one Personnel Security Level Each Personnel has one Personnel Status Each Personnel has one Emergency Notification Profile Each Personnel has one Personnel Classification Each Personnel may be referenced in one or more Operator Daily Diary page 50 of 66 Each Emergency Notification Profile may describe one or more any other entity.
+Each Personnel Status may describe one or more Personnel Each Personnel System Function references one Personnel Security Each Personnel may be referenced in one or more System Operation Each Personnel may be referenced in one ore more Device Command Each Personnel may be referenced in one or more Problem Work Each Personnel Classification may describe one or more Personnel Each Personnel Security Level may describe one or more Personnel Each Personnel Security Level may be authorized for one or more Each Personnel Security Level may be referenced by one or more Each Personnel Security Level may be authorized for one or more Each Personnel Security Level may be authorized for one or more Each Personnel Security Level has one Command Level Each Personnel Security Level Device references one Device and one Each Personnel System Mode references one Personnel Security Level and one System Mode Each Personnel Workstation references one Personnel Security Level Each Problem Work Order has one Problem Work Order Type Each Problem Work Order has one Problem Work Order Status Each Problem Work is referenced by one ore more Problem Work Each Problem Work Order Personnel associates all the Personnel associated with one Problem Work Order Each Problem Work Order Personnel associates all the Problem Work Each Problem Work Order Status may describe one or more Problem Each Problem Work Order Type may describe one or more Problem Each Report Parameter has no associations or relationships with any Each Sign Message has no associations or relationships with any other Each System Control Parameter has no associations or relationships Each System Function may be referenced by one or more Personnel Each System Mode may be used for one or more System Operation Each System Mode may be referenced by one or more Personnel with any other entity Each System Operation Command Log entry is generated by one Each System Operation Command Log entry references one Personnel Each System Operation Command Schedule item refers to one Agency Each System Operation Command Schedule item refers to one System Each System Operation Command Schedule item creates one or more Each System Operation Command Schedule item creates one or more Each System Operation Command Schedule references one System Operational Command or Device Command Macro or Device Each System Operation Status may be associated with one or more Each System Operational Command Step associates one Device Command Macro with all its System Operational Commands Each System Operational Command Step associates one System Operational Command with all its Device Command Macros.
+Each System Operational Command (Super Macro) is composed of one or more System Operational Command Steps Each System Operational Command may be referenced by one or more System Operation Command Schedules Each Workstation may be referenced by one or more Operator Daily Each Workstation may be referenced by one or more Personnel Appendix D – Hardware Interface I/O Card Pin Configuration RS 232 to Dial up modem RS 232 to Dial up modem Appendix E – Transportation Electrical Equipment Specification (TEES) for the 2070 Controller This document can be found at the Department of Transportation web site at http://www.
+This section describes the RLCS operational requirements which are critical to designing a safe control system.
+This section also lays down operational rules, which the software must implement and adhere to.
+RLCS facility entrances allow vehicles to enter from the adjacent main lanes of I-15 or SR-163.
+Each entrance serves only one direction of travel (either Northbound, or Southbound).
+Each entrance is, as necessary, opened in order to allow access to the facility, or closed in order to either close the facility, or open it in the opposing direction.
+RLCS facility exits, used by vehicles to exit the facility, are always open and have no control devices associated with them.
+In the direction of travel on the freeway, RLCS facility entrance closure devices consist of: Operation of each closure device will entail one or more commands from its associated control unit.
+Each command, which operates a single closure device, shall have a specific ‘response time window’ defined for successful command completion.
+In addition, each compound command, which includes more than one ‘single device’ command, shall have a specific ‘response time window’ defined for successful command completion of the compound command.
+The control system must not attempt to open any entrance closure device, if the status of any opposite direction entrance closure device is ‘unknown’ or open’.
+Steps within a command, or command group, shall be executed sequentially, whether the individual commands in a group, will be executed by one (1) control unit, or by more than one control unit.
+The current status of all entrance closure devices in the system must be maintained at each control unit.
+The state of the closure devices shall be updated in all control units.
+The update frequency shall be higher during the opening and closing periods.
+Closure device sensors shall be monitored continuously by their local control unit.
+The status should be forwarded immediately to all other control units in the system.
+Opening sequences must open Entrance devices in the following order: If more than one bank, banks are opened in the direction from the freeway toward the reversible lanes.
+Pop-up banks are opened beginning at the entrance ramp nose at the reversible lanes, and proceeding toward the edge of shoulder.
+If more than one bank, the banks are opened in the direction from the reversible lanes toward the freeway.
+Pop-up banks are opened downstream (entrance ramp nose at the freeway) to upstream CMS messages will be changed from a ‘Closed’ message, to an ‘Open’ message beginning with the furthest downstream sign (sign closest to the reversible lane), and proceeding upstream (away from the reversible lanes) as message change confirmations are received from each sign.
+At any point in an opening sequence, the sequence shall be halted if: A device fails to report completion of the current sequence step within the response time window allotted for the step, or The status of a closure device for the opposite direction of travel changes to ‘unknown’ or ‘open’, or The status of a closure device, which was previously opened at the current entrance, changes to ‘unknown’ or ‘closed’.
+Closing sequences must close Entrance devices in the following order: CMS messages will be changed from “Open” to “Closed” beginning with the farthest upstream sign (furthest away from the entrance) and proceeding, in order, downstream The system shall provide for a specific delay between the message change on each sign and the message change on the next downstream sign.
+The delay for each sign pair shall equal the time to travel between the two signs at a system specified speed.
+Entrance Longitudinal Pop-ups must be closed in the direction of adjacent freeway traffic ( beginning at the shoulder edge and proceeding toward the entrance ramp nose).
+If more than one bank, Entrance Transverse Pop-ups will be closed in the direction from the freeway toward the reversible lanes.
+Wrong Way Longitudinal Pop-ups will be closed beginning at the shoulder edge, and progressing toward the ramp nose, next to the reversible lanes.
+If more than one bank, Wrong Way Transverse Pop-ups will be closed in the direction from the reversible lanes toward the freeway.
+At any point in a closing sequence, the sequence shall be halted if either: A device fails to report completion of the current sequence step within the response time The status for a closure device, which was previously closed at the current entrance, window allotted for the step, or changes to ‘unknown’ or ‘open’.F.5 ‘Halted’ Opening and Closing Sequences A ‘halted’ opening or closing sequence shall cause the system to enter a ‘hold’ state for a system specified time.
+If the offending device status can be corrected within the specified time period, the operator shall be able to enter a ‘resume’ command in order for the system to attempt to complete the original opening/closing sequence.
+If multiple entrances exist on the reversible lanes in the direction of travel being opened, the specific order in which those entrances are opened presents no ‘wrong way’ safety issues.
+Likewise, if multiple entrances exist on the reversible lanes in the direction of travel being closed, the specific order in which those entrances are closed presents no ‘wrong way’ safety issues.
+Safety screening shall be done to determine if execution of a proposed command, if successful, would produce a valid reversible lanes configuration.
+If the screened command, including any subordinate commands would result in an unacceptable reversible lanes configuration, the screening check is considered to have failed.
+In the following section, the term ‘device command’ shall be understood to include any simple command, command group, or macro, which may, if executed, change the state of one or more entrance devices.
+In the case of device command groups (macros, compound commands, etc.) any screening requirement shall be applied to the command group, and to each device command within the group, prior to execution.
+Each instance of safety screening shall utilize system configuration data that is no more than 3 seconds old.
+Safety screening of device commands shall be multi-layered.
+Safety screening shall be applied to all device commands at the originating control unit, and at all subordinate control units to which the device command or any of its subordinate device commands may be forwarded.
+Safety screening shall always be applied to any device command, or command step, by any control unit which directly operates the target entrance closure device(s), just prior to actual command execution.
+An opening or closing sequence shall be halted, with an appropriate error response to the system operator, if, at any sequence step, command safety screening fails.
+In each FCU and DCU in the system, the following items shall be replicated from the central database server and maintained in non-volatile, non-removable memory: Reversible Lanes Operating Logic, Control Sequences, and Rule Sets The system shall will employ a one-way hash function as an aid to encrypting and maintaining the integrity of the data and software in the field.
+The hash value returned by the function shall will be at least 128 bits in length.
+The MD5 algorithm is acceptable for this purpose.
+This algorithm shall reside in all the controllers and the application server.
+At each time, one or more of the above item types, listed under ‘Control Unit Non-Volatile Memory’, is created or modified, a UTC date/time stamp shall will be appended to the code (or table).
+The appending of the time stamp shall will be the last step in the process which builds the time stamped code/data section.
+The system shall will also, for each control unit in the system, produce a table of the returned ‘one-way hash function’ (Message Digest) values, of each of the ‘Control Unit Non-Volatile Memory’ items.
+The returned ‘Message Digest’ values shall will be stored as hexadecimal characters.
+‘Message Digest’ table shall will be maintained in non-volatile memory in each system control unit.
+The system will provide for periodic verification that current, recomputed ‘Message Digest’ values, for each unit in the system, correspond with ‘record’ values computed by the development process.
+The periodic evaluation shall will occur at least once a day.
+The ‘Message Digest’ value verification results shall will be recorded in the system log.
+A verification failure shall will cause an alarm condition for the affected control unit.
+If the failure occurs in checking the non-volatile memory items, the system shall will prevent the affected unit from being used in control sequences.
+The system shall will provide for ‘Message Digest’ verification requests for a given unit by operator command.
+For system login purposes, the hash function shall will also be used to encrypt user passwords.
+The system will provide for password aging.
+Whether or not the system will require password aging shall will be controllable by the System Administrator.
+The system will provide for minimum username and password lengths.
+The minimum length values shall will be controllable by the system administrator.
+Access and Safety Characteristics of the I-15 Reversible Roadway System commands may be entered only at a control unit console following logon.
+Command pathways are hard-wired, and not shared with other devices or systems.
+The current state of the roadway may be transmitted from the upper control unit (TSU) to another system via a one- way serial link.
+The Reversible Lane Control System does not accept or process any input from other systems.
+The current state of each roadway closure device and device status change is circulated to all control units in the system, every 2 seconds.
+Commands are only forwarded from superior units to inferior units.
+This prevents a lower level unit from changing the state of a device which is controlled by either a higher level unit, or by a peer unit.
+Device control units utilize device feedback, coupled with strict response time windows for device opening and closing commands.
+Unknown, or improper closure device status anywhere in the system, will immediately terminate a ‘device opening’ command.
+Improper device status ‘may’ terminate a device closing command, or sequence.
+NB 15 Entrance Wrong Way Devices and Gate NB 163 Entrance Devices and Gate SB 15 Entrance Devices and Gate F.
+11 Normal Operations (Operator is logged on) The system must allow the following scheduled operations at a minimum during ‘normal’ operational mode: Sequence #1: Goal State: Open South Bound (AM) / Initial State: Closed (PM) AM Opening South Bound at 5:20 AM.
+Sequence #2: Goal State: Closed (AM) / Initial State: Open South Bound (AM) AM Closing South Bound at 11:00 AM Sequence #3: Goal State: Open North Bound (PM) / Initial State: Closed (AM) PM Opening North Bound at 11:15 AM Sequence #4: Goal State: Closed (PM) / Initial State: Open North Bound (PM) PM Closing of RLCS at 7:00 PM.
+F.12 Unattended Operations (No operator is logged on) When no operator is logged on to the system, the status of all devices will continue to be monitored and displayed.
+If a scheduled operational sequence requires an operator to be logged on to confirm each step of the operation, an audible alarm will sound to alert the operator to log on to the system.
