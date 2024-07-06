@@ -103,7 +103,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "The humidistat ",
+        "The humidistat",
         "the humidistat"
       ],
       "Environment Entity": [
@@ -118,7 +118,7 @@
     "relation": {
       "interface": [
         [
-          "The humidistat ",
+          "The humidistat",
           "the current humidity"
         ],
         [
@@ -138,10 +138,10 @@
       ],
       "Physical Device": [
         "magnetic alarm contact switches",
-        " switch"
+        "switch"
       ],
       "Environment Entity": [
-        " a door",
+        "a door",
         "window"
       ],
       "Design Domain": [],
@@ -161,7 +161,7 @@
           "entry"
         ],
         [
-          " a door",
+          "a door",
           "entry"
         ],
         [
@@ -170,7 +170,7 @@
         ],
         [
           "magnetic alarm contact switches",
-          " switch"
+          "switch"
         ]
       ],
       "requirements reference": [],
@@ -991,7 +991,7 @@
       "Machine Domain": [],
       "Physical Device": [],
       "Environment Entity": [
-        "the help-desk user "
+        "the help-desk user"
       ],
       "Design Domain": [],
       "Requirements": [
@@ -1005,12 +1005,12 @@
       "interface": [
         [
           "reports",
-          "the help-desk user "
+          "the help-desk user"
         ]
       ],
       "requirements reference": [
         [
-          "the help-desk user ",
+          "the help-desk user",
           "view the reports"
         ]
       ],
@@ -1415,14 +1415,14 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        "Error and status messages "
+        "Error and status messages"
       ]
     },
     "relation": {
       "interface": [
         [
           "upper system",
-          "Error and status messages "
+          "Error and status messages"
         ]
       ],
       "requirements reference": [],
@@ -1442,7 +1442,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        " system wide configuration ",
+        "system wide configuration",
         "a low level CMIB command line instruction"
       ]
     },
@@ -1450,11 +1450,11 @@
       "interface": [
         [
           "Software tools",
-          " system wide configuration "
+          "system wide configuration"
         ],
         [
           "the user",
-          " system wide configuration "
+          "system wide configuration"
         ],
         [
           "the user",
@@ -1508,7 +1508,7 @@
       "Machine Domain": [],
       "Physical Device": [
         "The carrier board for the CMIB",
-        "visible indicator "
+        "visible indicator"
       ],
       "Environment Entity": [
         "a user"
@@ -1523,10 +1523,10 @@
       "interface": [
         [
           "The carrier board for the CMIB",
-          "visible indicator "
+          "visible indicator"
         ],
         [
-          "visible indicator ",
+          "visible indicator",
           "a physical indication of CMIB operational status"
         ],
         [
@@ -1951,7 +1951,7 @@
         "AV flight parameters",
         "payload control parameters",
         "data link control parameters",
-        "AV VCR control parameters ",
+        "AV VCR control parameters",
         "AV loiter patterns"
       ]
     },
@@ -1979,7 +1979,7 @@
         ],
         [
           "Tactical Control System",
-          "AV VCR control parameters "
+          "AV VCR control parameters"
         ],
         [
           "operator",
@@ -1995,7 +1995,7 @@
         ],
         [
           "operator",
-          "AV VCR control parameters "
+          "AV VCR control parameters"
         ],
         [
           "operator",
@@ -3404,7 +3404,7 @@
       "Shared Phenomena": [
         "status information",
         "network identifier",
-        " link identifier",
+        "link identifier",
         "school zone identifier",
         "school zone name"
       ]
@@ -3425,7 +3425,7 @@
         ],
         [
           "School Zone",
-          " link identifier"
+          "link identifier"
         ],
         [
           "School Zone",

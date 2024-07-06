@@ -141,7 +141,7 @@
       "Physical Device": [],
       "Environment Entity": [],
       "Design Domain": [
-        "The home web server "
+        "The home web server"
       ],
       "Requirements": [
         "provide storage"
@@ -153,14 +153,14 @@
     "relation": {
       "interface": [
         [
-          "The home web server ",
+          "The home web server",
           "DigitalHome plans and data"
         ]
       ],
       "requirements reference": [],
       "requirements constraints": [
         [
-          "The home web server ",
+          "The home web server",
           "provide storage"
         ]
       ]
@@ -382,18 +382,18 @@
       "Design Domain": [],
       "Requirements": [],
       "Shared Phenomena": [
-        "temperatures "
+        "temperatures"
       ]
     },
     "relation": {
       "interface": [
         [
           "A DigitalHome user",
-          "temperatures "
+          "temperatures"
         ],
         [
           "the thermostat",
-          "temperatures "
+          "temperatures"
         ]
       ],
       "requirements reference": [],
@@ -519,7 +519,7 @@
         "a humidistat"
       ],
       "Environment Entity": [
-        "A DigitalHome user "
+        "A DigitalHome user"
       ],
       "Design Domain": [],
       "Requirements": [],
@@ -530,7 +530,7 @@
     "relation": {
       "interface": [
         [
-          "A DigitalHome user ",
+          "A DigitalHome user",
           "the humidity level"
         ],
         [
@@ -675,7 +675,7 @@
     "text": "For a given month and year, in the past two years, DigitalHome shall be able to provide a report on the management and control of the home.",
     "entity": {
       "Machine Domain": [
-        " DigitalHome"
+        "DigitalHome"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -690,7 +690,7 @@
     "relation": {
       "interface": [
         [
-          " DigitalHome",
+          "DigitalHome",
           "a report"
         ],
         [
@@ -1963,7 +1963,7 @@
       "Machine Domain": [],
       "Physical Device": [
         "The CMIB",
-        "all writeable hardware control registers "
+        "all writeable hardware control registers"
       ],
       "Environment Entity": [],
       "Design Domain": [],
@@ -1979,7 +1979,7 @@
           "the contents"
         ],
         [
-          "all writeable hardware control registers ",
+          "all writeable hardware control registers",
           "the contents"
         ]
       ],
@@ -2550,7 +2550,7 @@
       "Design Domain": [],
       "Requirements": [],
       "Shared Phenomena": [
-        "AV commands ",
+        "AV commands",
         "The flight route plan"
       ]
     },
@@ -2562,7 +2562,7 @@
         ],
         [
           "a programmed flight",
-          "AV commands "
+          "AV commands"
         ]
       ],
       "requirements reference": [],
@@ -2904,20 +2904,20 @@
         "process payload product data from Electro Optical (EO), Infrared (IR), and Synthetic Aperture Radar (SAR) payloads"
       ],
       "Shared Phenomena": [
-        " payload product data"
+        "payload product data"
       ]
     },
     "relation": {
       "interface": [
         [
           "Tactical Control System",
-          " payload product data"
+          "payload product data"
         ]
       ],
       "requirements reference": [
         [
           "process payload product data from Electro Optical (EO), Infrared (IR), and Synthetic Aperture Radar (SAR) payloads",
-          " payload product data"
+          "payload product data"
         ]
       ],
       "requirements constraints": []
@@ -3047,14 +3047,14 @@
         "to manage all aspects of C4I system interfaces"
       ],
       "Shared Phenomena": [
-        " receiving, processing, and transmitting tactical information"
+        "receiving, processing, and transmitting tactical information"
       ]
     },
     "relation": {
       "interface": [
         [
           "The Tactical Control System",
-          " receiving, processing, and transmitting tactical information"
+          "receiving, processing, and transmitting tactical information"
         ]
       ],
       "requirements reference": [],
@@ -3231,7 +3231,7 @@
         "the Tactical Control System Display input device(s)"
       ],
       "Environment Entity": [
-        "the Operator(s) ",
+        "the Operator(s)",
         "VCR"
       ],
       "Design Domain": [],
@@ -3459,7 +3459,7 @@
     "text": "The HCI shall prompt the operator for a valid input.",
     "entity": {
       "Machine Domain": [
-        "The HCI "
+        "The HCI"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -3476,7 +3476,7 @@
     "relation": {
       "interface": [
         [
-          "The HCI ",
+          "The HCI",
           "a valid input"
         ]
       ],

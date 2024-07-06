@@ -51,7 +51,7 @@
       "Physical Device": [
         "sensor",
         "control devices",
-        " lighting units"
+        "lighting units"
       ],
       "Environment Entity": [
         "The general user",
@@ -77,7 +77,7 @@
         ],
         [
           "The general user",
-          " lighting units"
+          "lighting units"
         ]
       ],
       "requirements reference": [],
@@ -114,7 +114,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "sensors ",
+        "sensors",
         "controllers"
       ],
       "Environment Entity": [
@@ -128,7 +128,7 @@
       "interface": [
         [
           "an actual home",
-          "sensors "
+          "sensors"
         ],
         [
           "an actual home",
@@ -1440,7 +1440,7 @@
       "Environment Entity": [],
       "Design Domain": [],
       "Requirements": [
-        " ensure high scalability and performance"
+        "ensure high scalability and performance"
       ],
       "Shared Phenomena": []
     },
@@ -1450,7 +1450,7 @@
       "requirements constraints": [
         [
           "The CCTNS system",
-          " ensure high scalability and performance"
+          "ensure high scalability and performance"
         ]
       ]
     }
@@ -1626,7 +1626,7 @@
         "the EVLA Correlator Monitor and Control System"
       ],
       "Physical Device": [
-        "The Master Correlator Control Computer "
+        "The Master Correlator Control Computer"
       ],
       "Environment Entity": [],
       "Design Domain": [
@@ -1642,20 +1642,20 @@
       "interface": [
         [
           "the EVLA Correlator Monitor and Control System",
-          "The Master Correlator Control Computer "
+          "The Master Correlator Control Computer"
         ],
         [
-          "The Master Correlator Control Computer ",
+          "The Master Correlator Control Computer",
           "disk"
         ],
         [
-          "The Master Correlator Control Computer ",
+          "The Master Correlator Control Computer",
           "file system facilities"
         ]
       ],
       "requirements reference": [
         [
-          "The Master Correlator Control Computer ",
+          "The Master Correlator Control Computer",
           "boot and run in a stand-alone configuration"
         ]
       ],
@@ -2774,7 +2774,7 @@
       "Physical Device": [
         "standard DoD tactical (VHF, UHF, and UHF/VHF) radios",
         "Mobile Subscriber Equipmen",
-        " military and commercial satellite communications equipment"
+        "military and commercial satellite communications equipment"
       ],
       "Environment Entity": [],
       "Design Domain": [],
@@ -3094,7 +3094,7 @@
     "text": "Using risk assessment procedures defined in DoD 5200.28(D), a risk index and the minimum security requirements for Tactical Control System shall be determined.",
     "entity": {
       "Machine Domain": [
-        "Tactical Control System "
+        "Tactical Control System"
       ],
       "Physical Device": [],
       "Environment Entity": [],
@@ -3109,7 +3109,7 @@
       "requirements reference": [
         [
           "DoD 5200.28(D)",
-          "Tactical Control System "
+          "Tactical Control System"
         ]
       ],
       "requirements constraints": []
@@ -3257,14 +3257,14 @@
         "provide the operator a caution and warning diagnostic"
       ],
       "Shared Phenomena": [
-        " a caution and warning diagnostic"
+        "a caution and warning diagnostic"
       ]
     },
     "relation": {
       "interface": [
         [
           "The Tactical Control System",
-          " a caution and warning diagnostic"
+          "a caution and warning diagnostic"
         ]
       ],
       "requirements reference": [],
@@ -3872,7 +3872,7 @@
     "text": "The Center-to-Center shall execute in a Microsoft Windows NT environment.",
     "entity": {
       "Machine Domain": [
-        "The Center-to-Center "
+        "The Center-to-Center"
       ],
       "Physical Device": [],
       "Environment Entity": [],

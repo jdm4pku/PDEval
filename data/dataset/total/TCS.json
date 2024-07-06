@@ -175,7 +175,7 @@
       ],
       "Physical Device": [],
       "Environment Entity": [
-        "The Unmanned Aerial Vehicle Joint Project Office ",
+        "The Unmanned Aerial Vehicle Joint Project Office",
         "UAVs"
       ],
       "Design Domain": [],
@@ -186,7 +186,7 @@
       "interface": [
         [
           "a Tactical Control System",
-          "The Unmanned Aerial Vehicle Joint Project Office "
+          "The Unmanned Aerial Vehicle Joint Project Office"
         ],
         [
           "a Tactical Control System",
@@ -2491,7 +2491,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        "the state "
+        "the state"
       ]
     },
     "relation": {
@@ -2506,11 +2506,11 @@
         ],
         [
           "Tactical Control System",
-          "the state "
+          "the state"
         ],
         [
           "all interfaces",
-          "the state "
+          "the state"
         ]
       ],
       "requirements reference": [],
@@ -3631,7 +3631,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        " mission planning data",
+        "mission planning data",
         "mission plan data"
       ]
     },
@@ -3647,11 +3647,11 @@
         ],
         [
           "Tactical Control System",
-          " mission planning data"
+          "mission planning data"
         ],
         [
           "C4I interfaces",
-          " mission planning data"
+          "mission planning data"
         ]
       ],
       "requirements reference": [],
@@ -3883,7 +3883,7 @@
       "Environment Entity": [
         "Government",
         "the UAV",
-        " "
+        ""
       ],
       "Design Domain": [
         "database",
@@ -3891,7 +3891,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        " UAV signature",
+        "UAV signature",
         "aircraft signature"
       ]
     },
@@ -3899,7 +3899,7 @@
       "interface": [
         [
           "Tactical Control System",
-          " UAV signature"
+          "UAV signature"
         ],
         [
           "Tactical Control System",
@@ -3907,7 +3907,7 @@
         ],
         [
           "the UAV",
-          " UAV signature"
+          "UAV signature"
         ],
         [
           "the UAV",
@@ -3965,7 +3965,7 @@
         "AV flight parameters",
         "payload control parameters",
         "data link control parameters",
-        "AV VCR control parameters ",
+        "AV VCR control parameters",
         "AV loiter patterns"
       ]
     },
@@ -3993,7 +3993,7 @@
         ],
         [
           "Tactical Control System",
-          "AV VCR control parameters "
+          "AV VCR control parameters"
         ],
         [
           "operator",
@@ -4009,7 +4009,7 @@
         ],
         [
           "operator",
-          "AV VCR control parameters "
+          "AV VCR control parameters"
         ],
         [
           "operator",
@@ -4038,7 +4038,7 @@
         "AV identification number",
         "selected payload type",
         "ground control authorization information",
-        "communications pre-set ",
+        "communications pre-set",
         "tactical communications",
         "C4I data dissemination"
       ]
@@ -4067,7 +4067,7 @@
         ],
         [
           "Tactical Control System",
-          "communications pre-set "
+          "communications pre-set"
         ],
         [
           "Tactical Control System",
@@ -4079,7 +4079,7 @@
         ],
         [
           "data links",
-          "communications pre-set "
+          "communications pre-set"
         ]
       ],
       "requirements reference": [],
@@ -4760,7 +4760,7 @@
       "Design Domain": [],
       "Requirements": [],
       "Shared Phenomena": [
-        "AV commands ",
+        "AV commands",
         "The flight route plan"
       ]
     },
@@ -4772,7 +4772,7 @@
         ],
         [
           "a programmed flight",
-          "AV commands "
+          "AV commands"
         ]
       ],
       "requirements reference": [],
@@ -6188,20 +6188,20 @@
         "control, monitor, and display the operation of the Air Data"
       ],
       "Shared Phenomena": [
-        " Air Data"
+        "Air Data"
       ]
     },
     "relation": {
       "interface": [
         [
           "Tactical Control System",
-          " Air Data"
+          "Air Data"
         ]
       ],
       "requirements reference": [
         [
           "control, monitor, and display the operation of the Air Data",
-          " Air Data"
+          "Air Data"
         ]
       ],
       "requirements constraints": []
@@ -7564,7 +7564,7 @@
         "interactive display"
       ],
       "Requirements": [
-        " interactive display for the purpose of controlling the data link terminal"
+        "interactive display for the purpose of controlling the data link terminal"
       ],
       "Shared Phenomena": []
     },
@@ -7581,13 +7581,13 @@
       ],
       "requirements reference": [
         [
-          " interactive display for the purpose of controlling the data link terminal",
+          "interactive display for the purpose of controlling the data link terminal",
           "data link terminal"
         ]
       ],
       "requirements constraints": [
         [
-          " interactive display for the purpose of controlling the data link terminal",
+          "interactive display for the purpose of controlling the data link terminal",
           "interactive display"
         ]
       ]
@@ -8127,20 +8127,20 @@
         "process payload product data from Electro Optical (EO), Infrared (IR), and Synthetic Aperture Radar (SAR) payloads"
       ],
       "Shared Phenomena": [
-        " payload product data"
+        "payload product data"
       ]
     },
     "relation": {
       "interface": [
         [
           "Tactical Control System",
-          " payload product data"
+          "payload product data"
         ]
       ],
       "requirements reference": [
         [
           "process payload product data from Electro Optical (EO), Infrared (IR), and Synthetic Aperture Radar (SAR) payloads",
-          " payload product data"
+          "payload product data"
         ]
       ],
       "requirements constraints": []
@@ -8827,14 +8827,14 @@
         "to manage all aspects of C4I system interfaces"
       ],
       "Shared Phenomena": [
-        " receiving, processing, and transmitting tactical information"
+        "receiving, processing, and transmitting tactical information"
       ]
     },
     "relation": {
       "interface": [
         [
           "The Tactical Control System",
-          " receiving, processing, and transmitting tactical information"
+          "receiving, processing, and transmitting tactical information"
         ]
       ],
       "requirements reference": [],
@@ -10242,7 +10242,7 @@
       "Physical Device": [
         "standard DoD tactical (VHF, UHF, and UHF/VHF) radios",
         "Mobile Subscriber Equipmen",
-        " military and commercial satellite communications equipment"
+        "military and commercial satellite communications equipment"
       ],
       "Environment Entity": [],
       "Design Domain": [],
@@ -11446,7 +11446,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        " future AVs"
+        "future AVs"
       ],
       "Environment Entity": [],
       "Design Domain": [
@@ -11729,7 +11729,7 @@
         "the Tactical Control System Display input device(s)"
       ],
       "Environment Entity": [
-        "the Operator(s) ",
+        "the Operator(s)",
         "VCR"
       ],
       "Design Domain": [],
@@ -12058,8 +12058,8 @@
       "Environment Entity": [],
       "Design Domain": [],
       "Requirements": [
-        " consider all safety requirements affecting design",
-        " performance except nuclear safety"
+        "consider all safety requirements affecting design",
+        "performance except nuclear safety"
       ],
       "Shared Phenomena": []
     },
@@ -12569,7 +12569,7 @@
       "Physical Device": [],
       "Environment Entity": [],
       "Design Domain": [
-        " DoD Regulation 5000.2-R",
+        "DoD Regulation 5000.2-R",
         "DoD Directive 5200.28(D)"
       ],
       "Requirements": [
@@ -12610,7 +12610,7 @@
     "text": "Using risk assessment procedures defined in DoD 5200.28(D), a risk index and the minimum security requirements for Tactical Control System shall be determined.",
     "entity": {
       "Machine Domain": [
-        "Tactical Control System "
+        "Tactical Control System"
       ],
       "Physical Device": [],
       "Environment Entity": [],
@@ -12625,7 +12625,7 @@
       "requirements reference": [
         [
           "DoD 5200.28(D)",
-          "Tactical Control System "
+          "Tactical Control System"
         ]
       ],
       "requirements constraints": []
@@ -13716,7 +13716,7 @@
     "text": "The Tactical Control System software shall restrict the operator(s) from exercising levels of interaction not achievable by the system.",
     "entity": {
       "Machine Domain": [
-        "The Tactical Control System software ",
+        "The Tactical Control System software",
         "the system"
       ],
       "Physical Device": [],
@@ -13918,7 +13918,7 @@
         "The controls"
       ],
       "Physical Device": [
-        " air vehicle"
+        "air vehicle"
       ],
       "Environment Entity": [
         "payload operators",
@@ -13967,14 +13967,14 @@
         "provide the operator a caution and warning diagnostic"
       ],
       "Shared Phenomena": [
-        " a caution and warning diagnostic"
+        "a caution and warning diagnostic"
       ]
     },
     "relation": {
       "interface": [
         [
           "The Tactical Control System",
-          " a caution and warning diagnostic"
+          "a caution and warning diagnostic"
         ]
       ],
       "requirements reference": [],
@@ -14298,7 +14298,7 @@
     "text": "The HCI shall prompt the operator for a valid input.",
     "entity": {
       "Machine Domain": [
-        "The HCI "
+        "The HCI"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -14315,7 +14315,7 @@
     "relation": {
       "interface": [
         [
-          "The HCI ",
+          "The HCI",
           "a valid input"
         ]
       ],
@@ -15036,14 +15036,14 @@
         "provide a default selection as well as an override option"
       ],
       "Shared Phenomena": [
-        " mission-critical Warnings"
+        "mission-critical Warnings"
       ]
     },
     "relation": {
       "interface": [
         [
           "the Tactical Control System HCI",
-          " mission-critical Warnings"
+          "mission-critical Warnings"
         ]
       ],
       "requirements reference": [],

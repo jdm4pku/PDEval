@@ -232,7 +232,7 @@
       ],
       "Physical Device": [],
       "Environment Entity": [
-        "a home user ",
+        "a home user",
         "a home"
       ],
       "Design Domain": [],
@@ -246,7 +246,7 @@
       "interface": [
         [
           "The Digital Home system",
-          "a home user "
+          "a home user"
         ],
         [
           "The Digital Home system",
@@ -255,11 +255,11 @@
       ],
       "requirements reference": [
         [
-          "a home user ",
+          "a home user",
           "manage devices"
         ],
         [
-          "a home user ",
+          "a home user",
           "control the environment of a home"
         ]
       ],
@@ -413,7 +413,7 @@
     "text": "The prototype DigitalHome software system will be situated in a simulated environment.",
     "entity": {
       "Machine Domain": [
-        "DigitalHome software system "
+        "DigitalHome software system"
       ],
       "Physical Device": [],
       "Environment Entity": [],
@@ -505,7 +505,7 @@
       "Physical Device": [
         "sensor",
         "control devices",
-        " lighting units"
+        "lighting units"
       ],
       "Environment Entity": [
         "The general user",
@@ -531,7 +531,7 @@
         ],
         [
           "The general user",
-          " lighting units"
+          "lighting units"
         ]
       ],
       "requirements reference": [],
@@ -758,7 +758,7 @@
       ],
       "Design Domain": [],
       "Requirements": [
-        "setting up and making changes in the configuration ",
+        "setting up and making changes in the configuration",
         "starting and stopping operation"
       ],
       "Shared Phenomena": [
@@ -779,7 +779,7 @@
       "requirements reference": [
         [
           "A DigitalHome Technician",
-          "setting up and making changes in the configuration "
+          "setting up and making changes in the configuration"
         ],
         [
           "A DigitalHome Technician",
@@ -1005,7 +1005,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "sensors ",
+        "sensors",
         "controllers"
       ],
       "Environment Entity": [
@@ -1019,7 +1019,7 @@
       "interface": [
         [
           "an actual home",
-          "sensors "
+          "sensors"
         ],
         [
           "an actual home",
@@ -1202,7 +1202,7 @@
       ],
       "Environment Entity": [],
       "Design Domain": [
-        "The home web server "
+        "The home web server"
       ],
       "Requirements": [],
       "Shared Phenomena": []
@@ -1210,7 +1210,7 @@
     "relation": {
       "interface": [
         [
-          "The home web server ",
+          "The home web server",
           "DigitalHome elements."
         ]
       ],
@@ -1225,7 +1225,7 @@
       "Physical Device": [],
       "Environment Entity": [],
       "Design Domain": [
-        "The home web server "
+        "The home web server"
       ],
       "Requirements": [
         "provide storage"
@@ -1237,14 +1237,14 @@
     "relation": {
       "interface": [
         [
-          "The home web server ",
+          "The home web server",
           "DigitalHome plans and data"
         ]
       ],
       "requirements reference": [],
       "requirements constraints": [
         [
-          "The home web server ",
+          "The home web server",
           "provide storage"
         ]
       ]
@@ -1374,8 +1374,8 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "The Gateway ",
-        " Gateway ",
+        "The Gateway",
+        "Gateway",
         "an RF Module",
         "sensors",
         "controllers"
@@ -1390,7 +1390,7 @@
     "relation": {
       "interface": [
         [
-          "The Gateway ",
+          "The Gateway",
           "an RF Module"
         ],
         [
@@ -1398,7 +1398,7 @@
           "wireless communications"
         ],
         [
-          " Gateway ",
+          "Gateway",
           "wireless communications"
         ],
         [
@@ -1625,7 +1625,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "The humidistat ",
+        "The humidistat",
         "the humidistat"
       ],
       "Environment Entity": [
@@ -1640,7 +1640,7 @@
     "relation": {
       "interface": [
         [
-          "The humidistat ",
+          "The humidistat",
           "the current humidity"
         ],
         [
@@ -1706,10 +1706,10 @@
       ],
       "Physical Device": [
         "magnetic alarm contact switches",
-        " switch"
+        "switch"
       ],
       "Environment Entity": [
-        " a door",
+        "a door",
         "window"
       ],
       "Design Domain": [],
@@ -1729,7 +1729,7 @@
           "entry"
         ],
         [
-          " a door",
+          "a door",
           "entry"
         ],
         [
@@ -1738,7 +1738,7 @@
         ],
         [
           "magnetic alarm contact switches",
-          " switch"
+          "switch"
         ]
       ],
       "requirements reference": [],
@@ -1999,10 +1999,10 @@
         "home devices"
       ],
       "Environment Entity": [
-        "a user "
+        "a user"
       ],
       "Design Domain": [
-        " systems",
+        "systems",
         "a DigitalHome home web server"
       ],
       "Requirements": [
@@ -2018,20 +2018,20 @@
         ],
         [
           "a DigitalHome home web server",
-          "a user "
+          "a user"
         ],
         [
-          "a user ",
+          "a user",
           "home devices"
         ],
         [
-          "a user ",
-          " systems"
+          "a user",
+          "systems"
         ]
       ],
       "requirements reference": [
         [
-          "a user ",
+          "a user",
           "monitor and control home devices and systems"
         ]
       ],
@@ -2098,7 +2098,7 @@
         "DigitalHome"
       ],
       "Physical Device": [
-        " environmental controllers",
+        "environmental controllers",
         "thermostats",
         "humidistats",
         "contact sensors",
@@ -2115,7 +2115,7 @@
       "interface": [
         [
           "DigitalHome",
-          " environmental controllers"
+          "environmental controllers"
         ],
         [
           "DigitalHome",
@@ -2243,7 +2243,7 @@
         "to monitor and control a home’s temperature"
       ],
       "Shared Phenomena": [
-        " temperature "
+        "temperature"
       ]
     },
     "relation": {
@@ -2254,11 +2254,11 @@
         ],
         [
           "The DigitalHome programmable thermostat",
-          " temperature "
+          "temperature"
         ],
         [
           "a home",
-          " temperature "
+          "temperature"
         ],
         [
           "a web ready computer",
@@ -2326,18 +2326,18 @@
       "Design Domain": [],
       "Requirements": [],
       "Shared Phenomena": [
-        "temperatures "
+        "temperatures"
       ]
     },
     "relation": {
       "interface": [
         [
           "A DigitalHome user",
-          "temperatures "
+          "temperatures"
         ],
         [
           "the thermostat",
-          "temperatures "
+          "temperatures"
         ]
       ],
       "requirements reference": [],
@@ -2410,10 +2410,10 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "thermostat "
+        "thermostat"
       ],
       "Environment Entity": [
-        "an enclosed space "
+        "an enclosed space"
       ],
       "Design Domain": [],
       "Requirements": [
@@ -2426,18 +2426,18 @@
     "relation": {
       "interface": [
         [
-          "thermostat ",
+          "thermostat",
           "the air temperature"
         ],
         [
-          "an enclosed space ",
+          "an enclosed space",
           "the air temperature"
         ]
       ],
       "requirements reference": [],
       "requirements constraints": [
         [
-          "thermostat ",
+          "thermostat",
           "the air temperature is to be controlled"
         ]
       ]
@@ -2677,7 +2677,7 @@
         "a humidistat"
       ],
       "Environment Entity": [
-        "A DigitalHome user "
+        "A DigitalHome user"
       ],
       "Design Domain": [],
       "Requirements": [],
@@ -2688,7 +2688,7 @@
     "relation": {
       "interface": [
         [
-          "A DigitalHome user ",
+          "A DigitalHome user",
           "the humidity level"
         ],
         [
@@ -2708,7 +2708,7 @@
         "humidistats"
       ],
       "Environment Entity": [
-        "rooms ",
+        "rooms",
         "home"
       ],
       "Design Domain": [],
@@ -2719,7 +2719,7 @@
       "interface": [
         [
           "humidistats",
-          "rooms "
+          "rooms"
         ],
         [
           "humidistats",
@@ -3231,7 +3231,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "contact sensors ",
+        "contact sensors",
         "power switches"
       ],
       "Environment Entity": [
@@ -3266,7 +3266,7 @@
         ],
         [
           "a user",
-          "contact sensors "
+          "contact sensors"
         ],
         [
           "a user",
@@ -3282,7 +3282,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "switches ",
+        "switches",
         "household devices"
       ],
       "Environment Entity": [
@@ -3300,7 +3300,7 @@
       "interface": [
         [
           "A user",
-          "switches "
+          "switches"
         ],
         [
           "A user",
@@ -3308,7 +3308,7 @@
         ],
         [
           "the DigitalHome website",
-          "switches "
+          "switches"
         ],
         [
           "the DigitalHome website",
@@ -3318,7 +3318,7 @@
       "requirements reference": [],
       "requirements constraints": [
         [
-          "switches ",
+          "switches",
           "override planned parameter values,"
         ],
         [
@@ -3332,7 +3332,7 @@
     "text": "For a given month and year, in the past two years, DigitalHome shall be able to provide a report on the management and control of the home.",
     "entity": {
       "Machine Domain": [
-        " DigitalHome"
+        "DigitalHome"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -3347,7 +3347,7 @@
     "relation": {
       "interface": [
         [
-          " DigitalHome",
+          "DigitalHome",
           "a report"
         ],
         [

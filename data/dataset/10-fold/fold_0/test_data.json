@@ -134,7 +134,7 @@
       ],
       "Environment Entity": [],
       "Design Domain": [
-        "The home web server "
+        "The home web server"
       ],
       "Requirements": [],
       "Shared Phenomena": []
@@ -142,7 +142,7 @@
     "relation": {
       "interface": [
         [
-          "The home web server ",
+          "The home web server",
           "DigitalHome elements."
         ]
       ],
@@ -155,8 +155,8 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "The Gateway ",
-        " Gateway ",
+        "The Gateway",
+        "Gateway",
         "an RF Module",
         "sensors",
         "controllers"
@@ -171,7 +171,7 @@
     "relation": {
       "interface": [
         [
-          "The Gateway ",
+          "The Gateway",
           "an RF Module"
         ],
         [
@@ -179,7 +179,7 @@
           "wireless communications"
         ],
         [
-          " Gateway ",
+          "Gateway",
           "wireless communications"
         ],
         [
@@ -267,10 +267,10 @@
         "home devices"
       ],
       "Environment Entity": [
-        "a user "
+        "a user"
       ],
       "Design Domain": [
-        " systems",
+        "systems",
         "a DigitalHome home web server"
       ],
       "Requirements": [
@@ -286,20 +286,20 @@
         ],
         [
           "a DigitalHome home web server",
-          "a user "
+          "a user"
         ],
         [
-          "a user ",
+          "a user",
           "home devices"
         ],
         [
-          "a user ",
-          " systems"
+          "a user",
+          "systems"
         ]
       ],
       "requirements reference": [
         [
-          "a user ",
+          "a user",
           "monitor and control home devices and systems"
         ]
       ],
@@ -313,7 +313,7 @@
         "DigitalHome"
       ],
       "Physical Device": [
-        " environmental controllers",
+        "environmental controllers",
         "thermostats",
         "humidistats",
         "contact sensors",
@@ -330,7 +330,7 @@
       "interface": [
         [
           "DigitalHome",
-          " environmental controllers"
+          "environmental controllers"
         ],
         [
           "DigitalHome",
@@ -380,7 +380,7 @@
         "to monitor and control a home’s temperature"
       ],
       "Shared Phenomena": [
-        " temperature "
+        "temperature"
       ]
     },
     "relation": {
@@ -391,11 +391,11 @@
         ],
         [
           "The DigitalHome programmable thermostat",
-          " temperature "
+          "temperature"
         ],
         [
           "a home",
-          " temperature "
+          "temperature"
         ],
         [
           "a web ready computer",
@@ -472,7 +472,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "switches ",
+        "switches",
         "household devices"
       ],
       "Environment Entity": [
@@ -490,7 +490,7 @@
       "interface": [
         [
           "A user",
-          "switches "
+          "switches"
         ],
         [
           "A user",
@@ -498,7 +498,7 @@
         ],
         [
           "the DigitalHome website",
-          "switches "
+          "switches"
         ],
         [
           "the DigitalHome website",
@@ -508,7 +508,7 @@
       "requirements reference": [],
       "requirements constraints": [
         [
-          "switches ",
+          "switches",
           "override planned parameter values,"
         ],
         [
@@ -1965,7 +1965,7 @@
     "text": "All computers within the Correlator Monitor and Control System system shall have the ability for authorized users to directly access individual systems for maintenance and monitoring through remote logins.",
     "entity": {
       "Machine Domain": [
-        " the Correlator Monitor and Control System"
+        "the Correlator Monitor and Control System"
       ],
       "Physical Device": [
         "All computers"
@@ -1982,7 +1982,7 @@
     "relation": {
       "interface": [
         [
-          " the Correlator Monitor and Control System",
+          "the Correlator Monitor and Control System",
           "All computers"
         ],
         [
@@ -2406,7 +2406,7 @@
         "AV identification number",
         "selected payload type",
         "ground control authorization information",
-        "communications pre-set ",
+        "communications pre-set",
         "tactical communications",
         "C4I data dissemination"
       ]
@@ -2435,7 +2435,7 @@
         ],
         [
           "Tactical Control System",
-          "communications pre-set "
+          "communications pre-set"
         ],
         [
           "Tactical Control System",
@@ -2447,7 +2447,7 @@
         ],
         [
           "data links",
-          "communications pre-set "
+          "communications pre-set"
         ]
       ],
       "requirements reference": [],
@@ -3484,14 +3484,14 @@
         "provide a default selection as well as an override option"
       ],
       "Shared Phenomena": [
-        " mission-critical Warnings"
+        "mission-critical Warnings"
       ]
     },
     "relation": {
       "interface": [
         [
           "the Tactical Control System HCI",
-          " mission-critical Warnings"
+          "mission-critical Warnings"
         ]
       ],
       "requirements reference": [],
@@ -3551,7 +3551,7 @@
       "Shared Phenomena": [
         "the node information",
         "node identifier",
-        "node name ",
+        "node name",
         "node type description"
       ]
     },
@@ -3567,7 +3567,7 @@
         ],
         [
           "The Center",
-          "node name "
+          "node name"
         ],
         [
           "The Center",
@@ -3756,7 +3756,7 @@
       "Physical Device": [],
       "Environment Entity": [
         "the user",
-        "a HOV "
+        "a HOV"
       ],
       "Design Domain": [],
       "Requirements": [],
@@ -3768,11 +3768,11 @@
       "interface": [
         [
           "an Center",
-          "a HOV "
+          "a HOV"
         ],
         [
           "the user",
-          "a HOV "
+          "a HOV"
         ],
         [
           "an Center",

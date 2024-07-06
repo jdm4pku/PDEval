@@ -216,7 +216,7 @@
       ],
       "Physical Device": [],
       "Environment Entity": [
-        "a home user ",
+        "a home user",
         "a home"
       ],
       "Design Domain": [],
@@ -230,7 +230,7 @@
       "interface": [
         [
           "The Digital Home system",
-          "a home user "
+          "a home user"
         ],
         [
           "The Digital Home system",
@@ -239,11 +239,11 @@
       ],
       "requirements reference": [
         [
-          "a home user ",
+          "a home user",
           "manage devices"
         ],
         [
-          "a home user ",
+          "a home user",
           "control the environment of a home"
         ]
       ],
@@ -430,7 +430,7 @@
       "Physical Device": [
         "sensor",
         "control devices",
-        " lighting units"
+        "lighting units"
       ],
       "Environment Entity": [
         "The general user",
@@ -456,7 +456,7 @@
         ],
         [
           "The general user",
-          " lighting units"
+          "lighting units"
         ]
       ],
       "requirements reference": [],
@@ -627,7 +627,7 @@
       ],
       "Design Domain": [],
       "Requirements": [
-        "setting up and making changes in the configuration ",
+        "setting up and making changes in the configuration",
         "starting and stopping operation"
       ],
       "Shared Phenomena": [
@@ -648,7 +648,7 @@
       "requirements reference": [
         [
           "A DigitalHome Technician",
-          "setting up and making changes in the configuration "
+          "setting up and making changes in the configuration"
         ],
         [
           "A DigitalHome Technician",
@@ -844,7 +844,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "sensors ",
+        "sensors",
         "controllers"
       ],
       "Environment Entity": [
@@ -858,7 +858,7 @@
       "interface": [
         [
           "an actual home",
-          "sensors "
+          "sensors"
         ],
         [
           "an actual home",
@@ -1041,7 +1041,7 @@
       ],
       "Environment Entity": [],
       "Design Domain": [
-        "The home web server "
+        "The home web server"
       ],
       "Requirements": [],
       "Shared Phenomena": []
@@ -1049,7 +1049,7 @@
     "relation": {
       "interface": [
         [
-          "The home web server ",
+          "The home web server",
           "DigitalHome elements."
         ]
       ],
@@ -1064,7 +1064,7 @@
       "Physical Device": [],
       "Environment Entity": [],
       "Design Domain": [
-        "The home web server "
+        "The home web server"
       ],
       "Requirements": [
         "provide storage"
@@ -1076,14 +1076,14 @@
     "relation": {
       "interface": [
         [
-          "The home web server ",
+          "The home web server",
           "DigitalHome plans and data"
         ]
       ],
       "requirements reference": [],
       "requirements constraints": [
         [
-          "The home web server ",
+          "The home web server",
           "provide storage"
         ]
       ]
@@ -1188,8 +1188,8 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "The Gateway ",
-        " Gateway ",
+        "The Gateway",
+        "Gateway",
         "an RF Module",
         "sensors",
         "controllers"
@@ -1204,7 +1204,7 @@
     "relation": {
       "interface": [
         [
-          "The Gateway ",
+          "The Gateway",
           "an RF Module"
         ],
         [
@@ -1212,7 +1212,7 @@
           "wireless communications"
         ],
         [
-          " Gateway ",
+          "Gateway",
           "wireless communications"
         ],
         [
@@ -1421,7 +1421,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "The humidistat ",
+        "The humidistat",
         "the humidistat"
       ],
       "Environment Entity": [
@@ -1436,7 +1436,7 @@
     "relation": {
       "interface": [
         [
-          "The humidistat ",
+          "The humidistat",
           "the current humidity"
         ],
         [
@@ -1502,10 +1502,10 @@
       ],
       "Physical Device": [
         "magnetic alarm contact switches",
-        " switch"
+        "switch"
       ],
       "Environment Entity": [
-        " a door",
+        "a door",
         "window"
       ],
       "Design Domain": [],
@@ -1525,7 +1525,7 @@
           "entry"
         ],
         [
-          " a door",
+          "a door",
           "entry"
         ],
         [
@@ -1534,7 +1534,7 @@
         ],
         [
           "magnetic alarm contact switches",
-          " switch"
+          "switch"
         ]
       ],
       "requirements reference": [],
@@ -1795,10 +1795,10 @@
         "home devices"
       ],
       "Environment Entity": [
-        "a user "
+        "a user"
       ],
       "Design Domain": [
-        " systems",
+        "systems",
         "a DigitalHome home web server"
       ],
       "Requirements": [
@@ -1814,20 +1814,20 @@
         ],
         [
           "a DigitalHome home web server",
-          "a user "
+          "a user"
         ],
         [
-          "a user ",
+          "a user",
           "home devices"
         ],
         [
-          "a user ",
-          " systems"
+          "a user",
+          "systems"
         ]
       ],
       "requirements reference": [
         [
-          "a user ",
+          "a user",
           "monitor and control home devices and systems"
         ]
       ],
@@ -1894,7 +1894,7 @@
         "DigitalHome"
       ],
       "Physical Device": [
-        " environmental controllers",
+        "environmental controllers",
         "thermostats",
         "humidistats",
         "contact sensors",
@@ -1911,7 +1911,7 @@
       "interface": [
         [
           "DigitalHome",
-          " environmental controllers"
+          "environmental controllers"
         ],
         [
           "DigitalHome",
@@ -1999,7 +1999,7 @@
         "to monitor and control a home’s temperature"
       ],
       "Shared Phenomena": [
-        " temperature "
+        "temperature"
       ]
     },
     "relation": {
@@ -2010,11 +2010,11 @@
         ],
         [
           "The DigitalHome programmable thermostat",
-          " temperature "
+          "temperature"
         ],
         [
           "a home",
-          " temperature "
+          "temperature"
         ],
         [
           "a web ready computer",
@@ -2082,18 +2082,18 @@
       "Design Domain": [],
       "Requirements": [],
       "Shared Phenomena": [
-        "temperatures "
+        "temperatures"
       ]
     },
     "relation": {
       "interface": [
         [
           "A DigitalHome user",
-          "temperatures "
+          "temperatures"
         ],
         [
           "the thermostat",
-          "temperatures "
+          "temperatures"
         ]
       ],
       "requirements reference": [],
@@ -2395,7 +2395,7 @@
         "a humidistat"
       ],
       "Environment Entity": [
-        "A DigitalHome user "
+        "A DigitalHome user"
       ],
       "Design Domain": [],
       "Requirements": [],
@@ -2406,7 +2406,7 @@
     "relation": {
       "interface": [
         [
-          "A DigitalHome user ",
+          "A DigitalHome user",
           "the humidity level"
         ],
         [
@@ -2811,7 +2811,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "contact sensors ",
+        "contact sensors",
         "power switches"
       ],
       "Environment Entity": [
@@ -2846,7 +2846,7 @@
         ],
         [
           "a user",
-          "contact sensors "
+          "contact sensors"
         ],
         [
           "a user",
@@ -2862,7 +2862,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "switches ",
+        "switches",
         "household devices"
       ],
       "Environment Entity": [
@@ -2880,7 +2880,7 @@
       "interface": [
         [
           "A user",
-          "switches "
+          "switches"
         ],
         [
           "A user",
@@ -2888,7 +2888,7 @@
         ],
         [
           "the DigitalHome website",
-          "switches "
+          "switches"
         ],
         [
           "the DigitalHome website",
@@ -2898,7 +2898,7 @@
       "requirements reference": [],
       "requirements constraints": [
         [
-          "switches ",
+          "switches",
           "override planned parameter values,"
         ],
         [
@@ -2912,7 +2912,7 @@
     "text": "For a given month and year, in the past two years, DigitalHome shall be able to provide a report on the management and control of the home.",
     "entity": {
       "Machine Domain": [
-        " DigitalHome"
+        "DigitalHome"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -2927,7 +2927,7 @@
     "relation": {
       "interface": [
         [
-          " DigitalHome",
+          "DigitalHome",
           "a report"
         ],
         [
@@ -4208,14 +4208,14 @@
         "to monitor instrument performance"
       ],
       "Shared Phenomena": [
-        "ASPERA-3 data "
+        "ASPERA-3 data"
       ]
     },
     "relation": {
       "interface": [
         [
           "public view",
-          "ASPERA-3 data "
+          "ASPERA-3 data"
         ]
       ],
       "requirements reference": [],
@@ -4234,7 +4234,7 @@
       "Physical Device": [],
       "Environment Entity": [
         "ASPERA-3 team",
-        "science analysis ",
+        "science analysis",
         "the ASPERA-3 team"
       ],
       "Design Domain": [],
@@ -4253,11 +4253,11 @@
           "Web-based displays defined"
         ],
         [
-          "science analysis ",
+          "science analysis",
           "ASPERA-3 data"
         ],
         [
-          "science analysis ",
+          "science analysis",
           "the ASPERA-3 team"
         ]
       ],
@@ -7492,7 +7492,7 @@
       "Machine Domain": [],
       "Physical Device": [],
       "Environment Entity": [
-        "players "
+        "players"
       ],
       "Design Domain": [],
       "Requirements": [],
@@ -9394,7 +9394,7 @@
       "Machine Domain": [],
       "Physical Device": [],
       "Environment Entity": [
-        "the help-desk user "
+        "the help-desk user"
       ],
       "Design Domain": [],
       "Requirements": [
@@ -9408,12 +9408,12 @@
       "interface": [
         [
           "reports",
-          "the help-desk user "
+          "the help-desk user"
         ]
       ],
       "requirements reference": [
         [
-          "the help-desk user ",
+          "the help-desk user",
           "view the reports"
         ]
       ],
@@ -9527,18 +9527,18 @@
       "Design Domain": [],
       "Requirements": [],
       "Shared Phenomena": [
-        "information about all the actions "
+        "information about all the actions"
       ]
     },
     "relation": {
       "interface": [
         [
           "The CCTNS system",
-          "information about all the actions "
+          "information about all the actions"
         ],
         [
           "an unalterable audit trail",
-          "information about all the actions "
+          "information about all the actions"
         ]
       ],
       "requirements reference": [],
@@ -13455,7 +13455,7 @@
       "Environment Entity": [],
       "Design Domain": [],
       "Requirements": [
-        " ensure high scalability and performance"
+        "ensure high scalability and performance"
       ],
       "Shared Phenomena": []
     },
@@ -13465,7 +13465,7 @@
       "requirements constraints": [
         [
           "The CCTNS system",
-          " ensure high scalability and performance"
+          "ensure high scalability and performance"
         ]
       ]
     }
@@ -14120,7 +14120,7 @@
     "text": "The Correlator monitor subsystem will provide VLA Expansion Project system wide access to all correlator system states including the Monitor and Control System supervisor system state.",
     "entity": {
       "Machine Domain": [
-        "The Correlator monitor subsystem "
+        "The Correlator monitor subsystem"
       ],
       "Physical Device": [],
       "Environment Entity": [],
@@ -14136,11 +14136,11 @@
     "relation": {
       "interface": [
         [
-          "The Correlator monitor subsystem ",
+          "The Correlator monitor subsystem",
           "all correlator system states"
         ],
         [
-          "The Correlator monitor subsystem ",
+          "The Correlator monitor subsystem",
           "the Monitor and Control System supervisor system state"
         ],
         [
@@ -14183,14 +14183,14 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        "Error and status messages "
+        "Error and status messages"
       ]
     },
     "relation": {
       "interface": [
         [
           "upper system",
-          "Error and status messages "
+          "Error and status messages"
         ]
       ],
       "requirements reference": [],
@@ -14204,7 +14204,7 @@
         "a human GUI"
       ],
       "Physical Device": [
-        "the correlator ",
+        "the correlator",
         "the correlator hardware"
       ],
       "Environment Entity": [],
@@ -14214,27 +14214,27 @@
       ],
       "Shared Phenomena": [
         "hardware configuration tables",
-        " configuration"
+        "configuration"
       ]
     },
     "relation": {
       "interface": [
         [
-          "the correlator ",
+          "the correlator",
           "hardware configuration tables"
         ],
         [
           "a human GUI",
-          " configuration"
+          "configuration"
         ],
         [
           "the correlator hardware",
-          " configuration"
+          "configuration"
         ]
       ],
       "requirements reference": [
         [
-          "the correlator ",
+          "the correlator",
           "to satisfy the configuration"
         ]
       ],
@@ -14477,7 +14477,7 @@
       "Shared Phenomena": [
         "reboot requests",
         "self-heal attempts",
-        "an alert notice "
+        "an alert notice"
       ]
     },
     "relation": {
@@ -14492,11 +14492,11 @@
         ],
         [
           "a CMIB subsystem",
-          "an alert notice "
+          "an alert notice"
         ],
         [
           "personnel",
-          "an alert notice "
+          "an alert notice"
         ]
       ],
       "requirements reference": [],
@@ -14683,7 +14683,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        " system wide configuration ",
+        "system wide configuration",
         "a low level CMIB command line instruction"
       ]
     },
@@ -14691,11 +14691,11 @@
       "interface": [
         [
           "Software tools",
-          " system wide configuration "
+          "system wide configuration"
         ],
         [
           "the user",
-          " system wide configuration "
+          "system wide configuration"
         ],
         [
           "the user",
@@ -15269,7 +15269,7 @@
       "Machine Domain": [],
       "Physical Device": [
         "The CMIB",
-        "all writeable hardware control registers "
+        "all writeable hardware control registers"
       ],
       "Environment Entity": [],
       "Design Domain": [],
@@ -15285,7 +15285,7 @@
           "the contents"
         ],
         [
-          "all writeable hardware control registers ",
+          "all writeable hardware control registers",
           "the contents"
         ]
       ],
@@ -15379,7 +15379,7 @@
       "Machine Domain": [],
       "Physical Device": [
         "The carrier board for the CMIB",
-        "visible indicator "
+        "visible indicator"
       ],
       "Environment Entity": [
         "a user"
@@ -15394,10 +15394,10 @@
       "interface": [
         [
           "The carrier board for the CMIB",
-          "visible indicator "
+          "visible indicator"
         ],
         [
-          "visible indicator ",
+          "visible indicator",
           "a physical indication of CMIB operational status"
         ],
         [
@@ -15470,7 +15470,7 @@
     "text": "All computers within the Correlator Monitor and Control System system shall have the ability for authorized users to directly access individual systems for maintenance and monitoring through remote logins.",
     "entity": {
       "Machine Domain": [
-        " the Correlator Monitor and Control System"
+        "the Correlator Monitor and Control System"
       ],
       "Physical Device": [
         "All computers"
@@ -15487,7 +15487,7 @@
     "relation": {
       "interface": [
         [
-          " the Correlator Monitor and Control System",
+          "the Correlator Monitor and Control System",
           "All computers"
         ],
         [
@@ -15595,7 +15595,7 @@
         "the EVLA Correlator Monitor and Control System"
       ],
       "Physical Device": [
-        "The Master Correlator Control Computer "
+        "The Master Correlator Control Computer"
       ],
       "Environment Entity": [],
       "Design Domain": [
@@ -15611,20 +15611,20 @@
       "interface": [
         [
           "the EVLA Correlator Monitor and Control System",
-          "The Master Correlator Control Computer "
+          "The Master Correlator Control Computer"
         ],
         [
-          "The Master Correlator Control Computer ",
+          "The Master Correlator Control Computer",
           "disk"
         ],
         [
-          "The Master Correlator Control Computer ",
+          "The Master Correlator Control Computer",
           "file system facilities"
         ]
       ],
       "requirements reference": [
         [
-          "The Master Correlator Control Computer ",
+          "The Master Correlator Control Computer",
           "boot and run in a stand-alone configuration"
         ]
       ],
@@ -15697,7 +15697,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "This computer ",
+        "This computer",
         "CPU device"
       ],
       "Environment Entity": [],
@@ -15710,7 +15710,7 @@
     "relation": {
       "interface": [
         [
-          "This computer ",
+          "This computer",
           "CPU device"
         ]
       ],
@@ -16962,7 +16962,7 @@
       ],
       "Physical Device": [],
       "Environment Entity": [
-        "The Unmanned Aerial Vehicle Joint Project Office ",
+        "The Unmanned Aerial Vehicle Joint Project Office",
         "UAVs"
       ],
       "Design Domain": [],
@@ -16973,7 +16973,7 @@
       "interface": [
         [
           "a Tactical Control System",
-          "The Unmanned Aerial Vehicle Joint Project Office "
+          "The Unmanned Aerial Vehicle Joint Project Office"
         ],
         [
           "a Tactical Control System",
@@ -18938,7 +18938,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        "the state "
+        "the state"
       ]
     },
     "relation": {
@@ -18953,11 +18953,11 @@
         ],
         [
           "Tactical Control System",
-          "the state "
+          "the state"
         ],
         [
           "all interfaces",
-          "the state "
+          "the state"
         ]
       ],
       "requirements reference": [],
@@ -19964,7 +19964,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        " mission planning data",
+        "mission planning data",
         "mission plan data"
       ]
     },
@@ -19980,11 +19980,11 @@
         ],
         [
           "Tactical Control System",
-          " mission planning data"
+          "mission planning data"
         ],
         [
           "C4I interfaces",
-          " mission planning data"
+          "mission planning data"
         ]
       ],
       "requirements reference": [],
@@ -20185,7 +20185,7 @@
       "Environment Entity": [
         "Government",
         "the UAV",
-        " "
+        ""
       ],
       "Design Domain": [
         "database",
@@ -20193,7 +20193,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        " UAV signature",
+        "UAV signature",
         "aircraft signature"
       ]
     },
@@ -20201,7 +20201,7 @@
       "interface": [
         [
           "Tactical Control System",
-          " UAV signature"
+          "UAV signature"
         ],
         [
           "Tactical Control System",
@@ -20209,7 +20209,7 @@
         ],
         [
           "the UAV",
-          " UAV signature"
+          "UAV signature"
         ],
         [
           "the UAV",
@@ -20267,7 +20267,7 @@
         "AV flight parameters",
         "payload control parameters",
         "data link control parameters",
-        "AV VCR control parameters ",
+        "AV VCR control parameters",
         "AV loiter patterns"
       ]
     },
@@ -20295,7 +20295,7 @@
         ],
         [
           "Tactical Control System",
-          "AV VCR control parameters "
+          "AV VCR control parameters"
         ],
         [
           "operator",
@@ -20311,7 +20311,7 @@
         ],
         [
           "operator",
-          "AV VCR control parameters "
+          "AV VCR control parameters"
         ],
         [
           "operator",
@@ -20340,7 +20340,7 @@
         "AV identification number",
         "selected payload type",
         "ground control authorization information",
-        "communications pre-set ",
+        "communications pre-set",
         "tactical communications",
         "C4I data dissemination"
       ]
@@ -20369,7 +20369,7 @@
         ],
         [
           "Tactical Control System",
-          "communications pre-set "
+          "communications pre-set"
         ],
         [
           "Tactical Control System",
@@ -20381,7 +20381,7 @@
         ],
         [
           "data links",
-          "communications pre-set "
+          "communications pre-set"
         ]
       ],
       "requirements reference": [],
@@ -21007,7 +21007,7 @@
       "Design Domain": [],
       "Requirements": [],
       "Shared Phenomena": [
-        "AV commands ",
+        "AV commands",
         "The flight route plan"
       ]
     },
@@ -21019,7 +21019,7 @@
         ],
         [
           "a programmed flight",
-          "AV commands "
+          "AV commands"
         ]
       ],
       "requirements reference": [],
@@ -22288,20 +22288,20 @@
         "control, monitor, and display the operation of the Air Data"
       ],
       "Shared Phenomena": [
-        " Air Data"
+        "Air Data"
       ]
     },
     "relation": {
       "interface": [
         [
           "Tactical Control System",
-          " Air Data"
+          "Air Data"
         ]
       ],
       "requirements reference": [
         [
           "control, monitor, and display the operation of the Air Data",
-          " Air Data"
+          "Air Data"
         ]
       ],
       "requirements constraints": []
@@ -23469,7 +23469,7 @@
         "interactive display"
       ],
       "Requirements": [
-        " interactive display for the purpose of controlling the data link terminal"
+        "interactive display for the purpose of controlling the data link terminal"
       ],
       "Shared Phenomena": []
     },
@@ -23486,13 +23486,13 @@
       ],
       "requirements reference": [
         [
-          " interactive display for the purpose of controlling the data link terminal",
+          "interactive display for the purpose of controlling the data link terminal",
           "data link terminal"
         ]
       ],
       "requirements constraints": [
         [
-          " interactive display for the purpose of controlling the data link terminal",
+          "interactive display for the purpose of controlling the data link terminal",
           "interactive display"
         ]
       ]
@@ -23831,20 +23831,20 @@
         "process payload product data from Electro Optical (EO), Infrared (IR), and Synthetic Aperture Radar (SAR) payloads"
       ],
       "Shared Phenomena": [
-        " payload product data"
+        "payload product data"
       ]
     },
     "relation": {
       "interface": [
         [
           "Tactical Control System",
-          " payload product data"
+          "payload product data"
         ]
       ],
       "requirements reference": [
         [
           "process payload product data from Electro Optical (EO), Infrared (IR), and Synthetic Aperture Radar (SAR) payloads",
-          " payload product data"
+          "payload product data"
         ]
       ],
       "requirements constraints": []
@@ -24507,14 +24507,14 @@
         "to manage all aspects of C4I system interfaces"
       ],
       "Shared Phenomena": [
-        " receiving, processing, and transmitting tactical information"
+        "receiving, processing, and transmitting tactical information"
       ]
     },
     "relation": {
       "interface": [
         [
           "The Tactical Control System",
-          " receiving, processing, and transmitting tactical information"
+          "receiving, processing, and transmitting tactical information"
         ]
       ],
       "requirements reference": [],
@@ -25794,7 +25794,7 @@
       "Physical Device": [
         "standard DoD tactical (VHF, UHF, and UHF/VHF) radios",
         "Mobile Subscriber Equipmen",
-        " military and commercial satellite communications equipment"
+        "military and commercial satellite communications equipment"
       ],
       "Environment Entity": [],
       "Design Domain": [],
@@ -26853,7 +26853,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        " future AVs"
+        "future AVs"
       ],
       "Environment Entity": [],
       "Design Domain": [
@@ -27106,7 +27106,7 @@
         "the Tactical Control System Display input device(s)"
       ],
       "Environment Entity": [
-        "the Operator(s) ",
+        "the Operator(s)",
         "VCR"
       ],
       "Design Domain": [],
@@ -27413,8 +27413,8 @@
       "Environment Entity": [],
       "Design Domain": [],
       "Requirements": [
-        " consider all safety requirements affecting design",
-        " performance except nuclear safety"
+        "consider all safety requirements affecting design",
+        "performance except nuclear safety"
       ],
       "Shared Phenomena": []
     },
@@ -27906,7 +27906,7 @@
       "Physical Device": [],
       "Environment Entity": [],
       "Design Domain": [
-        " DoD Regulation 5000.2-R",
+        "DoD Regulation 5000.2-R",
         "DoD Directive 5200.28(D)"
       ],
       "Requirements": [
@@ -27947,7 +27947,7 @@
     "text": "Using risk assessment procedures defined in DoD 5200.28(D), a risk index and the minimum security requirements for Tactical Control System shall be determined.",
     "entity": {
       "Machine Domain": [
-        "Tactical Control System "
+        "Tactical Control System"
       ],
       "Physical Device": [],
       "Environment Entity": [],
@@ -27962,7 +27962,7 @@
       "requirements reference": [
         [
           "DoD 5200.28(D)",
-          "Tactical Control System "
+          "Tactical Control System"
         ]
       ],
       "requirements constraints": []
@@ -29131,7 +29131,7 @@
         "The controls"
       ],
       "Physical Device": [
-        " air vehicle"
+        "air vehicle"
       ],
       "Environment Entity": [
         "payload operators",
@@ -29180,14 +29180,14 @@
         "provide the operator a caution and warning diagnostic"
       ],
       "Shared Phenomena": [
-        " a caution and warning diagnostic"
+        "a caution and warning diagnostic"
       ]
     },
     "relation": {
       "interface": [
         [
           "The Tactical Control System",
-          " a caution and warning diagnostic"
+          "a caution and warning diagnostic"
         ]
       ],
       "requirements reference": [],
@@ -29488,7 +29488,7 @@
     "text": "The HCI shall prompt the operator for a valid input.",
     "entity": {
       "Machine Domain": [
-        "The HCI "
+        "The HCI"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -29505,7 +29505,7 @@
     "relation": {
       "interface": [
         [
-          "The HCI ",
+          "The HCI",
           "a valid input"
         ]
       ],
@@ -30153,14 +30153,14 @@
         "provide a default selection as well as an override option"
       ],
       "Shared Phenomena": [
-        " mission-critical Warnings"
+        "mission-critical Warnings"
       ]
     },
     "relation": {
       "interface": [
         [
           "the Tactical Control System HCI",
-          " mission-critical Warnings"
+          "mission-critical Warnings"
         ]
       ],
       "requirements reference": [],
@@ -30918,7 +30918,7 @@
       "Shared Phenomena": [
         "the node information",
         "node identifier",
-        "node name ",
+        "node name",
         "node type description"
       ]
     },
@@ -30934,7 +30934,7 @@
         ],
         [
           "The Center",
-          "node name "
+          "node name"
         ],
         [
           "The Center",
@@ -31588,7 +31588,7 @@
     "text": "The Center shall support the following status information about each HAR, including network identifier, HAR identifier, HAR name, location and status.",
     "entity": {
       "Machine Domain": [
-        "The Center "
+        "The Center"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -31608,7 +31608,7 @@
     "relation": {
       "interface": [
         [
-          "The Center ",
+          "The Center",
           "status information"
         ],
         [
@@ -32081,7 +32081,7 @@
       "Shared Phenomena": [
         "status information",
         "network identifier",
-        " link identifier",
+        "link identifier",
         "school zone identifier",
         "school zone name"
       ]
@@ -32102,7 +32102,7 @@
         ],
         [
           "School Zone",
-          " link identifier"
+          "link identifier"
         ],
         [
           "School Zone",
@@ -32121,7 +32121,7 @@
     "text": "To support School Zone control in other centers, the Center shall be able to support the following device control command for a School Zone, including network identifier, school zone identifier, username, password and plan.",
     "entity": {
       "Machine Domain": [
-        "the Center "
+        "the Center"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -32132,7 +32132,7 @@
         "To support School Zone control in other centers"
       ],
       "Shared Phenomena": [
-        "device control command ",
+        "device control command",
         "network identifier",
         "school zone identifier",
         "username",
@@ -32143,12 +32143,12 @@
     "relation": {
       "interface": [
         [
-          "the Center ",
-          "device control command "
+          "the Center",
+          "device control command"
         ],
         [
           "a School Zone",
-          "device control command "
+          "device control command"
         ],
         [
           "a School Zone",
@@ -32173,7 +32173,7 @@
       ],
       "requirements reference": [
         [
-          "the Center ",
+          "the Center",
           "To support School Zone control in other centers"
         ]
       ],
@@ -32688,7 +32688,7 @@
       "Shared Phenomena": [
         "status information",
         "network identifier",
-        " park and ride lot identifier",
+        "park and ride lot identifier",
         "park and ride lot name",
         "location",
         "status",
@@ -32711,7 +32711,7 @@
         ],
         [
           "Park and Ride Lot",
-          " park and ride lot identifier"
+          "park and ride lot identifier"
         ],
         [
           "Park and Ride Lot",
@@ -33437,7 +33437,7 @@
     "text": "The Incident GUI shall allow the user to input the following information for each incident.",
     "entity": {
       "Machine Domain": [
-        "The Incident GUI "
+        "The Incident GUI"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -33452,7 +33452,7 @@
     "relation": {
       "interface": [
         [
-          "The Incident GUI ",
+          "The Incident GUI",
           "information for each incident"
         ],
         [
@@ -33473,7 +33473,7 @@
       "Physical Device": [],
       "Environment Entity": [
         "the user",
-        " lane closure"
+        "lane closure"
       ],
       "Design Domain": [],
       "Requirements": [],
@@ -33492,7 +33492,7 @@
           "information for each lane closure"
         ],
         [
-          " lane closure",
+          "lane closure",
           "information for each lane closure"
         ]
       ],
@@ -33728,7 +33728,7 @@
       "Requirements": [],
       "Shared Phenomena": [
         "Target DMS",
-        "Message to be displayed ",
+        "Message to be displayed",
         "Beacons On/Off"
       ]
     },
@@ -33752,11 +33752,11 @@
         ],
         [
           "an Center",
-          "Message to be displayed "
+          "Message to be displayed"
         ],
         [
           "the user",
-          "Message to be displayed "
+          "Message to be displayed"
         ],
         [
           "an Center",
@@ -34012,7 +34012,7 @@
       "Physical Device": [],
       "Environment Entity": [
         "the user",
-        "a HOV "
+        "a HOV"
       ],
       "Design Domain": [],
       "Requirements": [],
@@ -34024,11 +34024,11 @@
       "interface": [
         [
           "an Center",
-          "a HOV "
+          "a HOV"
         ],
         [
           "the user",
-          "a HOV "
+          "a HOV"
         ],
         [
           "an Center",
@@ -34176,7 +34176,7 @@
       "Requirements": [],
       "Shared Phenomena": [
         "each device command/control status request",
-        "the status returned from the network identifier "
+        "the status returned from the network identifier"
       ]
     },
     "relation": {
@@ -34187,7 +34187,7 @@
         ],
         [
           "the GUI",
-          "the status returned from the network identifier "
+          "the status returned from the network identifier"
         ]
       ],
       "requirements reference": [],
@@ -34278,7 +34278,7 @@
     "text": "The Center-to-Center shall execute in a Microsoft Windows NT environment.",
     "entity": {
       "Machine Domain": [
-        "The Center-to-Center "
+        "The Center-to-Center"
       ],
       "Physical Device": [],
       "Environment Entity": [],
@@ -34350,7 +34350,7 @@
     "text": "The Remote Control GUI shall be implemented using C/C++ and ESRI Map Objects.",
     "entity": {
       "Machine Domain": [
-        "The Remote Control GUI "
+        "The Remote Control GUI"
       ],
       "Physical Device": [],
       "Environment Entity": [],

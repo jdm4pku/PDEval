@@ -43,7 +43,7 @@
       ],
       "Physical Device": [],
       "Environment Entity": [
-        "a home user ",
+        "a home user",
         "a home"
       ],
       "Design Domain": [],
@@ -57,7 +57,7 @@
       "interface": [
         [
           "The Digital Home system",
-          "a home user "
+          "a home user"
         ],
         [
           "The Digital Home system",
@@ -66,11 +66,11 @@
       ],
       "requirements reference": [
         [
-          "a home user ",
+          "a home user",
           "manage devices"
         ],
         [
-          "a home user ",
+          "a home user",
           "control the environment of a home"
         ]
       ],
@@ -1155,18 +1155,18 @@
       "Design Domain": [],
       "Requirements": [],
       "Shared Phenomena": [
-        "information about all the actions "
+        "information about all the actions"
       ]
     },
     "relation": {
       "interface": [
         [
           "The CCTNS system",
-          "information about all the actions "
+          "information about all the actions"
         ],
         [
           "an unalterable audit trail",
-          "information about all the actions "
+          "information about all the actions"
         ]
       ],
       "requirements reference": [],
@@ -1998,7 +1998,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        " mission planning data",
+        "mission planning data",
         "mission plan data"
       ]
     },
@@ -2014,11 +2014,11 @@
         ],
         [
           "Tactical Control System",
-          " mission planning data"
+          "mission planning data"
         ],
         [
           "C4I interfaces",
-          " mission planning data"
+          "mission planning data"
         ]
       ],
       "requirements reference": [],
@@ -2066,7 +2066,7 @@
       "Environment Entity": [
         "Government",
         "the UAV",
-        " "
+        ""
       ],
       "Design Domain": [
         "database",
@@ -2074,7 +2074,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        " UAV signature",
+        "UAV signature",
         "aircraft signature"
       ]
     },
@@ -2082,7 +2082,7 @@
       "interface": [
         [
           "Tactical Control System",
-          " UAV signature"
+          "UAV signature"
         ],
         [
           "Tactical Control System",
@@ -2090,7 +2090,7 @@
         ],
         [
           "the UAV",
-          " UAV signature"
+          "UAV signature"
         ],
         [
           "the UAV",
@@ -2478,20 +2478,20 @@
         "control, monitor, and display the operation of the Air Data"
       ],
       "Shared Phenomena": [
-        " Air Data"
+        "Air Data"
       ]
     },
     "relation": {
       "interface": [
         [
           "Tactical Control System",
-          " Air Data"
+          "Air Data"
         ]
       ],
       "requirements reference": [
         [
           "control, monitor, and display the operation of the Air Data",
-          " Air Data"
+          "Air Data"
         ]
       ],
       "requirements constraints": []
@@ -3597,7 +3597,7 @@
     "text": "The Remote Control GUI shall be implemented using C/C++ and ESRI Map Objects.",
     "entity": {
       "Machine Domain": [
-        "The Remote Control GUI "
+        "The Remote Control GUI"
       ],
       "Physical Device": [],
       "Environment Entity": [],

@@ -518,7 +518,7 @@
     "text": "The Correlator monitor subsystem will provide VLA Expansion Project system wide access to all correlator system states including the Monitor and Control System supervisor system state.",
     "entity": {
       "Machine Domain": [
-        "The Correlator monitor subsystem "
+        "The Correlator monitor subsystem"
       ],
       "Physical Device": [],
       "Environment Entity": [],
@@ -534,11 +534,11 @@
     "relation": {
       "interface": [
         [
-          "The Correlator monitor subsystem ",
+          "The Correlator monitor subsystem",
           "all correlator system states"
         ],
         [
-          "The Correlator monitor subsystem ",
+          "The Correlator monitor subsystem",
           "the Monitor and Control System supervisor system state"
         ],
         [
@@ -599,14 +599,14 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        "Error and status messages "
+        "Error and status messages"
       ]
     },
     "relation": {
       "interface": [
         [
           "upper system",
-          "Error and status messages "
+          "Error and status messages"
         ]
       ],
       "requirements reference": [],
@@ -617,7 +617,7 @@
     "text": "Correlator configurations and control instructions will be received from the VLA Expansion Project Monitor and Control System system in a form suitable for translation by the Master Correlator Control Computer.",
     "entity": {
       "Machine Domain": [
-        "the VLA Expansion Project Monitor and Control System "
+        "the VLA Expansion Project Monitor and Control System"
       ],
       "Physical Device": [
         "the Master Correlator Control Computer"
@@ -633,11 +633,11 @@
     "relation": {
       "interface": [
         [
-          "the VLA Expansion Project Monitor and Control System ",
+          "the VLA Expansion Project Monitor and Control System",
           "Correlator configurations"
         ],
         [
-          "the VLA Expansion Project Monitor and Control System ",
+          "the VLA Expansion Project Monitor and Control System",
           "control instructions"
         ],
         [
@@ -660,7 +660,7 @@
         "a human GUI"
       ],
       "Physical Device": [
-        "the correlator ",
+        "the correlator",
         "the correlator hardware"
       ],
       "Environment Entity": [],
@@ -670,27 +670,27 @@
       ],
       "Shared Phenomena": [
         "hardware configuration tables",
-        " configuration"
+        "configuration"
       ]
     },
     "relation": {
       "interface": [
         [
-          "the correlator ",
+          "the correlator",
           "hardware configuration tables"
         ],
         [
           "a human GUI",
-          " configuration"
+          "configuration"
         ],
         [
           "the correlator hardware",
-          " configuration"
+          "configuration"
         ]
       ],
       "requirements reference": [
         [
-          "the correlator ",
+          "the correlator",
           "to satisfy the configuration"
         ]
       ],
@@ -933,7 +933,7 @@
       "Shared Phenomena": [
         "reboot requests",
         "self-heal attempts",
-        "an alert notice "
+        "an alert notice"
       ]
     },
     "relation": {
@@ -948,11 +948,11 @@
         ],
         [
           "a CMIB subsystem",
-          "an alert notice "
+          "an alert notice"
         ],
         [
           "personnel",
-          "an alert notice "
+          "an alert notice"
         ]
       ],
       "requirements reference": [],
@@ -1139,7 +1139,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        " system wide configuration ",
+        "system wide configuration",
         "a low level CMIB command line instruction"
       ]
     },
@@ -1147,11 +1147,11 @@
       "interface": [
         [
           "Software tools",
-          " system wide configuration "
+          "system wide configuration"
         ],
         [
           "the user",
-          " system wide configuration "
+          "system wide configuration"
         ],
         [
           "the user",
@@ -1837,7 +1837,7 @@
       "Machine Domain": [],
       "Physical Device": [
         "The CMIB",
-        "all writeable hardware control registers "
+        "all writeable hardware control registers"
       ],
       "Environment Entity": [],
       "Design Domain": [],
@@ -1853,7 +1853,7 @@
           "the contents"
         ],
         [
-          "all writeable hardware control registers ",
+          "all writeable hardware control registers",
           "the contents"
         ]
       ],
@@ -1947,7 +1947,7 @@
       "Machine Domain": [],
       "Physical Device": [
         "The carrier board for the CMIB",
-        "visible indicator "
+        "visible indicator"
       ],
       "Environment Entity": [
         "a user"
@@ -1962,10 +1962,10 @@
       "interface": [
         [
           "The carrier board for the CMIB",
-          "visible indicator "
+          "visible indicator"
         ],
         [
-          "visible indicator ",
+          "visible indicator",
           "a physical indication of CMIB operational status"
         ],
         [
@@ -2038,7 +2038,7 @@
     "text": "All computers within the Correlator Monitor and Control System system shall have the ability for authorized users to directly access individual systems for maintenance and monitoring through remote logins.",
     "entity": {
       "Machine Domain": [
-        " the Correlator Monitor and Control System"
+        "the Correlator Monitor and Control System"
       ],
       "Physical Device": [
         "All computers"
@@ -2055,7 +2055,7 @@
     "relation": {
       "interface": [
         [
-          " the Correlator Monitor and Control System",
+          "the Correlator Monitor and Control System",
           "All computers"
         ],
         [
@@ -2195,7 +2195,7 @@
         "the EVLA Correlator Monitor and Control System"
       ],
       "Physical Device": [
-        "The Master Correlator Control Computer "
+        "The Master Correlator Control Computer"
       ],
       "Environment Entity": [],
       "Design Domain": [
@@ -2211,20 +2211,20 @@
       "interface": [
         [
           "the EVLA Correlator Monitor and Control System",
-          "The Master Correlator Control Computer "
+          "The Master Correlator Control Computer"
         ],
         [
-          "The Master Correlator Control Computer ",
+          "The Master Correlator Control Computer",
           "disk"
         ],
         [
-          "The Master Correlator Control Computer ",
+          "The Master Correlator Control Computer",
           "file system facilities"
         ]
       ],
       "requirements reference": [
         [
-          "The Master Correlator Control Computer ",
+          "The Master Correlator Control Computer",
           "boot and run in a stand-alone configuration"
         ]
       ],
@@ -2297,7 +2297,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "This computer ",
+        "This computer",
         "CPU device"
       ],
       "Environment Entity": [],
@@ -2310,7 +2310,7 @@
     "relation": {
       "interface": [
         [
-          "This computer ",
+          "This computer",
           "CPU device"
         ]
       ],

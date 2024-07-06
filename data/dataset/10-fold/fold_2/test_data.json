@@ -1487,7 +1487,7 @@
     "text": "The Correlator monitor subsystem will provide VLA Expansion Project system wide access to all correlator system states including the Monitor and Control System supervisor system state.",
     "entity": {
       "Machine Domain": [
-        "The Correlator monitor subsystem "
+        "The Correlator monitor subsystem"
       ],
       "Physical Device": [],
       "Environment Entity": [],
@@ -1503,11 +1503,11 @@
     "relation": {
       "interface": [
         [
-          "The Correlator monitor subsystem ",
+          "The Correlator monitor subsystem",
           "all correlator system states"
         ],
         [
-          "The Correlator monitor subsystem ",
+          "The Correlator monitor subsystem",
           "the Monitor and Control System supervisor system state"
         ],
         [
@@ -1530,7 +1530,7 @@
         "a human GUI"
       ],
       "Physical Device": [
-        "the correlator ",
+        "the correlator",
         "the correlator hardware"
       ],
       "Environment Entity": [],
@@ -1540,27 +1540,27 @@
       ],
       "Shared Phenomena": [
         "hardware configuration tables",
-        " configuration"
+        "configuration"
       ]
     },
     "relation": {
       "interface": [
         [
-          "the correlator ",
+          "the correlator",
           "hardware configuration tables"
         ],
         [
           "a human GUI",
-          " configuration"
+          "configuration"
         ],
         [
           "the correlator hardware",
-          " configuration"
+          "configuration"
         ]
       ],
       "requirements reference": [
         [
-          "the correlator ",
+          "the correlator",
           "to satisfy the configuration"
         ]
       ],
@@ -1584,7 +1584,7 @@
       "Shared Phenomena": [
         "reboot requests",
         "self-heal attempts",
-        "an alert notice "
+        "an alert notice"
       ]
     },
     "relation": {
@@ -1599,11 +1599,11 @@
         ],
         [
           "a CMIB subsystem",
-          "an alert notice "
+          "an alert notice"
         ],
         [
           "personnel",
-          "an alert notice "
+          "an alert notice"
         ]
       ],
       "requirements reference": [],
@@ -1708,7 +1708,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "This computer ",
+        "This computer",
         "CPU device"
       ],
       "Environment Entity": [],
@@ -1721,7 +1721,7 @@
     "relation": {
       "interface": [
         [
-          "This computer ",
+          "This computer",
           "CPU device"
         ]
       ],
@@ -3271,7 +3271,7 @@
         "The controls"
       ],
       "Physical Device": [
-        " air vehicle"
+        "air vehicle"
       ],
       "Environment Entity": [
         "payload operators",

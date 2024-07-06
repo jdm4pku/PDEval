@@ -3211,7 +3211,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        " future AVs"
+        "future AVs"
       ],
       "Environment Entity": [],
       "Design Domain": [
@@ -3266,8 +3266,8 @@
       "Environment Entity": [],
       "Design Domain": [],
       "Requirements": [
-        " consider all safety requirements affecting design",
-        " performance except nuclear safety"
+        "consider all safety requirements affecting design",
+        "performance except nuclear safety"
       ],
       "Shared Phenomena": []
     },
@@ -3584,7 +3584,7 @@
       "Shared Phenomena": [
         "status information",
         "network identifier",
-        " park and ride lot identifier",
+        "park and ride lot identifier",
         "park and ride lot name",
         "location",
         "status",
@@ -3607,7 +3607,7 @@
         ],
         [
           "Park and Ride Lot",
-          " park and ride lot identifier"
+          "park and ride lot identifier"
         ],
         [
           "Park and Ride Lot",

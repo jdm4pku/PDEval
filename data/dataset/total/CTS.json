@@ -1025,7 +1025,7 @@
       "Machine Domain": [],
       "Physical Device": [],
       "Environment Entity": [
-        "the help-desk user "
+        "the help-desk user"
       ],
       "Design Domain": [],
       "Requirements": [
@@ -1039,12 +1039,12 @@
       "interface": [
         [
           "reports",
-          "the help-desk user "
+          "the help-desk user"
         ]
       ],
       "requirements reference": [
         [
-          "the help-desk user ",
+          "the help-desk user",
           "view the reports"
         ]
       ],
@@ -1158,18 +1158,18 @@
       "Design Domain": [],
       "Requirements": [],
       "Shared Phenomena": [
-        "information about all the actions "
+        "information about all the actions"
       ]
     },
     "relation": {
       "interface": [
         [
           "The CCTNS system",
-          "information about all the actions "
+          "information about all the actions"
         ],
         [
           "an unalterable audit trail",
-          "information about all the actions "
+          "information about all the actions"
         ]
       ],
       "requirements reference": [],
@@ -2044,7 +2044,7 @@
       "Environment Entity": [],
       "Design Domain": [],
       "Requirements": [
-        "to provide a familiar and common look "
+        "to provide a familiar and common look"
       ],
       "Shared Phenomena": [
         "user interface rules"
@@ -2057,7 +2057,7 @@
           "user interface rules"
         ],
         [
-          "to provide a familiar and common look ",
+          "to provide a familiar and common look",
           "user interface rules"
         ]
       ],
@@ -3101,18 +3101,18 @@
         "Making text resizable by the user"
       ],
       "Shared Phenomena": [
-        "Text "
+        "Text"
       ]
     },
     "relation": {
       "interface": [
         [
           "the user",
-          "Text "
+          "Text"
         ],
         [
           "the user agent",
-          "Text "
+          "Text"
         ]
       ],
       "requirements reference": [
@@ -5502,7 +5502,7 @@
       "Environment Entity": [],
       "Design Domain": [],
       "Requirements": [
-        " ensure high scalability and performance"
+        "ensure high scalability and performance"
       ],
       "Shared Phenomena": []
     },
@@ -5512,7 +5512,7 @@
       "requirements constraints": [
         [
           "The CCTNS system",
-          " ensure high scalability and performance"
+          "ensure high scalability and performance"
         ]
       ]
     }

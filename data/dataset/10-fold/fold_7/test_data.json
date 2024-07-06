@@ -19,7 +19,7 @@
     "text": "The prototype DigitalHome software system will be situated in a simulated environment.",
     "entity": {
       "Machine Domain": [
-        "DigitalHome software system "
+        "DigitalHome software system"
       ],
       "Physical Device": [],
       "Environment Entity": [],
@@ -248,10 +248,10 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "thermostat "
+        "thermostat"
       ],
       "Environment Entity": [
-        "an enclosed space "
+        "an enclosed space"
       ],
       "Design Domain": [],
       "Requirements": [
@@ -264,18 +264,18 @@
     "relation": {
       "interface": [
         [
-          "thermostat ",
+          "thermostat",
           "the air temperature"
         ],
         [
-          "an enclosed space ",
+          "an enclosed space",
           "the air temperature"
         ]
       ],
       "requirements reference": [],
       "requirements constraints": [
         [
-          "thermostat ",
+          "thermostat",
           "the air temperature is to be controlled"
         ]
       ]
@@ -289,7 +289,7 @@
         "humidistats"
       ],
       "Environment Entity": [
-        "rooms ",
+        "rooms",
         "home"
       ],
       "Design Domain": [],
@@ -300,7 +300,7 @@
       "interface": [
         [
           "humidistats",
-          "rooms "
+          "rooms"
         ],
         [
           "humidistats",
@@ -541,7 +541,7 @@
       ],
       "Shared Phenomena": [
         "The web-based displays",
-        "the ASPERA-3 data "
+        "the ASPERA-3 data"
       ]
     },
     "relation": {
@@ -556,7 +556,7 @@
         ],
         [
           "the ASPERA-3 team",
-          "the ASPERA-3 data "
+          "the ASPERA-3 data"
         ]
       ],
       "requirements reference": [],
@@ -1075,7 +1075,7 @@
       "Environment Entity": [],
       "Design Domain": [],
       "Requirements": [
-        "to provide a familiar and common look "
+        "to provide a familiar and common look"
       ],
       "Shared Phenomena": [
         "user interface rules"
@@ -1088,7 +1088,7 @@
           "user interface rules"
         ],
         [
-          "to provide a familiar and common look ",
+          "to provide a familiar and common look",
           "user interface rules"
         ]
       ],
@@ -1182,18 +1182,18 @@
         "Making text resizable by the user"
       ],
       "Shared Phenomena": [
-        "Text "
+        "Text"
       ]
     },
     "relation": {
       "interface": [
         [
           "the user",
-          "Text "
+          "Text"
         ],
         [
           "the user agent",
-          "Text "
+          "Text"
         ]
       ],
       "requirements reference": [
@@ -1539,7 +1539,7 @@
     "text": "Correlator configurations and control instructions will be received from the VLA Expansion Project Monitor and Control System system in a form suitable for translation by the Master Correlator Control Computer.",
     "entity": {
       "Machine Domain": [
-        "the VLA Expansion Project Monitor and Control System "
+        "the VLA Expansion Project Monitor and Control System"
       ],
       "Physical Device": [
         "the Master Correlator Control Computer"
@@ -1555,11 +1555,11 @@
     "relation": {
       "interface": [
         [
-          "the VLA Expansion Project Monitor and Control System ",
+          "the VLA Expansion Project Monitor and Control System",
           "Correlator configurations"
         ],
         [
-          "the VLA Expansion Project Monitor and Control System ",
+          "the VLA Expansion Project Monitor and Control System",
           "control instructions"
         ],
         [
@@ -3395,7 +3395,7 @@
     "text": "The Tactical Control System software shall restrict the operator(s) from exercising levels of interaction not achievable by the system.",
     "entity": {
       "Machine Domain": [
-        "The Tactical Control System software ",
+        "The Tactical Control System software",
         "the system"
       ],
       "Physical Device": [],

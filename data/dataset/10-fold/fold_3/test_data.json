@@ -198,7 +198,7 @@
     "entity": {
       "Machine Domain": [],
       "Physical Device": [
-        "contact sensors ",
+        "contact sensors",
         "power switches"
       ],
       "Environment Entity": [
@@ -233,7 +233,7 @@
         ],
         [
           "a user",
-          "contact sensors "
+          "contact sensors"
         ],
         [
           "a user",
@@ -1736,7 +1736,7 @@
       ],
       "Physical Device": [],
       "Environment Entity": [
-        "The Unmanned Aerial Vehicle Joint Project Office ",
+        "The Unmanned Aerial Vehicle Joint Project Office",
         "UAVs"
       ],
       "Design Domain": [],
@@ -1747,7 +1747,7 @@
       "interface": [
         [
           "a Tactical Control System",
-          "The Unmanned Aerial Vehicle Joint Project Office "
+          "The Unmanned Aerial Vehicle Joint Project Office"
         ],
         [
           "a Tactical Control System",
@@ -2475,7 +2475,7 @@
         "interactive display"
       ],
       "Requirements": [
-        " interactive display for the purpose of controlling the data link terminal"
+        "interactive display for the purpose of controlling the data link terminal"
       ],
       "Shared Phenomena": []
     },
@@ -2492,13 +2492,13 @@
       ],
       "requirements reference": [
         [
-          " interactive display for the purpose of controlling the data link terminal",
+          "interactive display for the purpose of controlling the data link terminal",
           "data link terminal"
         ]
       ],
       "requirements constraints": [
         [
-          " interactive display for the purpose of controlling the data link terminal",
+          "interactive display for the purpose of controlling the data link terminal",
           "interactive display"
         ]
       ]
@@ -3673,7 +3673,7 @@
       "Physical Device": [],
       "Environment Entity": [
         "the user",
-        " lane closure"
+        "lane closure"
       ],
       "Design Domain": [],
       "Requirements": [],
@@ -3692,7 +3692,7 @@
           "information for each lane closure"
         ],
         [
-          " lane closure",
+          "lane closure",
           "information for each lane closure"
         ]
       ],

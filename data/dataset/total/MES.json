@@ -824,14 +824,14 @@
         "to monitor instrument performance"
       ],
       "Shared Phenomena": [
-        "ASPERA-3 data "
+        "ASPERA-3 data"
       ]
     },
     "relation": {
       "interface": [
         [
           "public view",
-          "ASPERA-3 data "
+          "ASPERA-3 data"
         ]
       ],
       "requirements reference": [],
@@ -850,7 +850,7 @@
       "Physical Device": [],
       "Environment Entity": [
         "ASPERA-3 team",
-        "science analysis ",
+        "science analysis",
         "the ASPERA-3 team"
       ],
       "Design Domain": [],
@@ -869,11 +869,11 @@
           "Web-based displays defined"
         ],
         [
-          "science analysis ",
+          "science analysis",
           "ASPERA-3 data"
         ],
         [
-          "science analysis ",
+          "science analysis",
           "the ASPERA-3 team"
         ]
       ],
@@ -902,7 +902,7 @@
       ],
       "Shared Phenomena": [
         "The web-based displays",
-        "the ASPERA-3 data "
+        "the ASPERA-3 data"
       ]
     },
     "relation": {
@@ -917,7 +917,7 @@
         ],
         [
           "the ASPERA-3 team",
-          "the ASPERA-3 data "
+          "the ASPERA-3 data"
         ]
       ],
       "requirements reference": [],

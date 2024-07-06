@@ -99,7 +99,7 @@
       ],
       "Design Domain": [],
       "Requirements": [
-        "setting up and making changes in the configuration ",
+        "setting up and making changes in the configuration",
         "starting and stopping operation"
       ],
       "Shared Phenomena": [
@@ -120,7 +120,7 @@
       "requirements reference": [
         [
           "A DigitalHome Technician",
-          "setting up and making changes in the configuration "
+          "setting up and making changes in the configuration"
         ],
         [
           "A DigitalHome Technician",
@@ -413,14 +413,14 @@
         "to monitor instrument performance"
       ],
       "Shared Phenomena": [
-        "ASPERA-3 data "
+        "ASPERA-3 data"
       ]
     },
     "relation": {
       "interface": [
         [
           "public view",
-          "ASPERA-3 data "
+          "ASPERA-3 data"
         ]
       ],
       "requirements reference": [],
@@ -439,7 +439,7 @@
       "Physical Device": [],
       "Environment Entity": [
         "ASPERA-3 team",
-        "science analysis ",
+        "science analysis",
         "the ASPERA-3 team"
       ],
       "Design Domain": [],
@@ -458,11 +458,11 @@
           "Web-based displays defined"
         ],
         [
-          "science analysis ",
+          "science analysis",
           "ASPERA-3 data"
         ],
         [
-          "science analysis ",
+          "science analysis",
           "the ASPERA-3 team"
         ]
       ],
@@ -836,7 +836,7 @@
       "Machine Domain": [],
       "Physical Device": [],
       "Environment Entity": [
-        "players "
+        "players"
       ],
       "Design Domain": [],
       "Requirements": [],
@@ -2068,7 +2068,7 @@
       ],
       "Requirements": [],
       "Shared Phenomena": [
-        "the state "
+        "the state"
       ]
     },
     "relation": {
@@ -2083,11 +2083,11 @@
         ],
         [
           "Tactical Control System",
-          "the state "
+          "the state"
         ],
         [
           "all interfaces",
-          "the state "
+          "the state"
         ]
       ],
       "requirements reference": [],
@@ -2957,7 +2957,7 @@
       "Physical Device": [],
       "Environment Entity": [],
       "Design Domain": [
-        " DoD Regulation 5000.2-R",
+        "DoD Regulation 5000.2-R",
         "DoD Directive 5200.28(D)"
       ],
       "Requirements": [
@@ -3688,7 +3688,7 @@
     "text": "The Center shall support the following status information about each HAR, including network identifier, HAR identifier, HAR name, location and status.",
     "entity": {
       "Machine Domain": [
-        "The Center "
+        "The Center"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -3708,7 +3708,7 @@
     "relation": {
       "interface": [
         [
-          "The Center ",
+          "The Center",
           "status information"
         ],
         [
@@ -3808,7 +3808,7 @@
     "text": "To support School Zone control in other centers, the Center shall be able to support the following device control command for a School Zone, including network identifier, school zone identifier, username, password and plan.",
     "entity": {
       "Machine Domain": [
-        "the Center "
+        "the Center"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -3819,7 +3819,7 @@
         "To support School Zone control in other centers"
       ],
       "Shared Phenomena": [
-        "device control command ",
+        "device control command",
         "network identifier",
         "school zone identifier",
         "username",
@@ -3830,12 +3830,12 @@
     "relation": {
       "interface": [
         [
-          "the Center ",
-          "device control command "
+          "the Center",
+          "device control command"
         ],
         [
           "a School Zone",
-          "device control command "
+          "device control command"
         ],
         [
           "a School Zone",
@@ -3860,7 +3860,7 @@
       ],
       "requirements reference": [
         [
-          "the Center ",
+          "the Center",
           "To support School Zone control in other centers"
         ]
       ],
@@ -3987,7 +3987,7 @@
     "text": "The Incident GUI shall allow the user to input the following information for each incident.",
     "entity": {
       "Machine Domain": [
-        "The Incident GUI "
+        "The Incident GUI"
       ],
       "Physical Device": [],
       "Environment Entity": [
@@ -4002,7 +4002,7 @@
     "relation": {
       "interface": [
         [
-          "The Incident GUI ",
+          "The Incident GUI",
           "information for each incident"
         ],
         [
@@ -4029,7 +4029,7 @@
       "Requirements": [],
       "Shared Phenomena": [
         "Target DMS",
-        "Message to be displayed ",
+        "Message to be displayed",
         "Beacons On/Off"
       ]
     },
@@ -4053,11 +4053,11 @@
         ],
         [
           "an Center",
-          "Message to be displayed "
+          "Message to be displayed"
         ],
         [
           "the user",
-          "Message to be displayed "
+          "Message to be displayed"
         ],
         [
           "an Center",
@@ -4085,7 +4085,7 @@
       "Requirements": [],
       "Shared Phenomena": [
         "each device command/control status request",
-        "the status returned from the network identifier "
+        "the status returned from the network identifier"
       ]
     },
     "relation": {
@@ -4096,7 +4096,7 @@
         ],
         [
           "the GUI",
-          "the status returned from the network identifier "
+          "the status returned from the network identifier"
         ]
       ],
       "requirements reference": [],
