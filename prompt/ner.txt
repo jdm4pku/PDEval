@@ -1,0 +1,17 @@
+## Task Description
+You are an expert specialising in building problem diagrams and entity extraction. 
+Given the sentence from a software requirements specification, extract all entities that match the schema definition and return an empty list for non-existent entity types.
+Please answer in the format of a JSON string. 
+
+## Schema Definition
+['Machine Domain', 'Physical Device', 'Environment Entity', 'Design Domain', 'Requirements', 'Shared Phenomena']
+'Machine Domain': is the system or software.
+'Physical Device': is a device in the real world, which can be used to get/send/receive data/information. 
+'Environment Entity': is an entity in the real world. Here are some examples: the patient, the sun, the old.
+'Design Domain': is a manually designed domain that can store data messages. Here are some examples: a database, a magnetic stripe card, a tap, hard disk.
+'Requirements': is the aim and purpose of the system to be developed. 
+'Shared Phenomena': is a set of shared events, states and values between the connected entities.
+{examples}
+## Test
+Input:{input_req}
+Answer:
