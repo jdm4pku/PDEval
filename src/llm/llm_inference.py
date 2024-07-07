@@ -33,11 +33,11 @@ def load_model(model_name,moda,max_tokens=512,max_model_len=2048):
     elif model_name.startswith("glm4-9b"):
         print("Loading glm-4-9b")
         model_dir = "THUDM/glm-4-9b"
-        stop_token_ids = []
+        stop_token_ids = [151329,151330,151331,151332,151333,151334,151335,151336,151337,151338,151339,151340,151341,151342]
     elif model_name.startswith("gemma-7b"):
         print("Loading gemma-7b")
         model_dir = "google/gemma-7b"
-        stop_token_ids = []
+        stop_token_ids = [2,1,3,0,106,107]
     elif model_name.startswith("llama3-8b"):
         print("Loading Meta-Llama-3-8B")
         model_dir = "meta-llama/Meta-Llama-3-8B"
@@ -80,6 +80,7 @@ def get_ner_prompt(args):
             input_req = test_item["text"]
             shot_prompt = get_ner_shot_prompt(i,train_data,shot_data,shot_num)
             prompt = prompt_templeate.format(examples=shot_prompt,input_req=input_req)
+            print(prompt)
             prompt_list.append(prompt)
         return prompt_list
 
@@ -96,7 +97,6 @@ def llm_inference(args,model,sampling_params):
     for prompt in tqdm(prompt_list, desc='generate answer'):
         predict = model.generate([prompt],sampling_params)
         predict = predict[0].outputs[0].text
-        logger.info(predict)
         predict_dict = {
             "predict":predict
         }
@@ -111,9 +111,10 @@ def llm_inference(args,model,sampling_params):
     json_data = json.dumps(predict_list,ensure_ascii=False,indent=2)
     with open(output_path,'w',encoding='utf-8') as output_file:
         output_file.write(json_data)
-    
+
 def main():
     args = parser_args()
+    # model,sampling_params = None,None
     model,sampling_params = load_model(args.model,args.moda)
     llm_inference(args,model,sampling_params)
     pass
