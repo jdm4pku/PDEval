@@ -28,6 +28,17 @@ def glm4_process(result):
     if match:
         dict_str = match.group(0)
     return dict_str
+
+def qwen2_process(result):
+    if result=="":
+        print("here")
+        return "[]"
+    print("==========")
+    print(result)
+    match = re.search(r"{[^}]*}", result)
+    if match:
+        dict_str = match.group(0)
+    return dict_str
 def compute_f1(llm3_path,human_path):
     # TP,FP,FN,P,R,F1
     result = {
@@ -77,18 +88,18 @@ def compute_f1(llm3_path,human_path):
         total_fn += FN
         precision = TP / (TP + FP) if TP + FP != 0 else 0
         recall = TP / (TP + FN) if TP + FN != 0 else 0
-        f1 = 2 * (precision * recall) / (precision + recall)
+        f1 = 2 * (precision * recall) / (precision + recall) if precision + recall !=0 else 0
         value.append(precision)
         value.append(recall)
         value.append(f1)
     print(result)
     total_p = total_tp / (total_tp + total_fp) if total_tp + total_fp != 0 else 0
     total_r = total_tp / (total_tp + total_fn) if total_tp + total_fn !=0 else 0
-    total_f1 = 2 * (total_p * total_r) / (total_p + total_r)
+    total_f1 = 2 * (total_p * total_r) / (total_p + total_r) if total_p + total_r!=0 else 0
     print(f"total_p:{total_p}, total_r:{total_r}, total_f1:{total_f1}")
 
 def main():
-    llm3_path = "/home/jindongming/project/modeling/PDEval/output/entity/glm4-9b/fold_0/5.json"
+    llm3_path = "/home/jindongming/project/modeling/PDEval/output/entity/glm4-9b/fold_0/1.json"
     human_path = "/home/jindongming/project/modeling/PDEval/data/dataset/10-fold/fold_0/test_data.json"
     compute_f1(llm3_path,human_path)
 

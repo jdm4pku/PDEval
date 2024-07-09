@@ -44,9 +44,9 @@ def do_similarity_search(in_dir,out_dir,k):
     with open(out_path, 'w', encoding='utf-8') as output_file:
         output_file.write(json_data)
 def main():
-    in_dir = "/home/jindongming/project/modeling/PDEval/data/dataset/10-fold/fold_9"
-    out_dir = "/home/jindongming/project/modeling/PDEval/input/fold_9"
-    k = 10 # 检索的数量
+    in_dir = "/home/jindongming/project/modeling/PDEval/data/dataset/10-fold/fold_0"
+    out_dir = "/home/jindongming/project/modeling/PDEval/input/fold_0"
+    k = 20 # 检索的数量
     do_similarity_search(in_dir,out_dir,k)
 
 
