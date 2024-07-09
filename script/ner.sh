@@ -7,7 +7,7 @@ TEST_DIR="/home/jindongming/project/modeling/PDEval/data/dataset/10-fold/fold_0/
 SHOT_DIR="/home/jindongming/project/modeling/PDEval/input/fold_0/shot.json"
 SHOT_NUM="1" #2,3,4,5
 PROMPT_DIR="/home/jindongming/project/modeling/PDEval/prompt/ner.txt"
-MODEL="llama3-8b" #qwen2-7b,glm4-9b,gemma-7b,llama3-8b,
+MODEL="glm4-9b" #qwen2-7b,glm4-9b,gemma2-9b,llama3-8b,mistral-7b
 MODA="greedy"
 OUTPUT_DIR="/home/jindongming/project/modeling/PDEval/output"
 

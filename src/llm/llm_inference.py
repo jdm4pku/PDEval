@@ -34,14 +34,18 @@ def load_model(model_name,moda,max_tokens=512,max_model_len=2048):
         print("Loading glm-4-9b")
         model_dir = "THUDM/glm-4-9b"
         stop_token_ids = [151329,151330,151331,151332,151333,151334,151335,151336,151337,151338,151339,151340,151341,151342]
-    elif model_name.startswith("gemma-7b"):
-        print("Loading gemma-7b")
-        model_dir = "google/gemma-7b"
+    elif model_name.startswith("gemma2-9b"):
+        print("Loading gemma-9b")
+        model_dir = "google/gemma-2-9b"
         stop_token_ids = [2,1,3,0,106,107]
     elif model_name.startswith("llama3-8b"):
         print("Loading Meta-Llama-3-8B")
         model_dir = "meta-llama/Meta-Llama-3-8B"
         stop_token_ids = [128001]
+    elif model_name.startswith("mistral-7b"):
+        print("Loading mistral-7b")
+        model_dir = "mistralai/Mistral-7B-v0.3"
+        stop_token_ids = []
     if moda=='greedy':
         sampling_params = SamplingParams(temperature=0.0, max_tokens=max_tokens, stop_token_ids=stop_token_ids,n=1)
     else:
@@ -80,7 +84,7 @@ def get_ner_prompt(args):
             input_req = test_item["text"]
             shot_prompt = get_ner_shot_prompt(i,train_data,shot_data,shot_num)
             prompt = prompt_templeate.format(examples=shot_prompt,input_req=input_req)
-            print(prompt)
+            logger.info(prompt)
             prompt_list.append(prompt)
         return prompt_list
 
