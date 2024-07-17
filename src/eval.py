@@ -39,6 +39,51 @@ def qwen2_process(result):
     if match:
         dict_str = match.group(0)
     return dict_str
+
+def gpt35_process(result):
+    if result=="":
+        print("here")
+        return "[]"
+    print("==========")
+    print(result)
+    match = re.search(r"{[^}]*}", result)
+    if match:
+        dict_str = match.group(0)
+    return dict_str
+
+def gpt4_process(result):
+    if result=="":
+        print("here")
+        return "[]"
+    print("==========")
+    print(result)
+    match = re.search(r"{[^}]*}", result)
+    if match:
+        dict_str = match.group(0)
+    return dict_str
+
+def mistral_process(result):
+    if result=="":
+        print("here")
+        return "[]"
+    print("==========")
+    print(result)
+    match = re.search(r"{[^}]*}", result)
+    if match:
+        dict_str = match.group(0)
+    return dict_str
+
+def gemma_process(result):
+    if result=="" or result[:4]=="None":
+        print("here")
+        return "[]"
+    print("==========")
+    print(result)
+    match = re.search(r"{[^}]*}", result)
+    if match:
+        dict_str = match.group(0)
+    return dict_str
+
 def compute_f1(llm3_path,human_path):
     # TP,FP,FN,P,R,F1
     result = {
@@ -54,7 +99,7 @@ def compute_f1(llm3_path,human_path):
     with open(human_path,'r',encoding='utf-8') as file:
         human_data = json.load(file)
     for i,predict in enumerate(llm3_data):
-        predict = glm4_process(predict['predict'])
+        predict = gemma_process(predict['predict'])
         if predict=="[]":
             predict = {
                 "Machine Domain":[],
@@ -99,7 +144,7 @@ def compute_f1(llm3_path,human_path):
     print(f"total_p:{total_p}, total_r:{total_r}, total_f1:{total_f1}")
 
 def main():
-    llm3_path = "/home/jindongming/project/modeling/PDEval/output/entity/glm4-9b/fold_0/1.json"
+    llm3_path = "/home/jindongming/project/modeling/PDEval/output/entity/gemma-7b/fold_0/1.json"
     human_path = "/home/jindongming/project/modeling/PDEval/data/dataset/10-fold/fold_0/test_data.json"
     compute_f1(llm3_path,human_path)
 
